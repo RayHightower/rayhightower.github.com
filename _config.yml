@@ -4,7 +4,7 @@
 
 url: http://RayHightower.github.com
 title: RayHightower.com
-subtitle: Continuous student of Ruby and iOS.
+subtitle: Thoughts about creating software, especially Ruby and iOS.
 author: Raymond T. Hightower
 simple_search: http://google.com/search
 description:
@@ -96,4 +96,4 @@ disqus_show_comment_count: false
 google_analytics_tracking_id:
 
 # Facebook Like
-facebook_like: false
+facebook_like: true
