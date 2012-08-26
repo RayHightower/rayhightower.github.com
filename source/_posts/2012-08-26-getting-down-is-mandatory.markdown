@@ -5,7 +5,8 @@ date: 2012-08-26 16:55
 comments: true
 categories: 
 ---
-[Charlie Rose](http://www.charlierose.com/) is an amazing journalist. His interviews are eclectic and rich, as are his interview subjects. During an interview with mountain climber Ed Viesturs, I was struck by the parallels between mountain climbing and business achievement.
+{% img right /images/climber.jpg 'No Shortcuts to the Top by Ed Viesturs' 'Book cover: No Shortcuts to the Top by Ed Viesturs' %}
+[Charlie Rose](http://www.charlierose.com/) is an amazing journalist. His interviews are eclectic and rich. During an interview with mountain climber Ed Viesturs, I was struck by the parallels between mountain climbing and business achievement.
 
 ####Managing Risk, Ignoring Critics
 “People say that I’m a very conservative and cautious climber,” says Viesturs. “It’s true, and I’m happy about that because it’s a risky arena and it’s about managing the risk and being smart and being patient. The people who criticize me have no idea what they’re talking about. They’ve never climbed an 8,000-foot peak. So they’re either jealous or bored. My goal is to be alive. And I don’t care about critics.”
