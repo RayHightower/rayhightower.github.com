@@ -71,6 +71,10 @@ twitter_follow_button: true
 twitter_show_follower_count: false
 twitter_tweet_button: true
 
+# LinkedIn added by RTH
+linkedin_user:
+linkedin_public_url:
+
 # Google +1
 google_plus_one: false
 google_plus_one_size: small
@@ -93,7 +97,7 @@ disqus_short_name: RayHightower
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-330946-28
 
 # Facebook Like
 facebook_like: true
