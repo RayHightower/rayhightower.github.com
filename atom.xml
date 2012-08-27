@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Ruby on Rails, iOS, and Business Growth]]></title>
+  <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.github.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.github.com/"/>
-  <updated>2012-08-26T22:35:49-05:00</updated>
+  <updated>2012-08-26T23:10:41-05:00</updated>
   <id>http://RayHightower.github.com/</id>
   <author>
-    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails and iOS Developer]]></name>
+    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
