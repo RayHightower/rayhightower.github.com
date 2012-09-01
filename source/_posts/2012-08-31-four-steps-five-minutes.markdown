@@ -25,12 +25,14 @@ It's not fair to pick on Webvan when so many other companies make the same mista
 ####The Four Steps
 Steve Blank lists _The Four Steps to the Epiphany_ as:
 
+<blockquote>
 <ol>
 <li>Customer Discovery</li>
 <li>Customer Validation</li>
 <li>Customer Creation</li>
 <li>Company Building</li>
 </ol>
+</blockquote>
 
   1. Customer Discovery
   2. Customer Validation
