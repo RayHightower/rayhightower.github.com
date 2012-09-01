@@ -69,5 +69,6 @@ Business is tough, especially now. Yet even in the midst of a challenging econom
 
 _Outliers_, by Malcolm Gladwell. Through interviews and statistical analysis, Gladwell determines why some people and organizations achieve success far beyond their peers.
 
-_Note: A version of this post was published at [WisdomGroup.com](http://wisdomgroup.com)._
+_Note: A version of this post was originally published at [WisdomGroup.com](http://wisdomgroup.com)._
+
 
