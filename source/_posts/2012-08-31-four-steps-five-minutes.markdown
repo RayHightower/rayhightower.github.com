@@ -7,13 +7,13 @@ categories:
 ---
 Nine out of ten startups fail in the first year. Why? More important, what can we do to improve the odds? Entrepreneur Steve Blank might have an answer, expressed in his book _The Four Steps to the Epiphany_. Key points from the book are summarized here.
 
-*Ignite Chicago*
-This presentation was created for "Ignite Chicago":http://ignitechi.org. Ignite talks are special because speakers are required to present their thoughts in five minutes with slides that auto-advance every fifteen seconds. Thank you Stella Fayman and Tim Jahn for organizing the event.
+####Ignite Chicago
+This presentation was created for <a href="http://ignitechi.org">Ignite Chicago</a>. Ignite talks are special because speakers are required to present their thoughts in five minutes with slides that auto-advance every fifteen seconds. Thank you Stella Fayman and Tim Jahn for organizing the event.
 
 <center><iframe width="560" height="349" src="http://www.youtube.com/embed/uIYUTKP1pl8?rel=0" frameborder="0" allowfullscreen></iframe></center>
 
-*About the Author of _The Four Steps to the Epiphany_*
-"Steve Blank":http://steveblank.com worked in, owned, or managed eight different silicon valley startups in the course of twenty years. His eighth startup was very successful; he was able to exit with enough money to retire. At that point, Blank began to reflect on the successes and failures of the various startups he had been involved with. Reflection led to lectures at Stanford, Berkeley, and Columbia. Notes from his lectures evolved into the book: _The Four Steps to the Epiphany_.
+####About the Author of _The Four Steps to the Epiphany_*
+<a href="http://steveblank.com">Steve Blank</a> worked in, owned, or managed eight different silicon valley startups in the course of twenty years. His eighth startup was very successful; he was able to exit with enough money to retire. At that point, Blank began to reflect on the successes and failures of the various startups he had been involved with. Reflection led to lectures at Stanford, Berkeley, and Columbia. Notes from his lectures evolved into the book: _The Four Steps to the Epiphany_.
 
 Blank noticed that startups went through predictable patterns of success or failure. Yes, there are multiple paths to failure, but there are fewer paths to success. Blank believes he has found a success path that applies to most startups.
 
