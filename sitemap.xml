@@ -1,19 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://RayHightower.github.com/blog/2012/08/26/getting-down-is-mandatory/</loc>
+        <loc>http://RayHightower.com/blog/2012/08/26/getting-down-is-mandatory/</loc>
         <lastmod>2012-08-26T20:13:59-05:00</lastmod>
     </url>
     <url>
-        <loc>http://RayHightower.github.com/blog/2012/08/31/four-steps-five-minutes/</loc>
+        <loc>http://RayHightower.com/blog/2012/08/31/four-steps-five-minutes/</loc>
         <lastmod>2012-08-31T21:31:34-05:00</lastmod>
     </url>
     <url>
-        <loc>http://RayHightower.github.com/blog/archives/</loc>
-        <lastmod>2012-08-31T21:31:34-05:00</lastmod>
+        <loc>http://RayHightower.com/blog/2012/09/01/a-business-view-of-ruby-on-rails/</loc>
+        <lastmod>2012-09-01T01:13:05-05:00</lastmod>
     </url>
     <url>
-        <loc>http://RayHightower.github.com/</loc>
-        <lastmod>2012-08-31T21:31:34-05:00</lastmod>
+        <loc>http://RayHightower.com/blog/2012/09/04/10000-hours-of-practice/</loc>
+        <lastmod>2012-09-01T00:59:33-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://RayHightower.com/blog/archives/</loc>
+        <lastmod>2012-09-01T01:13:05-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://RayHightower.com/</loc>
+        <lastmod>2012-09-01T01:13:05-05:00</lastmod>
     </url>
 </urlset>
