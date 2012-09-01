@@ -27,11 +27,8 @@ Steve Blank lists _The Four Steps to the Epiphany_ as:
 
 <blockquote>
   1. Customer Discovery<br/>
-
   2. Customer Validation<br/>
-
   3. Customer Creation<br/>
-
   4. Company Building<br/>
 </blockquote>
 
