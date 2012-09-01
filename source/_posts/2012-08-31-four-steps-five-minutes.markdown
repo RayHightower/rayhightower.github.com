@@ -53,5 +53,6 @@ After we've gone through the first three customer-oriented steps, we build the c
 ####That's Not All...
 We live in a time of continuous & rapid change. Once a business has become successful with _The Four Steps_, it's important to remain watchful for new opportunities. Good companies become great when they execute consistently over time.
 
+_Note: A version of this post originally appeared on the [WisdomGroup Blog](http://wisdomgroup.com)._
 
 
