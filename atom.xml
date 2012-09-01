@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.github.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.github.com/"/>
-  <updated>2012-08-31T21:06:19-05:00</updated>
+  <updated>2012-08-31T21:16:06-05:00</updated>
   <id>http://RayHightower.github.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -42,6 +42,14 @@
 <h4>The Four Steps</h4>
 
 <p>Steve Blank lists <em>The Four Steps to the Epiphany</em> as:</p>
+
+<ol>
+<li>Customer Discovery</li>
+<li>Customer Validation</li>
+<li>Customer Creation</li>
+<li>Company Building</li>
+</ol>
+
 
 <ol>
 <li>Customer Discovery</li>
