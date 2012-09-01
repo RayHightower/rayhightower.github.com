@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.github.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.github.com/"/>
-  <updated>2012-08-31T20:44:27-05:00</updated>
+  <updated>2012-08-31T20:52:53-05:00</updated>
   <id>http://RayHightower.github.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -57,7 +57,7 @@
 
 <p>Every entrepreneur has an idea about what customers want. We all know something of the pain felt by our customers, or so we think. Blank&#8217;s suggestion: Take what you know about your prospective customers&#8217; pain and build a minimum viable product (MVP) with just enough features to address the pain. Then get outside the building. Get away from wherever it is that you work and talk to real customers with your MVP in hand. Let them try it. They&#8217;ll give you valuable feedback about what you should do next. If their pain is great enough, and if your MVP is good enough, they&#8217;ll buy it.</p>
 
-<h4>Which Customers?<a href="{filedir_1}lifecycle.png" onclick="window.open('{filedir_1}lifecycle.png','popup','width=770,height=548,scrollbars=no,resizable=yes,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="{filedir_1}lifecycle_thumb.png" border="0" alt="image" name="image" class="right" width="195" height="137" /></a></h4>
+<h4>Which Customers?<a href="http://RayHightower.github.com/images/lifecycle.png" onclick="window.open('/images/lifecycle.png','popup','width=770,height=548,scrollbars=no,resizable=yes,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://RayHightower.github.com/images/lifecycle_thumb.png" border="0" alt="image" name="image" class="right" width="195" height="137" /></a></h4>
 
 <p>It&#8217;s important to note the type of customer we want at this stage. We want early adopters. We want customers who are feeling pain in the entrepreneur&#8217;s area of expertise. Perhaps customers who have tried to solve the problem themselves with no success. Early adopters will give us the most useful &amp; actionable feedback at this stage.</p>
 
