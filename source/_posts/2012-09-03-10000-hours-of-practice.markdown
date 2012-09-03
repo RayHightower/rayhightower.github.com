@@ -5,7 +5,6 @@ date: 2012-09-03 00:46
 comments: true
 categories: 
 ---
-<img src=/images/clock.jpg align=right "10,000 Hours of Practice" alt="10,000 Hours of Practice" height="250" width="250" title="10,000 Hours of Practice">
 In the book _Outliers_, author Malcolm Gladwell observes that it takes roughly ten thousand hours of practice to achieve mastery in a field. How does Gladwell arrive at this conclusion? And, if the conclusion is true, how can we leverage this idea to achieve greatness in our professions?
 
 Gladwell studied the lives of extremely successful people to find out how they achieved success. This article will review a few examples from Gladwell’s research, and conclude with some thoughts for moving forward.
