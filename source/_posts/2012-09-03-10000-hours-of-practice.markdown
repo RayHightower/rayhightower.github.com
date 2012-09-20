@@ -8,7 +8,7 @@ categories:
 In the book _Outliers_, author Malcolm Gladwell observes that it takes roughly ten thousand hours of practice to achieve mastery in a field. How does Gladwell arrive at this conclusion? And, if the conclusion is true, how can we leverage this idea to achieve greatness in our professions?
 
 Gladwell studied the lives of extremely successful people to find out how they achieved success. This article will review a few examples from Gladwell’s research, and conclude with some thoughts for moving forward.
-
+<!-- more -->
 ####Violins in Berlin
 
 In the early 1990s a team of psychologists in Berlin, Germany studied violin students. Specifically, they studied their practice habits in childhood, adolescence, and adulthood. All of the subjects were asked this question: “Over the course of your entire career, ever since you first picked up the violin, how many hours have you practiced?”
@@ -16,7 +16,6 @@ In the early 1990s a team of psychologists in Berlin, Germany studied violin stu
 All of the violinists had begun playing at roughly five years of age with similar practice times. However, at age eight, practice times began to diverge. By age twenty, the elite performers averaged more than 10,000 hours of practice each, while the less able performers had only 4,000 hours of practice.
 
 The elite had more than double the practice hours of the less capable performers.
-<!-- more -->
 
 ####Natural Talent: Not Important
 
