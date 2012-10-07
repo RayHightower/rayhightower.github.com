@@ -5,14 +5,9 @@ date: 2012-10-06 22:47
 comments: true
 categories: 
 ---
-####Who are the Innovators?
-Mention the word “innovation” to some people and high-tech companies may come to mind. Some think of Google and Facebook as innovators. People from an earlier generation may regard the works of Apple and Microsoft as innovative. Beyond the tech industry we may look to Disney as an innovator.
-
-Innovation is nothing new. Successful companies (and organizations) have had to choose innovation or death since the dawn of civilization.
-<!-- more -->
-
 ####Innovation vs. Luck
 Some organizations are innovative, while others are just lucky. How can you tell the difference? I would submit that longevity is a great divider between true innovators and those who are just lucky. An organization that generates new ideas time after time breaks the statistical rules that define luck. These are the organizations worthy of study.
+<!-- more -->
 
 ####157 Years of Innovation
 Corning entered the glass business over 150 years ago. At that time, the art of glassmaking had remained largely unchanged since the time of the Roman Empire. Glassmaking was a craft, an art handed down from father to son for generations, and glassmaking techniques were closely guarded secrets.
