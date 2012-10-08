@@ -11,10 +11,11 @@ Some organizations are innovative, while others are just lucky. How can you tell
 ####150+ Years of Innovation
 Corning entered the glass business over 150 years ago. At that time, the art of glassmaking had remained largely unchanged since the time of the Roman Empire. Glassmaking was a craft, an art handed down from father to son for generations, and glassmaking techniques were closely guarded secrets.
 
-Corning changed that. Corning introduced science to glassmaking. Over the past century and a half they have experimented extensively and documented thoroughly. The results are glass innovations we see today:
+Corning changed that. Corning introduced science to glassmaking. Over the past century and a half they have experimented extensively and documented thoroughly. The results are glass innovations we see today, such as:
 
-Fiber optic cables that shuttle gigabits of data throughout today’s Internet.
-Large, flat-panel computer displays that use less power than older monitors while reducing eye-strain.
+* Fiber optic cables that shuttle gigabits of data throughout today’s Internet.
+* Large, flat-panel computer displays that use less power than older monitors while reducing eye-strain.
+
 To explore innovation at Corning, we’ll take a closer look at a few Corning innovations from the 1800s and 1900s that are still in use today: stones in the glass, the ribbon machine, and joint ventures.
 
 ####Stones in the Glass
