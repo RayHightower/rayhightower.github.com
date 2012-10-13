@@ -31,12 +31,6 @@ Here's a video of our fizzbuzz app running in the iOS simulator. You'll
 find the source code on [github.com/rayhightower/fizzbuzzrm](github.com/rayhightower/fizzbuzzrm).
 
 
-<a href="fizzbuzzrm2.mov" rel="qtposter">
-	<img src="/assets/fizzbuzzrm2.jpg" width="303" height="496" alt="/assets/fizzbuzzrm2"/>
-</a>
-
-
-<video src="/assets/fizzbuzzrm.m4v" width="227" height="360" controls>
 
 
 
