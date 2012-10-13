@@ -26,12 +26,10 @@ It's not fair to pick on Webvan when so many other companies make the same mista
 ####The Four Steps
 Steve Blank lists _The Four Steps to the Epiphany_ as:
 
-<blockquote>
-  1. Customer Discovery<br/>
-  2. Customer Validation<br/>
-  3. Customer Creation<br/>
-  4. Company Building<br/>
-</blockquote>
+1. Customer Discovery
+2. Customer Validation
+3. Customer Creation
+4. Company Building
 
 There are a few things to point out about the steps. First the process is iterative, not linear. If at any point we get stuck, we go back and repeat a step (or two) based on what we've learned. A smaller repetition might be termed an iteration. But if the entrepreneur needs to revisit the entire business plan, or change basic assumptions in the business model, the repetition/backtracking would be termed a _pivot_.
 
