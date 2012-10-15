@@ -8,7 +8,7 @@ categories:
 
 ####Executive Summary
 [RubyMotion](http://www.rubymotion.com/) is a Mac application that lets developers write iOS apps in
-Ruby. It's possible to create the user interface for the IOS app entirely
+Ruby. It's possible to create the user interface for the app entirely
 within RubyMotion or with a Ruby gem like [Teacup](https://github.com/rubymotion/teacup). But what about devs who prefer Interface Builder?
 
 This article will show how to use Xcode's Interface Builder to create a basic UI for
@@ -24,14 +24,17 @@ the fizzbuzz function. As a refresher, here's the fizzbuzz algorithm:
 3. If the integer to be displayed is a multiple of 5, display "buzz" instead.
 4. If the integer to be displayed is a multiple of both 3 and 5 (i.e. a multiple of 15) display "fizzbuzz".
 
-{% video /assets/fizzbuzzrm.mp4 189 300 /assets/fizzbuzzrm.png %}
-
 Here's a video of our fizzbuzz app running in the iOS simulator. You'll
 find the source code on [github.com/rayhightower/fizzbuzzrm](github.com/rayhightower/fizzbuzzrm).
-
-
-
-
+<center>
+<Table width = "300">
+<tr>
+<td>
+{% video /assets/fizzbuzzrm.mp4 189 300 /assets/fizzbuzzrm.png %}
+</td>
+</tr>
+</table>
+</center>
 
 ####First, Build the RubyMotion App
 We start by building the fizzbuzz app in RubyMotion.
