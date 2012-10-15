@@ -5,7 +5,7 @@
 ---
 layout: post
 title: "Using RubyMotion With Xcode's Interface Builder"
-date: 2012-10-13 18:34
+date: 2012-10-15 18:34
 comments: true
 categories: 
 ---
@@ -15,8 +15,9 @@ categories:
 Ruby. It's possible to create the user interface for the IOS app entirely
 within RubyMotion or with a Ruby gem like [Teacup](https://github.com/rubymotion/teacup). But what about devs who prefer Interface Builder?
 
-This article will show how to use Xcode's Interface Builder to create a UI for
-a basic RubyMotion application.
+This article will show how to use Xcode's Interface Builder to create a basic UI for
+a RubyMotion application.
+<!-- more -->
 
 ####Our Sample App: FizzBuzz
 For this example we will build an iOS app that calculates and displays
