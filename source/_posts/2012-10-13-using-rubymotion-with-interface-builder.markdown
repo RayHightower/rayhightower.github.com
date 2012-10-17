@@ -24,17 +24,11 @@ the fizzbuzz function. As a refresher, here's the fizzbuzz algorithm:
 3. If the integer to be displayed is a multiple of 5, display "buzz" instead.
 4. If the integer to be displayed is a multiple of both 3 and 5 (i.e. a multiple of 15) display "fizzbuzz".
 
-Here's a video of our fizzbuzz app running in the iOS simulator. You'll
-find the source code on [github.com/rayhightower/fizzbuzzrm](github.com/rayhightower/fizzbuzzrm).
-<center>
-<Table width = "300">
-<tr>
-<td>
-{% video /assets/fizzbuzzrm.mp4 189 300 /assets/fizzbuzzrm.png %}
-</td>
-</tr>
-</table>
-</center>
+<img src="/assets/fizzbuzzrm.png" width = "200" align = "right">
+The bare-bones UI appears at right. The plus sign increments the
+counter, minius decrements it, and the label area shows "Begin" at
+the beginning.
+
 
 ####First, Build the RubyMotion App
 We start by building the fizzbuzz app in RubyMotion.
