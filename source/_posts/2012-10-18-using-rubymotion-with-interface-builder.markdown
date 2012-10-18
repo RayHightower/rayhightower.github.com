@@ -16,7 +16,7 @@ a RubyMotion application.
 <!-- more -->
 
 <img src="/assets/fizzbuzzrm.png" width = "200" align = "right"
-alt="Interface Builder with RubyMotion">
+alt="Interface Builder with RubyMotion" title="Interface Builder with RubyMotion">
 ####Our Sample App: FizzBuzz
 For this example we will build an iOS app that calculates and displays
 the fizzbuzz function. As a refresher, here's the fizzbuzz algorithm:
@@ -85,6 +85,45 @@ pressed.
     minus_button.addTarget(self, action:'minusTapped:', forControlEvents:UIControlEventTouchUpInside)
     reset_button.addTarget(self, action:'resetTapped:', forControlEvents:UIControlEventTouchUpInside)
     # background_area.addTarget(self, action:'backgroundTapped:', forControlEvents:UIControlEventTouchUpInside)
+  end
+```
+
+And finally, let's define a method for each button.
+
+``` ruby
+  def plusTapped(sender)
+    @counter += 1
+    @label.text = FizzBuzzViewController.fbcalc(@counter).to_s
+  end
+
+  def minusTapped(sender)
+    @counter -= 1
+    @label.text = FizzBuzzViewController.fbcalc(@counter).to_s
+  end
+
+  def resetTapped(sender)
+    @counter = 0
+    @label.text = "Begin"
+
+    rotate_background(@view_handle)
+
+  end
+
+  def rotate_background(view_handle)
+    @color_index ||= 0
+
+    case @color_index
+    when 0
+      @view_handle.backgroundColor = UIColor.redColor
+    when 1
+      @view_handle.backgroundColor = UIColor.greenColor
+    when 2
+      @view_handle.backgroundColor = UIColor.blueColor
+    when 3
+      @view_handle.backgroundColor = UIColor.yellowColor
+    end
+
+    @color_index = (@color_index +1) % 4
   end
 ```
 
