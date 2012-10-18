@@ -53,7 +53,7 @@ minus button, and reset, respectively.
 Save the IB file in the <code>/resources</code> directory of your
 RubyMotion project. In my example, I called the file
 <code>fbib.xib</code>. RubyMotion will compile the .xib file next time
-you run the rake command to build the ap.
+you run the rake command to build the app.
 
 ####Connecting the .xib file to the RubyMotion App
 Let's head back to the RubyMotion app so we can tell RubyMotion how to
