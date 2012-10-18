@@ -15,6 +15,8 @@ This article will show how to use Xcode's Interface Builder to create a basic UI
 a RubyMotion application.
 <!-- more -->
 
+<img src="/assets/fizzbuzzrm.png" width = "200" align = "right"
+alt="Interface Builder with RubyMotion">
 ####Our Sample App: FizzBuzz
 For this example we will build an iOS app that calculates and displays
 the fizzbuzz function. As a refresher, here's the fizzbuzz algorithm:
@@ -24,7 +26,6 @@ the fizzbuzz function. As a refresher, here's the fizzbuzz algorithm:
 3. If the integer to be displayed is a multiple of 5, display "buzz" instead.
 4. If the integer to be displayed is a multiple of both 3 and 5 (i.e. a multiple of 15) display "fizzbuzz".
 
-<img src="/assets/fizzbuzzrm.png" width = "200" align = "right">
 The bare-bones UI appears at right. The plus sign increments the
 counter, minius decrements it, and the label area shows "Begin" at
 the beginning.
@@ -37,21 +38,22 @@ We start by building the fizzbuzz app in RubyMotion.
 $ motion create fizzbuzzrm
 </code>
 
-You'll find the code for the finished app at [github.com/rayhightower/fizzbuzzrm](github.com/rayhightower/fizzbuzzrm).
+The code for the finished app can be found on [GitHub](http://github.com/rayhightower/fizzbuzzrm).
 
 ####Build the UI in Interface Builder
 Next, build the UI in Xcode's Interface Builder.
 
-Once you've completed the interface, we will need to asign tags to each
+After completing the interface, we will need to asign tags to each
 element so that the UI knows how to communicate with RubyMotion. Scroll
-down to View|Tag in the rightmost colum (screnshot attached). In my
+down to View|Tag in the rightmost colum (screenshot below). In this
 example, I assigned the tags 1, 2, 3, and 4 to the label, plus button,
 minus button, and reset, respectively.
+<img src="/assets/tag1.png" alt="Interface Builder With RubyMotion">
 
 Save the IB file in the <code>/resources</code> directory of your
 RubyMotion project. In my example, I called the file
 <code>fbib.xib</code>. RubyMotion will compile the .xib file next time
-you use the rake command to build the ap.
+you run the rake command to build the ap.
 
 ####Connecting the .xib file to the RubyMotion App
 Let's head back to the RubyMotion app so we can 
