@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2012-10-12T18:32:34-10:00</updated>
+  <updated>2012-10-17T19:24:46-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -14,9 +14,141 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Using RubyMotion With Xcode's Interface Builder]]></title>
+    <link href="http://RayHightower.com/blog/2012/10/18/using-rubymotion-with-interface-builder/"/>
+    <updated>2012-10-18T18:34:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2012/10/18/using-rubymotion-with-interface-builder</id>
+    <content type="html"><![CDATA[<h4>Executive Summary</h4>
+
+<p><a href="http://www.rubymotion.com/">RubyMotion</a> is a Mac application that lets developers write iOS apps in
+Ruby. It&#8217;s possible to create the user interface for the app entirely
+within RubyMotion or with a Ruby gem like <a href="https://github.com/rubymotion/teacup">Teacup</a>. But what about devs who prefer Interface Builder?</p>
+
+<p>This article will show how to use Xcode&#8217;s Interface Builder to create a basic UI for
+a RubyMotion application.</p>
+
+<!-- more -->
+
+
+<p><img src="http://RayHightower.com/assets/fizzbuzzrm.png" width = "200" align = "right"
+alt="Interface Builder with RubyMotion"></p>
+
+<h4>Our Sample App: FizzBuzz</h4>
+
+<p>For this example we will build an iOS app that calculates and displays
+the fizzbuzz function. As a refresher, here&#8217;s the fizzbuzz algorithm:</p>
+
+<ol>
+<li>Count integers starting with 1 and incrementing as high as the user wants to go.</li>
+<li>If the integer to be displayed is a multiple of 3, display &#8220;fizz&#8221; instead.</li>
+<li>If the integer to be displayed is a multiple of 5, display &#8220;buzz&#8221; instead.</li>
+<li>If the integer to be displayed is a multiple of both 3 and 5 (i.e. a multiple of 15) display &#8220;fizzbuzz&#8221;.</li>
+</ol>
+
+
+<p>The bare-bones UI appears at right. The plus sign increments the
+counter, minius decrements it, and the label area shows &#8220;Begin&#8221; at
+the beginning.</p>
+
+<h4>First, Build the RubyMotion App</h4>
+
+<p>We start by building the fizzbuzz app in RubyMotion.</p>
+
+<p><code>
+$ motion create fizzbuzzrm
+</code></p>
+
+<p>The code for the finished app can be found on <a href="http://github.com/rayhightower/fizzbuzzrm">GitHub</a>.</p>
+
+<h4>Build the UI in Interface Builder</h4>
+
+<p>Next, build the UI in Xcode&#8217;s Interface Builder.</p>
+
+<p>After completing the interface, we will need to asign tags to each
+element so that the UI knows how to communicate with RubyMotion. Scroll
+down to View|Tag in the rightmost colum (screenshot below). In this
+example, I assigned the tags 1, 2, 3, and 4 to the label, plus button,
+minus button, and reset, respectively.
+<img src="http://RayHightower.com/assets/tag1.png" alt="Interface Builder With RubyMotion"></p>
+
+<p>Save the IB file in the <code>/resources</code> directory of your
+RubyMotion project. In my example, I called the file
+<code>fbib.xib</code>. RubyMotion will compile the .xib file next time
+you run the rake command to build the ap.</p>
+
+<h4>Connecting the .xib file to the RubyMotion App</h4>
+
+<p>Let&#8217;s head back to the RubyMotion app so we can tell RubyMotion how to
+interact with the IB file. Note that we specify the name of the IB file
+on the second line of the <code>loadView</code> method.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'>  <span class="k">def</span> <span class="nf">loadView</span>
+</span><span class='line'>    <span class="n">views</span> <span class="o">=</span> <span class="no">NSBundle</span><span class="o">.</span><span class="n">mainBundle</span><span class="o">.</span><span class="n">loadNibNamed</span> <span class="s2">&quot;fbib&quot;</span><span class="p">,</span> <span class="n">owner</span><span class="ss">:self</span><span class="p">,</span> <span class="n">options</span><span class="ss">:nil</span>
+</span><span class='line'>    <span class="nb">self</span><span class="o">.</span><span class="n">view</span> <span class="o">=</span> <span class="n">views</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span>
+</span><span class='line'>    <span class="vi">@counter</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class='line'>    <span class="vi">@view_handle</span> <span class="o">=</span> <span class="nb">self</span><span class="o">.</span><span class="n">view</span>
+</span><span class='line'>  <span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The <code>viewDidLoad</code> method is where we assign buttons to their corresponding
+methods, and we specify how the app should behave when each button is
+pressed.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'>  <span class="k">def</span> <span class="nf">viewDidLoad</span>
+</span><span class='line'>    <span class="vi">@label</span> <span class="o">=</span> <span class="n">view</span><span class="o">.</span><span class="n">viewWithTag</span> <span class="mi">1</span>
+</span><span class='line'>    <span class="n">plus_button</span> <span class="o">=</span> <span class="n">view</span><span class="o">.</span><span class="n">viewWithTag</span> <span class="mi">2</span>
+</span><span class='line'>    <span class="n">minus_button</span> <span class="o">=</span> <span class="n">view</span><span class="o">.</span><span class="n">viewWithTag</span> <span class="mi">3</span>
+</span><span class='line'>    <span class="n">reset_button</span> <span class="o">=</span> <span class="n">view</span><span class="o">.</span><span class="n">viewWithTag</span> <span class="mi">4</span>
+</span><span class='line'>    <span class="c1"># background_area = view.viewWithTag 5</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">plus_button</span><span class="o">.</span><span class="n">addTarget</span><span class="p">(</span><span class="nb">self</span><span class="p">,</span> <span class="n">action</span><span class="ss">:&#39;plusTapped:&#39;</span><span class="p">,</span> <span class="n">forControlEvents</span><span class="ss">:UIControlEventTouchUpInside</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">minus_button</span><span class="o">.</span><span class="n">addTarget</span><span class="p">(</span><span class="nb">self</span><span class="p">,</span> <span class="n">action</span><span class="ss">:&#39;minusTapped:&#39;</span><span class="p">,</span> <span class="n">forControlEvents</span><span class="ss">:UIControlEventTouchUpInside</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">reset_button</span><span class="o">.</span><span class="n">addTarget</span><span class="p">(</span><span class="nb">self</span><span class="p">,</span> <span class="n">action</span><span class="ss">:&#39;resetTapped:&#39;</span><span class="p">,</span> <span class="n">forControlEvents</span><span class="ss">:UIControlEventTouchUpInside</span><span class="p">)</span>
+</span><span class='line'>    <span class="c1"># background_area.addTarget(self, action:&#39;backgroundTapped:&#39;, forControlEvents:UIControlEventTouchUpInside)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Rake</h4>
+
+<p>Run <code>$ rake</code> to compile and execute the app.</p>
+
+<p>Note the surprise when you hit the Reset button in the app. This
+surprise is one reason why you should always have a designer on your
+dev team!</p>
+
+<h4>Conclusion</h4>
+
+<p>The more familiar I become with RubyMotion, the more I learn that there
+are multiple ways to do things, especially when it comes to UI. If you
+have ideas or suggestions for a different approach, feel free to dash
+me a message through the <a href="http://RayHightower.com/contact">Contact Form</a>. Thanks!</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Clear Innovation]]></title>
     <link href="http://RayHightower.com/blog/2012/10/06/clear-innovation/"/>
-    <updated>2012-10-06T22:47:00-10:00</updated>
+    <updated>2012-10-06T22:47:00-05:00</updated>
     <id>http://RayHightower.com/blog/2012/10/06/clear-innovation</id>
     <content type="html"><![CDATA[<p>Some organizations are innovative, while others are just lucky. How can you tell the difference? I would submit that longevity is a great divider between true innovators and those who are just lucky. An organization that generates new ideas time after time breaks the statistical rules that define luck. These are the organizations worthy of study.</p>
 
@@ -96,7 +228,7 @@
   <entry>
     <title type="html"><![CDATA[Theodore Roosevelt's Arena]]></title>
     <link href="http://RayHightower.com/blog/2012/09/15/theodore-roosevelt-and-the-arena/"/>
-    <updated>2012-09-15T08:46:00-10:00</updated>
+    <updated>2012-09-15T08:46:00-05:00</updated>
     <id>http://RayHightower.com/blog/2012/09/15/theodore-roosevelt-and-the-arena</id>
     <content type="html"><![CDATA[<p>This is one of my favorite quotes from TR. Pardon the bias toward the
 male gender. This was written in the early 1900s.</p>
@@ -122,7 +254,7 @@ nor defeat.</p>
   <entry>
     <title type="html"><![CDATA[10,000 Hours of Practice]]></title>
     <link href="http://RayHightower.com/blog/2012/09/03/10000-hours-of-practice/"/>
-    <updated>2012-09-03T00:46:00-10:00</updated>
+    <updated>2012-09-03T00:46:00-05:00</updated>
     <id>http://RayHightower.com/blog/2012/09/03/10000-hours-of-practice</id>
     <content type="html"><![CDATA[<p>In the book <em>Outliers</em>, author Malcolm Gladwell observes that it takes roughly ten thousand hours of practice to achieve mastery in a field. How does Gladwell arrive at this conclusion? And, if the conclusion is true, how can we leverage this idea to achieve greatness in our professions?</p>
 
@@ -198,7 +330,7 @@ nor defeat.</p>
   <entry>
     <title type="html"><![CDATA[Four Steps. Five Minutes.]]></title>
     <link href="http://RayHightower.com/blog/2012/08/31/four-steps-five-minutes/"/>
-    <updated>2012-08-31T15:04:00-10:00</updated>
+    <updated>2012-08-31T15:04:00-05:00</updated>
     <id>http://RayHightower.com/blog/2012/08/31/four-steps-five-minutes</id>
     <content type="html"><![CDATA[<p>Nine out of ten startups fail in the first year. Why? More important, what can we do to improve the odds? Entrepreneur Steve Blank might have an answer, expressed in his book <em>The Four Steps to the Epiphany</em>. Key points from the book are summarized here.</p>
 
@@ -230,12 +362,12 @@ nor defeat.</p>
 
 <p>Steve Blank lists <em>The Four Steps to the Epiphany</em> as:</p>
 
-<blockquote>
-  1. Customer Discovery<br/>
-  2. Customer Validation<br/>
-  3. Customer Creation<br/>
-  4. Company Building<br/>
-</blockquote>
+<ol>
+<li>Customer Discovery</li>
+<li>Customer Validation</li>
+<li>Customer Creation</li>
+<li>Company Building</li>
+</ol>
 
 
 <p>There are a few things to point out about the steps. First the process is iterative, not linear. If at any point we get stuck, we go back and repeat a step (or two) based on what we&#8217;ve learned. A smaller repetition might be termed an iteration. But if the entrepreneur needs to revisit the entire business plan, or change basic assumptions in the business model, the repetition/backtracking would be termed a <em>pivot</em>.</p>
@@ -271,7 +403,7 @@ nor defeat.</p>
   <entry>
     <title type="html"><![CDATA[Getting Down Is Mandatory]]></title>
     <link href="http://RayHightower.com/blog/2012/08/26/getting-down-is-mandatory/"/>
-    <updated>2012-08-26T16:55:00-10:00</updated>
+    <updated>2012-08-26T16:55:00-05:00</updated>
     <id>http://RayHightower.com/blog/2012/08/26/getting-down-is-mandatory</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://RayHightower.com/images/climber.jpg" title="No Shortcuts to the Top by Ed Viesturs" alt="Book cover: No Shortcuts to the Top by Ed Viesturs">
 <a href="http://www.charlierose.com/">Charlie Rose</a> is an amazing journalist. His interviews are eclectic and rich. During his interview with mountain climber Ed Viesturs, I was struck by the parallels between mountain climbing and business achievement.</p>
