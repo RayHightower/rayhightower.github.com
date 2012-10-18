@@ -56,10 +56,50 @@ RubyMotion project. In my example, I called the file
 you run the rake command to build the ap.
 
 ####Connecting the .xib file to the RubyMotion App
-Let's head back to the RubyMotion app so we can 
+Let's head back to the RubyMotion app so we can tell RubyMotion how to
+interact with the IB file. Note that we specify the name of the IB file
+on the second line of the <code>loadView</code> method.
+
+``` ruby
+  def loadView
+    views = NSBundle.mainBundle.loadNibNamed "fbib", owner:self, options:nil
+    self.view = views[0]
+    @counter = 0
+    @view_handle = self.view
+  end
+```
+
+The <code>viewDidLoad</code> method is where we assign buttons to their corresponding
+methods, and we specify how the app should behave when each button is
+pressed.
+
+``` ruby
+  def viewDidLoad
+    @label = view.viewWithTag 1
+    plus_button = view.viewWithTag 2
+    minus_button = view.viewWithTag 3
+    reset_button = view.viewWithTag 4
+    # background_area = view.viewWithTag 5
+
+    plus_button.addTarget(self, action:'plusTapped:', forControlEvents:UIControlEventTouchUpInside)
+    minus_button.addTarget(self, action:'minusTapped:', forControlEvents:UIControlEventTouchUpInside)
+    reset_button.addTarget(self, action:'resetTapped:', forControlEvents:UIControlEventTouchUpInside)
+    # background_area.addTarget(self, action:'backgroundTapped:', forControlEvents:UIControlEventTouchUpInside)
+  end
+```
+
+####Rake
+Run <code>$ rake</code> to compile and execute the app.
+
+Note the surprise when you hit the Reset button in the app. This
+surprise is one reason why you should always have a designer on your
+dev team!
+
+####Conclusion
+The more familiar I become with RubyMotion, the more I learn that there
+are multiple ways to do things, especially when it comes to UI. If you
+have ideas or suggestions for a different approach, feel free to dash
+me a message through the <a href="/contact">Contact Form</a>. Thanks!
 
 
 
-
-####Create the UI in Interface Builder
-Xcode's Interface Builder is an intutive GUI for creating GUI's 
