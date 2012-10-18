@@ -48,7 +48,7 @@ element so that the UI knows how to communicate with RubyMotion. Scroll
 down to View|Tag in the rightmost colum (screenshot below). In this
 example, I assigned the tags 1, 2, 3, and 4 to the label, plus button,
 minus button, and reset, respectively.
-<img src="/assets/tag1.png" alt="Interface Builder With RubyMotion">
+<img src="/assets/tag1.png" alt="Interface Builder With RubyMotion" title="Interface Builder with RubyMotion">
 
 Save the IB file in the <code>/resources</code> directory of your
 RubyMotion project. In my example, I called the file
