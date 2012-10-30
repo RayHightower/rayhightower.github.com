@@ -20,4 +20,4 @@ Keep in mind that I am Ruby-biased, so I see advantages on the RubyMotion side o
 
 Slides from the talk are available on [SpeakerDeck](https://speakerdeck.com/rayhightower/building-ios-apps-with-rubymotion) and here on [RayHightower.com](http://rayhightower.com/presentations/).
 
-Thank you again MagicRuby and Aloha Ruby for asking me to speak!
+Thanks again to MagicRuby and Aloha Ruby for asking me to speak, and to Confreaks for recording the talk.
