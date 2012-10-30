@@ -2,7 +2,7 @@
 layout: page
 title: "contact"
 ---
-<p>WisdomGroup builds software for the web using Ruby on Rails and mobile software for iPhone & iPad. Please fill out this form to contact a member of our team.</p>
+<p>This form will put you in touch with Ray Hightower.</p>
 <div id="wufoo-r7w8p9">
 Fill out my <a href="http://wisdomgroup.wufoo.com/forms/r7w8p9">online form</a>.
 </div>
