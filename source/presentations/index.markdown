@@ -6,7 +6,7 @@ sharing: true
 footer: true
 ---
 ###Building iOS Apps With RubyMotion
-<p>RubyMotion lets developers write native iOS apps using the Ruby programming language. Hightower delivered this presentation at <a href="http://magic-ruby.com/">Magic Ruby</a> and <a href="http://aloharubyconf.com/">Aloha Ruby</a> in October 2012.</p>
+<p>RubyMotion lets developers write native iOS apps using the Ruby programming language. Hightower delivered this presentation at <a href="http://magic-ruby.com/">Magic Ruby</a> and <a href="http://aloharubyconf.com/">Aloha Ruby</a> in October 2012. Bonus: <a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">Video from Aloha Ruby</a></p>
 <table>
 <tr><td width ="600">
 <script async class="speakerdeck-embed" data-id="4fb97dd49d60b90022004d42" data-ratio="1.2945638432364097" src="//speakerdeck.com/assets/embed.js"></script>
