@@ -18,8 +18,9 @@ First, some definitions. The authors divide the business world into two oceans: 
 ####Undiscovered Blue Oceans
 But blue oceans are undiscovered markets. Blue ocean companies offer products and services that are so full of value that customers pay premium prices for the better value. Competition is scarce (and the water remains blue) because blue ocean markets tend to be new. Few companies have figured out how to find the blue ocean. Customers are pleased because blue ocean offerings contain features beyond those found in typical (red ocean) products. Customers willingly pay higher prices for the increased value found in blue ocean products.
 
->Blue ocean products deliver more value, therefore customers are 
->willing to pay more to have them.
+>Blue ocean products deliver more value, therefore
+>customers are willing to pay more
+>to have them.
 
 ####Example: Red Ocean Circus
 Say the word “circus” to a person of a certain age and they will immediately think “Ringling Brothers.” The Ringling Brothers Barnum & Bailey Circus owned the American circus market for decades. Small regional players competed for crumbs. But by the 1980’s, circus audiences were shrinking and even Ringling Brothers had trouble keeping pace. Kids who once begged their parents for circus tickets wanted the latest computer games instead. The market, as a whole, was struggling for new customers and revenue was on the decline.
@@ -35,6 +36,13 @@ The result: A brand new blue ocean in the form of Cirque du Soleil. The Montreal
 
 ####Another Red Ocean: Intimidating Wine
 Wine drinkers know that the process appears intimidating and pretentious to the novice buyer. Personally, I know little of the industry jargon: I’ve picked up words like “vintage” and “legs” but beyond that, I’m clueless. And I’m not alone. An Australian wine company, Casella Wines, discovered that millions of prospective customers were as clueless as me.
+
+>If the market has already been defined by
+>your competitors, you are operating in a red ocean.
+>Why play a game created and dominated by your competitors? Successful
+>blue ocean companies never battle incumbents head-on.
+>They re-write the rules.
+
 
 ####Blue Ocean: Inviting Wine
 Casella wines decided to challenge the entire industry with a brand new wine, [yellow tail]. Casella could have sold its product to the existing population of wine buyers (red ocean). However, strategists at the company tapped latent demand for wine among non-wine buyers, people who avoided wine because they didn’t want to learn all the mumbo jumbo. People like beer drinkers, a market three times the size of wine drinkers. So [yellow tail] was marketed without all of the typical focus on vintages, years, etcetera.
