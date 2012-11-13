@@ -9,7 +9,7 @@ categories:
 ####Path to Victory
 A skillfully executed business strategy is one path to victory. Many strategy books will tell business owners how to win at the expense of the competition, how to take market share away from the competition, and so on.
 
-The book Blue Ocean Strategy proposes a non-typical path to victory over the competition. According to the authors, following a blue ocean strategy will make your competition irrelevant.
+The book _Blue Ocean Strategy_ proposes a non-typical path to victory over the competition. According to the authors, following a blue ocean strategy will make your competition irrelevant.
 
 <!--more-->
 ####Competitive Red Oceans
