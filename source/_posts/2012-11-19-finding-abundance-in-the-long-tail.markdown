@@ -9,7 +9,7 @@ You are already familiar with the [80/20 rule](http://en.wikipedia.org/wiki/80/2
 <!--more--> 	
 ####Another View of the 80/20 Rule
 
-<cite>The Long Tail</cite> by Chris Anderson offers another way to look at the 80/20 rule. Our business example: A book store. The graph below shows book sales ranked by sales volume. Best-sellers are on the left side of the chart (in green) while slower sellers fill in the curve toward the right. Since shelf space is limited and expensive, the store only carries the most popular books along the left side of the chart. Smart application of the 80/20 rule, right? Maybe.
+[The Long Tail](http://www.thelongtail.com/about.html) by Chris Anderson offers another way to look at the 80/20 rule. Our business example: A book store. The graph below shows book sales ranked by sales volume. Best-sellers are on the left side of the chart (in green) while slower sellers fill in the curve toward the right. Since shelf space is limited and expensive, the store only carries the most popular books along the left side of the chart. Smart application of the 80/20 rule, right? Maybe.
 
 <img src="/assets/TheLongTail.png" align="center" alt="The Long Tail" title="The Long Tail">
 
@@ -53,8 +53,8 @@ Of course, one person's crud is another person's masterpiece. Musical tastes var
 
 Given the success of Long Tail companies (like Sears, Amazon, and Apple) one might wonder if there are any Long Tail opportunities left in our economy. The answer is yes! Anderson argues that a Long Tail company needs to do two things to succeed:
 
-# Make a wide selection available, from the short head and the Long Tail.
-# Help customers find what they want.
+1. Make a wide selection available, from the short head and the Long Tail.
+2. Help customers find what they want.
 
 ####Everything, Easy to Find
 
@@ -74,8 +74,6 @@ Are there any Long Tail opportunities left in today's marketplace? Yes. And the 
 
 ####Suggested Reading
 
-<cite>The Long Tail</cite>, by Chris Anderson. The drastic reduction in the cost of distribution for digital information has far-reaching effects upon our economy. As a result, some businesses will thrive while others will die.
+[The Long Tail](http://www.amazon.com/Long-Revised-Updated-Edition-ebook/dp/B000JMKSE2), by Chris Anderson. The drastic reduction in the cost of distribution for digital information has far-reaching effects upon our economy. As a result, some businesses will thrive while others will die.
 
-####About WisdomGroup
-
-WisdomGroup is a software company that creates apps for the "web":/services/web and for "mobile":/services/go: iPhone, iPad, and Android. WisdomGroup also serves the open source community through leadership of "ChicagoRuby":http://chicagoruby.org and related "conferences":/about/rails.
+_Note: A version of this post originally appeared on the [WisdomGroup Blog](http://wisdomgroup.com)._
