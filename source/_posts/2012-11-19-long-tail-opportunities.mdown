@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Winning With the Long Tail"
-date: 2012-11-19 16:58
+title: "Long Tail Opportunities"
+date: 2012-11-19 06:58
 comments: true
 categories: 
 ---
