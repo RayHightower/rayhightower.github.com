@@ -1,19 +1,17 @@
 ---
 layout: post
-title: "Finding Abundance in the Long Tail"
+title: "Winning With the Long Tail"
 date: 2012-11-19 16:58
 comments: true
 categories: 
 ---
-####The 80/20 Rule
-
-You are already familiar with the "80/20 rule":http://en.wikipedia.org/wiki/80/20_rule. In the late 1800s an Italian economist discovered that 80% of the wealth in his country was owned by 20% of the people. More recently we find that the 80/20 rule applies in other areas of our lives. Professional service firms find that eighty percent of the revenue comes from twenty percent of the clients. Merchants find that eighty percent of sales comes from twenty percent of the products. Winners at the very top of any field tend to win by a large margin.
- 	
+You are already familiar with the [80/20 rule](http://en.wikipedia.org/wiki/80/20_rule). In the late 1800s an Italian economist discovered that 80% of the wealth in his country was owned by 20% of the people. More recently we find that the 80/20 rule applies in other areas of our lives. Professional service firms find that eighty percent of the revenue comes from twenty percent of the clients. Merchants find that eighty percent of sales comes from twenty percent of the products. Winners at the very top of any field tend to win by a large margin.
+<!--more--> 	
 ####Another View of the 80/20 Rule
 
 <cite>The Long Tail</cite> by Chris Anderson offers another way to look at the 80/20 rule. Our business example: A book store. The graph below shows book sales ranked by sales volume. Best-sellers are on the left side of the chart (in green) while slower sellers fill in the curve toward the right. Since shelf space is limited and expensive, the store only carries the most popular books along the left side of the chart. Smart application of the 80/20 rule, right? Maybe.
 
-<img src="{filedir_2}2009q1_chart.png" width="614" height="127" class="center" />
+<img src="/assets/TheLongTail.png" align="center" alt="The Long Tail" title="The Long Tail">
 
 ####The Long Tail: Everything Else
 
