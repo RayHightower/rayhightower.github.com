@@ -100,9 +100,6 @@ To pause for five seconds and then take the screenshot:
 $ sleep 5; scrot ~/desktop.png
 ```
 
-
-
-
 <img src="/assets/raspberry-pi-analog-TV.jpg" width="400" align="right">
 #### Analog TV
 Don't laugh: I still have an old analog TV in my living room. It's only twelve years old and it still works. Since every Raspberry Pi comes with an old-fashioned RCA video output, analog TVs are useful again.
