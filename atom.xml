@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2012-12-03T02:45:15-06:00</updated>
+  <updated>2012-12-03T03:00:01-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -157,7 +157,7 @@ card on order.</p>
 <li>I already mentioned this, but it&#8217;s worth repeating: It took 23 minutes to write the SD card, and there was no feedback along the way. This wasn&#8217;t a big deal since I had been pre-warned by one of the wikis.</li>
 <li>apt-get needed an update before I could install git.</li>
 <li>The Pi will do absolutely nothing without a properly configured SD card. You know how a PC will partially boot (to CMOS) even without a hard drive? Not so with the Pi.</li>
-<li>The micro-USB power port requires 700mA or more of current. Most micro-USB power adapters don&#8217;t deliver this month. I happened to have one on hand from another device.</li>
+<li>The micro-USB power port requires 700mA or more of current. Most micro-USB power adapters deliver 500mA or less. Raspberry Pi will only boot if the micro-USB provides sufficient amperage. Only one of my several micro-USB adapters met this requirement.</li>
 <li>A 4GB SD card is far too small if you want to do something useful with the Pi. My first Rails installation failed due to size limitations because I was using a 4GB card. Go with 8GB or larger.</li>
 <li>I&#8217;m not 100% sure, but I think that a faster SD card will make a difference especially during the compilation of the Ruby interpreter. This is only a guess at this point. I don&#8217;t yet know where the bottlenecks are.</li>
 </ul>
