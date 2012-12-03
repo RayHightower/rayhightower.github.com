@@ -158,12 +158,12 @@ Raspberry Pi is a single-board computer roughly the size of a deck of cards. It&
 <p>References:</p>
 
 <ul>
-<li><a href="http://elinux.org/RPi_Easy_SD_Card_Setup">eLinux SD Card Setup</a>. Methods for putting your preferred image on the SD card. I chose the &#8220;OS X mostly GUI&#8221; method.</li>
+<li><a href="http://elinux.org/RPi_Easy_SD_Card_Setup">eLinux SD Card Setup</a>. Methods for putting your preferred image on the SD card. I chose the &#8220;Copying an image to the SD card in Mac OS X (mostly graphical interface)&#8221; method.</li>
 <li><a href="http://www.raspberrypi.org/downloads">Raspberry Pi Official Downloads</a>. Several SD card images, and a beginners wiki.</li>
 </ul>
 
 
-<p>Prepping an SD card takes a <em>long</em> time. In my case, it took 23 minutes from the time I executed the SD write command to the completion of the process. It was a little disconcerting because the system didn&#8217;t do anything during that time. No feedback whatsoever. Sounds like an opportunity for a pull request!</p>
+<p>Prepping an SD card takes a <em>long</em> time. In my case, it took 23 minutes from the time I executed the SD write command (<code>$ sudo dd...</code>) to the completion of the process. It was a little disconcerting because the system didn&#8217;t do anything during that time. No feedback whatsoever. Sounds like an opportunity for a pull request!</p>
 
 <h4>Starting the System</h4>
 
@@ -186,7 +186,7 @@ Raspberry Pi is a single-board computer roughly the size of a deck of cards. It&
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>A few seconds later, you will be greeted with the $ prompt. You can continue to use the Pi in text mode, or you can start the X Window GUI with:</p>
+<p>Several seconds later, you will be greeted with the $ prompt. You can continue to use the Pi in text mode, or you can start the X Window GUI with:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>startx
@@ -260,7 +260,7 @@ card on order.</p>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>After you install Scrot, this command will take a shot of the entire desktop an drop it into a file called desktop.png in your home directory.</p>
+<p>After you install Scrot, this command will take a shot of the entire desktop and drop it into a file called <code>desktop.png</code> in your home directory.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>scrot ~/desktop.png
