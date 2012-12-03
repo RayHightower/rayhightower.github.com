@@ -7,7 +7,7 @@ categories:
 ---
 
 <img src="/assets/raspberry_pi_iphone.png" width="400" align="right">
-Raspberry Pi is single-board computer roughly the size of a deck of cards. It's equipped with an ARM processor that runs Linux. USB ports let you attach a keyboard and mouse. Video is supported via HDMI and RCA. Storage comes in the form of SD cards. There's an Ethernet port. 
+Raspberry Pi is a single-board computer roughly the size of a deck of cards. It's equipped with an ARM processor that runs Linux. USB ports let you attach a keyboard and mouse. Video is supported via HDMI and RCA. Storage comes in the form of SD cards. There's an Ethernet port. 
 
 Even better: You can buy a Raspberry Pi for $35.00.
 
@@ -42,7 +42,7 @@ The makers of the Pi have tested the device with SD cards as large as 32GB. I se
 #### Prepping the SD Card
 The Pi's operating system boots from the SD card. I found several methods for prepping the SD card with the Raspberry Pi system. The easiest: Buy a Pi with a pre-configured SD card. 
 
-My Pi arrived before the kit containing the pre-configured SD card. I'm a little bit impatient when it comes to new gadgets, so I decided to prep an old SD card of my own.
+My Pi arrived before the pre-configured SD card. I'm a little bit impatient when it comes to new gadgets, so I decided to prep an old SD card of my own.
 
 _Note:_ If your'e reading this article, you already know the standard disclaimer about how technology changes rapidly therefore this procedure could be wrong by the time you read this. I've included links to references so you can check for updates on your own. You know the risks. Please backup everything that needs it.
 
