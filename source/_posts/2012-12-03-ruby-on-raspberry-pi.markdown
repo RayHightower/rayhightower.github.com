@@ -76,11 +76,32 @@ $ startx
 #### Ruby with RVM
 I love Ruby Version Manager (RVM). I learn best when I break things, and RVM lets me recover rapidly and well. 
 
-Here's how to get RVM running on your Raspberry Pi.
-
 This command will install the latest stable versions of RVM and Ruby:
 
-$ \curl -L https://get.rvm.io | bash -s stable --ruby
+``` bash
+$ curl -L https://get.rvm.io | bash -s stable --ruby
+```
+
+### Installing Rails
+First, make sure you're using the version of Ruby you want to use.
+
+``` bash
+$ rvm current
+```
+
+Next, create a gemset and tell RVM that you want to use it.
+
+``` bash
+$ rvm use [version of Ruby you want to use]
+$ rvm gemset create firstgemset
+$ rvm gemset use firstgemset
+```
+
+And then install Rails as you would on any other 'nix-based machine.
+
+```
+$ gem install rails
+```
 
 
 #### Gotchas
@@ -112,7 +133,7 @@ $ sleep 5; scrot ~/desktop.png
 
 <img src="/assets/raspberry-pi-analog-TV.jpg" width="400" align="right">
 #### Analog TV
-Don't laugh: I still have an old analog TV in my living room. It's only twelve years old and it still works. Since every Raspberry Pi comes with an old-fashioned RCA video output, analog TVs are useful again.
+Don't laugh: I still have an old analog TV in my living room. It's only twelve years old and it still works. Since Raspberry Pi comes with an old-fashioned RCA video output, analog TVs are useful again.
 
 Here's Raspberry Pi running with my old analog TV as a monitor. Reminds me of the Commodore 64 days!
 
