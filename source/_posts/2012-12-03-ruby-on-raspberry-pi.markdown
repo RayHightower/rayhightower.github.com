@@ -9,12 +9,12 @@ categories:
 <img src="/assets/raspberry_pi_iphone.png" width="400" align="right">
 Raspberry Pi is a single-board computer roughly the size of a deck of cards. It's equipped with an ARM processor that runs Linux. USB ports let you attach a keyboard and mouse. Video is supported via HDMI and RCA. Storage comes in the form of SD cards. There's an Ethernet port. 
 
-Even better: You can buy a Raspberry Pi for $35.00.
+And on top of that, you can buy a Raspberry Pi for $35.00.
 
 #### Why Raspberry Pi?
 Raspberry Pi was created by a group of UK educators and engineers with a concern: Inexpensive hobbyist computers like the old Commodore 64 no longer exist. Game consoles continue to get better, but there is no replacement for the Commodore. As a result, young people who _might_ become developers get introduced to the profession as gamers or users of Word or Excel. They begin as consumers, not creators. Sad news, because creators shape the world we all enjoy. 
 
-Creators get stronger when they have tools for learning, play, and [10,000 hours of practice](/blog/2012/09/03/10000-hours-of-practice/). Enter Raspberry Pi. It's a tiny, inexpensive computer. It runs open source software so it is highly accessible to curious minds that are eager to learn.
+Creators get stronger when they have tools for learning, play, and [10,000 hours of practice](/blog/2012/09/03/10000-hours-of-practice/). Enter Raspberry Pi. It's a tiny, inexpensive computer. It runs open source software so it is highly accessible to curious minds that are eager to learn, practice, and play.
 
 #### Will it Run Ruby?
 When my Raspberry Pi arrived, I was curious: Will it run Ruby? How about Rails?  This article describes my procedure for installing RVM, Ruby, and Rails on a Raspberry Pi, along with the "gotchas" I encountered along the way.
@@ -40,7 +40,7 @@ Here's what you need to get Ruby running on your Raspberry Pi.
 The makers of the Pi have tested the device with SD cards as large as 32GB. I see no harm in using a larger card. More room for testing.
 
 #### Prepping the SD Card
-The Pi's operating system boots from the SD card. I found several methods for prepping the SD card with the Raspberry Pi system. The easiest: Buy a Pi with a pre-configured SD card. 
+The Pi's operating system boots from the SD card. There are several methods for prepping the SD card with the Raspberry Pi system. The easiest: Buy a Pi with a pre-configured SD card. 
 
 My Pi arrived before the pre-configured SD card. I'm a little bit impatient when it comes to new gadgets, so I decided to prep an old SD card of my own.
 
