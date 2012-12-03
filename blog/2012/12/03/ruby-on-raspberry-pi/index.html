@@ -195,11 +195,39 @@ Raspberry Pi is single-board computer roughly the size of a deck of cards. It&#8
 
 <p>I love Ruby Version Manager (RVM). I learn best when I break things, and RVM lets me recover rapidly and well.</p>
 
-<p>Here&#8217;s how to get RVM running on your Raspberry Pi.</p>
-
 <p>This command will install the latest stable versions of RVM and Ruby:</p>
 
-<p>$ \curl -L https://get.rvm.io | bash -s stable &#8211;ruby</p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>curl -L https://get.rvm.io | bash -s stable --ruby
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Installing Rails</h3>
+
+<p>First, make sure you&#8217;re using the version of Ruby you want to use.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rvm current
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Next, create a gemset and tell RVM that you want to use it.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rvm use <span class="o">[</span>version of Ruby you want to use<span class="o">]</span>
+</span><span class='line'><span class="nv">$ </span>rvm gemset create firstgemset
+</span><span class='line'><span class="nv">$ </span>rvm gemset use firstgemset
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And then install Rails as you would on any other &#8216;nix-based machine.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>gem install rails
+</span></code></pre></td></tr></table></div></figure>
+
 
 <h4>Gotchas</h4>
 
@@ -240,7 +268,7 @@ Raspberry Pi is single-board computer roughly the size of a deck of cards. It&#8
 
 <h4>Analog TV</h4>
 
-<p>Don&#8217;t laugh: I still have an old analog TV in my living room. It&#8217;s only twelve years old and it still works. Since every Raspberry Pi comes with an old-fashioned RCA video output, analog TVs are useful again.</p>
+<p>Don&#8217;t laugh: I still have an old analog TV in my living room. It&#8217;s only twelve years old and it still works. Since Raspberry Pi comes with an old-fashioned RCA video output, analog TVs are useful again.</p>
 
 <p>Here&#8217;s Raspberry Pi running with my old analog TV as a monitor. Reminds me of the Commodore 64 days!</p>
 
