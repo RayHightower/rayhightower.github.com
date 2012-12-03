@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-<img src="/assets/raspberry_pi_iphone.jpg" width="400" align="right">
+<img src="/assets/raspberry_pi_iphone.jpg" width="400" align="right" title="Raspberry Pi Circuit Board" alt="Raspberry Pi Circuit Board">
 Raspberry Pi is a single-board computer roughly the size of a deck of cards. It's equipped with an ARM processor that runs Linux. USB ports let you attach a keyboard and mouse. Video is supported via HDMI and RCA. Storage is handled by SD cards. There's an Ethernet port. 
 
 You can buy a Raspberry Pi for $35.00.
@@ -20,9 +20,11 @@ Creators get stronger when they have tools for learning, play, and [10,000 hours
 When my Raspberry Pi arrived, I was curious: Will it run Ruby? How about Rails?  This article describes my procedure for installing RVM, Ruby, and Rails on a Raspberry Pi, along with the "gotchas" I encountered along the way.
 <!--more-->
 #### Yes, It Will Run Ruby
-Here's a screenshot from my Raspberry Pi with the Midori web browser, RVM, Ruby 1.9.3-p327, Rails 3.2.9, Vim 7.3, and other tools.
+Here's a screenshot from my Raspberry Pi with the Midori web browser, RVM, Ruby 1.9.3-p327, Rails 3.2.9, Vim 7.3, and other tools. In this shot, I'm using the Pi's HDMI output to drive a 1080p monitor.
 
-<img src="/assets/RaspberryPi-Desktop.png" width="800" align="middle">
+<img src="/assets/RaspberryPi-Desktop.png" width="800" align="middle" title="Raspberry Pi 1080p HDMI Monitor" alt="Raspberry Pi 1080p HDMI Monitor" >
+
+Yes, this tiny, $35 device will drive a monitor at full 1080p HD!
 
 #### Getting Started
 Here's what you need to get Ruby running on your Raspberry Pi.
@@ -141,15 +143,15 @@ To pause for five seconds and then take the screenshot:
 $ sleep 5; scrot ~/desktop.png
 ```
 
-<img src="/assets/raspberry-pi-analog-TV.jpg" width="400" align="right">
+<img src="/assets/raspberry-pi-analog-TV.jpg" width="400" align="right" title="Raspberry Pi Analog TV Monitor" alt="Raspberry Pi Analog TV Monitor" >
 #### Analog TV
-Don't laugh: I still have an old analog TV in my living room. It's twelve years old and it still works. Since Raspberry Pi comes with an old-fashioned RCA video output, analog TVs are useful again.
+Don't laugh: I still have an old analog TV in my living room. It's twelve years old and it still works. Since Raspberry Pi comes with multiple video outupts, analog TVs are useful again.
 
 Here's Raspberry Pi running with my old analog TV as a monitor. Reminds me of the Commodore 64 days!
 
-By designing Raspberry Pi to work with older devices, the creators have made the device accessible to the widest possible audience.
+Raspberry Pi will work with a wide range of monitors, from HDMI to ancient analog. That makes the Pi accessible to a large audience of hobbyists and developers. 
 
 #### Conclusion
 Raspberry Pi will never replace my primary machine because it's too slow. But it is certainly fast enough for learning. It meets the goals set forth by the engineering team. 
 
-More important: It's a very cool toy. Something tells me that it will continue to improve. To the Raspberry Pi Foundation: Thank you for an impressive device. I wish you much success. 
+I am excited by the learning opportunities offered by Raspberry Pi. To the Raspberry Pi Foundation: Thank you for an impressive device. I wish you much success. 
