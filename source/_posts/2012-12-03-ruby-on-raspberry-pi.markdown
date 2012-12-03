@@ -6,10 +6,10 @@ comments: true
 categories: 
 ---
 
-<img src="/assets/raspberry_pi_iphone.png" width="400" align="right">
-Raspberry Pi is a single-board computer roughly the size of a deck of cards. It's equipped with an ARM processor that runs Linux. USB ports let you attach a keyboard and mouse. Video is supported via HDMI and RCA. Storage comes in the form of SD cards. There's an Ethernet port. 
+<img src="/assets/raspberry_pi_iphone.jpg" width="400" align="right">
+Raspberry Pi is a single-board computer roughly the size of a deck of cards. It's equipped with an ARM processor that runs Linux. USB ports let you attach a keyboard and mouse. Video is supported via HDMI and RCA. Storage is handled by SD cards. There's an Ethernet port. 
 
-And on top of that, you can buy a Raspberry Pi for $35.00.
+You can buy a Raspberry Pi for $35.00.
 
 #### Why Raspberry Pi?
 Raspberry Pi was created by a group of UK educators and engineers with a concern: Inexpensive hobbyist computers like the old Commodore 64 no longer exist. Game consoles continue to get better, but there is no replacement for the Commodore. As a result, young people who _might_ become developers get introduced to the profession as gamers or users of Word or Excel. They begin as consumers, not creators. Sad news, because creators shape the world we all enjoy. 
@@ -44,7 +44,7 @@ The Pi's operating system boots from the SD card. There are several methods for 
 
 My Pi arrived before the pre-configured SD card. I'm a little bit impatient when it comes to new gadgets, so I decided to prep an old SD card of my own.
 
-_Note:_ If your'e reading this article, you already know the standard disclaimer about how technology changes rapidly therefore this procedure could be wrong by the time you read this. I've included links to references so you can check for updates on your own. You know the risks. Please backup everything that needs it.
+_Note:_ If you're reading this article, you already know the standard disclaimer about how technology changes rapidly therefore this procedure could be wrong by the time you read this. I've included links to references so you can check for updates on your own. You know the risks. Please backup everything that needs it.
 
 
 References:
@@ -60,7 +60,9 @@ To start your Raspberry Pi system:
 * Plug the SD card, USB keyboard & mouse, Ethernet cable, and video cable (HDMI or RCA) into their corresponding sockets.
 * Plug in the USB power adapter.
 
-Linux will boot in text mode. When the system is done booting, you will be prompted for a username and password:
+There is no power switch. The device is turned on/off by adding or removing the power cable.
+
+Linux will boot in text mode. When the system is done booting, you will be prompted for a username and password. Here are the default credentials:
 
 ``` bash
 raspberrypi login: pi
@@ -74,13 +76,17 @@ $ startx
 ```
 
 #### Ruby with RVM
-I love Ruby Version Manager (RVM). I learn best when I break things, and RVM lets me recover rapidly and well. 
+I am a big fan of [Ruby Version Manager (RVM)](http://rvm.io). I learn best when I break things. RVM's handling of Ruby versions and gemsets enables me to recover rapidly and well. 
 
 This command will install the latest stable versions of RVM and Ruby:
 
 ``` bash
 $ curl -L https://get.rvm.io | bash -s stable --ruby
 ```
+
+It took over an hour for Ruby to compile on my Pi. The read/write speed
+of my SD card could have been a factor. I have a faster (Class 10) SD
+card on order.
 
 ### Installing Rails
 First, make sure you're using the version of Ruby you want to use.
@@ -111,6 +117,10 @@ The installation process was relatively smooth. Still, here are a few gotchas I 
 * apt-get needed an update before I could install git.
 * The Pi will do absolutely nothing without a properly configured SD card. You know how a PC will partially boot (to CMOS) even without a hard drive? Not so with the Pi.
 * The micro-USB power port requires 700mA or more of current. Most micro-USB power adapters don't deliver this month. I happened to have one on hand from another device.
+* A 4GB SD card is far too small if you want to do something useful with the Pi. My first Rails installation failed due to size limitations because I was using a 4GB card. Go with 8GB or larger.
+* I'm not 100% sure, but I think that a faster SD card will make a difference especially during the compilation of the Ruby interpreter. This is only a guess at this point. I don't yet know where the bottlenecks are. 
+
+Overall, the gotchas were minor.
 
 #### For Screenshots, Try Scrot
 To take screenshots of the Raspberry Pi desktop, I used Scrot (SCReenshOT). Here's how to install Scrot:
@@ -133,11 +143,13 @@ $ sleep 5; scrot ~/desktop.png
 
 <img src="/assets/raspberry-pi-analog-TV.jpg" width="400" align="right">
 #### Analog TV
-Don't laugh: I still have an old analog TV in my living room. It's only twelve years old and it still works. Since Raspberry Pi comes with an old-fashioned RCA video output, analog TVs are useful again.
+Don't laugh: I still have an old analog TV in my living room. It's twelve years old and it still works. Since Raspberry Pi comes with an old-fashioned RCA video output, analog TVs are useful again.
 
 Here's Raspberry Pi running with my old analog TV as a monitor. Reminds me of the Commodore 64 days!
 
-#### Conclusion
-Raspberry Pi will never replace my primary machine because it's too slow. But it is certainly fast enough for learning. More important: It's a very cool toy. Something tells me that it will continue to improve.
+By designing Raspberry Pi to work with older devices, the creators have made the device accessible to the widest possible audience.
 
-To the Raspberry Pi Foundation: Thank you for an impressive device. I wish you much success. 
+#### Conclusion
+Raspberry Pi will never replace my primary machine because it's too slow. But it is certainly fast enough for learning. It meets the goals set forth by the engineering team. 
+
+More important: It's a very cool toy. Something tells me that it will continue to improve. To the Raspberry Pi Foundation: Thank you for an impressive device. I wish you much success. 
