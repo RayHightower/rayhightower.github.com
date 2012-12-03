@@ -12,9 +12,9 @@ Raspberry Pi is single-board computer roughly the size of a deck of cards. It's 
 Even better: You can buy a Raspberry Pi for $35.00.
 
 #### Why Raspberry Pi?
-Raspberry Pi was created by a group of UK educators and engineers with a concern: Inexpensive hobbyist computers like the old Commodore 64 no longer exist. Game consoles continue to get better, but there is no replacement for the Commodore. As a result, young people who _might_ become developers get introduced to the profession as gamers or users of Word or Excel. They begin as consumers, not creators. Sad news, because it's creators who shape the world that we all enjoy. 
+Raspberry Pi was created by a group of UK educators and engineers with a concern: Inexpensive hobbyist computers like the old Commodore 64 no longer exist. Game consoles continue to get better, but there is no replacement for the Commodore. As a result, young people who _might_ become developers get introduced to the profession as gamers or users of Word or Excel. They begin as consumers, not creators. Sad news, because creators shape the world we all enjoy. 
 
-Creators get stronger when they have tools for learning, play, and growth. Enter Raspberry Pi. It's a tiny, inexpensive computer. It runs open source software so it is highly accessible to curious minds that are eager to learn.
+Creators get stronger when they have tools for learning, play, and [10,000 hours of practice](/blog/2012/09/03/10000-hours-of-practice/). Enter Raspberry Pi. It's a tiny, inexpensive computer. It runs open source software so it is highly accessible to curious minds that are eager to learn.
 
 #### Will it Run Ruby?
 When my Raspberry Pi arrived, I was curious: Will it run Ruby? How about Rails?  This article describes my procedure for installing RVM, Ruby, and Rails on a Raspberry Pi, along with the "gotchas" I encountered along the way.
