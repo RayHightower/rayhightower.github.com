@@ -11,14 +11,14 @@ Raspberry Pi is a single-board computer roughly the size of a deck of cards. It'
 
 You can buy a Raspberry Pi for $35.00.
 
+#### Will it Run Ruby?
+When my Raspberry Pi arrived, I was curious: Will it run Ruby? How about Rails?  This article describes my experience with RVM, Ruby, and Rails on a Raspberry Pi, along with the "gotchas" I encountered along the way.
+<!--more-->
 #### Why Raspberry Pi?
 Raspberry Pi was created by a group of UK educators and engineers with a concern: Inexpensive hobbyist computers like the old Commodore 64 no longer exist. Game consoles continue to get better, but there is no replacement for the Commodore. As a result, young people who _might_ become developers get introduced to the profession as gamers or users of Word or Excel. They begin as consumers, not creators. Sad news, because creators shape the world we all enjoy. 
 
 Creators get stronger when they have tools for learning, play, and [10,000 hours of practice](/blog/2012/09/03/10000-hours-of-practice/). Enter Raspberry Pi. It's a tiny, inexpensive computer. It runs open source software so it is highly accessible to curious minds that are eager to learn, practice, and play.
 
-#### Will it Run Ruby?
-When my Raspberry Pi arrived, I was curious: Will it run Ruby? How about Rails?  This article describes my procedure for installing RVM, Ruby, and Rails on a Raspberry Pi, along with the "gotchas" I encountered along the way.
-<!--more-->
 #### Yes, It Will Run Ruby
 Here's a screenshot from my Raspberry Pi with the Midori web browser, RVM, Ruby 1.9.3-p327, Rails 3.2.9, Vim 7.3, and other tools. In this shot, I'm using the Pi's HDMI output to drive a 1080p monitor.
 
@@ -86,9 +86,7 @@ This command will install the latest stable versions of RVM and Ruby:
 $ curl -L https://get.rvm.io | bash -s stable --ruby
 ```
 
-It took over an hour for Ruby to compile on my Pi. The read/write speed
-of my SD card could have been a factor. I have a faster (Class 10) SD
-card on order.
+It took over an hour for Ruby to compile on my Pi. The read/write speed of my SD card (Class 4) could have been a factor. I have a faster (Class 10) SD card on order.
 
 ### Installing Rails
 First, make sure you're using the version of Ruby you want to use.
@@ -137,7 +135,7 @@ After you install Scrot, this command will take a shot of the entire desktop and
 $ scrot ~/desktop.png
 ```
 
-To pause for five seconds and then take the screenshot:
+To pause five seconds before taking the screenshot:
 
 ```
 $ sleep 5; scrot ~/desktop.png
