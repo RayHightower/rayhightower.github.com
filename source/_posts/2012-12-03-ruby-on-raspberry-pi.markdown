@@ -37,7 +37,7 @@ Here's what you need to get Ruby running on your Raspberry Pi.
 * 1 high-speed Internet connection.
 * A separate computer capable of writing an SD card image, or an SD card pre-configured for Raspberry Pi.
 
-The makers of the Pi have tested the device with SD cards as large as 32GB. I see no harm in using a larger card. More room for testing.
+The Pi makers have tested the device with SD cards as large as 32GB, even though 4GB is recommended. Personally, I prefer the larger cards because they allow more room for experiments.
 
 #### Prepping the SD Card
 The Pi's operating system boots from the SD card. There are several methods for prepping the SD card with the Raspberry Pi system. The easiest: Buy a Pi with a pre-configured SD card. 
@@ -49,10 +49,10 @@ _Note:_ If you're reading this article, you already know the standard disclaimer
 
 References:
 
-* [eLinux SD Card Setup](http://elinux.org/RPi_Easy_SD_Card_Setup). Methods for putting your preferred image on the SD card. I chose the "OS X mostly GUI" method.
+* [eLinux SD Card Setup](http://elinux.org/RPi_Easy_SD_Card_Setup). Methods for putting your preferred image on the SD card. I chose the "Copying an image to the SD card in Mac OS X (mostly graphical interface)" method.
 * [Raspberry Pi Official Downloads](http://www.raspberrypi.org/downloads). Several SD card images, and a beginners wiki.
 
-Prepping an SD card takes a _long_ time. In my case, it took 23 minutes from the time I executed the SD write command to the completion of the process. It was a little disconcerting because the system didn't do anything during that time. No feedback whatsoever. Sounds like an opportunity for a pull request!
+Prepping an SD card takes a _long_ time. In my case, it took 23 minutes from the time I executed the SD write command (`$ sudo dd...`) to the completion of the process. It was a little disconcerting because the system didn't do anything during that time. No feedback whatsoever. Sounds like an opportunity for a pull request!
 
 #### Starting the System
 To start your Raspberry Pi system:
@@ -69,7 +69,7 @@ raspberrypi login: pi
 Password: raspberry
 ```
 
-A few seconds later, you will be greeted with the $ prompt. You can continue to use the Pi in text mode, or you can start the X Window GUI with:
+Several seconds later, you will be greeted with the $ prompt. You can continue to use the Pi in text mode, or you can start the X Window GUI with:
 
 ```
 $ startx
@@ -114,9 +114,9 @@ $ gem install rails
 The installation process was relatively smooth. Still, here are a few gotchas I encountered with the Pi:
 
 * I already mentioned this, but it's worth repeating: It took 23 minutes to write the SD card, and there was no feedback along the way. This wasn't a big deal since I had been pre-warned by one of the wikis.
-* apt-get needed an update before I could install git.
+* apt-get needed an update before I could install git. `$ sudo apt-get update` did the trick.
 * The Pi will do absolutely nothing without a properly configured SD card. You know how a PC will partially boot (to CMOS) even without a hard drive? Not so with the Pi.
-* The micro-USB power port requires 700mA or more of current. Most micro-USB power adapters don't deliver this month. I happened to have one on hand from another device.
+* The micro-USB power port requires 700mA or more of current. Most micro-USB power adapters deliver 500mA or less. Raspberry Pi will only boot if the micro-USB provides sufficient amperage. Only one of my several micro-USB adapters met this requirement.
 * A 4GB SD card is far too small if you want to do something useful with the Pi. My first Rails installation failed due to size limitations because I was using a 4GB card. Go with 8GB or larger.
 * I'm not 100% sure, but I think that a faster SD card will make a difference especially during the compilation of the Ruby interpreter. This is only a guess at this point. I don't yet know where the bottlenecks are. 
 
@@ -129,7 +129,7 @@ To take screenshots of the Raspberry Pi desktop, I used Scrot (SCReenshOT). Here
 $ sudo apt-get install scrot
 ```
 
-After you install Scrot, this command will take a shot of the entire desktop an drop it into a file called desktop.png in your home directory.
+After you install Scrot, this command will take a shot of the entire desktop and drop it into a file called `desktop.png` in your home directory.
 
 ```
 $ scrot ~/desktop.png
