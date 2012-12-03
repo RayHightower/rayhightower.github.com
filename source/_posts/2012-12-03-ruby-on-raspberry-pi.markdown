@@ -65,13 +65,23 @@ Linux will boot in text mode. When the system is done booting, you will be promp
 ``` bash
 raspberrypi login: pi
 Password: raspberry
-````
+```
 
 A few seconds later, you will be greeted with the $ prompt. You can continue to use the Pi in text mode, or you can start the X Window GUI with:
 
 ```
 $ startx
 ```
+
+#### Ruby with RVM
+I love Ruby Version Manager (RVM). I learn best when I break things, and RVM lets me recover rapidly and well. 
+
+Here's how to get RVM running on your Raspberry Pi.
+
+This command will install the latest stable versions of RVM and Ruby:
+
+$ \curl -L https://get.rvm.io | bash -s stable --ruby
+
 
 #### Gotchas
 The installation process was relatively smooth. Still, here are a few gotchas I encountered with the Pi:
