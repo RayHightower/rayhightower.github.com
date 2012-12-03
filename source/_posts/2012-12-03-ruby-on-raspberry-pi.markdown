@@ -66,14 +66,14 @@ There is no power switch. The device is turned on/off by adding or removing the 
 
 Linux will boot in text mode. When the system is done booting, you will be prompted for a username and password. Here are the default credentials:
 
-``` bash
+<pre><code>
 raspberrypi login: pi
 Password: raspberry
-```
+</code></pre>
 
 Several seconds later, you will be greeted with the $ prompt. You can continue to use the Pi in text mode, or you can start the X Window GUI with:
 
-```
+``` bash
 $ startx
 ```
 
