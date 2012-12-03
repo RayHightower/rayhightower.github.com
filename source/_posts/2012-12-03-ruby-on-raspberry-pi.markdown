@@ -24,7 +24,7 @@ Here's a screenshot from my Raspberry Pi with the Midori web browser, RVM, Ruby 
 
 <img src="/assets/RaspberryPi-Desktop.png" width="800" align="middle" title="Raspberry Pi 1080p HDMI Monitor" alt="Raspberry Pi 1080p HDMI Monitor" >
 
-Yes, this tiny, $35 device will drive a monitor at full 1080p HD!
+Yes, this tiny, $35 device will drive a monitor at full 1080p HD.
 
 #### Getting Started
 Here's what you need to get Ruby running on your Raspberry Pi.
