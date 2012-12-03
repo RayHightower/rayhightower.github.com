@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2012-12-03T01:16:48-06:00</updated>
+  <updated>2012-12-03T01:22:18-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -25,9 +25,9 @@ Raspberry Pi is single-board computer roughly the size of a deck of cards. It&#8
 
 <h4>Why Raspberry Pi?</h4>
 
-<p>Raspberry Pi was created by a group of UK educators and engineers with a concern: Inexpensive hobbyist computers like the old Commodore 64 no longer exist. Game consoles continue to get better, but there is no replacement for the Commodore. As a result, young people who <em>might</em> become developers get introduced to the profession as gamers or users of Word or Excel. They begin as consumers, not creators. Sad news, because it&#8217;s creators who shape the world that we all enjoy.</p>
+<p>Raspberry Pi was created by a group of UK educators and engineers with a concern: Inexpensive hobbyist computers like the old Commodore 64 no longer exist. Game consoles continue to get better, but there is no replacement for the Commodore. As a result, young people who <em>might</em> become developers get introduced to the profession as gamers or users of Word or Excel. They begin as consumers, not creators. Sad news, because creators shape the world we all enjoy.</p>
 
-<p>Creators get stronger when they have tools for learning, play, and growth. Enter Raspberry Pi. It&#8217;s a tiny, inexpensive computer. It runs open source software so it is highly accessible to curious minds that are eager to learn.</p>
+<p>Creators get stronger when they have tools for learning, play, and <a href="http://RayHightower.com/blog/2012/09/03/10000-hours-of-practice/">10,000 hours of practice</a>. Enter Raspberry Pi. It&#8217;s a tiny, inexpensive computer. It runs open source software so it is highly accessible to curious minds that are eager to learn.</p>
 
 <h4>Will it Run Ruby?</h4>
 
