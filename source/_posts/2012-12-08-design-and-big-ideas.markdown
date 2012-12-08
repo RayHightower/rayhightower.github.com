@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Design and Big Ideas"
-date: 2012-12-08 23:35
+date: 2012-12-08 00:35
 comments: true
 categories: 
 ---
@@ -12,8 +12,9 @@ WisdomGroup is hiring a [web design intern](https://jobs.chicagoruby.org/jobs/10
 
 Great design is functional and inspiring. Autodesk captures the idea in this ad from several years ago:
 
-<center><iframe width="560" height="315" src="http://www.youtube.com/embed/jrK4rTkKLDg?rel=0" frameborder="0" allowfullscreen></iframe></center>
+<center><iframe name="autodesk" width="560" height="315" src="http://www.youtube.com/embed/jrK4rTkKLDg?rel=0" frameborder="0" allowfullscreen></iframe></center>
 
+<!--more-->
 Text from the Autodesk ad:
 >For every serious challenge facing the world there is someone with a big idea. That big idea needs to be nurtured. It needs to be explored and analyzed in order to bring it to life.
 
