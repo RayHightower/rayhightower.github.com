@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-WisdomGroup is hiring a [web design intern](https://jobs.chicagoruby.org/jobs/100). Our current volume of work requires it. The ideal candidate will understand that... 
+WisdomGroup is hiring a [web design intern](https://jobs.chicagoruby.org/jobs/100). Our current volume of work requires it. The ideal candidate will share our beliefs about design, summarized as...
 
 >Design is not just what it looks like and feels like. Design is how it works. ~Steve Jobs
 
@@ -24,4 +24,4 @@ Text from the Autodesk ad:
 
 >There isn't a problem in the world that a great designer can't solve.
 
-If you know a good candidate for WisdomGroup's Web Design Internship, please point them to the [job description](https://jobs.chicagoruby.org/jobs/100). Thanks.
+If you know a solid candidate for WisdomGroup's Web Design Internship, please point them to the [job description](https://jobs.chicagoruby.org/jobs/100). Thanks.
