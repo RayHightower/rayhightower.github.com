@@ -18,9 +18,7 @@ My background includes an undergrad degree in computer science. Over the years, 
 In late 2011, I began to focus on sharpening my personal technical skills, and that led to my immersion in [RubyMotion](/blog/2012/10/29/building-ios-apps-with-ruby-motion/) this year. I expect the Mobile Makers experience to strengthen my grasp of Objective-C, OO theory, and iOS. Cross-training with Objective-C will boost my RubyMotion skills as well. 
 
 ####Instruction Format
-[Don Bora](https://twitter.com/dbora) is the head instructor at Mobile Makers. Don is embarrassed when I say this, but he's the main reason why I chose to enroll. Don is a true polyglot programmer, with a background that includes Objective-C (of course!), C#, Java, Ruby, and Smalltalk. He currently builds Objective-C apps for his clients at [Eight Bit Studios](http://eightbitstudios.com/). Don holds degrees in computer science and linguistics. 
-
-Don will conduct the lectures, and he will run two of the five weekly lab sessions. The opportunity for Objective-C mentorship is rich.
+[Don Bora](https://twitter.com/dbora) is the head instructor at Mobile Makers. Don is embarrassed when I say this, but he's the main reason why I chose to enroll. Don is a true polyglot programmer, with a background that includes Objective-C (of course!), C#, Java, Ruby, and Smalltalk among other languages. He currently builds Objective-C apps for his clients at [Eight Bit Studios](http://eightbitstudios.com/). Don holds degrees in computer science and linguistics. 
 
 Mobile Makers offers a learning format that is relatively new to me. Beyond the traditional classroom lectures, students get plenty of time for lab immersion and interaction with mentors. I first witnessed this format when Neal Sales-Griffin and Mike McGee launched [The Starter League](http://starterleague.com). 
 
