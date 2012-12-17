@@ -29,4 +29,4 @@ Classroom sessions are fine, but they're not enough. Can you learn a musical ins
 Behind the scenes, Adam Lupu is the learning architect who designed the Mobile Makers curriculum. In Don's words: "I know how to explain things, but I don't know how to structure a course. That's where Adam comes in." Adam was the lead architect behind the Rails-based curriculum at the Starter League. Now he's building the mobile curriculum at Mobile Makers.
 
 ####Excitement
-The [iOS Accelerated](http://mobilemakers.co/ios-accelerated) class is only three weeks away. Mention this blog post and we'll both benefit from a $300 tuition discount. More important, we will acquire skills that will serve us well as we solve problems for clients. What an exciting time to be a developer!
+The Mobile Makers [iOS Accelerated](http://mobilemakers.co/ios-accelerated) class is only three weeks away. If you mention this blog post, you and I will both get a $300 tuition discount. More important, we will acquire skills that will serve us well as we solve problems for clients. What an exciting time to be a developer!
