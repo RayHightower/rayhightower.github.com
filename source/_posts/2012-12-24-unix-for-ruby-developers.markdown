@@ -30,10 +30,11 @@ Once we have our hands on the ARGV array, we can parse it and manipulate it at w
 The section on forks contains a lot of mind-bending fun. The author offers some code to explain how forks work. I had write my own in order to grok forks for myself.
 
 Here's what the code does:
-* In the parent process, fork returns the pid of the child process.
-* In the child process, fork returns nil.
-* Therefore, the *if* block should be executed by the parent process, 
-* and the *else* block should be executed by the child process.
+
+* In the parent process, `fork` returns the `pid` of the child process.
+* In the child process, `fork` returns `nil`.
+* Therefore, the `if` block should be executed by the parent process, 
+* and the `else` block should be executed by the child process.
 
 ``` ruby
 puts "Parent process pid (before fork) is #{Process.pid}.\n"
@@ -54,8 +55,35 @@ end
 Running the above Ruby code produces the following results:
 
 ``` bash
+~/Code/Ruby/apps/sandbox$ ruby forking_around.rb 
+Parent process pid (before fork) is 79439.
+Entered the *if* block while running Process 79439.
+The parent of this process is 76751, which should be bash.
 
+Entered the *else* block while running Process 79440.
+The parent of this process is 79439, which should be the original of this process.
 ```
+
+Digging further: Let's look at the names that correspond to our
+`pids`.
+
+``` bash
+~/Code/Ruby/apps/sandbox$ ps -p 79439
+  PID TTY           TIME CMD
+
+~/Code/Ruby/apps/sandbox$ ps -p 76751
+  PID TTY           TIME CMD
+76751 ttys003    0:00.39 -bash
+
+~/Code/Ruby/apps/sandbox$ ps -p 79440
+  PID TTY           TIME CMD
+
+~/Code/Ruby/apps/sandbox$ 
+```
+
+We get zero data for the `pids` 79439 and 79440 because those processes terminated with the program `forking_around.rb`. However, 76751 shows `bash` because bash is still running.
+
+The book is full of rich playground examples like this. Time slips away when I get rolling with this stuff!
 
 ### Errata Handling
 The book is new so you can expect a few typos. If you run into problems with sample code, a quick Google search will lead you to the corrected text. For example, early in the book I had problems with a command that returns the maximum number of processes allowed on a system. Turns out there was a typo, and <a href="http://forums.pragprog.com/forums/261/topics/11191">the correction</a> was posted by the author himself on the publisher's errata page.
