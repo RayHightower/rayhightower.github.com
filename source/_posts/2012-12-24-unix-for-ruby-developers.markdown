@@ -7,7 +7,7 @@ categories:
 published: true
 ---
 <a href="http://workingwithunixprocesses.com/"><img src="/images/working-w-unix-processes.jpg" align="right" width="350" height="266"></a>
-It's gratifying to know that learning something tangentially related to Ruby will, in fact, teach me more about Ruby. 
+It is gratifying to know that learning something tangentially related to Ruby will, in fact, teach me more about Ruby. 
 
 [_Working With Unix Processes_](http://workingwithunixprocesses.com/), by Jesse Storimer, is ostensibly about Unix internals. However, in reading this book, I have become more aware of how executables run on my favorite family of operating systems, which in turn gives me more insight into Ruby.
 
