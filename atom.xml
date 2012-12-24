@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2012-12-23T22:59:18-06:00</updated>
+  <updated>2012-12-24T14:20:23-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,144 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Unix for Ruby Developers]]></title>
+    <link href="http://RayHightower.com/blog/2012/12/24/unix-for-ruby-developers/"/>
+    <updated>2012-12-24T16:50:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2012/12/24/unix-for-ruby-developers</id>
+    <content type="html"><![CDATA[<p><a href="http://workingwithunixprocesses.com/"><img src="http://RayHightower.com/images/working-w-unix-processes.jpg" align="right" width="350" height="266"></a>
+It is gratifying to know that learning something tangentially related to Ruby will, in fact, teach me more about Ruby.</p>
+
+<p><a href="http://workingwithunixprocesses.com/"><em>Working With Unix Processes</em></a>, by Jesse Storimer, is ostensibly about Unix internals. However, in reading this book, I have become more aware of how executables run on my favorite family of operating systems, which in turn gives me more insight into Ruby.</p>
+
+<h3>Passing Arguments</h3>
+
+<p>For example, what happens when we pass arguments to a process, Ruby or otherwise? How do the arguments get there? Storimer offers a 1-line Ruby program called <code>argv.rb</code> that we can use to play with the ARGV array:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span><span class="nb">echo</span> <span class="s1">&#39;p ARGV&#39;</span> &gt; argv.rb
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span>ruby argv.rb what results can we expect here
+</span><span class='line'><span class="o">[</span><span class="s2">&quot;what&quot;</span>, <span class="s2">&quot;results&quot;</span>, <span class="s2">&quot;can&quot;</span>, <span class="s2">&quot;we&quot;</span>, <span class="s2">&quot;expect&quot;</span>, <span class="s2">&quot;here&quot;</span><span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<!--more-->
+
+
+<p>Once we have our hands on the ARGV array, we can parse it and manipulate it at will.</p>
+
+<h3>Grokking Forks</h3>
+
+<p>The section on forks contains a lot of mind-bending fun. The author offers some code to explain how forks work, but some concepts are only understandable when we write our own code. I had write my own in order to grok forks for myself.</p>
+
+<p>Here&#8217;s what the code does:</p>
+
+<ul>
+<li>In the parent process, <code>fork</code> returns the <code>pid</code> of the child process.</li>
+<li>In the child process, <code>fork</code> returns <code>nil</code>.</li>
+<li>Therefore, the <code>if</code> block should be executed by the parent process,</li>
+<li>and the <code>else</code> block should be executed by the child process.</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">puts</span> <span class="s2">&quot;Parent process pid (before fork) is </span><span class="si">#{</span><span class="no">Process</span><span class="o">.</span><span class="n">pid</span><span class="si">}</span><span class="s2">.</span><span class="se">\n</span><span class="s2">&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">if</span> <span class="nb">fork</span>
+</span><span class='line'>  <span class="n">current_process</span> <span class="o">=</span> <span class="no">Process</span><span class="o">.</span><span class="n">pid</span>
+</span><span class='line'>  <span class="n">parent_process</span> <span class="o">=</span> <span class="no">Process</span><span class="o">.</span><span class="n">ppid</span>
+</span><span class='line'>  <span class="nb">printf</span> <span class="s2">&quot;Entered the *if* block during Process </span><span class="si">#{</span><span class="n">current_process</span><span class="si">}</span><span class="s2">.&quot;</span>
+</span><span class='line'>  <span class="nb">printf</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">The parent of this process is </span><span class="si">#{</span><span class="no">Process</span><span class="o">.</span><span class="n">ppid</span><span class="si">}</span><span class="s2">, which should be bash.</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+</span><span class='line'><span class="k">else</span>
+</span><span class='line'>  <span class="n">current_process</span> <span class="o">=</span> <span class="no">Process</span><span class="o">.</span><span class="n">pid</span>
+</span><span class='line'>  <span class="n">parent_process</span> <span class="o">=</span> <span class="no">Process</span><span class="o">.</span><span class="n">ppid</span>
+</span><span class='line'>  <span class="nb">printf</span> <span class="s2">&quot;Entered the *else* block during Process </span><span class="si">#{</span><span class="n">current_process</span><span class="si">}</span><span class="s2">.&quot;</span>
+</span><span class='line'>  <span class="nb">printf</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">The parent of this process is </span><span class="si">#{</span><span class="n">parent_process</span><span class="si">}</span><span class="s2">, which should be the original of this process.</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Running the above Ruby code produces the following results:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span>ruby forking_around.rb
+</span><span class='line'>Parent process pid <span class="o">(</span>before fork<span class="o">)</span> is 79703.
+</span><span class='line'>Entered the *if* block during Process 79703.
+</span><span class='line'>The parent of this process is 76751, which should be bash.
+</span><span class='line'>
+</span><span class='line'>Entered the *else* block during Process 79704.
+</span><span class='line'>The parent of this process is 79703, which should be the original of this process.
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Digging further: Let&#8217;s look at the names that correspond to our
+<code>pids</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span>ps -p 79703
+</span><span class='line'>  PID TTY           TIME CMD
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span>ps -p 79704
+</span><span class='line'>  PID TTY           TIME CMD
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span>ps -p 76751
+</span><span class='line'>  PID TTY           TIME CMD
+</span><span class='line'>76751 ttys003    0:00.40 -bash
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We get zero data for the <code>pids</code> 79703 and 79704 because those processes terminated with the program <code>forking_around.rb</code>. However, 76751 shows <code>bash</code> because bash is still running.</p>
+
+<p>The book is full of rich playground examples that go much deeper than this. Time slips away when I get rolling with this stuff!</p>
+
+<h3>Errata Handling</h3>
+
+<p>The book is new so you can expect a few typos. If you run into problems with sample code, a quick Google search will lead you to the corrected text. For example, early in the book I had problems with a command that returns the maximum number of processes allowed on a system. Turns out there was a typo, and <a href="http://forums.pragprog.com/forums/261/topics/11191">the correction</a> was posted by the author himself on the publisher&#8217;s errata page.</p>
+
+<h3>Conclusion</h3>
+
+<p>I enjoyed reading <em>Working With Unix Processes</em> because it replaces a belief in &#8220;the magic of Unix&#8221; with a sound understanding of Unix fundamentals. The book is clear and brief with plenty of examples. The author assumes that readers have at least a basic understanding of Ruby. After that, you only need a command line, IRB, and the willingness to explore.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Mobile Makers, Objective-C, and RubyMotion]]></title>
