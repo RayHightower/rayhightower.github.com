@@ -4,7 +4,7 @@ title: "Unix for Ruby Developers"
 date: 2012-12-24 16:50
 comments: true
 categories: 
-publish: false
+published: false
 ---
 It amazes me how learning something tangentially related to Ruby will, in fact, teach me more about Ruby. 
 
