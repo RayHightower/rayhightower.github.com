@@ -27,7 +27,7 @@ For example, what happens when we pass arguments to a process, Ruby or otherwise
 Once we have our hands on the ARGV array, we can parse it and manipulate it at will.
 
 ### Grokking Forks
-The section on forks contains a lot of mind-bending fun. The author offers some code to explain how forks work, but some concepts are only understandable when we write our own code. I had write my own in order to grok forks for myself.
+The section on forks contains a lot of mind-bending fun. The author offers some code to explain how forks work, but some concepts are only understandable when we write our own code. I had to write my own in order to raise my comfort level with forks. 
 
 Here's what the code does:
 
@@ -42,14 +42,15 @@ puts "Parent process pid (before fork) is #{Process.pid}.\n"
 if fork
   current_process = Process.pid
   parent_process = Process.ppid
-  printf "Entered the *if* block while running Process #{current_process}."
+  printf "Entered the *if* block during Process #{current_process}."
   printf "\nThe parent of this process is #{Process.ppid}, which should be bash.\n\n"
 else
   current_process = Process.pid
   parent_process = Process.ppid
-  printf "Entered the *else* block while running Process #{current_process}."
+  printf "Entered the *else* block during Process #{current_process}."
   printf "\nThe parent of this process is #{parent_process}, which should be the original of this process.\n\n"
 end
+
 ```
 
 Running the above Ruby code produces the following results:
@@ -60,7 +61,7 @@ Parent process pid (before fork) is 79703.
 Entered the *if* block during Process 79703.
 The parent of this process is 76751, which should be bash.
 
-Entered the *else* block during running Process 79704.
+Entered the *else* block during Process 79704.
 The parent of this process is 79703, which should be the original of this process.
 
 ```
