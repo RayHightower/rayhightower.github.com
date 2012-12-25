@@ -33,8 +33,8 @@ Here's what the code does:
 
 * In the parent process, `fork` returns the `pid` of the child process.
 * In the child process, `fork` returns `nil`.
-* Therefore, the `if` block should be executed by the parent process, 
-* and the `else` block should be executed by the child process.
+* Therefore, the `if` block should be executed by the parent process...
+* ...and the `else` block should be executed by the child process.
 
 ``` ruby
 puts "Parent process pid (before fork) is #{Process.pid}.\n"
