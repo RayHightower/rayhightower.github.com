@@ -6,7 +6,7 @@ comments: true
 categories: 
 published: true
 ---
-<img src="/images/provisioning-profiles.png" align="right" width="96" height="117"></a>
+<img src="/images/provisioning-profile.png" align="right" width="96" height="117"></a>
 _Note: This article on provisioning profiles was first posted in the <a href="https://groups.google.com/forum/?fromgroups=#!topic/rubymotion/Nvo8dH_8rkI">RubyMotion Google Group</a> on May 10, 2012. The response was also referenced by <a href="http://stackoverflow.com/questions/13539743/rubymotion-build-error-cant-find-a-provisioning-profile-named-mixios-tea">Stack Overflow</a>_
 
 Everything with RubyMotion worked great until I tried to run the sample apps on a physical device. And then I had to spend a few hours wrestling with provisioning profiles. Hopefully this post will save time for somebody else. 
