@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Mobile Makers, Objective-C, and RubyMotion - RayHightower.com</title>
+  <title>RubyMotion Provisioning Profiles - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="This week I enrolled in the iOS Accelerated course offered by the Mobile Makers Academy. If you would like to do the same, mention my name and we&# &hellip;">
+  <meta name="description" content="Note: This article on provisioning profiles was first posted in the RubyMotion Google Group on May 10, 2012. It was also referenced on Stack Overflow &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/2012/12/14/mobile-makers-objective-c-rubymotion/">
+  <link rel="canonical" href="http://RayHightower.com/blog/2012/12/26/rubymotion-provisioning-profiles/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -81,7 +81,7 @@
   
   <header>
     
-      <h1 class="entry-title">Mobile Makers, Objective-C, and RubyMotion</h1>
+      <h1 class="entry-title">RubyMotion Provisioning Profiles</h1>
     
     
       <p class="meta">
@@ -97,46 +97,49 @@
   
 
 
-<time datetime="2012-12-14T06:45:00-06:00" pubdate data-updated="true">Dec 14<span>th</span>, 2012</time>
+<time datetime="2012-12-26T20:46:00-06:00" pubdate data-updated="true">Dec 26<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><img src="/images/ipad-iphone.jpg" width="256" height="250" alt="iPad iPhone" title="iPad iPhone" align="right">
-This week I enrolled in the iOS Accelerated course offered by the <a href="http://mobilemakers.co/ios-accelerated">Mobile Makers Academy</a>. If you would like to do the same, mention my name and we&#8217;ll both receive a $300 discount on tuition.</p>
+<div class="entry-content"><p><em>Note: This article on provisioning profiles was first posted in the <a href="https://groups.google.com/forum/?fromgroups=#!topic/rubymotion/Nvo8dH_8rkI">RubyMotion Google Group</a> on May 10, 2012. It was also referenced on <a href="http://stackoverflow.com/questions/13539743/rubymotion-build-error-cant-find-a-provisioning-profile-named-mixios-tea">Stack Overflow</a>.</em></p>
 
-<p>Class starts on Jan 7, 2013. The evening lectures are convenient for those who serve clients by day.</p>
+<p>Everything with RubyMotion worked great until I tried to run the sample apps on a physical device. And then I had to spend a few hours wrestling with provisioning profiles. Hopefully this post will save time for somebody else.</p>
 
-<p>Of course, a tuition discount and easy schedule are poor reasons to enroll in a course. This article will describe my reasons for enrolling. If your thirst for learning is anything like mine, you might like Mobile Makers too.</p>
-
-<!--more-->
+<!-- more -->
 
 
-<h4>Background and Expectations</h4>
+<p>In order to successfully run a RubyMotion app on a non-jailbroken iPhone 3GS (via &#8220;rake device&#8221;) I had to:</p>
 
-<p>My background includes an undergrad degree in computer science. Over the years, I&#8217;ve coded in C, Lisp, Fortran, Pascal, x86 assembler, and Ruby. I became a &#8220;business guy&#8221; when I launched WisdomGroup eighteen years ago. WisdomGroup is fortunate to have a team of strong technologists who keep our clients happy while teaching me more every day.</p>
+<ul>
+<li>Delete all of the expired provisioning profiles in the Mac OS X Keychain Access app. Yeah, my past is littered with many random experiments :-)</li>
+<li>Explicitly set the path to my provisioning profile in the rakefile for the app (the defaults didn&#8217;t work for me).</li>
+<li>Explicitly set the name of my codesign_certificate.</li>
+</ul>
 
-<p>In late 2011, I began to focus on sharpening my personal technical skills, and that led to my immersion in <a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a> this year. I expect the Mobile Makers experience to strengthen my grasp of Objective-C, OO theory, and iOS. Cross-training with Objective-C will boost my RubyMotion skills as well.</p>
 
-<h4>Instruction Format</h4>
+<p>The default &#8220;iOS Team Profile&#8221; didn&#8217;t work for me. I had to set explicit values in my rakefile for the app. Here&#8217;s my rakefile for the <a href="https://github.com/HipByte/RubyMotionSamples/tree/master/Tweets">&#8216;Tweets&#8217; sample app</a>:</p>
 
-<p><a href="https://twitter.com/dbora">Don Bora</a> is the head instructor at Mobile Makers. Don is embarrassed when I say this, but he&#8217;s the main reason why I chose to enroll. Don is a true polyglot programmer, with a background that includes Objective-C (of course!), C#, Java, Ruby, and Smalltalk among other languages. He currently builds Objective-C apps for his clients at <a href="http://eightbitstudios.com/">Eight Bit Studios</a>. Don holds degrees in computer science and linguistics.</p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="vg">$:</span><span class="o">.</span><span class="n">unshift</span><span class="p">(</span><span class="s2">&quot;/Library/RubyMotion/lib&quot;</span><span class="p">)</span>
+</span><span class='line'><span class="nb">require</span> <span class="s1">&#39;motion/project&#39;</span>
+</span><span class='line'><span class="no">Motion</span><span class="o">::</span><span class="no">Project</span><span class="o">::</span><span class="no">App</span><span class="o">.</span><span class="n">setup</span> <span class="k">do</span> <span class="o">|</span><span class="n">app</span><span class="o">|</span> <span class="c1"># Use `rake config&#39; to see complete project settings. </span>
+</span><span class='line'>  <span class="n">app</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Tweets&#39;</span>
+</span><span class='line'>  <span class="n">app</span><span class="o">.</span><span class="n">provisioning_profile</span> <span class="o">=</span> <span class="s1">&#39;/Users/[username]/Library/ MobileDevice/Provisioning Profiles/[string-of-numbers].mobileprovision&#39;</span>
+</span><span class='line'>  <span class="n">app</span><span class="o">.</span><span class="n">codesign_certificate</span> <span class="o">=</span> <span class="s1">&#39;iPhone Developer: John Q Developer (A5QZ9QF4Z1)&#39;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<p>Mobile Makers offers a learning format that is relatively new to me. Beyond the traditional classroom lectures, students get plenty of time for lab immersion and interaction with mentors. I first witnessed this format when Neal Sales-Griffin and Mike McGee launched <a href="http://starterleague.com">The Starter League</a>.</p>
 
-<h4>More About Lab Time and Mentorship</h4>
-
-<p>Classroom sessions are fine, but they&#8217;re not enough. Can you learn a musical instrument by listening to lectures and taking notes? Mastering a skill like software development requires deliberate practice with challenging exercises. Learning is accelerated when lectures, labs, and mentorship complement each other.</p>
-
-<h4>Learning Architecture</h4>
-
-<p>Behind the scenes, Adam Lupu is the learning architect who designed the Mobile Makers curriculum. In Don&#8217;s words: &#8220;I know how to explain things, but I don&#8217;t know how to structure a course. That&#8217;s where Adam comes in.&#8221; Adam was the lead architect behind the Rails-based curriculum at the Starter League. Now he&#8217;s building the mobile curriculum at Mobile Makers.</p>
-
-<h4>Excitement</h4>
-
-<p>The Mobile Makers <a href="http://mobilemakers.co/ios-accelerated">iOS Accelerated</a> class is only three weeks away. If you mention this blog post, you and I will both get a $300 tuition discount. More important, we will acquire skills that will serve us well as we solve problems for clients. What an exciting time to be a developer!</p>
+<p>Of course, my name isn&#8217;t &#8220;John Q Developer&#8221;, but you get the idea. Hope this helps!</p>
 </div>
 
 
@@ -159,7 +162,7 @@ This week I enrolled in the iOS Accelerated course offered by the <a href="http:
   
 
 
-<time datetime="2012-12-14T06:45:00-06:00" pubdate data-updated="true">Dec 14<span>th</span>, 2012</time>
+<time datetime="2012-12-26T20:46:00-06:00" pubdate data-updated="true">Dec 26<span>th</span>, 2012</time>
       
 
 
@@ -167,7 +170,7 @@ This week I enrolled in the iOS Accelerated course offered by the <a href="http:
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2012/12/14/mobile-makers-objective-c-rubymotion/" data-via="RayHightower" data-counturl="http://RayHightower.com/blog/2012/12/14/mobile-makers-objective-c-rubymotion/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2012/12/26/rubymotion-provisioning-profiles/" data-via="RayHightower" data-counturl="http://RayHightower.com/blog/2012/12/26/rubymotion-provisioning-profiles/" >Tweet</a>
   
   
   
@@ -178,10 +181,8 @@ This week I enrolled in the iOS Accelerated course offered by the <a href="http:
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/12/08/design-and-big-ideas/" title="Previous Post: Design and Big Ideas">&laquo; Design and Big Ideas</a>
+        <a class="basic-alignment left" href="/blog/2012/12/24/unix-for-ruby-developers/" title="Previous Post: Unix for Ruby Developers">&laquo; Unix for Ruby Developers</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/12/24/unix-for-ruby-developers/" title="Next Post: Unix for Ruby Developers">Unix for Ruby Developers &raquo;</a>
       
     </p>
   </footer>
@@ -304,8 +305,8 @@ This week I enrolled in the iOS Accelerated course offered by the <a href="http:
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://RayHightower.com/blog/2012/12/14/mobile-makers-objective-c-rubymotion/';
-        var disqus_url = 'http://RayHightower.com/blog/2012/12/14/mobile-makers-objective-c-rubymotion/';
+        var disqus_identifier = 'http://RayHightower.com/blog/2012/12/26/rubymotion-provisioning-profiles/';
+        var disqus_url = 'http://RayHightower.com/blog/2012/12/26/rubymotion-provisioning-profiles/';
         var disqus_script = 'embed.js';
       
     (function () {
