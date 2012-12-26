@@ -20,17 +20,13 @@ In order to successfully run a RubyMotion app on a non-jailbroken iPhone 3GS (vi
 The default "iOS Team Profile" didn't work for me. I had to set explicit values in my rakefile for the app. Here's my rakefile for the 'Tweets' sample app at https://github.com/HipByte/RubyMotionSamples: 
 
 ``` ruby
-    $:.unshift("/Library/RubyMotion/lib") 
-    require 'motion/project' 
-    Motion::Project::App.setup do |app| 
-      # Use `rake config' to see complete project settings. 
-      app.name = 'Tweets' 
-      app.provisioning_profile = '/Users/[username]/Library/ 
- MobileDevice/Provisioning Profiles/[string-of- 
- numbers].mobileprovision' 
-      app.codesign_certificate = 'iPhone Developer: John Q Developer 
- (A5QZ9QF4Z1)' 
-    end 
+$:.unshift("/Library/RubyMotion/lib") 
+require 'motion/project' 
+Motion::Project::App.setup do |app| # Use `rake config' to see complete project settings. 
+  app.name = 'Tweets' 
+  app.provisioning_profile = '/Users/[username]/Library/ MobileDevice/Provisioning Profiles/[string-of-numbers].mobileprovision' 
+  app.codesign_certificate = 'iPhone Developer: John Q Developer (A5QZ9QF4Z1)' 
+end 
 ```
 
 Of course, my name isn't "John Q Developer", but you get the idea. Hope this helps! 
