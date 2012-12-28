@@ -4,6 +4,7 @@ title: "Focus in 2013: WindyCityRails"
 date: 2012-09-07 19:43
 comments: true
 categories: 
+published: false
 ---
 <blockquote>
 My success, part of it certainly, is that I have focused in on a few things. <br/><br/>~Bill Gates
