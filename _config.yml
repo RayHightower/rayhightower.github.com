@@ -10,8 +10,6 @@ author: Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer
 simple_search: http://google.com/search
 description: Chicago Ruby on Rails and iOS Developer
 
-# title: RayHightower.com
-# subtitle: Thoughts about Ruby, Rails, iOS, and business growth.
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
 # http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
@@ -42,7 +40,7 @@ pygments: false # default python pygments have been replaced by pygments.rb
 paginate: 10          # Posts per page on the blog index
 pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
-excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
+excerpt_link: "Continue reading &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 
 titlecase: true       # Converts page and post titles to titlecase
 
@@ -103,4 +101,4 @@ disqus_show_comment_count: false
 google_analytics_tracking_id: UA-330946-28
 
 # Facebook Like
-facebook_like: true
+facebook_like: false
