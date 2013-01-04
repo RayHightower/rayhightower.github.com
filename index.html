@@ -9,7 +9,11 @@
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
+<<<<<<< HEAD
   <meta name="description" content="Charlie Rose is an amazing journalist. His interviews are eclectic and rich. During his interview with mountain climber Ed Viesturs, I was struck by &hellip;">
+=======
+  <meta name="description" content="Note: This article on provisioning profiles was first posted in the RubyMotion Google Group on May 10, 2012. It was also referenced on Stack Overflow &hellip;">
+>>>>>>> 9dcd5e369228bd56b850d26ff25028eec786048d
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +22,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
+<<<<<<< HEAD
   <link rel="canonical" href="http://RayHightower.github.com/">
+=======
+  <link rel="canonical" href="http://RayHightower.com/">
+>>>>>>> 9dcd5e369228bd56b850d26ff25028eec786048d
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -29,6 +37,12 @@
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
+<<<<<<< HEAD
+=======
+<!-- Arvo is like Rockwell. Added by RTH on 12/27/2012. -->
+<link href='http://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
+
+>>>>>>> 9dcd5e369228bd56b850d26ff25028eec786048d
   
   <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -49,7 +63,11 @@
   <header role="banner"><hgroup>
   <h1><a href="/">RayHightower.com</a></h1>
   
+<<<<<<< HEAD
     <h2>Thoughts about Ruby on Rails, iOS, and business growth.</h2>
+=======
+    <h2>Thoughts about Ruby, Rails, RubyMotion, iOS, and business growth.</h2>
+>>>>>>> 9dcd5e369228bd56b850d26ff25028eec786048d
   
 </hgroup>
 
@@ -61,14 +79,25 @@
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
+<<<<<<< HEAD
     <input type="hidden" name="q" value="site:RayHightower.github.com" />
+=======
+    <input type="hidden" name="q" value="site:RayHightower.com" />
+>>>>>>> 9dcd5e369228bd56b850d26ff25028eec786048d
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
   
 <ul class="main-navigation">
+<<<<<<< HEAD
   <li><a href="/">Blog</a></li>
   <li><a href="/blog/archives">Archives</a></li>
+=======
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/presentations">Presentations</a></li>
+  <li><a href="/contact">Contact</a></li>
+>>>>>>> 9dcd5e369228bd56b850d26ff25028eec786048d
 </ul>
 
 </nav>
@@ -82,7 +111,10 @@
       
   <header>
     
+<<<<<<< HEAD
       <h1 class="entry-title"><a href="/blog/2012/08/26/getting-down-is-mandatory/">Getting Down Is Mandatory</a></h1>
+=======
+      <h1 class="entry-title"><a href="/blog/2012/12/26/rubymotion-provisioning-profiles/">RubyMotion Provisioning Profiles</a></h1>
     
     
       <p class="meta">
@@ -98,13 +130,269 @@
   
 
 
-<time datetime="2012-08-26T16:55:00-05:00" pubdate data-updated="true">Aug 26<span>th</span>, 2012</time>
+<time datetime="2012-12-26T20:46:00-06:00" pubdate data-updated="true">Dec 26<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
+  <div class="entry-content"><p><em>Note: This article on provisioning profiles was first posted in the <a href="https://groups.google.com/forum/?fromgroups=#!topic/rubymotion/Nvo8dH_8rkI">RubyMotion Google Group</a> on May 10, 2012. It was also referenced on <a href="http://stackoverflow.com/questions/13539743/rubymotion-build-error-cant-find-a-provisioning-profile-named-mixios-tea">Stack Overflow</a>.</em></p>
+
+<p>Everything with RubyMotion worked great until I tried to run the sample apps on a physical device. And then I had to spend a few hours wrestling with provisioning profiles. Hopefully this post will save time for somebody else.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/12/26/rubymotion-provisioning-profiles/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/12/24/unix-for-ruby-developers/">Unix for Ruby Developers</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-24T16:50:00-06:00" pubdate data-updated="true">Dec 24<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://workingwithunixprocesses.com/"><img src="/images/working-w-unix-processes.jpg" align="right" width="350" height="266"></a>
+It is gratifying to know that learning something tangentially related to Ruby will, in fact, teach me more about Ruby.</p>
+
+<p><a href="http://workingwithunixprocesses.com/"><em>Working With Unix Processes</em></a>, by Jesse Storimer, is ostensibly about Unix internals. However, in reading this book, I have become more aware of how executables run on my favorite family of operating systems, which in turn gives me more insight into Ruby.</p>
+
+<h3>Passing Arguments</h3>
+
+<p>For example, what happens when we pass arguments to a process, Ruby or otherwise? How do the arguments get there? Storimer offers a 1-line Ruby program called <code>argv.rb</code> that we can use to play with the ARGV array:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span><span class="nb">echo</span> <span class="s1">&#39;p ARGV&#39;</span> &gt; argv.rb
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span>ruby argv.rb what results can we expect here
+</span><span class='line'><span class="o">[</span><span class="s2">&quot;what&quot;</span>, <span class="s2">&quot;results&quot;</span>, <span class="s2">&quot;can&quot;</span>, <span class="s2">&quot;we&quot;</span>, <span class="s2">&quot;expect&quot;</span>, <span class="s2">&quot;here&quot;</span><span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/12/24/unix-for-ruby-developers/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/12/14/mobile-makers-objective-c-rubymotion/">Mobile Makers, Objective-C, and RubyMotion</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-14T06:45:00-06:00" pubdate data-updated="true">Dec 14<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="/images/ipad-iphone.jpg" width="256" height="250" alt="iPad iPhone" title="iPad iPhone" align="right">
+This week I enrolled in the iOS Accelerated course offered by the <a href="http://mobilemakers.co/ios-accelerated">Mobile Makers Academy</a>. If you would like to do the same, mention my name and we&#8217;ll both receive a $300 discount on tuition.</p>
+
+<p>Class starts on Jan 7, 2013. The evening lectures are convenient for those who serve clients by day.</p>
+
+<p>Of course, a tuition discount and easy schedule are poor reasons to enroll in a course. This article will describe my reasons for enrolling. If your thirst for learning is anything like mine, you might like Mobile Makers too.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/12/14/mobile-makers-objective-c-rubymotion/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/12/08/design-and-big-ideas/">Design and Big Ideas</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-08T00:35:00-06:00" pubdate data-updated="true">Dec 8<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>WisdomGroup is hiring a <a href="https://jobs.chicagoruby.org/jobs/100">web design intern</a>. Our current volume of work requires it. The ideal candidate will share our beliefs about design, summarized as&#8230;</p>
+
+<blockquote><p>Design is not just what it looks like and feels like. Design is how it works. ~Steve Jobs</p></blockquote>
+
+<p>Great design is functional and inspiring. Autodesk captures the idea in this ad from several years ago:</p>
+
+<center><iframe name="autodesk" width="560" height="315" src="http://www.youtube.com/embed/jrK4rTkKLDg?rel=0" frameborder="0" allowfullscreen></iframe></center>
+
+
+
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/12/08/design-and-big-ideas/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Ruby on Raspberry Pi</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-03T06:38:00-06:00" pubdate data-updated="true">Dec 3<span>rd</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="/assets/raspberry_pi_iphone.jpg" width="400" align="right" title="Raspberry Pi Circuit Board" alt="Raspberry Pi Circuit Board">
+Raspberry Pi is a single-board computer roughly the size of a deck of cards. It&#8217;s equipped with an ARM processor that runs Linux. USB ports let you attach a keyboard and mouse. Video is supported via HDMI and RCA. Storage is handled by SD cards. There&#8217;s an Ethernet port.</p>
+
+<p>You can buy a Raspberry Pi for $35.00.</p>
+
+<h4>Will it Run Ruby?</h4>
+
+<p>When my Raspberry Pi arrived, I was curious: Will it run Ruby? How about Rails?  This article describes my experience with RVM, Ruby, and Rails on a Raspberry Pi, along with the &#8220;gotchas&#8221; I encountered along the way.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/12/03/ruby-on-raspberry-pi/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/11/19/long-tail-opportunities/">Long Tail Opportunities</a></h1>
+>>>>>>> 9dcd5e369228bd56b850d26ff25028eec786048d
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<<<<<<< HEAD
+<time datetime="2012-08-26T16:55:00-05:00" pubdate data-updated="true">Aug 26<span>th</span>, 2012</time>
+=======
+<time datetime="2012-11-19T06:58:00-06:00" pubdate data-updated="true">Nov 19<span>th</span>, 2012</time>
+>>>>>>> 9dcd5e369228bd56b850d26ff25028eec786048d
+        
+      </p>
+    
+  </header>
+
+
+<<<<<<< HEAD
   <div class="entry-content"><p><img class="right" src="/images/climber.jpg" title="No Shortcuts to the Top by Ed Viesturs" alt="Book cover: No Shortcuts to the Top by Ed Viesturs">
 <a href="http://www.charlierose.com/">Charlie Rose</a> is an amazing journalist. His interviews are eclectic and rich. During his interview with mountain climber Ed Viesturs, I was struck by the parallels between mountain climbing and business achievement.</p>
 
@@ -154,12 +442,214 @@ you can achieve amazing things if you have the patience to do so.<br/></p></bloc
 </div>
   
   
+=======
+  <div class="entry-content"><p>You are already familiar with the <a href="http://en.wikipedia.org/wiki/80/20_rule">80/20 rule</a>. In the late 1800s an Italian economist discovered that 80% of the wealth in his country was owned by 20% of the people. More recently we find that the 80/20 rule applies in other areas of our lives. Professional service firms find that eighty percent of the revenue comes from twenty percent of the clients. Merchants find that eighty percent of sales comes from twenty percent of the products. Winners at the very top of any field tend to win by a large margin.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/11/19/long-tail-opportunities/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/11/10/make-your-competition-irrelevant/">Make Your Competition Irrelevant</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-10T02:55:00-06:00" pubdate data-updated="true">Nov 10<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="/assets/blue_ocean_strategy.png" align="right" alt="Blue Ocean Strategy" title="Blue Ocean Strategy"></p>
+
+<h4>Path to Victory</h4>
+
+<p>A skillfully executed business strategy is one path to victory. Many strategy books will tell business owners how to win at the expense of the competition, how to take market share away from the competition, and so on.</p>
+
+<p>The book <em>Blue Ocean Strategy</em> proposes a non-typical path to victory over the competition. According to the authors, following a blue ocean strategy will make your competition irrelevant.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/11/10/make-your-competition-irrelevant/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">Building iOS Apps With RubyMotion</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-29T18:49:00-05:00" pubdate data-updated="true">Oct 29<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Special thanks to the organizers of <a href="http://magic-ruby.com/">MagicRuby</a> and <a href="http://aloharubyconf.com/">Aloha Ruby</a> for inviting me to present RubyMotion at their respective conferences. <a href="http://confreaks.com/videos/1245-aloharuby2012-building-ios-apps-with-rubymotion">Confreaks</a> recorded video at the Aloha Ruby event.</p>
+
+<center>
+<iframe name="rubymotionaloha" width="560" height="315" src="http://www.youtube.com/embed/3gCsen5Zs4s" frameborder="0" allowfullscreen></iframe>
+</center>
+
+
+<p>The fizzbuzz sample code can be found on <a href="https://github.com/RayHightower/fizzbuzzrm">GitHub</a>. Slides are on <a href="https://speakerdeck.com/rayhightower/building-ios-apps-with-rubymotion">SpeakerDeck</a>.</p>
+
+<p>Should you use RubyMotion or Objective-C for iOS development? That depends&#8230;</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/10/18/using-rubymotion-with-interface-builder/">Using RubyMotion With Xcode&#8217;s Interface Builder</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-18T18:34:00-05:00" pubdate data-updated="true">Oct 18<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h4>Executive Summary</h4>
+
+<p><a href="http://www.rubymotion.com/">RubyMotion</a> is a Mac application that lets developers write iOS apps in
+Ruby. It&#8217;s possible to create the user interface for the app entirely
+within RubyMotion or with a Ruby gem like <a href="https://github.com/rubymotion/teacup">Teacup</a>. But what about devs who prefer Interface Builder?</p>
+
+<p>This article will show how to use Xcode&#8217;s Interface Builder to create a basic UI for
+a RubyMotion application.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/10/18/using-rubymotion-with-interface-builder/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/10/06/clear-innovation/">Clear Innovation</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-06T22:47:00-05:00" pubdate data-updated="true">Oct 6<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Some organizations are innovative, while others are just lucky. How can you tell the difference? I would submit that longevity is a great divider between true innovators and those who are just lucky. An organization that generates new ideas time after time breaks the statistical rules that define luck. These are the organizations worthy of study.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/10/06/clear-innovation/">Continue reading &rarr;</a>
+    </footer>
+  
+>>>>>>> 9dcd5e369228bd56b850d26ff25028eec786048d
 
 
     </article>
   
   <div class="pagination">
     
+<<<<<<< HEAD
+=======
+      <a class="prev" href="/blog/page/2/">&larr; Older</a>
+    
+>>>>>>> 9dcd5e369228bd56b850d26ff25028eec786048d
     <a href="/blog/archives">Blog Archives</a>
     
   </div>
@@ -168,6 +658,7 @@ you can achieve amazing things if you have the patience to do so.<br/></p></bloc
   
     <section>
   <h1>About</h1>
+<<<<<<< HEAD
   <p>Raymond T. Hightower is founder of <a
     href="http://wisdomgroup.com">WisdomGroup</a> and organizer of
   <a href="http://chicagoruby.org">ChicagoRuby</a> & <a href="http://windycityrails.org">WindyCityRails</a>.
@@ -179,10 +670,45 @@ you can achieve amazing things if you have the patience to do so.<br/></p></bloc
     
       <li class="post">
         <a href="/blog/2012/08/26/getting-down-is-mandatory/">Getting Down Is Mandatory</a>
+=======
+  <p>Raymond T. Hightower is a software developer, perpetual student, founder of <a
+    href="http://wisdomgroup.com">WisdomGroup</a>, and organizer of
+  <a href="http://chicagoruby.org">ChicagoRuby</a> & <a href="http://windycityrails.org">WindyCityRails</a>. He is currently exploring RubyMotion & iOS.
+  </p>
+  <p>
+  <a href="http://wisdomgroup.com"><img src="/images/wisdomgroup.jpg" width="191" height="42" alt="WisdomGroup - Software development. Ruby on Rails. iPhone. iPad." title="WisdomGroup - Software development. Ruby on Rails. iPhone. iPad."/></a>
+  <a href="http://windycityrails.org"><img src="/images/windycityrails.jpg" width="191" height="42" alt="WindyCityRails - Chicago's Ruby on Rails Conference" title="WindyCityRails - Chicago's Ruby on Rails Conference" /></a>
+  <a href="http://chicagoruby.org"><img src="/images/chicagoruby.jpg" width="191" height="42" alt="ChicagoRuby - Chicago's Ruby on Rails User Group" title="ChicagoRuby - Chicago's Ruby on Rails User Group" /></a>
+  </p>
+</section>
+<section>
+  <h1>Recent Blog Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/12/26/rubymotion-provisioning-profiles/">RubyMotion Provisioning Profiles</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/12/24/unix-for-ruby-developers/">Unix for Ruby Developers</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/12/14/mobile-makers-objective-c-rubymotion/">Mobile Makers, Objective-C, and RubyMotion</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/12/08/design-and-big-ideas/">Design and Big Ideas</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Ruby on Raspberry Pi</a>
+>>>>>>> 9dcd5e369228bd56b850d26ff25028eec786048d
       </li>
     
   </ul>
 </section>
+<<<<<<< HEAD
 
 <section>
   <h1>GitHub Repos</h1>
@@ -211,11 +737,44 @@ you can achieve amazing things if you have the patience to do so.<br/></p></bloc
     });
   </script>
   <script src="/javascripts/github.js" type="text/javascript"> </script>
+=======
+<section>
+  <h1>Speaking: Upcoming</h1>
+  <ul>
+    <li><a href="http://snow-mobile.org">Snow Mobile</a>, Feb 15-16, 2013<br/>in Madison, WI</li>
+  </ul>
+  <h1>Speaking: Past</h1>
+  <ul>
+    <li><a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">Aloha Ruby</a> in Honolulu, HI</li>
+    <li><a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">Magic Ruby</a> in Orlando, FL</li>
+    <li><a href="http://chicagocodecamp.com">Chicago Code Camp</a> in Grayslake, IL</li>
+  </ul>
+</section>
+<section>
+  <h1>Code & Biz</h1>
+  <ul>
+    <li><a href="http://github.com/rayhightower">GitHub</a></li>
+    <li><a href="http://coderwall.com/rayhightower">Coder Wall</a></li>
+  </ul>
+<!-- AddThis Follow BEGIN -->
+  <div class="addthis_toolbox addthis_32x32_style addthis_default_style">
+    <a class="addthis_button_twitter_follow" addthis:userid="RayHightower"></a>
+    <a class="addthis_button_linkedin_follow" addthis:userid="RayHightower"></a>
+    <a class="addthis_button_google_follow" addthis:userid="100454540460248851628"></a>
+    <a class="addthis_button_vimeo_follow" addthis:userid="chicagoruby"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50904f5d21a0414f"></script>
+<!-- AddThis Follow END -->
+>>>>>>> 9dcd5e369228bd56b850d26ff25028eec786048d
 </section>
 
 
 <section>
+<<<<<<< HEAD
   <h1>Latest Tweets</h1>
+=======
+  <h1>Recent Tweets</h1>
+>>>>>>> 9dcd5e369228bd56b850d26ff25028eec786048d
   <ul id="tweets">
     <li class="loading">Status updating&#8230;</li>
   </ul>
@@ -232,6 +791,7 @@ you can achieve amazing things if you have the patience to do so.<br/></p></bloc
 
 
 
+<<<<<<< HEAD
 <section class="googleplus">
   <h1>
     <a href="https://plus.google.com/RayHightower?rel=author">
@@ -241,6 +801,8 @@ you can achieve amazing things if you have the patience to do so.<br/></p></bloc
   </h1>
 </section>
 
+=======
+>>>>>>> 9dcd5e369228bd56b850d26ff25028eec786048d
 
 
   
@@ -249,13 +811,18 @@ you can achieve amazing things if you have the patience to do so.<br/></p></bloc
     </div>
   </div>
   <footer role="contentinfo"><p>
+<<<<<<< HEAD
   Copyright &copy; 2012 - Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer -
+=======
+  Copyright &copy; 2013 - Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer -
+>>>>>>> 9dcd5e369228bd56b850d26ff25028eec786048d
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
 </footer>
   
 
+<<<<<<< HEAD
 
 
 <div id="fb-root"></div>
@@ -266,6 +833,22 @@ you can achieve amazing things if you have the patience to do so.<br/></p></bloc
   js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+=======
+<script type="text/javascript">
+      var disqus_shortname = 'rayhightower';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+>>>>>>> 9dcd5e369228bd56b850d26ff25028eec786048d
 
 
 
