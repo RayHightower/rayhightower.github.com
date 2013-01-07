@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Selected Presentations"
-comments: true
+comments: false
 sharing: true
 footer: true
 ---
