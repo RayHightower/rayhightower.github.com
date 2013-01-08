@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: iOS | RayHightower.com]]></title>
+  <link href="http://RayHightower.com/blog/categories/ios/atom.xml" rel="self"/>
+  <link href="http://RayHightower.com/"/>
+  <updated>2013-01-08T11:41:03-06:00</updated>
+  <id>http://RayHightower.com/</id>
+  <author>
+    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Code Pilot]]></title>
+    <link href="http://RayHightower.com/blog/2013/01/08/code-pilot/"/>
+    <updated>2013-01-08T10:54:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2013/01/08/code-pilot</id>
+    <content type="html"><![CDATA[<p><a href="http://codepilot.cc">Code Pilot</a> is a free tool that lets developers navigate quickly between files in Xcode. I was introduced to the tool yesterday by Don Bora, instructor of the Mobile Makers <a href="http://mobilemakers.co/">iOS Accelerated</a> course that I'm currently taking.</p>
+
+<h4>Starting Code Pilot</h4>
+
+<p>After downloading and installing the product, launch Code Pilot by starting Xcode and using the SHIFT-COMMAND-X key sequence.</p>
+
+<p><img src="http://RayHightower.com/images/nine-days-left.png" align="center" height="494" width="630" alt="Code Pilot w/o License"></p>
+
+<p>Code Pilot is free, but you still need to request and install the license file.</p>
+
+<h4>Installing the License</h4>
+
+<p>It wasn't immediately obvious to me where to put the license file. A quick email to Code Pilot's tech support team got me an answer. This post may save you some time if you decide to try Code Pilot for yourself.</p>
+
+<p>In Xcode, go into preferences (Xcode | Preferences). One section of the preference pane is devoted to Code Pilot. Go to that section, paste in the license, and you're all set.</p>
+
+<p><img src="http://RayHightower.com/images/paste-license.png" align="center" height="483" width="630" alt="Code Pilot w/o License"></p>
+
+<h4>First Impression of Code Pilot</h4>
+
+<p>I can see how the tool could make Xcode navigation faster. One drawback: As a Vim user, I'm in the habit of navigating with h, j, k, and l. Code Pilot requires me to use the arrow keys. If Code Pilot came equipped with Vim key bindings, I would view that as a plus!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Building iOS Apps With RubyMotion]]></title>
+    <link href="http://RayHightower.com/blog/2012/10/29/building-ios-apps-with-ruby-motion/"/>
+    <updated>2012-10-29T18:49:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2012/10/29/building-ios-apps-with-ruby-motion</id>
+    <content type="html"><![CDATA[<p>Special thanks to the organizers of <a href="http://magic-ruby.com/">MagicRuby</a> and <a href="http://aloharubyconf.com/">Aloha Ruby</a> for inviting me to present RubyMotion at their respective conferences. <a href="http://confreaks.com/videos/1245-aloharuby2012-building-ios-apps-with-rubymotion">Confreaks</a> recorded video at the Aloha Ruby event.</p>
+
+<center>
+<iframe name="rubymotionaloha" width="560" height="315" src="http://www.youtube.com/embed/3gCsen5Zs4s" frameborder="0" allowfullscreen></iframe>
+</center>
+
+
+<p>The fizzbuzz sample code can be found on <a href="https://github.com/RayHightower/fizzbuzzrm">GitHub</a>. Slides are on <a href="https://speakerdeck.com/rayhightower/building-ios-apps-with-rubymotion">SpeakerDeck</a>.</p>
+
+<p>Should you use RubyMotion or Objective-C for iOS development? That depends...</p>
+
+<!--more-->
+
+
+<p>If your team is currently building web apps, and they happen to be Ruby-focused, then RubyMotion will enable you to create a <a href="http://rayhightower.com/blog/2012/08/31/four-steps-five-minutes/">minimum viable product (MVP)</a> using skills that you already have in-house. However, if your team is currently Objective-C focused, it may be easier for you to build your MVP in Objective-C.</p>
+
+<p>Keep in mind that I am Ruby-biased, so I see advantages on the RubyMotion side of the question. Building the web <em>and</em> mobile pieces of an app in the same language means that expertise can be readily shared throughout the team. Shared expertise makes the team stronger.</p>
+
+<p>Thanks again to MagicRuby and Aloha Ruby for asking me to speak, and to Confreaks for recording the talk.</p>
+]]></content>
+  </entry>
+  
+</feed>
