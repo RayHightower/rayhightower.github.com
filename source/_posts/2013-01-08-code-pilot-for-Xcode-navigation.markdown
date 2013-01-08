@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Code Pilot"
+title: "Code Pilot for Xcode Navigation"
 date: 2013-01-08 10:54
 comments: true
 categories: [Objective-C, Xcode, iOS]
