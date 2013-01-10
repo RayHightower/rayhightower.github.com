@@ -13,7 +13,7 @@ After downloading and installing the product, launch Code Pilot by starting Xcod
 <img src="/images/nine-days-left.png" align="center" height="494" width="630" alt="Code Pilot w/o License" title="Code Pilot w/o License">
 
 Code Pilot is free, but you still need to request and install the license file.
-
+<!--more-->
 #### Installing the License
 It wasn't immediately obvious to me where to put the license file. A quick email to Code Pilot's tech support team got me an answer. This post may save you some time if you decide to try Code Pilot for yourself.
 
