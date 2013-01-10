@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Objective-C | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/objective-c/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-01-09T16:24:45-06:00</updated>
+  <updated>2013-01-09T19:28:41-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -39,6 +39,47 @@
 <h4>First Impression of Code Pilot</h4>
 
 <p>I can see how the tool could make Xcode navigation faster. One drawback: As a Vim user, I'm in the habit of navigating with h, j, k, and l. Code Pilot requires me to use the arrow keys. If Code Pilot came equipped with Vim key bindings, I would view that as a plus!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Mobile Makers, Objective-C, and RubyMotion]]></title>
+    <link href="http://RayHightower.com/blog/2012/12/14/mobile-makers-objective-c-rubymotion/"/>
+    <updated>2012-12-14T06:45:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2012/12/14/mobile-makers-objective-c-rubymotion</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/ipad-iphone.jpg" width="256" height="250" alt="iPad iPhone" title="iPad iPhone" align="right">
+This week I enrolled in the iOS Accelerated course offered by the <a href="http://mobilemakers.co/ios-accelerated">Mobile Makers Academy</a>. If you would like to do the same, mention my name and we'll both receive a $300 discount on tuition.</p>
+
+<p>Class starts on Jan 7, 2013. The evening lectures are convenient for those who serve clients by day.</p>
+
+<p>Of course, a tuition discount and easy schedule are poor reasons to enroll in a course. This article will describe my reasons for enrolling. If your thirst for learning is anything like mine, you might like Mobile Makers too.</p>
+
+<!--more-->
+
+
+<h4>Background and Expectations</h4>
+
+<p>My background includes an undergrad degree in computer science. Over the years, I've coded in C, Lisp, Fortran, Pascal, x86 assembler, and Ruby. I became a "business guy" when I launched WisdomGroup eighteen years ago. WisdomGroup is fortunate to have a team of strong technologists who keep our clients happy while teaching me more every day.</p>
+
+<p>In late 2011, I began to focus on sharpening my personal technical skills, and that led to my immersion in <a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a> this year. I expect the Mobile Makers experience to strengthen my grasp of Objective-C, OO theory, and iOS. Cross-training with Objective-C will boost my RubyMotion skills as well.</p>
+
+<h4>Instruction Format</h4>
+
+<p><a href="https://twitter.com/dbora">Don Bora</a> is the head instructor at Mobile Makers. Don is embarrassed when I say this, but he's the main reason why I chose to enroll. Don is a true polyglot programmer, with a background that includes Objective-C (of course!), C#, Java, Ruby, and Smalltalk among other languages. He currently builds Objective-C apps for his clients at <a href="http://eightbitstudios.com/">Eight Bit Studios</a>. Don holds degrees in computer science and linguistics.</p>
+
+<p>Mobile Makers offers a learning format that is relatively new to me. Beyond the traditional classroom lectures, students get plenty of time for lab immersion and interaction with mentors. I first witnessed this format when Neal Sales-Griffin and Mike McGee launched <a href="http://starterleague.com">The Starter League</a>.</p>
+
+<h4>More About Lab Time and Mentorship</h4>
+
+<p>Classroom sessions are fine, but they're not enough. Can you learn a musical instrument by listening to lectures and taking notes? Mastering a skill like software development requires deliberate practice with challenging exercises. Learning is accelerated when lectures, labs, and mentorship complement each other.</p>
+
+<h4>Learning Architecture</h4>
+
+<p>Behind the scenes, Adam Lupu is the learning architect who designed the Mobile Makers curriculum. In Don's words: "I know how to explain things, but I don't know how to structure a course. That's where Adam comes in." Adam was the lead architect behind the Rails-based curriculum at the Starter League. Now he's building the mobile curriculum at Mobile Makers.</p>
+
+<h4>Excitement</h4>
+
+<p>The Mobile Makers <a href="http://mobilemakers.co/ios-accelerated">iOS Accelerated</a> class is only three weeks away. If you mention this blog post, you and I will both get a $300 tuition discount. More important, we will acquire skills that will serve us well as we solve problems for clients. What an exciting time to be a developer!</p>
 ]]></content>
   </entry>
   
