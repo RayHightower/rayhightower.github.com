@@ -5,8 +5,7 @@ date: 2013-01-12 11:07
 comments: true
 categories: Vim
 ---
-<img src="/images/vim-osx.png" height="300" width="257"
-alt="Vim on OSX" title="Vim on OSX" align="right"/>
+<img src="/images/vim-osx.png" width="300" height="257" alt="Vim on OSX" title="Vim on OSX" align="right"/>
 My primary code-writing tools are:
 
 * [Xcode](https://developer.apple.com/xcode/) for Objective-C.
