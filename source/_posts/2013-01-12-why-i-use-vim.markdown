@@ -3,7 +3,7 @@ layout: post
 title: "Why I Use Vim"
 date: 2013-01-12 11:07
 comments: true
-categories: Vim
+categories: [Education, Vim]
 ---
 <img src="/images/vim-osx.png" width="300" height="257" alt="Vim on OSX" title="Vim on OSX" align="right"/>
 My primary code-writing tools are:
@@ -13,7 +13,7 @@ My primary code-writing tools are:
 
 Here are my reasons for using Vim, in priority order: 
 <!--more-->
-1. Vim is everywhere. I can find Vim on any 'nix-based machine: Linux, OSX, or Unix. I spend most of my time on OSX and Ubuntu. When I started experimenting with [Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/), it was pleasant to know that Vim was already there.
+1. Vim is everywhere. I can find Vim on any &#39;nix-based machine: Unix, Linux, or OSX. I spend most of my time on OSX and the Ubuntu distribution of Linux. When I started experimenting with [Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/), it was pleasant to know that Vim was already there. Having a common editor on multiple platforms makes it easier to bounce between them.
 
 2. Vim has history. I tried TextMate when I first heard about Ruby. Questions about TextMate's future caused me to look for an alternative. Vim's 20-year history and the [Vim community](http://www.vim.org/community.php) convinced me that the editor would be available for many years to come.
 
