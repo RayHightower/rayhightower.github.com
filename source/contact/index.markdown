@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "contact"
+footer: false
 ---
 <p>This form will put you in touch with Ray Hightower.</p>
 <div id="wufoo-r7w8p9">

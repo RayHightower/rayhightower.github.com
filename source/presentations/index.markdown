@@ -3,7 +3,7 @@ layout: page
 title: "Selected Presentations"
 comments: false
 sharing: true
-footer: true
+footer: false
 ---
 ###Building iOS Apps With RubyMotion
 <p>RubyMotion lets developers write native iOS apps using the Ruby programming language. Hightower delivered this presentation at <a href="http://magic-ruby.com/">Magic Ruby</a> and <a href="http://aloharubyconf.com/">Aloha Ruby</a> in October 2012. </p>
