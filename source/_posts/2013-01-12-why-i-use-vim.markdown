@@ -17,8 +17,8 @@ Here are my reasons for using Vim, in priority order:
 
 2. Vim has history. I tried TextMate when I first heard about Ruby. Questions about TextMate's future caused me to look for an alternative. Vim's 20-year history and the [Vim community](http://www.vim.org/community.php) convinced me that the editor would be available for many years to come.
 
-3. Vim is fast. I laughed out loud the first time I saw 
-`NERDTree: Refreshing the root node. This could take a while… DONE`
+3. Vim is fast. I laughed out loud the first time I saw<br/>
+`NERDTree: Refreshing the root node. This could take a while… DONE`<br/>
 because it happened so quickly.
 
 4. Vim can be customized. If I want to tailor Vim for myself, I can do that through plugins and `.vimrc`. If I don't want to configure it myself, I can use a tool like [Janus](https://github.com/carlhuda/janus) by Carl Lerche and Yehuda Katz . You may choose a different course. Choices are powerful!
