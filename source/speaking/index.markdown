@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Selected Presentations"
+title: "Speaking"
 comments: false
 sharing: true
 footer: false
