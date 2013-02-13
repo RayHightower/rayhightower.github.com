@@ -16,13 +16,13 @@ Ctags make writing code more efficient. But we shouldn't have to type `$ rake ct
 <!-- more -->
 
 #### How Ctags Save Time
-Ctags can save you time. For example, when creating a new class called `HomeViewController` that inherits from `UIViewController`, typing the first view characters of the superclass will produces the drop-down shown below.
+Ctags can save you time. For example, when creating a new class called `HomeViewController` that inherits from `UIViewController`, typing the first view characters of the superclass will produce the drop-down shown below.
 <img src="/images/uiviewcontroller.png" align="center" width="800" height="433" title="ctags RubyMotion Vim" alt="ctags RubyMotion Vim">
 
 RubyMotion's implementation of ctags includes support for built-in iOS classes like UIViewController. The code completion and drop-downs offered by ctags will reduce keystrokes and errors, freeing the developer to focus on solving harder problems.
 
 #### Creating the Script
-Here's the script. You can use any name that suits you. My script is called `mmotion.command` (with two m's at the beginning) and it's in `~/bin/`.
+Here's the script. You can use any name that suits you. My script is called `mmotion.command` (with two m's at the beginning to distinguish it from the standard motion command) and it's in `~/bin/`.
 
 ``` bash
 #!/bin/bash
@@ -40,7 +40,7 @@ echo "To use the RubyMotion console, cd into the new directory:" $1
 ```
 All of the work is done by by four lines. The remaining lines are comments or 'echos' that tell the user what's happening while the script is running.
 
-#### Running the Script
+#### Running the 
 If `~/bin/` is in the `$PATH`, you can run the script with the following line command:
 ``` bash
 $ mmotion.command [app name]
@@ -55,9 +55,8 @@ Dropping an alias into `~/.bash_profile` streamlines the process even more. You 
 alias mmotion="mmotion.command"
 ```
 
-#### Taking the Script for a Spin
-Now we can build a new RubyMotion app called `NewApp` with these
-results:
+#### Taking the  for a Spin
+Now we can build a new RubyMotion app called `NewApp` with these results:
 
 ``` bash
 ~/Code/Ruby/RubyMotion$ mmotion NewApp
@@ -77,7 +76,9 @@ To use the RubyMotion console, cd into the new directory: NewApp
 ~/Code/Ruby/RubyMotion$ 
 ```
 
-After the bash script ends, it lands in the directory from which it was originally run, no matter what directories it changed to during execution. This script will open the new app in Vim when it's done. You can `$ cd NewApp` and type `rake` to get to the RubyMotion console.
+After the bash script ends, it lands in the directory from which it was originally run, no matter what directories it changed to during execution. This script will open the new app in Vim when it's done.
+
+From here, you can `$ cd NewApp` and type `rake` to run the app in the iOS simulator.
 
 #### Feedback Welcome
 If you notice any glitches with this approach, feel free to send me a "heads up" via the [contact](/contact/) form on this site or in the blog comments below. 
