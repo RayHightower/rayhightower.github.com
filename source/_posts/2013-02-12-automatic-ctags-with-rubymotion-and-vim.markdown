@@ -40,7 +40,7 @@ echo "To use the RubyMotion console, cd into the new directory:" $1
 ```
 All of the work is done by by four lines. The remaining lines are comments or 'echos' that tell the user what's happening while the script is running.
 
-#### Running the 
+#### Running the Script
 If `~/bin/` is in the `$PATH`, you can run the script with the following line command:
 ``` bash
 $ mmotion.command [app name]
@@ -55,7 +55,7 @@ Dropping an alias into `~/.bash_profile` streamlines the process even more. You 
 alias mmotion="mmotion.command"
 ```
 
-#### Taking the  for a Spin
+#### Taking the Script for a Spin
 Now we can build a new RubyMotion app called `NewApp` with these results:
 
 ``` bash
