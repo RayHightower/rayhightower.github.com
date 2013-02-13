@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Why I Use Vim - RayHightower.com</title>
+  <title>Automatic ctags with RubyMotion and Vim - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="My primary code-writing tools are: Xcode for Objective-C.
-Vim for Ruby, RubyMotion, and everything else. Here are my reasons for using Vim, in &hellip;">
+  <meta name="description" content="RubyMotion includes a rake task that generates Exuberant Ctags. To generate tags, run the following in the root directory of a RubyMotion project. 1 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ Vim for Ruby, RubyMotion, and everything else. Here are my reasons for using Vim
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/2013/01/12/why-i-use-vim/">
+  <link rel="canonical" href="http://RayHightower.com/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -85,7 +84,7 @@ Vim for Ruby, RubyMotion, and everything else. Here are my reasons for using Vim
   
   <header>
     
-      <h1 class="entry-title">Why I Use Vim</h1>
+      <h1 class="entry-title">Automatic Ctags With RubyMotion and Vim</h1>
     
     
       <p class="meta">
@@ -101,39 +100,130 @@ Vim for Ruby, RubyMotion, and everything else. Here are my reasons for using Vim
   
 
 
-<time datetime="2013-01-12T11:07:00-06:00" pubdate data-updated="true">Jan 12<span>th</span>, 2013</time>
+<time datetime="2013-02-12T19:35:00-06:00" pubdate data-updated="true">Feb 12<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><img src="/images/vim-osx.png" width="300" height="257" alt="Vim on OSX" title="Vim on OSX" align="right"/>
-My primary code-writing tools are:</p>
+<div class="entry-content"><p><a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a> includes a <code>rake</code> task that generates <a href="http://ctags.sourceforge.net/whatis.html">Exuberant Ctags</a>. To generate tags, run the following in the root directory of a RubyMotion project.</p>
 
-<ul>
-<li><a href="https://developer.apple.com/xcode/">Xcode</a> for Objective-C.</li>
-<li><a href="http://code.google.com/p/macvim/">Vim</a> for Ruby, <a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a>, and everything else.</li>
-</ul>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rake ctags
+</span></code></pre></td></tr></table></div></figure>
 
 
-<p>Here are my reasons for using Vim, in priority order:</p>
+<h4>Make Ctags Better With Automation</h4>
 
-<!--more-->
+<p>Ctags make writing code more efficient. But we shouldn&#8217;t have to type <code>$ rake ctags</code> every time we create a new RubyMotion project. This article shows how to use a shell script to generate ctags automatically every time you create a new RubyMotion app.</p>
 
-
-<ol>
-<li><p>Vim is everywhere. I can find Vim on any &#39;nix-based machine: Unix, Linux, or OSX. I spend most of my time on OSX and the Ubuntu distribution of Linux. When I started experimenting with <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a>, it was pleasant to know that Vim was already there. Having a common editor on multiple platforms makes it easier to bounce between them.</p></li>
-<li><p>Vim has history. I tried TextMate when I first heard about Ruby. Questions about TextMate&#8217;s future caused me to look for an alternative. Vim&#8217;s 20-year history and the <a href="http://www.vim.org/community.php">Vim community</a> convinced me that the editor would be available for many years to come.</p></li>
-<li><p>Vim is fast. I laughed out loud the first time I saw<br/>
-<code>NERDTree: Refreshing the root node.</code><br/>
-<code>This could take a while… DONE</code><br/>
-because it happened so quickly.</p></li>
-<li><p>Vim can be customized. If I want to tailor Vim for myself, I can do that through plugins and <code>.vimrc</code>. If I don&#8217;t want to configure it myself, I can use a tool like <a href="https://github.com/carlhuda/janus">Janus</a> by Carl Lerche and Yehuda Katz . You may choose a different course. Choices are powerful!</p></li>
-</ol>
+<!-- more -->
 
 
-<p>The developers I admire are always learning. More important: They are strategic about what they learn because learning takes time. Being productive with a highly available editor like Vim means that I don&#8217;t have to spend time learning a new editor. Instead, I can focus my education in areas that benefit clients directly. That&#8217;s why I use Vim.</p>
+<h4>How Ctags Save Time</h4>
+
+<p>Ctags can save you time. For example, when creating a new class called <code>HomeViewController</code> that inherits from <code>UIViewController</code>, typing the first view characters of the superclass will produces the drop-down shown below.
+<img src="/images/uiviewcontroller.png" align="center" width="800" height="433" title="ctags RubyMotion Vim" alt="ctags RubyMotion Vim"></p>
+
+<p>RubyMotion&#8217;s implementation of ctags includes support for built-in iOS classes like UIViewController. The code completion and drop-downs offered by ctags will reduce keystrokes and errors, freeing the developer to focus on solving harder problems.</p>
+
+<h4>Creating the Script</h4>
+
+<p>Here&#8217;s the script. You can use any name that suits you. My script is called <code>mmotion.command</code> (with two m&#8217;s at the beginning) and it&#8217;s in <code>~/bin/</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c">#!/bin/bash</span>
+</span><span class='line'><span class="c"># Create a RubyMotion app, change into the app&#39;s directory, and run ctags.</span>
+</span><span class='line'><span class="c"># Written by Raymond T. Hightower on February 12, 2013</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot;Creating a new RubyMotion app called:&quot;</span> <span class="nv">$1</span>
+</span><span class='line'>motion create <span class="nv">$1</span>
+</span><span class='line'><span class="nb">cd</span> <span class="nv">$1</span>
+</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot;Creating ctags for the new RubyMotion app...&quot;</span>
+</span><span class='line'>rake ctags
+</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot;Opening the new app in Vim...&quot;</span>
+</span><span class='line'>mvim .
+</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot;To use the RubyMotion console, cd into the new directory:&quot;</span> <span class="nv">$1</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>All of the work is done by by four lines. The remaining lines are comments or &#8216;echos&#8217; that tell the user what&#8217;s happening while the script is running.</p>
+
+<h4>Running the Script</h4>
+
+<p>If <code>~/bin/</code> is in the <code>$PATH</code>, you can run the script with the following line command:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>mmotion.command <span class="o">[</span>app name<span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Of course, we can still do better by leveraging the power of aliases in <code>~/.bash_profile</code>.</p>
+
+<h4>Adding an Alias to ~/.bash_profile</h4>
+
+<p>Dropping an alias into <code>~/.bash_profile</code> streamlines the process even more. You can use any alias you want as long as it doesn&#8217;t confilct with another command. Here&#8217;s what my alias looks like:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">alias </span><span class="nv">mmotion</span><span class="o">=</span><span class="s2">&quot;mmotion.command&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Taking the Script for a Spin</h4>
+
+<p>Now we can build a new RubyMotion app called <code>NewApp</code> with these
+results:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/RubyMotion<span class="nv">$ </span>mmotion NewApp
+</span><span class='line'>Creating a new RubyMotion app called: NewApp
+</span><span class='line'>    Create NewApp
+</span><span class='line'>    Create NewApp/.gitignore
+</span><span class='line'>    Create NewApp/Rakefile
+</span><span class='line'>    Create NewApp/app
+</span><span class='line'>    Create NewApp/app/app_delegate.rb
+</span><span class='line'>    Create NewApp/resources
+</span><span class='line'>    Create NewApp/spec
+</span><span class='line'>    Create NewApp/spec/main_spec.rb
+</span><span class='line'>Creating ctags <span class="k">for </span>the new RubyMotion app...
+</span><span class='line'>Opening the new app in Vim...
+</span><span class='line'>To use the RubyMotion console, <span class="nb">cd </span>into the new directory: NewApp
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/RubyMotion<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>After the bash script ends, it lands in the directory from which it was originally run, no matter what directories it changed to during execution. This script will open the new app in Vim when it&#8217;s done. You can <code>$ cd NewApp</code> and type <code>rake</code> to get to the RubyMotion console.</p>
+
+<h4>Feedback Welcome</h4>
+
+<p>If you notice any glitches with this approach, feel free to send me a &#8220;heads up&#8221; via the <a href="/contact/">contact</a> form on this site, or in the blog comments below.</p>
 </div>
 
 
@@ -156,12 +246,12 @@ because it happened so quickly.</p></li>
   
 
 
-<time datetime="2013-01-12T11:07:00-06:00" pubdate data-updated="true">Jan 12<span>th</span>, 2013</time>
+<time datetime="2013-02-12T19:35:00-06:00" pubdate data-updated="true">Feb 12<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/education/'>Education</a>, <a class='category' href='/blog/categories/vim/'>Vim</a>
+    <a class='category' href='/blog/categories/ruby/'>Ruby</a>, <a class='category' href='/blog/categories/rubymotion/'>RubyMotion</a>, <a class='category' href='/blog/categories/vim/'>Vim</a>, <a class='category' href='/blog/categories/ios/'>iOS</a>
   
 </span>
 
@@ -170,7 +260,7 @@ because it happened so quickly.</p></li>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/01/12/why-i-use-vim/" data-via="RayHightower" data-counturl="http://RayHightower.com/blog/2013/01/12/why-i-use-vim/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim/" data-via="RayHightower" data-counturl="http://RayHightower.com/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim/" >Tweet</a>
   
   
   
@@ -179,10 +269,8 @@ because it happened so quickly.</p></li>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/01/08/code-pilot-for-Xcode-navigation/" title="Previous Post: Code Pilot for Xcode Navigation">&laquo; Code Pilot for Xcode Navigation</a>
+        <a class="basic-alignment left" href="/blog/2013/01/17/the-vast-and-endless-sea/" title="Previous Post: The Vast and Endless Sea">&laquo; The Vast and Endless Sea</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/01/17/the-vast-and-endless-sea/" title="Next Post: The Vast and Endless Sea">The Vast and Endless Sea &raquo;</a>
       
     </p>
   </footer>
@@ -330,8 +418,8 @@ because it happened so quickly.</p></li>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://RayHightower.com/blog/2013/01/12/why-i-use-vim/';
-        var disqus_url = 'http://RayHightower.com/blog/2013/01/12/why-i-use-vim/';
+        var disqus_identifier = 'http://RayHightower.com/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim/';
+        var disqus_url = 'http://RayHightower.com/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim/';
         var disqus_script = 'embed.js';
       
     (function () {
