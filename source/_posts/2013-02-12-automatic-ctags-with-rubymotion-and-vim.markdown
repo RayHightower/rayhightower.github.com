@@ -80,4 +80,4 @@ To use the RubyMotion console, cd into the new directory: NewApp
 After the bash script ends, it lands in the directory from which it was originally run, no matter what directories it changed to during execution. This script will open the new app in Vim when it's done. You can `$ cd NewApp` and type `rake` to get to the RubyMotion console.
 
 #### Feedback Welcome
-If you notice any glitches with this approach, feel free to send me a "heads up" via the [contact](/contact/) form on this site, or in the blog comments below. 
+If you notice any glitches with this approach, feel free to send me a "heads up" via the [contact](/contact/) form on this site or in the blog comments below. 
