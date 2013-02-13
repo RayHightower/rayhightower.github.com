@@ -123,14 +123,14 @@
 
 <h4>How Ctags Save Time</h4>
 
-<p>Ctags can save you time. For example, when creating a new class called <code>HomeViewController</code> that inherits from <code>UIViewController</code>, typing the first view characters of the superclass will produces the drop-down shown below.
+<p>Ctags can save you time. For example, when creating a new class called <code>HomeViewController</code> that inherits from <code>UIViewController</code>, typing the first view characters of the superclass will produce the drop-down shown below.
 <img src="/images/uiviewcontroller.png" align="center" width="800" height="433" title="ctags RubyMotion Vim" alt="ctags RubyMotion Vim"></p>
 
 <p>RubyMotion&#8217;s implementation of ctags includes support for built-in iOS classes like UIViewController. The code completion and drop-downs offered by ctags will reduce keystrokes and errors, freeing the developer to focus on solving harder problems.</p>
 
-<h4>Creating the Script</h4>
+<h4>Creating the</h4>
 
-<p>Here&#8217;s the script. You can use any name that suits you. My script is called <code>mmotion.command</code> (with two m&#8217;s at the beginning) and it&#8217;s in <code>~/bin/</code>.</p>
+<p>Here&#8217;s the . You can use any name that suits you. My script is called <code>mmotion.command</code> (with two m&#8217;s at the beginning) and it&#8217;s in <code>~/bin/</code>.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -159,11 +159,11 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>All of the work is done by by four lines. The remaining lines are comments or &#8216;echos&#8217; that tell the user what&#8217;s happening while the script is running.</p>
+<p>All of the work is done by by four lines. The remaining lines are comments or &#8216;echos&#8217; that tell the user what&#8217;s happening while the  is running.</p>
 
-<h4>Running the Script</h4>
+<h4>Running the</h4>
 
-<p>If <code>~/bin/</code> is in the <code>$PATH</code>, you can run the script with the following line command:</p>
+<p>If <code>~/bin/</code> is in the <code>$PATH</code>, you can run the  with the following line command:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>mmotion.command <span class="o">[</span>app name<span class="o">]</span>
@@ -181,7 +181,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h4>Taking the Script for a Spin</h4>
+<h4>Taking the  for a Spin</h4>
 
 <p>Now we can build a new RubyMotion app called <code>NewApp</code> with these
 results:</p>
@@ -219,7 +219,9 @@ results:</p>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>After the bash script ends, it lands in the directory from which it was originally run, no matter what directories it changed to during execution. This script will open the new app in Vim when it&#8217;s done. You can <code>$ cd NewApp</code> and type <code>rake</code> to get to the RubyMotion console.</p>
+<p>After the bash  ends, it lands in the directory from which it was originally run, no matter what directories it changed to during execution. This script will open the new app in Vim when it&#8217;s done.</p>
+
+<p>From here, you can <code>$ cd NewApp</code> and type <code>rake</code> to run the app in the iOS simulator.</p>
 
 <h4>Feedback Welcome</h4>
 
