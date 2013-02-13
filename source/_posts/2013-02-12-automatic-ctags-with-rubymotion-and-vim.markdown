@@ -22,7 +22,7 @@ Ctags can save you time. For example, when creating a new class called `HomeView
 RubyMotion's implementation of ctags includes support for built-in iOS classes like UIViewController. The code completion and drop-downs offered by ctags will reduce keystrokes and errors, freeing the developer to focus on solving harder problems.
 
 #### Creating the Script
-Here's the script. You can use any name that suits you. My script is called `mmotion.command` (with two m's at the beginning to distinguish it from the standard `motion` command) and it's in `~/bin/`.
+Here's the script. You can use any name that suits you. My script is called `mmotion.command` (with two m's at the beginning to distinguish it from the standard `motion` command) and it's in the `~/bin/` directory.
 
 ``` bash
 #!/bin/bash
