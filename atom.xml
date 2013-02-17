@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-02-17T09:36:15-06:00</updated>
+  <updated>2013-02-17T10:23:19-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,59 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Apprenticeship Patterns]]></title>
+    <link href="http://RayHightower.com/blog/2013/02/17/apprenticeship-patterns-by-dave-h-hoover-and-adewale-oshineye/"/>
+    <updated>2013-02-17T09:52:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2013/02/17/apprenticeship-patterns-by-dave-h-hoover-and-adewale-oshineye</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/apprenticeship-patterns.gif" align="right" width="180" height="236" alt="Apprenticeship Patterns" title="Apprenticeship Patterns">
+<em>In times of drastic change it is the learners who inherit the future. The learned usually find themselves equipped to live in a world that no longer exists.<br/>- Eric Hoffer, Reflections on the Human Condition</em></p>
+
+<p>This is a review of the book <em>Apprenticeship Patterns</em> by <a href="https://twitter.com/davehoover">Dave H. Hoover</a> and <a href="http://twitter.com/ade_oshineye">Adewale Oshineye</a>.</p>
+
+<h4>A New Profession</h4>
+
+<p>Software development is among the newest of professions – roughly 70 years old depending on what you consider to be the beginning. The field is in a constant state of flux. New languages, new theories, new ways of communicating with clients… the list seems endless. How does a new developer keep up? How does a seasoned developer avoid growing stale?</p>
+
+<!-- more -->
+
+
+<h4>How to Excel</h4>
+
+<p>Apprenticeship Patterns was written as a guide for developers who want to excel throughout their careers. You might think of the book as a compilation of design patterns applied to human beings. Yes, the book is suitable for new developers. But seasoned people will find value as well. One useful pattern for veterans: Share What You Learn. All of us see old ideas through fresh glasses when we’re questioned about them. “When one person teaches, two people learn,” says the book.</p>
+
+<p>How did the authors compile the list of patterns? They reflected on their own practices and they asked other developers. They spoke with software professionals at various stages of their careers to find out what steps they took (and continue to take) to keep growing.</p>
+
+<h4>Non-Linear Reading</h4>
+
+<p>The book can be read in a non-linear fashion if you prefer. I would suggest that you start with the Reading List pattern on page 100, followed by Read Constantly on page 111. These two patterns do a great job of framing the rest of the book because the reader will be executing the pattern while reading about it. There’s something meta about starting that way, and meta is cool.</p>
+
+<p>The Reading List pattern inspired me to post my personal reading list on GitHub.</p>
+
+<h4>Steer Your Own Education</h4>
+
+<p>One theme consistently appears throughout the book: If you want to be a great software developer, you must be an active participant in your own education. Formal education might be a good start, but it’s not enough. Formal programs tell you what to read. Formal programs tell what to do in the classroom, and if you’re a good student you do it. But here’s something that we rarely do: While finishing a formal assignment, how many of us stop to consider whether we’ve been assigned the best curriculum for our long term goals?</p>
+
+<p>The professional person must be a continuous student. Patterns give us a good place to start.</p>
+
+<h4>Improvements</h4>
+
+<p>What should the next edition of Apprenticeship Patterns look like? For starters, I would love to read an electronic version… filled with hyperlinks. All of the apprenticeship patterns relate to other patterns, and being able to click to the related patterns would enrich the learning experience. This book would make a great mobile app, especially if you turn all of the references into hyperlinks. What an exciting learning experience it would be!</p>
+
+<p>Now… if only we could find a hand-held reading device that supports hyperlinks, and a couple of software craftsmen to get the job done :-)</p>
+
+<h4>Update After the Original Post</h4>
+
+<p>Ade Oshineye tweeted with good news a few minutes after the original post:</p>
+
+<blockquote><p>@ChicagoRuby: Wish granted: <a href="http://apprenticeship-patterns.labs.oreilly.com/">http://apprenticeship-patterns.labs.oreilly.com/</a>. The book is available online as a hypertext.</p></blockquote>
+
+<p>Thank you authors!</p>
+
+<p><em>Blogger&#8217;s Note: This review was originally posted at <a href="http://www.chicagoruby.org/book-reviews/">ChicagoRuby.org/book-reviews</a>.</em></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Automatic ctags with RubyMotion and Vim]]></title>
@@ -1410,36 +1463,6 @@ you can achieve amazing things if you have the patience to do so.<br/></p></bloc
 <p>Amazing things indeed.</p>
 
 <p><em>Note: A version of this post originally appeared on the <a href="http://wisdomgroup.com">WisdomGroup Blog</a>.</em></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ruby on Rails 3 Tutorial By Michael Hartl]]></title>
-    <link href="http://RayHightower.com/blog/2011/07/27/ruby-on-rails-3-tutorial-by-michael-hartl/"/>
-    <updated>2011-07-27T09:15:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2011/07/27/ruby-on-rails-3-tutorial-by-michael-hartl</id>
-    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/ror3-hartl.jpg" width="132" height="175" alt="Ruby on
-Rails 3 Tutorial" title="Ruby on Rails 3 Tutorial" align="right">
-<em>Blogger&#8217;s Note: This review was originally posted at
-<a href="http://www.chicagoruby.org/book-reviews/">ChicagoRuby.org/book-reviews</a>.</em></p>
-
-<p>Ruby on Rails 3 Tutorial is well suited for beginning Ruby on Rails developers. Advanced developers will find it useful as well. Here’s why:</p>
-
-<ul>
-<li>Sometimes, as we become more advanced, we miss fundamentals along the way. Ruby on Rails 3 Tutorial will help to fill in the gaps.</li>
-<li>It is possible to know a concept so well that you can’t express it in words. If you’re an advanced developer, and you need to explain a concept to someone less advanced, you might not have the words to express your thoughts. This book can give you good building blocks for your explanations.</li>
-</ul>
-
-
-<p>Like most Rails books, this one starts with a few paragraphs about the Ruby language and the Rails framework. This book differs from some others because the author strives to build good craftsmanship practices in the reader. The earliest chapters introduce source code version control (using Git and GitHub), test driven development (using RSpec), and cloud hosting (using Heroku). By chapter two, the reader has already created and pushed to a GitHub repo. Very effective, very clear.</p>
-
-<p>Advanced users who want to brush up on best practices like TDD will appreciate Hartl’s coverage and explanations of the practices. No developer with critical thinking skills will do something simply because “all the cool kids” are doing it. When Hartl talks about TDD, he does not preach it as a panacea against bugs, but he states (realistically) that TDD makes bugs more likely to be caught and fixed when they occur.</p>
-
-<p>Hartl expresses a healthy level of irreverence for some of the semantics of our profession. When discussing the difference between TDD and behavior driven development (BDD), he states “Frankly, I’m not convinced there’s much of a difference.” This approach builds trust. You get the feeling that you’re listening to a fellow developer who has fought and defeated many of the dragons that you’re currently facing.</p>
-
-<p>Ruby on Rails 3 Tutorial is not a quick read. One reviewer, Derek Sivers of CD Baby, mentions in the jacket notes that he finished the book in three days. It’s certainly possible to read RoR3T in three days. But readers who want to truly absorb the material will spend time working through the examples, breaking code, fixing it, and generally immersing themselves in all this Ruby on Rails goodness.</p>
-
-<p>Ruby on Rails 3 Tutorial is a well-written book with clear explanations and useful examples. Highly recommended.</p>
 ]]></content>
   </entry>
   
