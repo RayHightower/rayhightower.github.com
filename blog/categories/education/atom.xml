@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Education | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/education/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-02-18T00:34:50-06:00</updated>
+  <updated>2013-02-18T01:33:31-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -250,7 +250,7 @@ This week I enrolled in the iOS Accelerated course offered by the <a href="http:
     <id>http://RayHightower.com/blog/2011/07/27/ruby-on-rails-3-tutorial-by-michael-hartl</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/ror3-hartl.jpg" width="132" height="175" alt="Ruby on
 Rails 3 Tutorial" title="Ruby on Rails 3 Tutorial" align="right">
-<em>Blogger's Note: This review was originally posted at <a href="http://www.chicagoruby.org/book-reviews/">ChicagoRuby.org/book-reviews</a>.</em></p>
+<em>Note: This review was originally posted at <a href="http://www.chicagoruby.org/book-reviews/">ChicagoRuby.org/book-reviews</a>.</em></p>
 
 <p>Ruby on Rails 3 Tutorial is well suited for beginning Ruby on Rails developers. Advanced developers will find it useful as well. Here’s why:</p>
 
@@ -258,6 +258,9 @@ Rails 3 Tutorial" title="Ruby on Rails 3 Tutorial" align="right">
 <li>Sometimes, as we become more advanced, we miss fundamentals along the way. Ruby on Rails 3 Tutorial will help to fill in the gaps.</li>
 <li>It is possible to know a concept so well that you can’t express it in words. If you’re an advanced developer, and you need to explain a concept to someone less advanced, you might not have the words to express your thoughts. This book can give you good building blocks for your explanations.</li>
 </ul>
+
+
+<!-- more -->
 
 
 <p>Like most Rails books, this one starts with a few paragraphs about the Ruby language and the Rails framework. This book differs from some others because the author strives to build good craftsmanship practices in the reader. The earliest chapters introduce source code version control (using Git and GitHub), test driven development (using RSpec), and cloud hosting (using Heroku). By chapter two, the reader has already created and pushed to a GitHub repo. Very effective, very clear.</p>
