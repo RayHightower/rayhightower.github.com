@@ -13,7 +13,7 @@ When [Arizona State University](http://asu.edu/news/stories/200610/20061010_asug
 Adrian Sannier, Information Technology Officer at ASU, outlines the problem and solution in this 4-minute video.
 
 <center><object width="325" height="275"><param name="movie" value="http://www.youtube.com/v/_x2fJRW_vvQ&rel=1"></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/_x2fJRW_vvQ&rel=1" type="application/x-shockwave-flash" wmode="transparent" width="325" height="275"></embed></object> </center>
-
+<!-- more -->
 #### Migrating from Exchange
 WisdomGroup migrated to GMail in November 2007 after nine years with [Microsoft Exchange](http://www.microsoft.com/exchange/default.mspx). The biggest benefits for WisdomGroup include:
 
