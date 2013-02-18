@@ -8,7 +8,7 @@ categories: [Education]
 <img src="/images/apprenticeship-patterns.gif" align="right" width="180" height="236" alt="Apprenticeship Patterns" title="Apprenticeship Patterns">
 _In times of drastic change it is the learners who inherit the future. The learned usually find themselves equipped to live in a world that no longer exists.<br/>- Eric Hoffer, Reflections on the Human Condition_
 
-This is a review of the book _Apprenticeship Patterns_ by [Dave H. Hoover](https://twitter.com/davehoover) and [Adewale Oshineye](http://twitter.com/ade_oshineye).
+Blogger's Note: This review of the book _Apprenticeship Patterns_ by [Dave H. Hoover](https://twitter.com/davehoover) and [Adewale Oshineye](http://twitter.com/ade_oshineye) was originally posted at [ChicagoRuby.org/book-reviews](http://www.chicagoruby.org/book-reviews/).
 
 #### A New Profession
 Software development is among the newest of professions – roughly 70 years old depending on what you consider to be the beginning. The field is in a constant state of flux. New languages, new theories, new ways of communicating with clients… the list seems endless. How does a new developer keep up? How does a seasoned developer avoid growing stale?
@@ -40,4 +40,3 @@ Ade Oshineye tweeted with good news a few minutes after the original post:
 
 Thank you authors!
 
-_Blogger's Note: This review was originally posted at [ChicagoRuby.org/book-reviews](http://www.chicagoruby.org/book-reviews/)._
