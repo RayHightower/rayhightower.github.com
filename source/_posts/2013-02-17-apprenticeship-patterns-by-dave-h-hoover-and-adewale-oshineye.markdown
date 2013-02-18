@@ -6,7 +6,7 @@ comments: true
 categories: [Education]
 ---
 <img src="/images/apprenticeship-patterns.gif" align="right" width="180" height="236" alt="Apprenticeship Patterns" title="Apprenticeship Patterns">
-_In times of drastic change it is the learners who inherit the future. The learned usually find themselves equipped to live in a world that no longer exists.<br/>- Eric Hoffer, Reflections on the Human Condition_
+>_In times of drastic change it is the learners who inherit the future. The learned usually find themselves equipped to live in a world that no longer exists.<br/>- Eric Hoffer, Reflections on the Human Condition_
 
 Blogger's Note: This review of the book _Apprenticeship Patterns_ by [Dave H. Hoover](https://twitter.com/davehoover) and [Adewale Oshineye](http://twitter.com/ade_oshineye) was originally posted at [ChicagoRuby.org/book-reviews](http://www.chicagoruby.org/book-reviews/).
 

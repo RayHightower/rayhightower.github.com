@@ -7,7 +7,7 @@ categories: [Education, Rails, Ruby]
 ---
 <img src="/images/ror3-hartl.jpg" width="132" height="175" alt="Ruby on
 Rails 3 Tutorial" title="Ruby on Rails 3 Tutorial" align="right">
-_Blogger's Note: This review was originally posted at [ChicagoRuby.org/book-reviews](http://www.chicagoruby.org/book-reviews/)._
+_Note: This review was originally posted at [ChicagoRuby.org/book-reviews](http://www.chicagoruby.org/book-reviews/)._
 
 Ruby on Rails 3 Tutorial is well suited for beginning Ruby on Rails developers. Advanced developers will find it useful as well. Here’s why:
 

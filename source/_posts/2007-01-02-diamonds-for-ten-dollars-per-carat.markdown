@@ -5,10 +5,9 @@ date: 2007-01-02 00:55
 comments: true
 categories: [Business]
 ---
-_Note: This article was originally posted on the [WisdomGroup](http://wisdomgroup.com) blog._
+_Blogger's Note from Feb2013: This article was originally posted on the [WisdomGroup](http://wisdomgroup.com) blog in Jan2007. In hindsight, my precicted timeline was too aggressive. However, the rest of the post remains sound._
 
->If Woolworth's sold diamond rings, you'd have a million of 'em baby!<br/>
->~Fats Waller, Piano composer/performer, circa 1915_
+>If Woolworth's sold diamond rings, you'd have a million of 'em baby!<br/> ~Fats Waller, Piano composer/performer, circa 1915
 
 <img src="/images/diamond.jpg" width="300" height="190" align="right" alt="Diamonds for Ten Dollars Per Carat" title="Diamonds for Ten Dollars Per Carat">
 Woolworth's and Fats Waller are long gone, but Waller's tounge-in-cheek prediction will come to pass in the next few years. Diamonds will sell for $10.00 per carat in the year 2015. Advances in the fabrication of synthetic/cultured diamonds will drive down the price and value of these "precious" gems. At the same time, the needs of computer manufacturers and huge economies of scale will make it worthwhile for diamond fabricators to roll out cheap diamonds by the pound. 
@@ -16,10 +15,12 @@ Woolworth's and Fats Waller are long gone, but Waller's tounge-in-cheek predicti
 #### Yes, They're Real
 The diamonds I'm talking about are chemically identical to diamonds found in the mines of South Africa, Canada, and other spots around the world. I'm not talking about cubic zirconium. I mean man-made diamonds that are arguably superior to diamonds found in mines. Mined diamonds occur in nature, and they are formed when carbon is exposed to millions of years of heat and pressure beneath the earth's surface. Volcanic activity can play a role. As natural diamonds form and harden, they tend to envelope impurities within. These impurities, (the diamond industry calls them "inclusions") can greatly reduce the value of a diamond.
 
-But man-made diamonds contain zero inclusions. There are several ways to make a diamond. Some methods duplicate the heat and pressure deep within our planet. Others grow a diamond from a "seed" crystal in a special chamber. Regardless of technique, a man-made diamond will only contain inclusions if that is what the manufacturer wants. Cultured diamonds are real, and they're more attractive. 
+But man-made diamonds contain zero inclusions.
+
+There are several ways to make a diamond. Some methods duplicate the heat and pressure deep within our planet. Others grow a diamond from a "seed" crystal in a special chamber. Regardless of technique, a man-made diamond will only contain inclusions if that is what the manufacturer wants. Cultured diamonds are real, and they're more attractive. 
 
 #### Wired Magazine's Diamond Revelation
-Check out this article in [Wired Magazine](http://www.wired.com/wired/archive/11.09/diamond.html). The writer interviews two diamond makers right here in the United States. [Apollo Diamond, Inc.](http://www.apollodiamond.com) sells diamonds for jewelry and technology. [Gemesis](http://www.gemesis.com) sells colored diamonds that are rare in nature (very expensive), but so easy to make in their Florida-based warehouse. Other entrepreneurs are sure to follow, and prices will certainly fall. The biggest drop will come when diamond-makers in China, India, and other manufacturing powerhouses come online.
+Check out this article in [Wired Magazine](http://www.wired.com/wired/archive/11.09/diamond.html). The writer interviews two diamond makers right here in the United States. [Apollo Diamond, Inc.](http://en.wikipedia.org/wiki/Apollo_Diamond) sells diamonds for jewelry and technology. [Gemesis](http://www.gemesis.com) sells colored diamonds that are rare in nature (very expensive), but so easy to make in their Florida-based warehouse. Other entrepreneurs are sure to follow, and prices will certainly fall. The biggest drop will come when diamond-makers in China, India, and other manufacturing powerhouses come online.
  
 #### Are Cheap Diamonds Worth Making?
 Computer industry insiders are familiar with Moore's Law. The law says that computers will double in processing capacity and halve in price every eighteen months. Moore's Law has held true for over forty years since Moore first announced his prediction in the early 1960's. But now Moore's law is approaching a wall.
