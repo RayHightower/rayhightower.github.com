@@ -44,7 +44,7 @@ Why should a serious developer spend time writing games? I can think of a few re
 * Writing a game lets us break out of our constraints. Devs who write business apps are very familiar with constraints.
 * Because writing a game is fun. Get over it :-)
 
-Of course, the most important reason was given by a Captain of the USS Enterprise NCC-1701 (no bloody A, B, C, or D):
+Of course, the most important reason was given by a Captain of the USS Enterprise NCC-1701:
 >The more advanced the mind, the greater the need for the simplicity of play.
 ><br/>~James T. Kirk
 
