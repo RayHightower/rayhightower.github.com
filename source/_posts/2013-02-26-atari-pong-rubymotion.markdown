@@ -18,10 +18,12 @@ I recently completed the iOS Accelerated course at the [Mobile Makers Academy](h
 * Let one or two players control the paddles via touch.
 <!-- more -->
 ####Questions to Consider
-How do you determine whether the pixels of the ball have collided with the pixels of the paddle? What about wall collisions? When a collision occurs, where should the ball bounce next? Many details to consider. 
+How do you determine whether the pixels of the ball have collided with the pixels of a paddle? What about wall collisions? When a collision occurs, where should the ball bounce next? Many details to consider. 
 
 ####Building Blocks
-Of course, Don had already taught us the necessary skills in earlier lectures, labs, and homework. Members of the class paired with each other, sharing solutions and advice. In time we each ended up with a working version of Pong in Objective-C. It's exciting to see a favorite childhood game running in the iOS simulator on your own machine, especially if you built the game yourself.
+Of course, Don had already taught us the necessary skills in earlier lectures, labs, and homework. It was our job to put the pieces together. 
+
+Members of the class paired with each other, sharing solutions and advice. In time we each ended up with a working version of Pong in Objective-C. It's exciting to see a favorite childhood game running in the iOS simulator on your own machine, especially if you built the game yourself.
 
 ####Pong in RubyMotion
 Since my day job revolves around Ruby, I wondered what Pong might look like in [RubyMotion](http://rayhightower.dev/blog/2012/10/29/building-ios-apps-with-ruby-motion/). Here are video clips of my two solutions. The first was written in Objective-C during the Mobile Makers course. The second is my version, written in RubyMotion.
@@ -42,9 +44,9 @@ Why should a serious developer spend time writing games? I can think of a few re
 * Writing a game lets us break out of our constraints. Devs who write business apps are very familiar with constraints.
 * Because writing a game is fun. Get over it :-)
 
-Of course, the most important reason was given by a  Captain of the USS Enterprise:
+Of course, the most important reason was given by a Captain of the USS Enterprise NCC-1701 (no bloody A, B, C, or D):
 >The more advanced the mind, the greater the need for the simplicity of play.
 ><br/>~James T. Kirk
 
 ####Comments and Pull Requests
-I lead a [software team](http://wisdomgroup.com) that builds business apps for the web and for mobile. My experience with games is limited. If you are a game developer, and if you see anything in my code that could be done better or differently, don't be shy! Feel free to submit a [pull request via GitHub](http://github.com/rayhightower/pong-rm), or you can drop a note in the comments below. Thanks!
+I lead a [software team](http://wisdomgroup.com) that builds business apps for the web and for mobile. My experience with games is limited. If you are a game developer, and if you see anything in my code that could be done better, don't be shy! Feel free to submit a [pull request via GitHub](http://github.com/rayhightower/pong-rm), or you can drop a note in the comments below. Thanks!
