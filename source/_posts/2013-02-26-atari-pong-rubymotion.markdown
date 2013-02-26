@@ -49,4 +49,4 @@ Of course, the most important reason was given by a Captain of the USS Enterpris
 ><br/>~James T. Kirk
 
 ####Comments and Pull Requests
-I lead a [software team](http://wisdomgroup.com) that builds business apps for the web and for mobile. My experience with games is limited. If you are a game developer, and if you see anything in my code that could be done better, don't be shy! Feel free to submit a [pull request via GitHub](http://github.com/rayhightower/pong-rm), or you can drop a note in the comments below. Thanks!
+I lead a [software team](http://wisdomgroup.com) that builds business apps. My experience with games is limited. If you are a game developer, and if you see anything in my code that could be done better, don't be shy! Feel free to submit a [pull request via GitHub](http://github.com/rayhightower/pong-rm), or you can drop a note in the comments below. Thanks!
