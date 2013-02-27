@@ -6,7 +6,7 @@ comments: true
 categories: [Education, Objective-C, Ruby, RubyMotion, iOS]
 published: true
 ---
-<img src="/images/pong-oc.png" width="300" height="160" alt="Atari's Pong in RubyMotion and Objective-C" title="Atari's Pong in RubyMotion and Objective-C" align="right">
+<img src="/images/pong-rubymotion-objective-c.png" width="300" height="160" alt="Atari's Pong in RubyMotion and Objective-C" title="Atari's Pong in RubyMotion and Objective-C" align="right">
 [Atari's Pong](http://en.wikipedia.org/wiki/Pong) is a classic video arcade game from the 1970s. Seeing Pong always gives me childhood flashbacks.
 
 ####Pong in Objective-C
@@ -40,19 +40,22 @@ As expected, the two solutions look similar. Source code is on GitHub:
 
 ####RubyMotion Gotchas
 I encountered a few RubyMotion snags during development:
-* *Mousover Ingored*. Normally, when running the simulator with RubyMotion, you can mouse over an object in the simulator, hit the command key, and grab a handle to the object.  This behavior was absent in version 1.31 of RubyMotion. The notes for version 1.33 mention that the problem has been solved. However, that was not my experience. 
-* *Touch Events Ignored on Part of Screen*. For some reason, the simulator ignored touch events on the right side of the screen. When I programattically moved the right panel closer to the left side of the screen, both paddles responded to touch events. Searches of Google and Stack Overflow reveal that others have encounterd this problem.
 
-Of course, I introduced a few bugs of my own during in development. At one point, the velocity of the ball increased every time a player scored. It made the game exciting, but good developers strive to maintain better control over their projects. I eventually found the problem. When using an NSTimer object to control animation, you have to invalidate the timer at the beginning of each cycle, or the animation will accelerate. That's a good thing to know.
+* *Mousovers Ingored*. Normally, when running the simulator with RubyMotion, you can mouse over an object in the simulator, hit the command key, and grab a handle to the object.  This behavior was absent in landcape mode with version 1.31 of RubyMotion. The release notes for version 1.33 mention that the problem has been solved. However, that was not my experience. 
+* *Touch Events Ignored on Part of Screen*. For some reason, the simulator ignored touch events on the right side of the screen. When I programatically moved the right paddle closer to the left side of the screen, both paddles responded to touch events. Searches of Google and Stack Overflow reveal that others have encounterd the same issue with touch events, especially in landcape mode.
 
-The rest of the work in RubyMotion went well. I look forward to a resolution for the touch event issues mentioned above.
+Of course, I introduced a few bugs of my own while developing the Pong game. At one point, the velocity of the ball increased every time a player scored. It made the game exciting! But I didn't know the cause of the acceleration, and good developers strive to maintain better control over their projects. 
+
+I eventually found the problem: When using an NSTimer object to control animation, you have to invalidate the timer at the beginning of each cycle, or the animation will accelerate. That's a useful thing to know.
+
+The rest of my work in RubyMotion went well, and I continue to enjoy the product. I plan to update the code once the touch event issues have been resolved.
 
 ####Why Play Games?
 Why should a serious developer spend time writing games? I can think of a few reasons:
 
 * Writing a game challenges our skills on many levels. In the case of Pong, we have to dust off our old physics and geometry textbooks to ensure that the ball bounces like a real ball.
 * Writing a game lets us break out of our constraints. Devs who write business apps are very familiar with constraints.
-* Because writing a game is fun. Get over it :-)
+* Because writing a game is fun.
 
 Of course, the most important reason was given by a Captain of the USS Enterprise NCC-1701:
 >The more advanced the mind, the greater the need for the simplicity of play.
