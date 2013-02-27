@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>GMail Growing Pains - RayHightower.com</title>
+  <title>Atari's Pong, Built With RubyMotion - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="Note: This article was originally posted on the WisdomGroup blog. WisdomGroup is both a proponent and a user of GMail. Of course, the service is not &hellip;">
+  <meta name="description" content="Atari&#8217;s Pong is a classic video arcade game from the 1970s. Seeing Pong always gives me childhood flashbacks. Pong in Objective-C I recently &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/2008/10/17/gmail-growing-pains/">
+  <link rel="canonical" href="http://RayHightower.com/blog/2013/02/26/atari-pong-rubymotion-objective-c/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -84,7 +84,7 @@
   
   <header>
     
-      <h1 class="entry-title">GMail Growing Pains</h1>
+      <h1 class="entry-title">Atari's Pong, Built With RubyMotion</h1>
     
     
       <p class="meta">
@@ -100,56 +100,108 @@
   
 
 
-<time datetime="2008-10-17T00:22:00-05:00" pubdate data-updated="true">Oct 17<span>th</span>, 2008</time>
+<time datetime="2013-02-26T10:35:00-06:00" pubdate data-updated="true">Feb 26<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><em>Note: This article was originally posted on the <a href="http://wisdomgroup.com">WisdomGroup</a> blog.</em></p>
+<div class="entry-content"><p><img src="/images/pong-rubymotion-objective-c.png" width="300" height="160" alt="Atari's Pong in RubyMotion and Objective-C" title="Atari's Pong in RubyMotion and Objective-C" align="right">
+<a href="http://en.wikipedia.org/wiki/Pong">Atari&#8217;s Pong</a> is a classic video arcade game from the 1970s. Seeing Pong always gives me childhood flashbacks.</p>
 
-<p>WisdomGroup is both a proponent and a <a href="/blog/2007/12/10/gmail-vs-microsoft-exchange/">user of GMail</a>. Of course, the service is not perfect, as proven during yesterday&#8217;s GMail outage. &#8220;It&#8217;s only affecting a small number of users&#8221; is hardly consolation when you&#8217;re one of the affected users.</p>
+<h4>Pong in Objective-C</h4>
+
+<p>I recently completed the iOS Accelerated course at the <a href="http://mobilemakers.co/">Mobile Makers Academy</a>. For one of our homework assignments, we were asked to build a version of Pong that runs on iOS. Our instructor, <a href="http://twitter.com/dbora">Don Bora</a>, started us off with some skeleton code in Objective-C. Each student had to take Don&#8217;s code and:</p>
+
+<ul>
+<li>Add paddles.</li>
+<li>Make the paddles move on their own.</li>
+<li>Make the ball bounce off the moving paddles.</li>
+<li>Keep score.</li>
+<li>Let one or two players control the paddles via touch.</li>
+</ul>
+
 
 <!-- more -->
 
 
-<h4>Sys Admin Anger</h4>
+<h4>Questions to Consider</h4>
 
-<p>One angry systems administrator posted this message in the <a href="http://groups.google.com/group/hosted-the-basics/browse_thread/thread/4465cc3272db6728?hl=en">Google Apps Discussion Group</a></p>
+<p>How do you determine whether the pixels of the ball have collided with the pixels of a paddle? What about wall collisions? When a collision occurs, where should the ball bounce next? There are many details to consider.</p>
 
-<blockquote><p>Since yesterday around at least 4:00pm my CEO cannot access his mail. He gets a 502 temporary error. Support keeps telling me it is affecting a small number of users. This is not a temporary problem if it lasts this long. It is frustrating to not be able to expedite these issues. I have to speak with the boss again and he&#8217;s po&#8217;d. This is considered a mission critical issue here. We may have to make other arrangements. Apparently Google mail is not very reliable. I think I would have pushed for something else before we switched if I had known the level of unreliability.</p></blockquote>
+<h4>Building Blocks</h4>
 
-<h4>Achieving 100% Uptime</h4>
+<p>Of course, Don had already introduced the necessary skills in earlier lectures, labs, and homework. It was our job to put the pieces together.</p>
 
-<p>In a perfect world, I could complete this sentence:</p>
+<p>Members of the class paired with each other, sharing solutions and advice. In time we each ended up with a working version of Pong in Objective-C. It&#8217;s exciting to see a favorite childhood game running in the iOS simulator on your own machine, especially if you built the game yourself.</p>
 
-<blockquote><p>Achieving 100% uptime is easy. All you have to do is&#8230;</p></blockquote>
+<h4>Pong in RubyMotion</h4>
 
-<p>Unfortunately, I don&#8217;t know of a 100% uptime solution. Systems are imperfect because they&#8217;re designed by imperfect humans. Good engineers design systems with multiple redundancies. Sometimes those redundancies fail.</p>
+<p>Since my day job revolves around Ruby, it made sense to re-write the exercise in <a href="http://rayhightower.dev/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a>. Here are video clips of my two solutions. The first was written in Objective-C during the Mobile Makers course. The second was written in RubyMotion.</p>
 
-<h4>What Sys Admins Can Do</h4>
+<center><iframe width="560" height="315" src="http://www.youtube.com/embed/9LETiMdi9jQ?rel=0" frameborder="0" allowfullscreen></iframe></iframe></center>
 
-<p>The GMail web client is outstanding. But when it fails, users can sometimes send/receive email through an old fat client like Microsoft Outlook or Apple Mail. Just point the fat client to GMail, and you&#8217;re in business.</p>
 
-<h4>What Google Can Do</h4>
 
-<p>The best thing a company can do in a time of failure: Communicate. Solve the problem, and make sure you&#8217;re sharing updates with users on a regular basis.</p>
 
-<h4>Bring Email In House?</h4>
+<center><iframe width="560" height="315" src="http://www.youtube.com/embed/Lt-JKqiA_fg?rel=0" frameborder="0" allowfullscreen></iframe></center>
 
-<p>When GMail fails, it&#8217;s tempting to wish for the good-old-days of the in-house mail server. &#8220;What moron moved us to external email?&#8221; is a common thought during an outage. But it&#8217;s important to balance our thinking:</p>
+
+<p>As expected, the two solutions look similar. Source code is on GitHub:</p>
 
 <ul>
-<li>With in-house email, you&#8217;re responsible for everything. Uptime, malware, bandwidth, etc.</li>
-<li>Managing in-house email takes time. Time for regular maintenance. Time for troubleshooting when things go wrong.</li>
-<li>Managing in-house takes money. Money for software upgrades, anit-malware tools, and talented technical people.</li>
+<li><a href="http://github.com/rayhightower/pong-oc">Pong in Objective-C</a></li>
+<li><a href="http://github.com/rayhightower/pong-rm">Pong in RubyMotion</a></li>
 </ul>
 
 
-<p>Sometimes in-house email makes sense. In other cases, the time &amp; energy spent on email management is better applied to business issues. It&#8217;s important to weigh the options rationally, especially in a time of crisis.</p>
+<h4>RubyMotion Gotchas</h4>
 
-<p>By the way, in-house email systems are subject to the same &#8220;less than 100% uptime&#8221; rules as all other systems.</p>
+<p>I encountered a few RubyMotion snags during development:</p>
+
+<ul>
+<li><em>Mousovers Ingored</em>. Normally, when running the simulator with RubyMotion, you can mouse over an object in the simulator, hit the command key, and grab a handle to the object.  This behavior was absent in landcape mode with version 1.31 of RubyMotion. The release notes for version 1.33 mention that the problem has been solved. However, that was not my experience.</li>
+<li><em>Touch Events Ignored on Part of Screen</em>. For some reason, the simulator ignored touch events on the right side of the screen. When I programatically moved the right paddle closer to the left side of the screen, both paddles responded to touch events. Searches of Google and Stack Overflow reveal that others have encounterd the same issue with touch events, especially in landcape mode.</li>
+</ul>
+
+
+<p>Of course, I introduced a few bugs of my own while developing the Pong game. At one point, the velocity of the ball increased every time a player scored. It made the game exciting! But I didn&#8217;t know the cause of the acceleration, and good developers strive to maintain better control over their projects.</p>
+
+<p>I eventually found the acceleration problem: When using an NSTimer object to control animation, you have to invalidate the timer at the beginning of each cycle, or the animation will accelerate. That&#8217;s a useful thing to know.</p>
+
+<p>The rest of my work in RubyMotion went well, and I continue to enjoy the product. I plan to update the code once the touch event issues have been resolved.</p>
+
+<h4>Why Play Games?</h4>
+
+<p>Why should a serious developer spend time writing games? I can think of a few reasons:</p>
+
+<ul>
+<li>Writing a game challenges our skills on many levels. In the case of Pong, we have to dust off our old physics and geometry textbooks to ensure that the ball bounces like a real ball.</li>
+<li>Writing a game lets us break out of our constraints. Devs who write business apps are very familiar with constraints.</li>
+<li>Because writing a game is fun.</li>
+</ul>
+
+
+<p>Of course, the most important reason was given by a Captain of the USS Enterprise NCC-1701:</p>
+
+<blockquote><p>The more advanced the mind, the greater the need for the simplicity of play.
+<br/>~James T. Kirk</p></blockquote>
+
+<h4>Room for Improvement</h4>
+
+<p>Building the Pong game was an interesting exercise in testing the capabilities of RubyMotion. Having gone done the work, I can look back and see some areas where I could improve the results. For example:</p>
+
+<ul>
+<li>Automated testing. These proof-of-concept exercises were done without automated testing. What is the best way to apply test driven development to a game? RubyMotion comes with a TDD framework, MacBacon. That would be a great subject for a future blog post.</li>
+<li>Better design. Each exercise looks like something from the 1970s! How would Pong function if it was created in 2013?</li>
+<li>Better collision detection. I&#8217;m using a built-in iOS method to detect ball collisions. The built-in detection works fine with the stationary walls, but not as well with the moving paddles. If I write a future version of Pong, I should also write a custom collision detection method.</li>
+</ul>
+
+
+<h4>Comments and Pull Requests</h4>
+
+<p><a href="http://wisdomgroup.com">My team and I</a> build business apps. My gaming experience is limited. If you are a game developer, and if you see anything in my code that could be done better, your ideas are welcome. Feel free to submit a <a href="http://github.com/rayhightower/pong-rm">pull request via GitHub</a>, or you can drop a note in the comments below. Thanks!</p>
 </div>
 
 
@@ -172,12 +224,12 @@
   
 
 
-<time datetime="2008-10-17T00:22:00-05:00" pubdate data-updated="true">Oct 17<span>th</span>, 2008</time>
+<time datetime="2013-02-26T10:35:00-06:00" pubdate data-updated="true">Feb 26<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/business/'>Business</a>
+    <a class='category' href='/blog/categories/education/'>Education</a>, <a class='category' href='/blog/categories/objective-c/'>Objective-C</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>, <a class='category' href='/blog/categories/rubymotion/'>RubyMotion</a>, <a class='category' href='/blog/categories/ios/'>iOS</a>
   
 </span>
 
@@ -186,7 +238,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2008/10/17/gmail-growing-pains/" data-via="RayHightower" data-counturl="http://RayHightower.com/blog/2008/10/17/gmail-growing-pains/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/02/26/atari-pong-rubymotion-objective-c/" data-via="RayHightower" data-counturl="http://RayHightower.com/blog/2013/02/26/atari-pong-rubymotion-objective-c/" >Tweet</a>
   
   
   
@@ -195,10 +247,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2007/12/10/gmail-vs-microsoft-exchange/" title="Previous Post: GMail vs Microsoft Exchange">&laquo; GMail vs Microsoft Exchange</a>
+        <a class="basic-alignment left" href="/blog/2013/02/17/apprenticeship-patterns-by-dave-h-hoover-and-adewale-oshineye/" title="Previous Post: Apprenticeship Patterns">&laquo; Apprenticeship Patterns</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2011/07/27/ruby-on-rails-3-tutorial-by-michael-hartl/" title="Next Post: Ruby on Rails 3 Tutorial By Michael Hartl">Ruby on Rails 3 Tutorial By Michael Hartl &raquo;</a>
       
     </p>
   </footer>
@@ -344,8 +394,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://RayHightower.com/blog/2008/10/17/gmail-growing-pains/';
-        var disqus_url = 'http://RayHightower.com/blog/2008/10/17/gmail-growing-pains/';
+        var disqus_identifier = 'http://RayHightower.com/blog/2013/02/26/atari-pong-rubymotion-objective-c/';
+        var disqus_url = 'http://RayHightower.com/blog/2013/02/26/atari-pong-rubymotion-objective-c/';
         var disqus_script = 'embed.js';
       
     (function () {
