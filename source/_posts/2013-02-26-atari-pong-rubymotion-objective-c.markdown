@@ -13,7 +13,8 @@ published: true
 I recently completed the iOS Accelerated course at the [Mobile Makers Academy](http://mobilemakers.co/). For one of our homework assignments, we were asked to build a version of Pong that runs on iOS. Our instructor, [Don Bora](http://twitter.com/dbora), started us off with some skeleton code in Objective-C. Each student had to take Don's code and:
 
 * Add paddles.
-* Make the ball bounce off the paddles.
+* Make the paddles move on their own.
+* Make the ball bounce off the moving paddles.
 * Keep score.
 * Let one or two players control the paddles via touch.
 <!-- more -->
@@ -37,11 +38,14 @@ As expected, the two solutions look similar. Source code is on GitHub:
 * [Pong in Objective-C](http://github.com/rayhightower/pong-oc)
 * [Pong in RubyMotion](http://github.com/rayhightower/pong-rm)
 
-####Obstacles Handled
+####RubyMotion Gotchas
+I encountered a few RubyMotion snags during development:
+* *Mousover Ingored*. Normally, when running the simulator with RubyMotion, you can mouse over an object in the simulator, hit the command key, and grab a handle to the object.  This behavior was absent in version 1.31 of RubyMotion. The notes for version 1.33 mention that the problem has been solved. However, that was not my experience. 
+* *Touch Events Ignored on Part of Screen*. For some reason, the simulator ignored touch events on the right side of the screen. When I programattically moved the right panel closer to the left side of the screen, both paddles responded to touch events. Searches of Google and Stack Overflow reveal that others have encounterd this problem.
 
-```bash
-Fixed a bug in the simulator mouse-over which could not properly select views if the iOS simulator was rotated.
-```
+Of course, I introduced a few bugs of my own during in development. At one point, the velocity of the ball increased every time a player scored. It made the game exciting, but good developers strive to maintain better control over their projects. I eventually found the problem. When using an NSTimer object to control animation, you have to invalidate the timer at the beginning of each cycle, or the animation will accelerate. That's a good thing to know.
+
+The rest of the work in RubyMotion went well. I look forward to a resolution for the touch event issues mentioned above.
 
 ####Why Play Games?
 Why should a serious developer spend time writing games? I can think of a few reasons:
@@ -55,12 +59,11 @@ Of course, the most important reason was given by a Captain of the USS Enterpris
 ><br/>~James T. Kirk
 
 ####Room for Improvement
-Building the Pong game was an interesting exercise in testing the
-capabilities of RubyMotion. Having gone done the work, I can look back
-and see some areas where the project could be improved. Among them:
+Building the Pong game was an interesting exercise in testing the capabilities of RubyMotion. Having gone done the work, I can look back and see some areas where I could improve the results. For example:
 
 * Automated testing. These proof-of-concept exercises were done without automated testing. What is the best way to apply test driven development to a game? That would be a great subject for a future blog post.
 * Better design. Each exercise looks like something from the 1970s! How would Pong function if it was created in 2013?
+* Better collision detection. I'm using a built-in iOS method to detect ball collisions. The built-in detection works fine with the stationary walls, but not as well with the moving paddles. If I write a future version of Pong, I should also write a custom collision detection method.
 
 ####Comments and Pull Requests
-[My team and I](http://wisdomgroup.com) build business apps for the web and for mobile devices. My gaming experience is limited. If you are a game developer, and if you see anything in my code that could be done better, your ideas are welcome. Feel free to submit a [pull request via GitHub](http://github.com/rayhightower/pong-rm), or you can drop a note in the comments below. Thanks!
+[My team and I](http://wisdomgroup.com) build business apps. My gaming experience is limited. If you are a game developer, and if you see anything in my code that could be done better, your ideas are welcome. Feel free to submit a [pull request via GitHub](http://github.com/rayhightower/pong-rm), or you can drop a note in the comments below. Thanks!
