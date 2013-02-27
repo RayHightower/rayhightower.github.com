@@ -18,17 +18,17 @@ I recently completed the iOS Accelerated course at the [Mobile Makers Academy](h
 * Let one or two players control the paddles via touch.
 <!-- more -->
 ####Questions to Consider
-How do you determine whether the pixels of the ball have collided with the pixels of a paddle? What about wall collisions? When a collision occurs, where should the ball bounce next? Many details to consider. 
+How do you determine whether the pixels of the ball have collided with the pixels of a paddle? What about wall collisions? When a collision occurs, where should the ball bounce next? There are many details to consider. 
 
 ####Building Blocks
-Of course, Don had already taught us the necessary skills in earlier lectures, labs, and homework. It was our job to put the pieces together. 
+Of course, Don had already introduced the necessary skills in earlier lectures, labs, and homework. It was our job to put the pieces together. 
 
 Members of the class paired with each other, sharing solutions and advice. In time we each ended up with a working version of Pong in Objective-C. It's exciting to see a favorite childhood game running in the iOS simulator on your own machine, especially if you built the game yourself.
 
 ####Pong in RubyMotion
-Since my day job revolves around Ruby, I wondered what Pong might look like in [RubyMotion](http://rayhightower.dev/blog/2012/10/29/building-ios-apps-with-ruby-motion/). Here are video clips of my two solutions. The first was written in Objective-C during the Mobile Makers course. The second is my version, written in RubyMotion.
+Since my day job revolves around Ruby, it made sense to re-write the exercise in [RubyMotion](http://rayhightower.dev/blog/2012/10/29/building-ios-apps-with-ruby-motion/). Here are video clips of my two solutions. The first was written in Objective-C during the Mobile Makers course. The second was written in RubyMotion.
 
-<video of  Objective-C version>
+<center><iframe width="560" height="315" src="http://www.youtube.com/embed/han_uk9LDl4?rel=0" frameborder="0" allowfullscreen></iframe></iframe></center>
 
 <video of RubyMotion version>
 
@@ -36,6 +36,12 @@ As expected, the two solutions look similar. Source code is on GitHub:
 
 * [Pong in Objective-C](http://github.com/rayhightower/pong-oc)
 * [Pong in RubyMotion](http://github.com/rayhightower/pong-rm)
+
+####Obstacles Handled
+
+```bash
+Fixed a bug in the simulator mouse-over which could not properly select views if the iOS simulator was rotated.
+```
 
 ####Why Play Games?
 Why should a serious developer spend time writing games? I can think of a few reasons:
@@ -48,5 +54,13 @@ Of course, the most important reason was given by a Captain of the USS Enterpris
 >The more advanced the mind, the greater the need for the simplicity of play.
 ><br/>~James T. Kirk
 
+####Room for Improvement
+Building the Pong game was an interesting exercise in testing the
+capabilities of RubyMotion. Having gone done the work, I can look back
+and see some areas where the project could be improved. Among them:
+
+* Automated testing. These proof-of-concept exercises were done without automated testing. What is the best way to apply test driven development to a game? That would be a great subject for a future blog post.
+* Better design. Each exercise looks like something from the 1970s! How would Pong function if it was created in 2013?
+
 ####Comments and Pull Requests
-I lead a [software team](http://wisdomgroup.com) that builds business apps. My experience with games is limited. If you are a game developer, and if you see anything in my code that could be done better, don't be shy! Feel free to submit a [pull request via GitHub](http://github.com/rayhightower/pong-rm), or you can drop a note in the comments below. Thanks!
+[My team and I](http://wisdomgroup.com) build business apps for the web and for mobile devices. My gaming experience is limited. If you are a game developer, and if you see anything in my code that could be done better, your ideas are welcome. Feel free to submit a [pull request via GitHub](http://github.com/rayhightower/pong-rm), or you can drop a note in the comments below. Thanks!
