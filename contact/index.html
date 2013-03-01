@@ -176,23 +176,6 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
 
   </ul>
 </section>
-
-<section>
-  <h1>Recent Tweets</h1>
-  <ul id="tweets">
-    <li class="loading">Status updating...</li>
-  </ul>
-  <script type="text/javascript">
-    $.domReady(function(){
-      getTwitterFeed("RayHightower", 4, false);
-    });
-  </script>
-  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
-  
-    <p>More tweets: <a href="http://twitter.com/RayHightower">@RayHightower</a></p>
-  
-</section>
-
 <section>
   <h1>Recent Blog Posts</h1>
   <ul id="recent_posts">
@@ -219,6 +202,23 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     
   </ul>
 </section>
+
+<section>
+  <h1>Recent Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("RayHightower", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <p>More tweets: <a href="http://twitter.com/RayHightower">@RayHightower</a></p>
+  
+</section>
+
 <section>
   <h1>Vim</h1>
   <p>I don't always use a modal editor. But when I do, I use <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a>.</p>
