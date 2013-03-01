@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-03-01T11:32:38-06:00</updated>
+  <updated>2013-03-01T12:02:20-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -23,7 +23,7 @@
 
 <h4>Pong in Objective-C</h4>
 
-<p>I recently completed the iOS Accelerated course at the <a href="http://mobilemakers.co/">Mobile Makers Academy</a>. For one of our homework assignments, we were asked to build a version of Pong that runs on iOS. Our instructor, <a href="http://twitter.com/dbora">Don Bora</a>, started us off with some skeleton code in Objective-C. Each student had to take Don's code and:</p>
+<p>I recently completed the <a href="http://mobilemakers.co/ios-accelerated">iOS Accelerated</a> course at the <a href="http://mobilemakers.co/">Mobile Makers Academy</a>. For one of our homework assignments, we were asked to build a version of Pong that runs on iOS. Our instructor, <a href="http://twitter.com/dbora">Don Bora</a>, started us off with some skeleton code in Objective-C. Each student had to take Don's code and:</p>
 
 <ul>
 <li>Add paddles.</li>
@@ -39,13 +39,13 @@
 
 <h4>Questions to Consider</h4>
 
-<p>How do you determine whether the pixels of the ball have collided with the pixels of a paddle? What about wall collisions? When a collision occurs, where should the ball bounce next? There are many details to consider.</p>
+<p>How do you determine whether the pixels of the ball have collided with the pixels of a paddle? What about wall collisions? When a collision occurs, where should the ball bounce next? As with any application, there are many details to consider.</p>
 
 <h4>Building Blocks</h4>
 
 <p>Of course, Don had already introduced the necessary skills in earlier lectures, labs, and homework. It was our job to put the pieces together.</p>
 
-<p>Members of the class paired with each other, sharing solutions and advice. In time we each ended up with a working version of Pong in Objective-C. It's exciting to see a favorite childhood game running in the iOS simulator on your own machine, especially if you built the game yourself.</p>
+<p>Members of the class paired with each other. We shared solutions and advice. In time, we each ended up with a working version of Pong in Objective-C. It's exciting to see a favorite childhood game running in the iOS simulator on your own machine, especially if you built the game yourself.</p>
 
 <h4>Pong in RubyMotion</h4>
 
@@ -72,7 +72,7 @@
 <p>I encountered a few RubyMotion snags during development:</p>
 
 <ul>
-<li><p><em>Mousovers Ingored</em>. Normally, when running the simulator with RubyMotion, you can mouse over an object in the simulator, hit the command key, and grab a handle to the object.  This behavior was absent in landcape mode with version 1.31 of RubyMotion. The release notes for version 1.33 mention that the problem has been solved. However, that was not my experience.</p></li>
+<li><p><em>Mouseovers Ingored</em>. Normally, when running the simulator with RubyMotion, you can mouse over an object in the simulator, hit the command key, and grab a handle to the object.  This behavior was absent in landcape mode with version 1.31 of RubyMotion. The release notes for version 1.33 mention that the problem has been solved. However, that was not my experience.</p></li>
 <li><p><em>Touch Events Ignored on Part of Screen</em>. For some reason, the simulator ignored touch events on the right side of the screen. When I programatically moved the right paddle closer to the left side of the screen, both paddles responded to touch events. Searches of Google and Stack Overflow reveal that others have encounterd the same issue with touch events, especially in landcape mode.</p></li>
 </ul>
 
@@ -94,14 +94,14 @@
 </ul>
 
 
-<p>Of course, the most important reason was given by a Captain of the USS Enterprise NCC-1701:</p>
+<p>Of course, the most important reason was given by a captain of the USS Enterprise NCC-1701:</p>
 
 <blockquote><p>The more advanced the mind, the greater the need for the simplicity of play.
 <br/>~James T. Kirk</p></blockquote>
 
 <h4>Room for Improvement</h4>
 
-<p>Building the Pong game was an interesting exercise in testing the capabilities of RubyMotion. Having gone done the work, I can look back and see some areas where I could improve the results. For example:</p>
+<p>Building the Pong game was an interesting exercise in testing the capabilities of RubyMotion. Having done the work, I can look back and see some areas where I could improve the results. For example:</p>
 
 <ul>
 <li>Automated testing. These proof-of-concept exercises were done without automated testing. What is the best way to apply test driven development to a game? RubyMotion comes with a TDD framework, MacBacon. That would be a great subject for a future blog post.</li>
