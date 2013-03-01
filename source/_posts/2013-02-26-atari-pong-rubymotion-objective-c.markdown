@@ -42,6 +42,7 @@ As expected, the two solutions look similar. Source code is on GitHub:
 I encountered a few RubyMotion snags during development:
 
 * *Mousovers Ingored*. Normally, when running the simulator with RubyMotion, you can mouse over an object in the simulator, hit the command key, and grab a handle to the object.  This behavior was absent in landcape mode with version 1.31 of RubyMotion. The release notes for version 1.33 mention that the problem has been solved. However, that was not my experience. 
+
 * *Touch Events Ignored on Part of Screen*. For some reason, the simulator ignored touch events on the right side of the screen. When I programatically moved the right paddle closer to the left side of the screen, both paddles responded to touch events. Searches of Google and Stack Overflow reveal that others have encounterd the same issue with touch events, especially in landcape mode.
 
 Of course, I introduced a few bugs of my own while developing the Pong game. At one point, the velocity of the ball increased every time a player scored. It made the game exciting! But I didn't know the cause of the acceleration, and good developers strive to maintain better control over their projects. 

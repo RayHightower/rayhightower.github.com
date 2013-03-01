@@ -29,6 +29,6 @@ The RubyMotion devs whom I admire most also know Objective-C. Devs like Matt Aim
 More important than following the masters: Learning from their triumphs and mistakes by reading their code. Developers in 2013 are fortunate to have tools like GitHub where code is shared on a massive scale. Most iOS code is written in Objective-C. If we want to learn from the iOS code that has been written before, we need to know Objective-C.
 
 ####Highly Recommended
-If you want to develop apps for iOS devices, start with *Objective-C Programming: The Big nerd Ranch Guide*. The book is also helpful if you prefer RubyMotion over Objective-C.
+If you want to develop apps for iOS devices, start with *Objective-C Programming: The Big Nerd Ranch Guide*. The book is also helpful if you prefer RubyMotion over Objective-C.
 
 And don't forget your [10,000 Hours of Practice](/blog/2012/09/03/10000-hours-of-practice/).
