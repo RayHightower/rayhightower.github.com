@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Objective-C | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/objective-c/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-03-01T11:12:17-06:00</updated>
+  <updated>2013-03-01T11:16:55-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -115,8 +115,8 @@
 <p>I encountered a few RubyMotion snags during development:</p>
 
 <ul>
-<li><em>Mousovers Ingored</em>. Normally, when running the simulator with RubyMotion, you can mouse over an object in the simulator, hit the command key, and grab a handle to the object.  This behavior was absent in landcape mode with version 1.31 of RubyMotion. The release notes for version 1.33 mention that the problem has been solved. However, that was not my experience.</li>
-<li><em>Touch Events Ignored on Part of Screen</em>. For some reason, the simulator ignored touch events on the right side of the screen. When I programatically moved the right paddle closer to the left side of the screen, both paddles responded to touch events. Searches of Google and Stack Overflow reveal that others have encounterd the same issue with touch events, especially in landcape mode.</li>
+<li><p><em>Mousovers Ingored</em>. Normally, when running the simulator with RubyMotion, you can mouse over an object in the simulator, hit the command key, and grab a handle to the object.  This behavior was absent in landcape mode with version 1.31 of RubyMotion. The release notes for version 1.33 mention that the problem has been solved. However, that was not my experience.</p></li>
+<li><p><em>Touch Events Ignored on Part of Screen</em>. For some reason, the simulator ignored touch events on the right side of the screen. When I programatically moved the right paddle closer to the left side of the screen, both paddles responded to touch events. Searches of Google and Stack Overflow reveal that others have encounterd the same issue with touch events, especially in landcape mode.</p></li>
 </ul>
 
 
