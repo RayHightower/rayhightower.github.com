@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Education | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/education/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-03-01T12:06:20-06:00</updated>
+  <updated>2013-03-02T21:28:59-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Technology and God]]></title>
+    <link href="http://RayHightower.com/blog/2013/03/03/technology-and-god/"/>
+    <updated>2013-03-03T14:00:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2013/03/03/technology-and-god</id>
+    <content type="html"><![CDATA[<p>Reflecting on a quote I just became aware of this week:</p>
+
+<blockquote><p>Technology is a gift of God. After the gift of life it is perhaps the greatest of God's gifts. It is the mother of civilizations, of arts and of sciences.</p>
+
+<p>~Freeman Dyson, English Physicist</p></blockquote>
+
+<p>Well said, Freeman Dyson. Praise God for technology.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Objective-C Programming: The Big Nerd Ranch Guide]]></title>
@@ -242,110 +257,6 @@ because it happened so quickly.</p></li>
 
 
 <p>The developers I admire are always learning. More important: They are strategic about what they learn because learning takes time. Being productive with a highly available editor like Vim means that I don't have to spend time learning a new editor. Instead, I can focus my education in areas that benefit clients directly. That's why I use Vim.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Unix for Ruby Developers]]></title>
-    <link href="http://RayHightower.com/blog/2012/12/24/unix-for-ruby-developers/"/>
-    <updated>2012-12-24T16:50:00-06:00</updated>
-    <id>http://RayHightower.com/blog/2012/12/24/unix-for-ruby-developers</id>
-    <content type="html"><![CDATA[<p><a href="http://workingwithunixprocesses.com/"><img src="http://RayHightower.com/images/working-w-unix-processes.jpg" align="right" width="350" height="266"></a>
-It is gratifying to know that learning something tangentially related to Ruby will, in fact, teach me more about Ruby.</p>
-
-<p><a href="http://workingwithunixprocesses.com/"><em>Working With Unix Processes</em></a>, by Jesse Storimer, is ostensibly about Unix internals. However, in reading this book, I have become more aware of how executables run on my favorite family of operating systems, which in turn gives me more insight into Ruby.</p>
-
-<h3>Passing Arguments</h3>
-
-<p>For example, what happens when we pass arguments to a process, Ruby or otherwise? How do the arguments get there? Storimer offers a 1-line Ruby program called <code>argv.rb</code> that we can use to play with the ARGV array:</p>
-
-<p>``` bash
-~/Code/Ruby/apps/sandbox$ echo 'p ARGV' > argv.rb</p>
-
-<p>~/Code/Ruby/apps/sandbox$ ruby argv.rb what results can we expect here
-["what", "results", "can", "we", "expect", "here"]</p>
-
-<p>~/Code/Ruby/apps/sandbox$</p>
-
-<p>```</p>
-
-<!--more-->
-
-
-<p>Once we have our hands on the ARGV array, we can parse it and manipulate it at will.</p>
-
-<h3>Grokking Forks</h3>
-
-<p>The section on forks contains a lot of mind-bending fun. The author offers some code to explain how forks work, but some concepts are only understandable when we write our own code. I had to write my own in order to raise my comfort level with forks.</p>
-
-<p>Here's what the code does:</p>
-
-<ul>
-<li>In the parent process, <code>fork</code> returns the <code>pid</code> of the child process.</li>
-<li>In the child process, <code>fork</code> returns <code>nil</code>.</li>
-<li>Therefore, the <code>if</code> block should be executed by the parent process...</li>
-<li>...and the <code>else</code> block should be executed by the child process.</li>
-</ul>
-
-
-<p>``` ruby
-puts "Parent process pid (before fork) is #{Process.pid}.\n"</p>
-
-<p>if fork
-  current_process = Process.pid
-  parent_process = Process.ppid
-  printf "Entered the <em>if</em> block during Process #{current_process}."
-  printf "\nThe parent of this process is #{Process.ppid}, which should be bash.\n\n"
-else
-  current_process = Process.pid
-  parent_process = Process.ppid
-  printf "Entered the <em>else</em> block during Process #{current_process}."
-  printf "\nThe parent of this process is #{parent_process}, which should be the original of this process.\n\n"
-end</p>
-
-<p>```</p>
-
-<p>Running the above Ruby code produces the following results:</p>
-
-<p>``` bash
-~/Code/Ruby/apps/sandbox$ ruby forking_around.rb
-Parent process pid (before fork) is 79703.
-Entered the <em>if</em> block during Process 79703.
-The parent of this process is 76751, which should be bash.</p>
-
-<p>Entered the <em>else</em> block during Process 79704.
-The parent of this process is 79703, which should be the original of this process.</p>
-
-<p>```</p>
-
-<p>Digging further: Let's look at the names that correspond to our
-<code>pids</code>.</p>
-
-<p>``` bash
-~/Code/Ruby/apps/sandbox$ ps -p 79703
-  PID TTY           TIME CMD</p>
-
-<p>~/Code/Ruby/apps/sandbox$ ps -p 79704
-  PID TTY           TIME CMD</p>
-
-<p>~/Code/Ruby/apps/sandbox$ ps -p 76751
-  PID TTY           TIME CMD
-76751 ttys003    0:00.40 -bash</p>
-
-<p>~/Code/Ruby/apps/sandbox$
-```</p>
-
-<p>We get zero data for the <code>pids</code> 79703 and 79704 because those processes terminated with the program <code>forking_around.rb</code>. However, 76751 shows <code>bash</code> because bash is still running.</p>
-
-<p>The book is full of rich playground examples that go much deeper than this. Time slips away when I get rolling with this stuff!</p>
-
-<h3>Errata Handling</h3>
-
-<p>The book is new so you can expect a few typos. If you run into problems with sample code, a quick Google search will lead you to the corrected text. For example, early in the book I had problems with a command that returns the maximum number of processes allowed on a system. Turns out there was a typo, and <a href="http://forums.pragprog.com/forums/261/topics/11191">the correction</a> was posted by the author himself on the publisher's errata page.</p>
-
-<h3>Conclusion</h3>
-
-<p>I enjoyed reading <em>Working With Unix Processes</em> because it replaces a belief in "the magic of Unix" with a sound understanding of Unix fundamentals. The book is clear and brief with plenty of examples. The author assumes that readers have at least a basic understanding of Ruby. After that, you only need a command line, IRB, and the willingness to explore.</p>
 ]]></content>
   </entry>
   
