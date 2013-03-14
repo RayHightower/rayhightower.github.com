@@ -37,14 +37,14 @@ Until you put the idea on paper (or some other medium) so you can show it to pot
 ####Keep Going
 Gupta and his brother had an idea. They wanted to create videos about the first wave of Indians to move to America. They approached Hollywood experts about creating the videos.
 
-“You’ll need at least $1 million”, they were told. Much too expensive. Most people fold when facing a million dollar wall.
+"You’ll need at least $1 million," they were told. Much too expensive. Most people fold when facing a million dollar wall.
 
-But Suneel and his brother made their own videos with the equipment they had available. It was not a million-dollar production. But the here’s the upside: When they were done, they had something of substance that they could show to people. They posted their work at [KahaniMovement.com](http://kahanimovement.com). One viewer liked the site enough to send a link to Steven Spielberg.
+But Suneel and his brother made their own videos with the equipment they had available. The videos were not million-dollar productions. But here’s the upside: When they were done, they had something of substance that they could show to people. They posted their work at [KahaniMovement.com](http://kahanimovement.com). One viewer liked the site enough to send a link to Steven Spielberg.
 
 Spielberg viewed the videos and he gave the brothers clear, actionable feedback. They made improvements. And they learned something interesting about Spielberg in the process: Even Spielberg starts with a loose cut sometimes! When Spielberg has a fresh idea that he’s trying to communicate, he will grab a hand-held camera, shoot the idea (no matter how rough) and show it to his team. If a picture is a thousand words, then a video is… you get the idea.
 
 ####Teachers & Parents Ignite Our Passion
-Gupta shared a story about his 7th grade Social Studies class. The class watched a film of JFK delivering his inaugural speech in 1960. Gupta was moved. At the end of the film, the teacher informed that class that JFK had not written the speech. The author was Ted Sorensen, a man whom Kennedy called his _intellectual blood bank_.
+Gupta shared a story about his 7th grade social studies class. The class watched a film of JFK delivering his inaugural speech in 1960. Gupta was moved. At the end of the film, the teacher informed that class that JFK had not written the speech. The author was Ted Sorensen, a man whom Kennedy called his _intellectual blood bank_.
 
 In 7th grade, Gupta had found his calling. He would become a speech writer.
 
