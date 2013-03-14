@@ -45,6 +45,8 @@ I encountered a few RubyMotion snags during development:
 
 * *Touch Events Ignored on Part of Screen*. For some reason, the simulator ignored touch events on the right side of the screen. When I programatically moved the right paddle closer to the left side of the screen, both paddles responded to touch events. Searches of Google and Stack Overflow reveal that others have encounterd the same issue with touch events, especially in landcape mode.
 
+*Update (3/13/2013): The touch events issue has been resolved, thanks to advice from Turki Al-Qusaimi in the comments below.*
+
 Of course, I introduced a few bugs of my own while developing the Pong game. At one point, the velocity of the ball increased every time a player scored. It made the game exciting! But I didn't know the cause of the acceleration, and good developers strive to maintain better control over their projects. 
 
 I eventually found the acceleration problem: When using an NSTimer object to control animation, you have to invalidate the timer at the beginning of each cycle, or the animation will accelerate. That's a useful thing to know.
