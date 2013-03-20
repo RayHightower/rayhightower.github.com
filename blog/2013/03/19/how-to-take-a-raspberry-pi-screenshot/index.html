@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: Vim - RayHightower.com</title>
+  <title>How to Take a Raspberry Pi Screenshot - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="Category: Vim">
+  <meta name="description" content="After you get a Raspberry Pi up and running, you may want to take a few screenshots so you can share the experience with others. Here&#8217;s how. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.comblog/categories/vim/">
+  <link rel="canonical" href="http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -80,50 +80,133 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Vim</h1>
+    
+      <h1 class="entry-title">How to Take a Raspberry Pi Screenshot</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-19T20:43:00-05:00" pubdate data-updated="true">Mar 19<span>th</span>, 2013</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>After you get a <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a> up and running, you may want to take a few screenshots so you can share the experience with others. Here&#8217;s how.</p>
 
-  
-  <h2>2013</h2>
-
-<article>
-  
-<h1><a href="/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim/">Automatic ctags with RubyMotion and Vim</a></h1>
-<time datetime="2013-02-12T19:35:00-06:00" pubdate><span class='month'>Feb</span> <span class='day'>12</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>, <a class='category' href='/blog/categories/rubymotion/'>RubyMotion</a>, <a class='category' href='/blog/categories/vim/'>Vim</a>, <a class='category' href='/blog/categories/ios/'>iOS</a></span>
-</footer>
+<!--more-->
 
 
-</article>
+<h4>Install Scrot</h4>
+
+<p>First, install the screenshot utility, <code>scrot</code>. Open up the LXTerminal
+and type the following at the prompt:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo apt-get install scrot
+</span></code></pre></td></tr></table></div></figure>
 
 
+<h4>Use Scrot</h4>
 
-<article>
-  
-<h1><a href="/blog/2013/01/12/why-i-use-vim/">Why I Use Vim</a></h1>
-<time datetime="2013-01-12T11:07:00-06:00" pubdate><span class='month'>Jan</span> <span class='day'>12</span> <span class='year'>2013</span></time>
+<p>To take a screenshot of the whole screen:</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/education/'>Education</a>, <a class='category' href='/blog/categories/vim/'>Vim</a></span>
-</footer>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo scrot
+</span></code></pre></td></tr></table></div></figure>
 
 
-</article>
+<p>By default, the screenshot will be stored in the current directory in a file named for the numerical date and time with a <code>.png</code> extension.</p>
 
+<p>To take a screenshot after a 10-second delay:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo scrot -d10
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Learn More About Scrot</h4>
+
+<p>To display a list of Scrot commands:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo scrot -h
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&#8217;s it!</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-19T20:43:00-05:00" pubdate data-updated="true">Mar 19<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX</a>, <a class='category' href='/blog/categories/raspberry-pi/'>Raspberry Pi</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot/" data-via="RayHightower" data-counturl="http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/03/13/you-can-do-it-now/" title="Previous Post: You Can Do It Now">&laquo; You Can Do It Now</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -256,7 +339,10 @@
       var disqus_shortname = 'rayhightower';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot/';
+        var disqus_url = 'http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

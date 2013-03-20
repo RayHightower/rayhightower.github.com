@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux-Unix-OSX | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/linux-unix-osx/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-03-17T10:17:14-05:00</updated>
+  <updated>2013-03-19T21:02:19-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,48 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Take a Raspberry Pi Screenshot]]></title>
+    <link href="http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot/"/>
+    <updated>2013-03-19T20:43:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot</id>
+    <content type="html"><![CDATA[<p>After you get a <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a> up and running, you may want to take a few screenshots so you can share the experience with others. Here's how.</p>
+
+<!--more-->
+
+
+<h4>Install Scrot</h4>
+
+<p>First, install the screenshot utility, <code>scrot</code>. Open up the LXTerminal
+and type the following at the prompt:</p>
+
+<p><code>bash
+$ sudo apt-get install scrot
+</code></p>
+
+<h4>Use Scrot</h4>
+
+<p>To take a screenshot of the whole screen:
+<code>bash
+$ sudo scrot
+</code>
+By default, the screenshot will be stored in the current directory in a file named for the numerical date and time with a <code>.png</code> extension.</p>
+
+<p>To take a screenshot after a 10-second delay:
+<code>bash
+$ sudo scrot -d10
+</code></p>
+
+<h4>Learn More About Scrot</h4>
+
+<p>To display a list of Scrot commands:
+<code>bash
+$ sudo scrot -h
+</code>
+That's it!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Automatic ctags with RubyMotion and Vim]]></title>

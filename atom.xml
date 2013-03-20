@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-03-17T10:17:14-05:00</updated>
+  <updated>2013-03-19T21:02:19-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Take a Raspberry Pi Screenshot]]></title>
+    <link href="http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot/"/>
+    <updated>2013-03-19T20:43:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot</id>
+    <content type="html"><![CDATA[<p>After you get a <a href="http://RayHightower.com/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a> up and running, you may want to take a few screenshots so you can share the experience with others. Here&#8217;s how.</p>
+
+<!--more-->
+
+
+<h4>Install Scrot</h4>
+
+<p>First, install the screenshot utility, <code>scrot</code>. Open up the LXTerminal
+and type the following at the prompt:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo apt-get install scrot
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Use Scrot</h4>
+
+<p>To take a screenshot of the whole screen:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo scrot
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>By default, the screenshot will be stored in the current directory in a file named for the numerical date and time with a <code>.png</code> extension.</p>
+
+<p>To take a screenshot after a 10-second delay:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo scrot -d10
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Learn More About Scrot</h4>
+
+<p>To display a list of Scrot commands:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo scrot -h
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&#8217;s it!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[You Can Do It Now]]></title>
@@ -1382,86 +1433,6 @@ dev team!</p>
 are multiple ways to do things, especially when it comes to UI. If you
 have ideas or suggestions for a different approach, feel free to dash
 me a message through the <a href="http://RayHightower.com/contact">Contact Form</a>. Thanks!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Clear Innovation]]></title>
-    <link href="http://RayHightower.com/blog/2012/10/06/clear-innovation/"/>
-    <updated>2012-10-06T22:47:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2012/10/06/clear-innovation</id>
-    <content type="html"><![CDATA[<p>Some organizations are innovative, while others are just lucky. How can you tell the difference? I would submit that longevity is a great divider between true innovators and those who are just lucky. An organization that generates new ideas time after time breaks the statistical rules that define luck. These are the organizations worthy of study.</p>
-
-<!-- more -->
-
-
-<h4>150+ Years of Innovation</h4>
-
-<p>Corning entered the glass business over 150 years ago. At that time, the art of glassmaking had remained largely unchanged since the time of the Roman Empire. Glassmaking was a craft, an art handed down from father to son for generations, and glassmaking techniques were closely guarded secrets.</p>
-
-<p>Corning changed that. Corning introduced science to glassmaking. Over the past century and a half they have experimented extensively and documented thoroughly. The results are glass innovations we see today, such as:</p>
-
-<ul>
-<li>Fiber optic cables that shuttle gigabits of data throughout today’s Internet.</li>
-<li>Large, flat-panel computer displays that use less power than older monitors while reducing eye-strain.</li>
-</ul>
-
-
-<p>To explore innovation at Corning, we’ll take a closer look at a few Corning innovations from the 1800s and 1900s that are still in use today: stones in the glass, the ribbon machine, and joint ventures.</p>
-
-<h4>Stones in the Glass</h4>
-
-<p>Glassmakers melt silicon and pour (or blow) it into molds to create useful shapes. That’s an oversimplification, but it serves the purposes of this article. Glass melts at very high temperatures. One big challenge faced by any glassmaker: building a furnace that won’t melt. If the heat of the molten glass melts the furnace, the product and furnace are both destroyed.</p>
-
-<p>In the early 1900s Corning searched aggressively for a high-temperature furnace material. Researchers believed that new and interesting glass products could be discovered at higher temperatures.</p>
-
-<p>One day, after a fresh batch of glass had cooled, the Corning researchers noticed something disturbing: stones in the glass. Somehow, impurities had crept into the molten glass and when the glass hardened, the impurities were trapped inside.</p>
-
-<h4>Problem or Opportunity?</h4>
-
-<p>The stones in the glass appeared to be a problem until the researchers thought about things from a different perspective. The stones were intact. Whatever the “stones” were made of, they were resilient enough to remain intact while the glass was melted. If the researchers could isolate this material, they might be able to use it to build high-temperature furnaces. The researchers managed to isolate the newly discovered material, and it served as a lining for Corning’s furnaces for many decades after that. Pyrex, the glass that chemists take for granted today, was born in the new high-temperature furnaces.</p>
-
-<h4>General Electric Needed Bulbs</h4>
-
-<p>Thomas Edison’s General Electric Company was an early customer of Corning. Edison needed an enclosure for his new electric lights. Glass seemed to fit the bill.</p>
-
-<p>At the time, glass bulbs for Edison’s new lights were blown by hand. This presented a problem as the demand for light bulbs increased because Corning couldn’t find enough human glass blowers to blow the bulbs fast enough. Further, when humans create simple, specialized products there are always slight variations in quality and dimensions that may render the product unusable.</p>
-
-<p>So the Corning engineers had a new problem to solve. How could they make bulbs faster and with the right dimensions every time?</p>
-
-<h4>Making Light Bulbs</h4>
-
-<p>The Corning engineers first attacked the problem by studying how the glass blowers blew the bulbs. Then they tried to duplicate the human process with machines. The result: Failure.</p>
-
-<h4>Birds vs. Airplanes</h4>
-
-<p>Early airplane designers experienced the same kind of failure when they first tried to fly. They tried to mimic the wings and flapping motion of birds, and the result was failure.</p>
-
-<p>However, the Wright brothers achieved flight because they looked at the problem from a different perspective. Keep the wings still, and move the air with an engine. Birds don’t fly that way. But today, that’s the way that millions of people fly around the world every day. Airplanes don’t mimic birds. They take a different approach, and they fly higher and faster as a result.</p>
-
-<h4>The Ribbon Machine</h4>
-
-<p>Back to making light bulbs. The engineers took a new approach. They threw out everything they knew about light bulb craftsmanship, and they started from scratch. The result was the ribbon machine, a device capable of producing bulbs at the rate of over fifty thousand units per hour. The ribbon machine was Corning’s key machine for making light bulbs for over six decades.</p>
-
-<h4>Human Skills Needed</h4>
-
-<p>Didn’t the ribbon machine put glassblowers out of work? Actually, no. Glassblowers were given other tasks that required special human skills. Through most of the innovations in glass technology, Corning maintained good relationships with the craftsmen and artists who fashioned the glass. Skilled workers in other industries rebelled against innovation because they feared losing their jobs to new machines. Corning’s artisans embraced the new technology because the company had other more advanced tasks for them to perform within the company. The more mundane tasks were relegated to machines.</p>
-
-<h4>Joint Ventures</h4>
-
-<p>Corning competes with glass companies many times its size. The company’s strength lies in its ability to create intellectual property and to profit from it. Other companies recognize this strength and they readily partner with Corning in joint ventures. Dow-Corning and Owens-Corning are two examples. The Corning company figured out how to establish and maintain positive relationships with other companies long before the term “joint venture” was coined.</p>
-
-<p>One reason for Corning’s attractiveness as an innovation partner is their stubborn insistence on investing in research and development, regardless of economic outlook. Many companies look at R&amp;D as something to cut when times get tough. But for Corning, investing in R&amp;D is part of their DNA. As a result, Corning always has something to offer when other firms come looking for a JV partner.</p>
-
-<h4>Conclusion</h4>
-
-<p>The Corning story is remarkable not only because of their recent innovations (fiber optics, LCD panels). Corning has consistently functioned as an innovation factory through two world wars and multiple CEOs. The light bulb, telephone, radio, television, airplane, and computer have all received a boost from Corning’s innovation engine. Corning consistently plays a role in the history of this country and the world. What a powerful source of inspiration.</p>
-
-<h4>Suggested Reading</h4>
-
-<p><em>Corning and the Craft of Innovation</em>, by Margaret B. W. Graham and Alec Shuldiner.</p>
-
-<p><em>Note: A version of this post was originally published at <a href="http://wisdomgroup.com">WisdomGroup.com</a>.</em></p>
 ]]></content>
   </entry>
   
