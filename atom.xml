@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-04-12T13:41:36-05:00</updated>
+  <updated>2013-04-18T20:56:30-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,74 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[New RVM Behavior With .ruby-version]]></title>
+    <link href="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior/"/>
+    <updated>2013-04-18T20:33:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/04/18/new-rvm-behavior</id>
+    <content type="html"><![CDATA[<p>I trust RVM to manage my Ruby versions and my gems. So when I saw an unexpected change in RVM&#8217;s behavior, I was concerned about a possible disruption in my workflow. Here&#8217;s the message I received:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps<span class="nv">$ </span><span class="nb">cd </span>hartl/
+</span><span class='line'>You are using <span class="s1">&#39;.rvmrc&#39;</span>, it requires trusting, it is slower and it is not
+</span><span class='line'>compatible with other ruby managers, you can switch to <span class="s1">&#39;.ruby-version&#39;</span>
+</span><span class='line'>using <span class="s1">&#39;rvm rvmrc to [.]ruby-version&#39;</span> or ignore this warnings with
+</span><span class='line'><span class="s1">&#39;rvm rvmrc warning ignore /Users/rth/Code/Ruby/apps/hartl/.rvmrc&#39;</span>,
+</span><span class='line'><span class="s1">&#39;.rvmrc&#39;</span> will <span class="k">continue </span>to be the default project file in RVM 1 and RVM 2,
+</span><span class='line'>to ignore the warning <span class="k">for </span>all files run
+</span><span class='line'><span class="s1">&#39;rvm rvmrc warning ignore all .rvmrcs&#39;</span>.
+</span><span class='line'>
+</span><span class='line'>Using /Users/rth/.rvm/gems/ruby-1.9.3-p385 with gemset hartl
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/hartl<span class="o">[</span>master<span class="o">]</span><span class="nv">$ </span>rvm --version
+</span><span class='line'>
+</span><span class='line'>rvm 1.19.5 <span class="o">(</span>master<span class="o">)</span> by Wayne E. Seguin &lt;wayneeseguin@gmail.com&gt;,
+</span><span class='line'>Michal Papis &lt;mpapis@gmail.com&gt; <span class="o">[</span>https://rvm.io/<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/hartl<span class="o">[</span>master<span class="o">]</span><span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>My decision: To move go with the flow. If things don&#8217;t work out, I can always remove RVM completely and start from scratch.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps/hartl<span class="o">[</span>master<span class="o">]</span><span class="nv">$ </span>rvm rvmrc to .ruby-version
+</span><span class='line'>
+</span><span class='line'>Using /Users/rth/.rvm/gems/ruby-1.9.3-p385 with gemset hartl
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/hartl<span class="o">[</span>master*<span class="o">]</span><span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And now, instead of a single <code>.rvmrc</code> file, Ruby versions are managed by
+<code>.ruby-versions</code> while gemsets are managed through <code>.ruby-gemset</code>.</p>
+
+<p>Let&#8217;s see how this works out.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Elegant Code]]></title>
@@ -1149,98 +1217,6 @@ Password: raspberry
 <h4>Suggested Reading</h4>
 
 <p><a href="http://www.amazon.com/Long-Revised-Updated-Edition-ebook/dp/B000JMKSE2">The Long Tail</a>, by Chris Anderson. The drastic reduction in the cost of distribution for digital information has far-reaching effects upon our economy. As a result, some businesses will thrive while others will die.</p>
-
-<p><em>Note: A version of this post originally appeared on the <a href="http://wisdomgroup.com">WisdomGroup Blog</a>.</em></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Make Your Competition Irrelevant]]></title>
-    <link href="http://RayHightower.com/blog/2012/11/10/make-your-competition-irrelevant/"/>
-    <updated>2012-11-10T02:55:00-06:00</updated>
-    <id>http://RayHightower.com/blog/2012/11/10/make-your-competition-irrelevant</id>
-    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/assets/blue_ocean_strategy.png" align="right" alt="Blue Ocean Strategy" title="Blue Ocean Strategy"></p>
-
-<h4>Path to Victory</h4>
-
-<p>A skillfully executed business strategy is one path to victory. Many strategy books will tell business owners how to win at the expense of the competition, how to take market share away from the competition, and so on.</p>
-
-<p>The book <em>Blue Ocean Strategy</em> proposes a non-typical path to victory over the competition. According to the authors, following a blue ocean strategy will make your competition irrelevant.</p>
-
-<!--more-->
-
-
-<h4>Competitive Red Oceans</h4>
-
-<p>First, some definitions. The authors divide the business world into two oceans: red and blue. Red oceans are markets where competition is stiff and companies battle fiercely. The ocean is red with the blood of business gladiators who cut each other to shreds with competing offerings. Margins tend to be low because customers have many identical options to choose from. Customers view red ocean products as commodities.</p>
-
-<h4>Undiscovered Blue Oceans</h4>
-
-<p>But blue oceans are undiscovered markets. Blue ocean companies offer products and services that are so full of value that customers pay premium prices for the better value. Competition is scarce (and the water remains blue) because blue ocean markets tend to be new. Few companies have figured out how to find the blue ocean. Customers are pleased because blue ocean offerings contain features beyond those found in typical (red ocean) products. Customers willingly pay higher prices for the increased value found in blue ocean products.</p>
-
-<blockquote><p>Blue ocean products deliver more value, therefore
-customers are willing to pay more
-to have them.</p></blockquote>
-
-<h4>Example: Red Ocean Circus</h4>
-
-<p>Say the word “circus” to a person of a certain age and they will immediately think “Ringling Brothers.” The Ringling Brothers Barnum &amp; Bailey Circus owned the American circus market for decades. Small regional players competed for crumbs. But by the 1980’s, circus audiences were shrinking and even Ringling Brothers had trouble keeping pace. Kids who once begged their parents for circus tickets wanted the latest computer games instead. The market, as a whole, was struggling for new customers and revenue was on the decline.</p>
-
-<p>To make matters worse, expenses were increasing. Animals eat every day and food prices continue to rise. Animals require trainers, and trainers require salaries. Circus “stars” demand star treatment in an industry where the customers, accustomed to Hollywood celebrities, no longer find the stars of the circus impressive.</p>
-
-<p>In short, the circus industry was a red ocean. Revenue was on the decline as costs continued to rise. Profits were squeezed.</p>
-
-<h4>Blue Ocean Circus</h4>
-
-<p>But a Montreal street performer had a bold new idea. Create a new kind of circus. Eliminate animals and eliminate the cost of feeding them. Avoid “star” performers in favor of an ensemble cast including former Olympic athletes. Direct the marketing focus toward a completely new clientele: adults instead of kids. Recognize that adult customers will pay more money for a higher level of entertainment. Build elements of high-end entertainment (such as Broadway theatre) into the new “circus.”</p>
-
-<p>The result: A brand new blue ocean in the form of Cirque du Soleil. The Montreal street performer, Guy Laliberte, achieved billionaire status through his new blue ocean. Another benefit: Customers willingly travel to places like Las Vegas to see Cirque du Soleil. So performers spend less time on the road than they would with a “traditional” circus. Performers enjoy a higher quality of life because they spend less time away from home and more time with their families. Some benefits, like this, are more important than any financial upside.</p>
-
-<h4>Another Red Ocean: Intimidating Wine</h4>
-
-<p>Wine drinkers know that the process appears intimidating and pretentious to the novice buyer. Personally, I know little of the industry jargon: I’ve picked up words like “vintage” and “legs” but beyond that, I’m clueless. And I’m not alone. An Australian wine company, Casella Wines, discovered that millions of prospective customers were as clueless as me.</p>
-
-<blockquote><p>If the market has already been defined by
-your competitors, you are operating in a red ocean.
-Why play a game created and dominated by your competitors? Successful
-blue ocean companies never battle incumbents head-on.
-They re-write the rules.</p></blockquote>
-
-<h4>Blue Ocean: Inviting Wine</h4>
-
-<p>Casella wines decided to challenge the entire industry with a brand new wine, [yellow tail]. Casella could have sold its product to the existing population of wine buyers (red ocean). However, strategists at the company tapped latent demand for wine among non-wine buyers, people who avoided wine because they didn’t want to learn all the mumbo jumbo. People like beer drinkers, a market three times the size of wine drinkers. So [yellow tail] was marketed without all of the typical focus on vintages, years, etcetera.</p>
-
-<p>The result: [yellow tail] discovered a blue ocean of new customers. People who had rarely bought wine before began to buy [yellow tail]. Yes, [yellow tail] wooed customers away from their competitors, but it’s more important to note that they grew the entire wine market. The new brand continues to grow aggressively in an industry previously thought to be mature.</p>
-
-<h4>Red Oceans and Old Rules</h4>
-
-<p>If you’re running an aggressive company, and the market has already been defined by your competitors, you are operating in a red ocean. Who says you need to compete there? Why play a game created and dominated by your competitors? Successful blue ocean companies never battle incumbents head-on. They re-write the rules.</p>
-
-<h4>The Next Blue Ocean: Where?</h4>
-
-<p>If blue oceans are so great, where do we find them? What industries offer the best blue ocean opportunities? Which companies are best at finding blue oceans in existing industries?</p>
-
-<p>Through their study of many industries and companies, the authors learned that there are no permanently excellent companies, and no permanently excellent industries. Blue ocean examples can be found in mature (or presumed dead) industries such as circus entertainment and dinner wine. One key to discovering the next blue ocean is something called value innovation.</p>
-
-<h4>Value Innovation</h4>
-
-<p>Value innovation is delivering a product or service in a manner that is both creative and relevant to the customer.</p>
-
-<p>Value without innovation leads to minor incremental improvement. In the circus example, adding more animals might add value, but only in a same-old-stuff kind of way.</p>
-
-<p>Innovation without value tends to be futuristic. Technology for technology’s sake. Although customers may find the innovation fascinating, they won’t pay for it without value. An example: Personal computers in the 1970’s. PCs were innovative, but they didn’t deliver value until the creation of useful business applications like electronic spreadsheets (Lotus 1-2-3, Microsoft Excel) and email.</p>
-
-<p>Value innovation is a fruitful marriage between value and innovation. It’s delivering something creative that customers care about and will pay for. Value innovation is not necessarily cutting edge. Elements of Cirque du Soleil are seen in other forms of entertainment. [yellow tail] is not the first wine ever sold.</p>
-
-<p>Rather, both of these examples combine value and innovation in creative ways. Each attracts new customers (adults, non-wine drinkers), eliminates things that add no value (animals, intimidation &amp; pretentiousness), and add elements that customers are willing to pay for (drama, fun beverages).</p>
-
-<h4>That’s Not All</h4>
-
-<p>A two-page newsletter cannot cover everything in Blue Ocean Strategy. The authors, W. Chan Kim and Renee Mauborgne, include many more example companies and frameworks for navigating your company to the next blue ocean.</p>
-
-<h4>Caution: Have a Plan</h4>
-
-<p>He who ventures beyond his current red ocean without a plan will wind up in a puddle. The authors caution against pursuing blue oceans based on gut instinct. Have a plan, and wear a life vest!</p>
 
 <p><em>Note: A version of this post originally appeared on the <a href="http://wisdomgroup.com">WisdomGroup Blog</a>.</em></p>
 ]]></content>

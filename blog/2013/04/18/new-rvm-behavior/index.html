@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>How to Take a Raspberry Pi Screenshot - RayHightower.com</title>
+  <title>New RVM Behavior With .ruby-version - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="After you get a Raspberry Pi up and running, you may want to take a few screenshots so you can share the experience with others. Here&#8217;s how. &hellip;">
+  <meta name="description" content="I trust RVM to manage my Ruby versions and my gems. So when I saw an unexpected change in RVM&#8217;s behavior, I was concerned about a possible &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot/">
+  <link rel="canonical" href="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -84,7 +84,7 @@
   
   <header>
     
-      <h1 class="entry-title">How to Take a Raspberry Pi Screenshot</h1>
+      <h1 class="entry-title">New RVM Behavior With .ruby-version</h1>
     
     
       <p class="meta">
@@ -100,56 +100,73 @@
   
 
 
-<time datetime="2013-03-19T20:43:00-05:00" pubdate data-updated="true">Mar 19<span>th</span>, 2013</time>
+<time datetime="2013-04-18T20:33:00-05:00" pubdate data-updated="true">Apr 18<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>After you get a <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a> up and running, you may want to take a few screenshots so you can share the experience with others. Here&#8217;s how.</p>
-
-<!--more-->
-
-
-<h4>Install Scrot</h4>
-
-<p>First, install the screenshot utility, <code>scrot</code>. Open up the LXTerminal
-and type the following at the prompt:</p>
+<div class="entry-content"><p>I trust RVM to manage my Ruby versions and my gems. So when I saw an unexpected change in RVM&#8217;s behavior, I was concerned about a possible disruption in my workflow. Here&#8217;s the message I received:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo apt-get install scrot
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps<span class="nv">$ </span><span class="nb">cd </span>hartl/
+</span><span class='line'>You are using <span class="s1">&#39;.rvmrc&#39;</span>, it requires trusting, it is slower and it is not
+</span><span class='line'>compatible with other ruby managers, you can switch to <span class="s1">&#39;.ruby-version&#39;</span>
+</span><span class='line'>using <span class="s1">&#39;rvm rvmrc to [.]ruby-version&#39;</span> or ignore this warnings with
+</span><span class='line'><span class="s1">&#39;rvm rvmrc warning ignore /Users/rth/Code/Ruby/apps/hartl/.rvmrc&#39;</span>,
+</span><span class='line'><span class="s1">&#39;.rvmrc&#39;</span> will <span class="k">continue </span>to be the default project file in RVM 1 and RVM 2,
+</span><span class='line'>to ignore the warning <span class="k">for </span>all files run
+</span><span class='line'><span class="s1">&#39;rvm rvmrc warning ignore all .rvmrcs&#39;</span>.
+</span><span class='line'>
+</span><span class='line'>Using /Users/rth/.rvm/gems/ruby-1.9.3-p385 with gemset hartl
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/hartl<span class="o">[</span>master<span class="o">]</span><span class="nv">$ </span>rvm --version
+</span><span class='line'>
+</span><span class='line'>rvm 1.19.5 <span class="o">(</span>master<span class="o">)</span> by Wayne E. Seguin &lt;wayneeseguin@gmail.com&gt;,
+</span><span class='line'>Michal Papis &lt;mpapis@gmail.com&gt; <span class="o">[</span>https://rvm.io/<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/hartl<span class="o">[</span>master<span class="o">]</span><span class="err">$</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h4>Use Scrot</h4>
-
-<p>To take a screenshot of the whole screen:</p>
+<p>My decision: To move go with the flow. If things don&#8217;t work out, I can always remove RVM completely and start from scratch.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo scrot
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps/hartl<span class="o">[</span>master<span class="o">]</span><span class="nv">$ </span>rvm rvmrc to .ruby-version
+</span><span class='line'>
+</span><span class='line'>Using /Users/rth/.rvm/gems/ruby-1.9.3-p385 with gemset hartl
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/hartl<span class="o">[</span>master*<span class="o">]</span><span class="err">$</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>By default, the screenshot will be stored in the current directory in a file named for the numerical date and time with a <code>.png</code> extension.</p>
+<p>And now, instead of a single <code>.rvmrc</code> file, Ruby versions are managed by
+<code>.ruby-versions</code> while gemsets are managed through <code>.ruby-gemset</code>.</p>
 
-<p>To take a screenshot after a 10-second delay:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo scrot -d10
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>Learn More About Scrot</h4>
-
-<p>To display a list of Scrot commands:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo scrot -h
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>That&#8217;s it!</p>
+<p>Let&#8217;s see how this works out.</p>
 </div>
 
 
@@ -172,12 +189,12 @@ and type the following at the prompt:</p>
   
 
 
-<time datetime="2013-03-19T20:43:00-05:00" pubdate data-updated="true">Mar 19<span>th</span>, 2013</time>
+<time datetime="2013-04-18T20:33:00-05:00" pubdate data-updated="true">Apr 18<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX</a>, <a class='category' href='/blog/categories/raspberry-pi/'>Raspberry Pi</a>
+    <a class='category' href='/blog/categories/rails/'>Rails</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>
   
 </span>
 
@@ -186,7 +203,7 @@ and type the following at the prompt:</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot/" data-via="RayHightower" data-counturl="http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior/" data-via="RayHightower" data-counturl="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior/" >Tweet</a>
   
   
   
@@ -195,10 +212,8 @@ and type the following at the prompt:</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/03/13/you-can-do-it-now/" title="Previous Post: You Can Do It Now">&laquo; You Can Do It Now</a>
+        <a class="basic-alignment left" href="/blog/2013/04/12/elegant-code/" title="Previous Post: Elegant Code">&laquo; Elegant Code</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/03/25/challenges-make-us-stronger/" title="Next Post: Challenges Make Us Stronger">Challenges Make Us Stronger &raquo;</a>
       
     </p>
   </footer>
@@ -342,8 +357,8 @@ and type the following at the prompt:</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot/';
-        var disqus_url = 'http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot/';
+        var disqus_identifier = 'http://RayHightower.com/blog/2013/04/18/new-rvm-behavior/';
+        var disqus_url = 'http://RayHightower.com/blog/2013/04/18/new-rvm-behavior/';
         var disqus_script = 'embed.js';
       
     (function () {
