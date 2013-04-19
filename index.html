@@ -110,68 +110,14 @@
   </header>
 
 
-  <div class="entry-content"><p>I trust RVM to manage my Ruby versions and my gemsets. So when I saw an unexpected change in RVM&#8217;s behavior, I was concerned about a possible disruption in my workflow. Here&#8217;s the message I received:</p>
+  <div class="entry-content"><p>I trust RVM to manage my Ruby versions and my gemsets. So when I saw an unexpected change in RVM&#8217;s behavior, I was concerned about a possible disruption in my workflow.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps<span class="nv">$ </span><span class="nb">cd </span>hartl/
-</span><span class='line'>You are using <span class="s1">&#39;.rvmrc&#39;</span>, it requires trusting, it is slower and it is not
-</span><span class='line'>compatible with other ruby managers, you can switch to <span class="s1">&#39;.ruby-version&#39;</span>
-</span><span class='line'>using <span class="s1">&#39;rvm rvmrc to [.]ruby-version&#39;</span> or ignore this warnings with
-</span><span class='line'><span class="s1">&#39;rvm rvmrc warning ignore /Users/rth/Code/Ruby/apps/hartl/.rvmrc&#39;</span>,
-</span><span class='line'><span class="s1">&#39;.rvmrc&#39;</span> will <span class="k">continue </span>to be the default project file in RVM 1 and RVM 2,
-</span><span class='line'>to ignore the warning <span class="k">for </span>all files run
-</span><span class='line'><span class="s1">&#39;rvm rvmrc warning ignore all .rvmrcs&#39;</span>.
-</span><span class='line'>
-</span><span class='line'>Using /Users/rth/.rvm/gems/ruby-1.9.3-p385 with gemset hartl
-</span><span class='line'>
-</span><span class='line'>~/Code/Ruby/apps/hartl<span class="o">[</span>master<span class="o">]</span><span class="nv">$ </span>rvm --version
-</span><span class='line'>
-</span><span class='line'>rvm 1.19.5 <span class="o">(</span>master<span class="o">)</span> by Wayne E. Seguin &lt;wayneeseguin@gmail.com&gt;,
-</span><span class='line'>Michal Papis &lt;mpapis@gmail.com&gt; <span class="o">[</span>https://rvm.io/<span class="o">]</span>
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'>~/Code/Ruby/apps/hartl<span class="o">[</span>master<span class="o">]</span><span class="err">$</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>My decision: To move go with the flow. If things don&#8217;t work out, I can always remove RVM completely and start from scratch.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps/hartl<span class="o">[</span>master<span class="o">]</span><span class="nv">$ </span>rvm rvmrc to .ruby-version
-</span><span class='line'>
-</span><span class='line'>Using /Users/rth/.rvm/gems/ruby-1.9.3-p385 with gemset hartl
-</span><span class='line'>
-</span><span class='line'>~/Code/Ruby/apps/hartl<span class="o">[</span>master*<span class="o">]</span><span class="err">$</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And now, instead of a single <code>.rvmrc</code> file, Ruby versions are managed by
-<code>.ruby-version</code> while gemsets are managed through <code>.ruby-gemset</code>.</p>
-
-<p>Let&#8217;s see how this works out.</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/">Continue reading &rarr;</a>
+    </footer>
   
 
 
