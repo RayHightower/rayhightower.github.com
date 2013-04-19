@@ -112,7 +112,9 @@
 <!--more-->
 
 
-<p>Here&#8217;s the message I received:</p>
+<h4>A New RVM Message</h4>
+
+<p>Here&#8217;s the message I received when I changed into <code>mydirectory/</code>:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -137,17 +139,68 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>My decision: To move go with the flow. If things don&#8217;t work out, I can always remove RVM completely and start from scratch.</p>
+<h4>Decision: Do the Update</h4>
+
+<p>My decision: To go with the update. If things don&#8217;t work out, I can always remove RVM completely and start from scratch.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps/hartl<span class="o">[</span>master<span class="o">]</span><span class="nv">$ </span>rvm rvmrc to .ruby-version
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps/mydirectory<span class="o">[</span>master<span class="o">]</span><span class="nv">$ </span>rvm rvmrc to .ruby-version
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>And now, instead of a single <code>.rvmrc</code> file, Ruby versions are managed by
+<p>My shell responded by repeating the <code>.rvmrc</code> vs <code>.ruby-version</code> notice. But when I examine the directory, everything looks good.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>total 56
+</span><span class='line'>drwx---rwx   53 rth  wheel   1802 Apr 19 07:18 .
+</span><span class='line'>drwx---rwx   27 rth  wheel    918 Feb 10 08:26 ..
+</span><span class='line'>-rw-r--r--    1 rth  wheel    175 Feb  4 13:41 .gitignore
+</span><span class='line'>-rw-r--r--@   1 rth  wheel      0 Oct 15  2012 .repl_history
+</span><span class='line'>-rw-r--r--    1 rth  wheel     11 Apr 19 07:18 .ruby-gemset
+</span><span class='line'>-rw-r--r--    1 rth  wheel     16 Apr 19 07:18 .ruby-version
+</span><span class='line'>drwxr-xr-x   10 rth  wheel    340 Feb 14 20:41 AFNetworking-RubyMotion-Example
+</span><span class='line'>drwxr-xr-x   13 rth  wheel    442 Feb 24 17:29 AccordionUIView
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Instead of a single <code>.rvmrc</code> file, Ruby versions are managed by
 <code>.ruby-version</code> while gemsets are managed through <code>.ruby-gemset</code>.</p>
 
-<p>Let&#8217;s see how this works out.</p>
+<h4>Bash Alias</h4>
+
+<p>Next, it&#8217;s time to clean things up by adding an <code>alias</code> to
+<code>~/.bash_profile</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">alias </span><span class="nv">newrvm</span><span class="o">=</span><span class="s2">&quot;rvm rvmrc to .ruby-version&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Tell the terminal session to use the new <code>~/.bash_profile</code> with</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">source</span> ~/.bash_profile
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And now we can begin using <code>.ruby-version</code> and <code>.ruby-gemset</code> in any .rvmrc-equipped directory with a simple one-word command.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>newrvm
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Feedback Welcome</h4>
+
+<p>If you notice any snags (including typos) in the above procedure, please reach out via the comments below or through <a href="http://twitter.com/rayhightower">Twitter</a>.</p>
 </div>
 
 
