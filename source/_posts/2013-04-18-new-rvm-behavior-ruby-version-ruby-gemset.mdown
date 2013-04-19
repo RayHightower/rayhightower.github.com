@@ -5,7 +5,9 @@ date: 2013-04-18 20:33
 comments: true
 categories: [Rails, Ruby]
 ---
-I trust RVM to manage my Ruby versions and my gemsets. So when I saw an unexpected change in RVM's behavior, I was concerned about a possible disruption in my workflow. Here's the message I received:
+I trust [RVM](http://rvm.io) to manage my Ruby versions and my gemsets. So when I saw an unexpected change in RVM's behavior, I was concerned about a possible disruption in my workflow. 
+<!--more-->
+Here's the message I received:
 
 ```bash
 ~/Code/Ruby/apps$ cd hartl/
@@ -17,14 +19,6 @@ using 'rvm rvmrc to [.]ruby-version' or ignore this warnings with
 to ignore the warning for all files run 
 'rvm rvmrc warning ignore all .rvmrcs'.
 
-Using /Users/rth/.rvm/gems/ruby-1.9.3-p385 with gemset hartl
-
-~/Code/Ruby/apps/hartl[master]$ rvm --version
-
-rvm 1.19.5 (master) by Wayne E. Seguin <wayneeseguin@gmail.com>,
-Michal Papis <mpapis@gmail.com> [https://rvm.io/]
-
-
 ~/Code/Ruby/apps/hartl[master]$
 ```
 
@@ -33,9 +27,6 @@ My decision: To move go with the flow. If things don't work out, I can always re
 ```bash
 ~/Code/Ruby/apps/hartl[master]$ rvm rvmrc to .ruby-version
 
-Using /Users/rth/.rvm/gems/ruby-1.9.3-p385 with gemset hartl
-
-~/Code/Ruby/apps/hartl[master*]$
 ```
 
 And now, instead of a single `.rvmrc` file, Ruby versions are managed by
