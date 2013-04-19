@@ -5,7 +5,7 @@ date: 2013-04-18 20:33
 comments: true
 categories: [Rails, Ruby]
 ---
-I trust RVM to manage my Ruby versions and my gems. So when I saw an unexpected change in RVM's behavior, I was concerned about a possible disruption in my workflow. Here's what I saw:
+I trust RVM to manage my Ruby versions and my gems. So when I saw an unexpected change in RVM's behavior, I was concerned about a possible disruption in my workflow. Here's the message I received:
 
 ```bash
 ~/Code/Ruby/apps$ cd hartl/
@@ -28,6 +28,17 @@ Michal Papis <mpapis@gmail.com> [https://rvm.io/]
 ~/Code/Ruby/apps/hartl[master]$
 ```
 
-My decision: To move forward boldly. If things don't work out, I can always remove RVM completely and start from scratch.
+My decision: To move go with the flow. If things don't work out, I can always remove RVM completely and start from scratch.
 
+```bash
+~/Code/Ruby/apps/hartl[master]$ rvm rvmrc to .ruby-version
 
+Using /Users/rth/.rvm/gems/ruby-1.9.3-p385 with gemset hartl
+
+~/Code/Ruby/apps/hartl[master*]$
+```
+
+And now, instead of a single `.rvmrc` file, Ruby versions are managed by
+`.ruby-versions` while gemsets are managed through `.ruby-gemset`.
+
+Let's see how this works out.
