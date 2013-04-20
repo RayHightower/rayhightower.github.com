@@ -54,9 +54,13 @@ For a sample project, let's use `demo_app` from Michael Hartl's [Ruby on
 Rails Tutorial](http://rubyonrailstutorial.com). Imagine that you want
 to find every file in the project that references `user_id`. How would
 you do that?
+<img src="/images/ack_user_id.png" align="center" height="650" width="650" alt="Ack command line demo" title="Ack command line demo">
 
-```bash
-~/Code/demo_app[master]$ ack user_id
+Fast, clear, and highlighted color.
+
+
+```ruby
+~/Code/Ruby/apps/demo_app[master]$ ack user_id
 app/models/micropost.rb
 2:  attr_accessible :content, :user_id
 
@@ -84,13 +88,11 @@ test/functional/microposts_controller_test.rb
 21:      post :create, micropost: { content: @micropost.content, user_id: @micropost.user_id }
 38:    put :update, id: @micropost, micropost: { content: @micropost.content, user_id: @micropost.user_id }
 
-~/Code/demo_app[master]$
+~/Code/Ruby/apps/demo_app[master]$
 ```
 
-Fast. Clear. And in highlighted color!
-
 ####Using Ack With Vim
-Ack.vim is a Vim plugin that lets you...
+Ack.vim is a plugin that lets you perform searches without leaving Vim.
 
 
 ####Fun With Ack
