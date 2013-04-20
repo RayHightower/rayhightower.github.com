@@ -25,12 +25,14 @@ Windows installations are beyond the scope of this article. If you're running Wi
 ####Installing Ack on Mac OS X
 Installing Ack is so easy that it almost feels wrong: Grab Ack in a single Perl file and drop it in your `~/bin/` directory. That's it. 
 
-Ack can also be installed via [Homebrew](http://mxcl.github.io/homebrew/), but I prefer the _drop it in ~/bin_ installation since everything is contained in one file. Here's a more detailed version of the steps:
+Ack can also be installed via [Homebrew](http://homebrew.org), but I
+prefer the _drop it in ~/bin_ installation since everything is
+contained in one file. Here's a more detailed version of the steps:
 
 1. If you don't have one already, create `~/bin/` as a subdirectory of your home directory.
 2. Grab a the single-file copy of Ack from [http://beyondgrep.com/ ](http://beyondgrep.com/)
 3. Drop the single-file copy of Ack into a file called `~/bin/ack`
-4. Make sure that `$HOME/bin:` appears at the beginning of your `$PATH` environment variable.
+4. Make sure that `$HOME/bin` appears at the beginning of your `$PATH` environmental variable.
 
 At this point you should be running Ack v2.0 or later. To verify:
 
