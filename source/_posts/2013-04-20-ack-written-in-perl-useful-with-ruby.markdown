@@ -9,7 +9,7 @@ categories:
 
 [Ack](http://beyondgrep.com/) is an open source command line tool that lets developers search large trees of source code very quickly. If you are looking for a method definition in a haystack of files, Ack will find that needle for you. Many devs regard Ack as a replacement for [grep](http://en.wikipedia.org/wiki/Grep).
 
-The Elmhurst [ChicagoRuby](http://chicagoruby.org) meetings are always a source of unexpected learning. Today we were joined by [Andy Lester](http://twitter.com/petdance), creator of Ack. Andy released Ack 2.0 two days before the meeting. He shared some of the latest features in an impromptu demo.
+The Elmhurst [ChicagoRuby](http://chicagoruby.org) meetings are always a source of unexpected learning. Today ChicagoRuby welcomed [Andy Lester](http://twitter.com/petdance), creator of Ack. Andy released Ack 2.0 two days ago. He shared some of the latest features in an impromptu demo.
 
 <!--more-->
 ####Why Ack?
@@ -17,8 +17,8 @@ Have you ever been working on a project, only to be interrupted when you need to
 
 All of us are more productive when we stay _in the zone_. Ack helps devs to maintain focus and thereby produce better results.
 
-####Installing Perl on Mac OS X
-Ack requires the Perl programming language. Perl comes pre-installed on Mac OS X and most Linux distros. If you're running on a 'nix platform, you probably have Perl already.
+####First, Install Perl
+Ack requires the [Perl](http://en.wikipedia.org/wiki/Perl) programming language. Perl comes pre-installed on Mac OS X and most Linux distros. If you're running on a 'nix platform, you probably have Perl already.
 
 Windows installations are beyond the scope of this article. If you're running Windows, you might consider a Linux VM for Ruby and Rails-related work.
 
@@ -47,17 +47,12 @@ under the terms of the Artistic License v2.0.
 ~/bin$
 ```
 
-Installation complete. Now, let's have some fun with Ack.
-
-####Using Ack With Vim
+Installation complete. Now, let's take Ack for a spin.
 
 ####Using Ack at the Command Line
 
 
-
-
-
-####Ack.Vim
+####Using Ack With Vim
 Ack.vim is a Vim plugin that lets you...
 
 
