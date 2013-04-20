@@ -7,9 +7,9 @@ categories:
 ---
 <img src="/images/ack.png" align="right" height="237" width="230" alt="Ack Linux Mac OS X" title="Ack Linux Mac OS X">
 
-Ack is a command line tool that lets developers search large trees of source code very quickly. If you are looking for a method definition in a haystack of files, Ack will find the needle for you.
+[Ack](http://beyondgrep.com/) is a command line tool that lets developers search large trees of source code very quickly. If you are looking for a method definition in a haystack of files, Ack will find the needle for you. Many devs regard Ack as a replacement for [grep](http://en.wikipedia.org/wiki/Grep).
 
-The Elmhurst [ChicagoRuby](http://chicagoruby.org) meetings are always a source of unexpected learning. The Saturday meetings are small and unstructured, with plenty of room for surprises. Today we were joined by [Andy Lester](http://twitter.com/petdance), creator of [Ack](http://beyondgrep.com/). Andy released Act v 2.0 two days before the meeting, and he shared some of the latest features in an impromptu demo.
+The Elmhurst [ChicagoRuby](http://chicagoruby.org) meetings are always a source of unexpected learning. Today we were joined by [Andy Lester](http://twitter.com/petdance), creator of Ack. Andy released Act v 2.0 two days before the meeting. He shared some of the latest features in an impromptu demo.
 
 <!--more-->
 ####Installing Perl on Mac OS X
@@ -49,6 +49,16 @@ Now, let's have some fun with Ack.
 ####Using Ack at the Command Line
 
 
+
+
+####Why Ack?
+When you're working on a project, maintaining focus is priceless. Have
+you every been working on a project, only to be interrupted when you
+have to look for something? A minor distraction can 
+
+
+####Ack.Vim
+Ack.vim is a Vim plugin that lets you...
 
 
 
