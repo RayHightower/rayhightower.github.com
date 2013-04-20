@@ -7,11 +7,16 @@ categories:
 ---
 <img src="/images/ack.png" align="right" height="237" width="230" alt="Ack Linux Mac OS X" title="Ack Linux Mac OS X">
 
-[Ack](http://beyondgrep.com/) is a command line tool that lets developers search large trees of source code very quickly. If you are looking for a method definition in a haystack of files, Ack will find that needle for you. Many devs regard Ack as a replacement for [grep](http://en.wikipedia.org/wiki/Grep).
+[Ack](http://beyondgrep.com/) is an open source command line tool that lets developers search large trees of source code very quickly. If you are looking for a method definition in a haystack of files, Ack will find that needle for you. Many devs regard Ack as a replacement for [grep](http://en.wikipedia.org/wiki/Grep).
 
 The Elmhurst [ChicagoRuby](http://chicagoruby.org) meetings are always a source of unexpected learning. Today we were joined by [Andy Lester](http://twitter.com/petdance), creator of Ack. Andy released Act v 2.0 two days before the meeting. He shared some of the latest features in an impromptu demo.
 
 <!--more-->
+####Why Ack?
+Have you ever been working on a project, only to be interrupted when you need to look for something? It could be a method name, a variable declaration, or a string of text in a comment. A minor distraction costs you the time it takes to search plus the time required to re-focus.
+
+All of us are more productive when we stay _in the zone_. Ack helps devs to maintain focus and thereby produce better results.
+
 ####Installing Perl on Mac OS X
 Ack requires the Perl programming language. Perl comes pre-installed on Mac OS X and most Linux distros. If you're running on a 'nix platform, you already have Perl.
 
@@ -42,7 +47,7 @@ under the terms of the Artistic License v2.0.
 ~/bin$
 ```
 
-Now, let's have some fun with Ack.
+Installation complete. Now, let's have some fun with Ack.
 
 ####Using Ack With Vim
 
@@ -51,14 +56,24 @@ Now, let's have some fun with Ack.
 
 
 
-####Why Ack?
-When you're working on a project, maintaining focus is priceless. Have
-you every been working on a project, only to be interrupted when you
-have to look for something? A minor distraction can 
-
 
 ####Ack.Vim
 Ack.vim is a Vim plugin that lets you...
 
 
+####Fun With Ack
+The creator of Ack has a sense of humor, as evidenced by the [Bloom County]() reference:
+
+```bash
+~/bin$ ack --thpppt
+_   /|
+\'o.O'
+=(___)=
+   U    ack --thpppt!
+
+~/bin$
+```
+
+####The Bottom Line
+Ack helps devs to find things quicker without leaving the zone. Try it!
 
