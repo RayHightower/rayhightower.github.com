@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ack: Written in Perl, Useful With Ruby"
+title: "Ack 2.0: Written in Perl, Useful With Ruby"
 date: 2013-04-20 17:12
 comments: true
 categories: 
@@ -9,7 +9,7 @@ categories:
 
 [Ack](http://beyondgrep.com/) is an open source command line tool that lets developers search large trees of source code very quickly. If you are looking for a method definition in a haystack of files, Ack will find that needle for you. Many devs regard Ack as a replacement for [grep](http://en.wikipedia.org/wiki/Grep).
 
-The Elmhurst [ChicagoRuby](http://chicagoruby.org) meetings are always a source of unexpected learning. Today we were joined by [Andy Lester](http://twitter.com/petdance), creator of Ack. Andy released Act v 2.0 two days before the meeting. He shared some of the latest features in an impromptu demo.
+The Elmhurst [ChicagoRuby](http://chicagoruby.org) meetings are always a source of unexpected learning. Today we were joined by [Andy Lester](http://twitter.com/petdance), creator of Ack. Andy released Ack 2.0 two days before the meeting. He shared some of the latest features in an impromptu demo.
 
 <!--more-->
 ####Why Ack?
