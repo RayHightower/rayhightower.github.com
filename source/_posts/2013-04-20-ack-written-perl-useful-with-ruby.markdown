@@ -7,7 +7,7 @@ categories:
 ---
 <img src="/images/ack.png" align="right" height="237" width="230" alt="Ack Linux Mac OS X" title="Ack Linux Mac OS X">
 
-[Ack](http://beyondgrep.com/) is a command line tool that lets developers search large trees of source code very quickly. If you are looking for a method definition in a haystack of files, Ack will find the needle for you. Many devs regard Ack as a replacement for [grep](http://en.wikipedia.org/wiki/Grep).
+[Ack](http://beyondgrep.com/) is a command line tool that lets developers search large trees of source code very quickly. If you are looking for a method definition in a haystack of files, Ack will find that needle for you. Many devs regard Ack as a replacement for [grep](http://en.wikipedia.org/wiki/Grep).
 
 The Elmhurst [ChicagoRuby](http://chicagoruby.org) meetings are always a source of unexpected learning. Today we were joined by [Andy Lester](http://twitter.com/petdance), creator of Ack. Andy released Act v 2.0 two days before the meeting. He shared some of the latest features in an impromptu demo.
 
@@ -22,12 +22,12 @@ Installing Ack is so easy that it almost feels wrong: Grab Ack in a single Perl 
 
 Here's a more detailed version of the steps:
 
-# If you don't have one already, create `~/bin/` as a subdirectory of your home directory.
-# Grab a the single-file copy of Ack from [http://beyondgrep.com/ ](http://beyondgrep.com/)
-# Drop the single-file copy of Ack into a file called `~/bin/ack`
-# Make sure that `$HOME/bin` appears at the beginning of your `$PATH` environmental variable.
+1. If you don't have one already, create `~/bin/` as a subdirectory of your home directory.
+2. Grab a the single-file copy of Ack from [http://beyondgrep.com/ ](http://beyondgrep.com/)
+3. Drop the single-file copy of Ack into a file called `~/bin/ack`
+4. Make sure that `$HOME/bin` appears at the beginning of your `$PATH` environmental variable.
 
-As of this writing, you should be running Ack v2.0. To verify:
+At this point you should be running Ack v2.0 or later. To verify:
 
 ```bash
 ~/bin$ ack --version
