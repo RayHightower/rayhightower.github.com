@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux-Unix-OSX | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/linux-unix-osx/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-04-20T19:15:07-05:00</updated>
+  <updated>2013-04-20T19:24:37-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,81 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ack 2.0: Written in Perl, Useful With Ruby]]></title>
+    <link href="http://RayHightower.com/blog/2013/04/20/ack-written-in-perl-useful-with-ruby/"/>
+    <updated>2013-04-20T17:12:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/04/20/ack-written-in-perl-useful-with-ruby</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/ack.png" align="right" height="237" width="230" alt="Ack Linux Mac OS X" title="Ack Linux Mac OS X"></p>
+
+<p><a href="http://beyondgrep.com/">Ack</a> is an open source command line tool that lets developers search large trees of source code very quickly. If you are looking for a method definition in a haystack of files, Ack will find that needle for you. Many devs regard Ack as a replacement for <a href="http://en.wikipedia.org/wiki/Grep">grep</a>.</p>
+
+<p>The Elmhurst <a href="http://chicagoruby.org">ChicagoRuby</a> meetings are always a source of unexpected learning. Today ChicagoRuby welcomed <a href="http://twitter.com/petdance">Andy Lester</a>, creator of Ack. Andy released Ack 2.0 two days ago. He shared some of the latest features in an impromptu demo.</p>
+
+<!--more-->
+
+
+<h4>Why Ack?</h4>
+
+<p>Have you ever been working on a project, only to be interrupted when you need to look for something? It could be a method name, a variable declaration, or a string of text in a comment. A minor distraction costs you the time it takes to search plus the time required to re-focus.</p>
+
+<p>All of us are more productive when we stay <em>in the zone</em>. Ack helps devs to maintain focus and thereby produce better results.</p>
+
+<h4>First, Install Perl</h4>
+
+<p>Ack requires the <a href="http://en.wikipedia.org/wiki/Perl">Perl</a> programming language. Perl comes pre-installed on Mac OS X and most Linux distros. If you're running on a 'nix platform, you probably have Perl already.</p>
+
+<p>Windows installations are beyond the scope of this article. If you're running Windows, you might consider a Linux VM for Ruby and Rails-related work.</p>
+
+<h4>Installing Ack on Mac OS X</h4>
+
+<p>Installing Ack is so easy that it almost feels wrong: Grab Ack in a single Perl file and drop it in your <code>~/bin/</code> directory. That's it.</p>
+
+<p>Ack can also be installed via <a href="http://mxcl.github.io/homebrew/">Homebrew</a>, but I prefer the <em>drop it in ~/bin</em> installation since everything is contained in one file. Here's a more detailed version of the steps:</p>
+
+<ol>
+<li>If you don't have one already, create <code>~/bin/</code> as a subdirectory of your home directory.</li>
+<li>Grab a the single-file copy of Ack from <a href="http://beyondgrep.com/">http://beyondgrep.com/ </a></li>
+<li>Drop the single-file copy of Ack into a file called <code>~/bin/ack</code></li>
+<li>Make sure that <code>$HOME/bin:</code> appears at the beginning of your <code>$PATH</code> environment variable.</li>
+</ol>
+
+
+<p>At this point you should be running Ack v2.0 or later. To verify:</p>
+
+<p>```bash
+~/bin$ ack --version
+ack 2.02 (git commit f3c8827)
+Running under Perl 5.12.4 at /usr/bin/perl</p>
+
+<p>Copyright 2005-2013 Andy Lester.</p>
+
+<p>This program is free software.  You may modify or distribute it
+under the terms of the Artistic License v2.0.</p>
+
+<p>~/bin$
+```</p>
+
+<p>Installation complete. Now, let's take Ack for a spin.</p>
+
+<h4>Using Ack at the Command Line</h4>
+
+<p>For a sample project, let's use <code>demo_app</code> from Michael Hartl's <a href="http://rubyonrailstutorial.com">Ruby on
+Rails Tutorial</a>. Imagine that you want
+to find every file in the project that references <code>user_id</code>. How would
+you do that?
+<img src="http://RayHightower.com/images/ack_user_id.png" align="center" height="650" width="887" alt="Ack command line demo" title="Ack command line demo"></p>
+
+<p>Fast, clear, and highlighted in color. Bonus: If you're a Vim user,
+try <a href="https://github.com/mileszs/ack.vim">ack.vim</a> if you want to run Ack
+without leaving your editor.</p>
+
+<h4>The Bottom Line</h4>
+
+<p>Ack helps devs to find things quicker without leaving the zone. Try it!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Take a Raspberry Pi Screenshot]]></title>
