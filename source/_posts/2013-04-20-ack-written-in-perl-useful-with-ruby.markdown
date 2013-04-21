@@ -57,7 +57,7 @@ you do that?
 <img src="/images/ack_user_id.png" align="center" height="650" width="887" alt="Ack command line demo" title="Ack command line demo">
 
 Fast, clear, and highlighted in color. Bonus: If you're a Vim user,
-check out [ack.vim](https://github.com/mileszs/ack.vim) to run Ack
+try [ack.vim](https://github.com/mileszs/ack.vim) if you want to run Ack
 without leaving your editor.
 
 ####The Bottom Line
