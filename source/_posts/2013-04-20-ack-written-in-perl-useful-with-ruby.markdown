@@ -54,59 +54,11 @@ For a sample project, let's use `demo_app` from Michael Hartl's [Ruby on
 Rails Tutorial](http://rubyonrailstutorial.com). Imagine that you want
 to find every file in the project that references `user_id`. How would
 you do that?
-<img src="/images/ack_user_id.png" align="center" height="650" width="650" alt="Ack command line demo" title="Ack command line demo">
+<img src="/images/ack_user_id.png" align="center" height="650" width="887" alt="Ack command line demo" title="Ack command line demo">
 
-Fast, clear, and highlighted color.
-
-
-```ruby
-~/Code/Ruby/apps/demo_app[master]$ ack user_id
-app/models/micropost.rb
-2:  attr_accessible :content, :user_id
-
-app/views/microposts/_form.html.erb
-19:    <%= f.label :user_id %><br />
-20:    <%= f.number_field :user_id %>
-
-app/views/microposts/index.html.erb
-15:    <td><%= micropost.user_id %></td>
-
-app/views/microposts/show.html.erb
-10:  <%= @micropost.user_id %>
-
-db/migrate/20130420013846_create_microposts.rb
-5:      t.integer :user_id
-
-db/schema.rb
-18:    t.integer  "user_id"
-
-test/fixtures/microposts.yml
-5:  user_id: 1
-9:  user_id: 1
-
-test/functional/microposts_controller_test.rb
-21:      post :create, micropost: { content: @micropost.content, user_id: @micropost.user_id }
-38:    put :update, id: @micropost, micropost: { content: @micropost.content, user_id: @micropost.user_id }
-
-~/Code/Ruby/apps/demo_app[master]$
-```
-
-####Using Ack With Vim
-Ack.vim is a plugin that lets you perform searches without leaving Vim.
-
-
-####Fun With Ack
-The creator of Ack has a sense of humor, as evidenced by the [Bloom County](http://www.berkeleybreathed.com/pages/About.asp) reference:
-
-```bash
-~/bin$ ack --thpppt
-_   /|
-\'o.O'
-=(___)=
-   U    ack --thpppt!
-
-~/bin$
-```
+Fast, clear, and highlighted in color. Bonus: If you're a Vim user,
+check out [ack.vim](https://github.com/mileszs/ack.vim) to run Ack
+without leaving your editor.
 
 ####The Bottom Line
 Ack helps devs to find things quicker without leaving the zone. Try it!
