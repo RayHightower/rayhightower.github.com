@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-04-19T08:06:05-05:00</updated>
+  <updated>2013-04-20T19:15:07-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,91 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ack 2.0: Written in Perl, Useful With Ruby]]></title>
+    <link href="http://RayHightower.com/blog/2013/04/20/ack-written-in-perl-useful-with-ruby/"/>
+    <updated>2013-04-20T17:12:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/04/20/ack-written-in-perl-useful-with-ruby</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/ack.png" align="right" height="237" width="230" alt="Ack Linux Mac OS X" title="Ack Linux Mac OS X"></p>
+
+<p><a href="http://beyondgrep.com/">Ack</a> is an open source command line tool that lets developers search large trees of source code very quickly. If you are looking for a method definition in a haystack of files, Ack will find that needle for you. Many devs regard Ack as a replacement for <a href="http://en.wikipedia.org/wiki/Grep">grep</a>.</p>
+
+<p>The Elmhurst <a href="http://chicagoruby.org">ChicagoRuby</a> meetings are always a source of unexpected learning. Today ChicagoRuby welcomed <a href="http://twitter.com/petdance">Andy Lester</a>, creator of Ack. Andy released Ack 2.0 two days ago. He shared some of the latest features in an impromptu demo.</p>
+
+<!--more-->
+
+
+<h4>Why Ack?</h4>
+
+<p>Have you ever been working on a project, only to be interrupted when you need to look for something? It could be a method name, a variable declaration, or a string of text in a comment. A minor distraction costs you the time it takes to search plus the time required to re-focus.</p>
+
+<p>All of us are more productive when we stay <em>in the zone</em>. Ack helps devs to maintain focus and thereby produce better results.</p>
+
+<h4>First, Install Perl</h4>
+
+<p>Ack requires the <a href="http://en.wikipedia.org/wiki/Perl">Perl</a> programming language. Perl comes pre-installed on Mac OS X and most Linux distros. If you&#8217;re running on a &#8216;nix platform, you probably have Perl already.</p>
+
+<p>Windows installations are beyond the scope of this article. If you&#8217;re running Windows, you might consider a Linux VM for Ruby and Rails-related work.</p>
+
+<h4>Installing Ack on Mac OS X</h4>
+
+<p>Installing Ack is so easy that it almost feels wrong: Grab Ack in a single Perl file and drop it in your <code>~/bin/</code> directory. That&#8217;s it.</p>
+
+<p>Ack can also be installed via <a href="http://mxcl.github.io/homebrew/">Homebrew</a>, but I prefer the <em>drop it in ~/bin</em> installation since everything is contained in one file. Here&#8217;s a more detailed version of the steps:</p>
+
+<ol>
+<li>If you don&#8217;t have one already, create <code>~/bin/</code> as a subdirectory of your home directory.</li>
+<li>Grab a the single-file copy of Ack from <a href="http://beyondgrep.com/">http://beyondgrep.com/ </a></li>
+<li>Drop the single-file copy of Ack into a file called <code>~/bin/ack</code></li>
+<li>Make sure that <code>$HOME/bin:</code> appears at the beginning of your <code>$PATH</code> environment variable.</li>
+</ol>
+
+
+<p>At this point you should be running Ack v2.0 or later. To verify:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/bin<span class="nv">$ </span>ack --version
+</span><span class='line'>ack 2.02 <span class="o">(</span>git commit f3c8827<span class="o">)</span>
+</span><span class='line'>Running under Perl 5.12.4 at /usr/bin/perl
+</span><span class='line'>
+</span><span class='line'>Copyright 2005-2013 Andy Lester.
+</span><span class='line'>
+</span><span class='line'>This program is free software.  You may modify or distribute it
+</span><span class='line'>under the terms of the Artistic License v2.0.
+</span><span class='line'>
+</span><span class='line'>~/bin<span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Installation complete. Now, let&#8217;s take Ack for a spin.</p>
+
+<h4>Using Ack at the Command Line</h4>
+
+<p>For a sample project, let&#8217;s use <code>demo_app</code> from Michael Hartl&#8217;s <a href="http://rubyonrailstutorial.com">Ruby on
+Rails Tutorial</a>. Imagine that you want
+to find every file in the project that references <code>user_id</code>. How would
+you do that?
+<img src="http://RayHightower.com/images/ack_user_id.png" align="center" height="650" width="887" alt="Ack command line demo" title="Ack command line demo"></p>
+
+<p>Fast, clear, and highlighted in color. Bonus: If you&#8217;re a Vim user,
+try <a href="https://github.com/mileszs/ack.vim">ack.vim</a> if you want to run Ack
+without leaving your editor.</p>
+
+<h4>The Bottom Line</h4>
+
+<p>Ack helps devs to find things quicker without leaving the zone. Try it!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[New RVM Behavior With .ruby-version and .ruby-gemset]]></title>
@@ -1166,94 +1251,6 @@ Password: raspberry
 <p>Raspberry Pi will never replace my primary machine because it&#8217;s too slow. But it is certainly fast enough for learning. It meets the goals set forth by the engineering team.</p>
 
 <p>I am excited by the learning opportunities offered by Raspberry Pi. To the Raspberry Pi Foundation: Thank you for an impressive device. I wish you much success.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Long Tail Opportunities]]></title>
-    <link href="http://RayHightower.com/blog/2012/11/19/long-tail-opportunities/"/>
-    <updated>2012-11-19T06:58:00-06:00</updated>
-    <id>http://RayHightower.com/blog/2012/11/19/long-tail-opportunities</id>
-    <content type="html"><![CDATA[<p>You are already familiar with the <a href="http://en.wikipedia.org/wiki/80/20_rule">80/20 rule</a>. In the late 1800s an Italian economist discovered that 80% of the wealth in his country was owned by 20% of the people. More recently we find that the 80/20 rule applies in other areas of our lives. Professional service firms find that eighty percent of the revenue comes from twenty percent of the clients. Merchants find that eighty percent of sales comes from twenty percent of the products. Winners at the very top of any field tend to win by a large margin.</p>
-
-<!--more-->
-
-
-<p></p>
-
-<h4>Another View of the 80/20 Rule</h4>
-
-<p><a href="http://www.thelongtail.com/about.html">The Long Tail</a> by Chris Anderson offers another way to look at the 80/20 rule. Our business example: A book store. The graph below shows book sales ranked by sales volume. Best-sellers are on the left side of the chart (in green) while slower sellers fill in the curve toward the right. Since shelf space is limited and expensive, the store only carries the most popular books along the left side of the chart. Smart application of the 80/20 rule, right? Maybe.</p>
-
-<p><img src="http://RayHightower.com/assets/TheLongTail.png" align="center" alt="The Long Tail" title="The Long Tail"></p>
-
-<h4>The Long Tail: Everything Else</h4>
-
-<p>High-volume books sell much more than other books. High-volume books (the short head) are the 20 percent that generate 80 percent of the revenue. The Long Tail is made up of everything else.</p>
-
-<p>When a book store chooses to carry 20% of the available titles, how do they decide which 20% to carry? How do they predict the hits in advance?</p>
-
-<p>Answer: They can&#8217;t. Sometimes a sure hit fizzles into a dud, while a &#8220;sleeper&#8221; rockets to the best-seller list. A similar problem is faced by movie distributors, retail stores, and other businesses. How do you profit from hits that you cannot predict?</p>
-
-<h4>The Long Tail in 1897</h4>
-
-<p>Sears, Roebuck &amp; Co. is one of the oldest Long Tail companies in the USA. If you wanted to buy a product in late 1800&#8217;s America, you would visit the general store. Most Americans lived on farms at that time, so visiting the store meant riding into town. Product selection was limited to the items on the store shelf. Shopping for a better price meant traveling to the next town &#8211; a tough journey in the days before automobiles.</p>
-
-<p>Sears entered the scene in 1897. Launching in the middle of the railroad boom gave Sears access to a cheap delivery system for both suppliers and customers. Efficient warehouses located at the country&#8217;s busiest railroad hub, Chicago, maximized their distribution leverage. The result: The cozy general store system was disrupted by the Sears catalog, 786-pages filled with more products and better prices.</p>
-
-<p>Note that the Sears catalog did not put the general store completely out of business. Impulse buyers still shopped at the general store. But Sears certainly shook things up by making Long Tail products available for everybody.</p>
-
-<h4>The Long Tail in 1994</h4>
-
-<p>In 1994 a math geek named Jeff Bezos was reviewing Internet investment opportunities. Bezos observed that book sellers were expanding their physical stores, but none were expanding on the web. He smelled an opportunity. Bezos believed that a new distribution system (the web) could make a wider selection (the Long Tail) available to the world. Amazon.com was born.</p>
-
-<p>Sears launched in the middle of the railroad boom, and Bezos launched Amazon.com in the middle of the first Internet boom. Sears benefited from inexpensive distribution via railroads, while Amazon distributes its catalog virtually free via the web. Great business ideas often repeat themselves.</p>
-
-<h4>The Long Tail Today</h4>
-
-<p>Do you remember record stores? Record stores had a problem &#8211; limited shelf space. Store managers had to figure out which records to stock by predicting (in advance) which records would sell best &#8211; the 80/20 rule again.</p>
-
-<p>Some people argue that record stores were destroyed by free music downloads. However, &#8220;free&#8221; was only part of the problem. The bigger challenge came from the wider selection (Long Tail) offered through music downloads. In January 2009, Apple announced that over six billion songs had been downloaded through iTunes at 99 cents each. Apple&#8217;s distribution costs are virtually zero thanks to iTunes.</p>
-
-<p>Apple found abundant opportunities in the Long Tail of music distribution. Video entertainment is next.</p>
-
-<h4>What About the Crud?</h4>
-
-<p>Some argue that there is a reason why some products are in the Long Tail instead of the short head: If you consider the entire spectrum of any product type, a large percentage of it is crud. The music industry is one example. True, the &#8220;better&#8221; music gets recorded by a large music studio or played on radio stations. But the Long Tail is full of music that never made it that far &#8211; from the amateur taking his first lesson to the garage band with great musical skills and bad marketing.</p>
-
-<p>Of course, one person&#8217;s crud is another person&#8217;s masterpiece. Musical tastes vary widely. The Long Tail works in the digital music business because it makes tiny niches of music available to people who want them.</p>
-
-<h4>The Long Tail Future</h4>
-
-<p>Given the success of Long Tail companies (like Sears, Amazon, and Apple) one might wonder if there are any Long Tail opportunities left in our economy. The answer is yes! Anderson argues that a Long Tail company needs to do two things to succeed:</p>
-
-<ol>
-<li>Make a wide selection available, from the short head and the Long Tail.</li>
-<li>Help customers find what they want.</li>
-</ol>
-
-
-<h4>Everything, Easy to Find</h4>
-
-<p>If you make everything available, customers could become annoyed if they have to sift through it. So we have to make it easy for them to find exactly what they want.</p>
-
-<p>Sears made everything available through railroads, and they solved the sifting problem with the Sears catalog. The catalog served as a convenient way for customers to find the products they wanted.</p>
-
-<p>Amazon&#8217;s recommendation software is wonderful &#8211; unless you&#8217;re a customer trying to save money! The engine examines a customer&#8217;s past purchases and uses that information to suggest future purchases. Human clerks have done the same thing for centuries. But Amazon&#8217;s software does it faster with  zero vacation days.</p>
-
-<p>Apple makes everything available and easily searchable through iTunes.</p>
-
-<h4>Conclusion</h4>
-
-<p>History shows that Long Tail opportunities tend to coincide with the introduction of disruptive technologies. Railroads and the Internet are two examples. Sears could not have existed in catalog form before railroads. Amazon could not have offered the long tail of book selection without the Internet. In both cases, the advent of a faster &amp; cheaper distribution system was a catalyst for a powerful new business model.</p>
-
-<p>Are there any Long Tail opportunities left in today&#8217;s marketplace? Yes. And the next Long Tail enterprise might be launched by you.</p>
-
-<h4>Suggested Reading</h4>
-
-<p><a href="http://www.amazon.com/Long-Revised-Updated-Edition-ebook/dp/B000JMKSE2">The Long Tail</a>, by Chris Anderson. The drastic reduction in the cost of distribution for digital information has far-reaching effects upon our economy. As a result, some businesses will thrive while others will die.</p>
-
-<p><em>Note: A version of this post originally appeared on the <a href="http://wisdomgroup.com">WisdomGroup Blog</a>.</em></p>
 ]]></content>
   </entry>
   
