@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-04-26T16:07:58-05:00</updated>
+  <updated>2013-05-04T00:28:54-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Ack 2.0: Written in Perl, Useful With Ruby]]></title>
     <link href="http://RayHightower.com/blog/2013/04/20/ack-written-in-perl-useful-with-ruby/"/>
-    <updated>2013-04-20T17:12:00-05:00</updated>
+    <updated>2013-04-20T17:12:00-06:00</updated>
     <id>http://RayHightower.com/blog/2013/04/20/ack-written-in-perl-useful-with-ruby</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/ack.png" align="right" height="237" width="230" alt="Ack Linux Mac OS X" title="Ack Linux Mac OS X"></p>
 
@@ -91,7 +91,7 @@ without leaving your editor.</p>
   <entry>
     <title type="html"><![CDATA[New RVM Behavior With .ruby-version and .ruby-gemset]]></title>
     <link href="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/"/>
-    <updated>2013-04-18T20:33:00-05:00</updated>
+    <updated>2013-04-18T20:33:00-06:00</updated>
     <id>http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset</id>
     <content type="html"><![CDATA[<p><a href="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/"><img src="http://RayHightower.com/images/rvm.png" height="98" width="89" align="right" alt="RVM .ruby-version .ruby-gemset" title="RVM .ruby-version .ruby-gemset"></a>
 I trust <a href="http://rvm.io">RVM</a> to manage my Ruby versions and my gemsets. So when I saw an unexpected change in RVM's behavior, I was concerned about a possible disruption in my workflow.</p>
@@ -167,7 +167,7 @@ $ newrvm
   <entry>
     <title type="html"><![CDATA[Atari's Pong, Built With RubyMotion]]></title>
     <link href="http://RayHightower.com/blog/2013/02/26/atari-pong-rubymotion-objective-c/"/>
-    <updated>2013-02-26T10:35:00-06:00</updated>
+    <updated>2013-02-26T10:35:00-07:00</updated>
     <id>http://RayHightower.com/blog/2013/02/26/atari-pong-rubymotion-objective-c</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/pong-rubymotion-objective-c.png" width="300" height="160" alt="Atari's Pong in RubyMotion and Objective-C" title="Atari's Pong in RubyMotion and Objective-C" align="right">
 <a href="http://en.wikipedia.org/wiki/Pong">Atari's Pong</a> is a classic video arcade game from the 1970s. Seeing Pong always gives me childhood flashbacks.</p>
@@ -272,7 +272,7 @@ $ newrvm
   <entry>
     <title type="html"><![CDATA[Automatic ctags with RubyMotion and Vim]]></title>
     <link href="http://RayHightower.com/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim/"/>
-    <updated>2013-02-12T19:35:00-06:00</updated>
+    <updated>2013-02-12T19:35:00-07:00</updated>
     <id>http://RayHightower.com/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim</id>
     <content type="html"><![CDATA[<p><a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a> includes a <code>rake</code> task that generates <a href="http://ctags.sourceforge.net/whatis.html">Exuberant Ctags</a>. To generate tags, run the following in the root directory of a RubyMotion project.</p>
 
@@ -372,7 +372,7 @@ To use the RubyMotion console, cd into the new directory: NewApp</p>
   <entry>
     <title type="html"><![CDATA[Unix for Ruby Developers]]></title>
     <link href="http://RayHightower.com/blog/2012/12/24/unix-for-ruby-developers/"/>
-    <updated>2012-12-24T16:50:00-06:00</updated>
+    <updated>2012-12-24T16:50:00-07:00</updated>
     <id>http://RayHightower.com/blog/2012/12/24/unix-for-ruby-developers</id>
     <content type="html"><![CDATA[<p><a href="http://workingwithunixprocesses.com/"><img src="http://RayHightower.com/images/working-w-unix-processes.jpg" align="right" width="350" height="266"></a>
 It is gratifying to know that learning something tangentially related to Ruby will, in fact, teach me more about Ruby.</p>
