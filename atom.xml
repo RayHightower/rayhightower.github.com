@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-05-04T00:28:54-06:00</updated>
+  <updated>2013-05-09T10:21:07-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[The Man Who Sold Hot Dogs]]></title>
     <link href="http://RayHightower.com/blog/2013/04/23/the-man-who-sold-hot-dogs/"/>
-    <updated>2013-04-23T18:13:00-06:00</updated>
+    <updated>2013-04-23T18:13:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/04/23/the-man-who-sold-hot-dogs</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/hot-dog-cart.jpg" width="250" height="277" align="right" title="The Man Who Sold Hot Dogs" alt="The Man Who Sold Hot Dogs">
 <em>Note: This timeless story pre-dates the web, and it has appeared at <a href="http://wisdomgroup.com">WisdomGroup.com</a>. Author unknown.</em></p>
@@ -44,7 +44,7 @@
   <entry>
     <title type="html"><![CDATA[Ack 2.0: Written in Perl, Useful With Ruby]]></title>
     <link href="http://RayHightower.com/blog/2013/04/20/ack-written-in-perl-useful-with-ruby/"/>
-    <updated>2013-04-20T17:12:00-06:00</updated>
+    <updated>2013-04-20T17:12:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/04/20/ack-written-in-perl-useful-with-ruby</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/ack.png" align="right" height="237" width="230" alt="Ack Linux Mac OS X" title="Ack Linux Mac OS X"></p>
 
@@ -129,7 +129,7 @@ without leaving your editor.</p>
   <entry>
     <title type="html"><![CDATA[New RVM Behavior With .ruby-version and .ruby-gemset]]></title>
     <link href="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/"/>
-    <updated>2013-04-18T20:33:00-06:00</updated>
+    <updated>2013-04-18T20:33:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset</id>
     <content type="html"><![CDATA[<p><a href="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/"><img src="http://RayHightower.com/images/rvm.png" height="98" width="89" align="right" alt="RVM .ruby-version .ruby-gemset" title="RVM .ruby-version .ruby-gemset"></a>
 I trust <a href="http://rvm.io">RVM</a> to manage my Ruby versions and my gemsets. So when I saw an unexpected change in RVM&#8217;s behavior, I was concerned about a possible disruption in my workflow.</p>
@@ -232,7 +232,7 @@ I trust <a href="http://rvm.io">RVM</a> to manage my Ruby versions and my gemset
   <entry>
     <title type="html"><![CDATA[Elegant Code]]></title>
     <link href="http://RayHightower.com/blog/2013/04/12/elegant-code/"/>
-    <updated>2013-04-12T13:34:00-06:00</updated>
+    <updated>2013-04-12T13:34:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/04/12/elegant-code</id>
     <content type="html"><![CDATA[<p>This quote is too long to tweet, but too good to pass up:</p>
 
@@ -245,7 +245,7 @@ I trust <a href="http://rvm.io">RVM</a> to manage my Ruby versions and my gemset
   <entry>
     <title type="html"><![CDATA[Challenges Make Us Stronger]]></title>
     <link href="http://RayHightower.com/blog/2013/03/25/challenges-make-us-stronger/"/>
-    <updated>2013-03-25T09:37:00-06:00</updated>
+    <updated>2013-03-25T09:37:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/03/25/challenges-make-us-stronger</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/moth.png" width="300" height="215" align="right" title="Emperor moth photo by Dean Morley" alt="Emperor moth photo by Dean Morley">
 A man found a cocoon of an emperor moth. He took it home so that he could watch the moth come out of the cocoon. On the day a small opening appeared, he sat and watched the moth for several hours as the moth struggled to force its body through that little hole.</p>
@@ -274,7 +274,7 @@ A man found a cocoon of an emperor moth. He took it home so that he could watch 
   <entry>
     <title type="html"><![CDATA[How to Take a Raspberry Pi Screenshot]]></title>
     <link href="http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot/"/>
-    <updated>2013-03-19T20:43:00-06:00</updated>
+    <updated>2013-03-19T20:43:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot</id>
     <content type="html"><![CDATA[<p>After you get a <a href="http://RayHightower.com/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a> up and running, you may want to take a few screenshots so you can share the experience with others. Here&#8217;s how.</p>
 
@@ -325,7 +325,7 @@ and type the following at the prompt:</p>
   <entry>
     <title type="html"><![CDATA[You Can Do It Now]]></title>
     <link href="http://RayHightower.com/blog/2013/03/13/you-can-do-it-now/"/>
-    <updated>2013-03-13T15:31:00-06:00</updated>
+    <updated>2013-03-13T15:31:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/03/13/you-can-do-it-now</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/do_it_now.jpg" align="right" width="200" height="296" alt="You Can Do It Now" title="You Can Do It Now">
 If you are fortunate enough to work in the technology industry, you do not need permission to move forward. So do it now.</p>
@@ -392,7 +392,7 @@ If you are fortunate enough to work in the technology industry, you do not need 
   <entry>
     <title type="html"><![CDATA[Technology and God]]></title>
     <link href="http://RayHightower.com/blog/2013/03/03/technology-and-god/"/>
-    <updated>2013-03-03T14:00:00-07:00</updated>
+    <updated>2013-03-03T14:00:00-06:00</updated>
     <id>http://RayHightower.com/blog/2013/03/03/technology-and-god</id>
     <content type="html"><![CDATA[<p>Reflecting on a quote I became aware of recently:</p>
 
@@ -407,7 +407,7 @@ If you are fortunate enough to work in the technology industry, you do not need 
   <entry>
     <title type="html"><![CDATA[Objective-C Programming: The Big Nerd Ranch Guide]]></title>
     <link href="http://RayHightower.com/blog/2013/02/28/objective-c-programming-the-big-nerd-ranch-guide/"/>
-    <updated>2013-02-28T15:52:00-07:00</updated>
+    <updated>2013-02-28T15:52:00-06:00</updated>
     <id>http://RayHightower.com/blog/2013/02/28/objective-c-programming-the-big-nerd-ranch-guide</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/objective-c-big-nerd.png" align="right" width="250" height="357" alt="Objective-C Programming - The Big Nerd Ranch Guide" title="Objective-C Programming - The Big Nerd Ranch Guide"></p>
 
@@ -450,7 +450,7 @@ If you are fortunate enough to work in the technology industry, you do not need 
   <entry>
     <title type="html"><![CDATA[Atari's Pong, Built With RubyMotion]]></title>
     <link href="http://RayHightower.com/blog/2013/02/26/atari-pong-rubymotion-objective-c/"/>
-    <updated>2013-02-26T10:35:00-07:00</updated>
+    <updated>2013-02-26T10:35:00-06:00</updated>
     <id>http://RayHightower.com/blog/2013/02/26/atari-pong-rubymotion-objective-c</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/pong-rubymotion-objective-c.png" width="300" height="160" alt="Atari's Pong in RubyMotion and Objective-C" title="Atari's Pong in RubyMotion and Objective-C" align="right">
 <a href="http://en.wikipedia.org/wiki/Pong">Atari&#8217;s Pong</a> is a classic video arcade game from the 1970s. Seeing Pong always gives me childhood flashbacks.</p>
@@ -555,7 +555,7 @@ If you are fortunate enough to work in the technology industry, you do not need 
   <entry>
     <title type="html"><![CDATA[Apprenticeship Patterns]]></title>
     <link href="http://RayHightower.com/blog/2013/02/17/apprenticeship-patterns-by-dave-h-hoover-and-adewale-oshineye/"/>
-    <updated>2013-02-17T09:52:00-07:00</updated>
+    <updated>2013-02-17T09:52:00-06:00</updated>
     <id>http://RayHightower.com/blog/2013/02/17/apprenticeship-patterns-by-dave-h-hoover-and-adewale-oshineye</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/apprenticeship-patterns.gif" align="right" width="180" height="236" alt="Apprenticeship Patterns" title="Apprenticeship Patterns"></p>
 
@@ -607,7 +607,7 @@ If you are fortunate enough to work in the technology industry, you do not need 
   <entry>
     <title type="html"><![CDATA[Automatic ctags with RubyMotion and Vim]]></title>
     <link href="http://RayHightower.com/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim/"/>
-    <updated>2013-02-12T19:35:00-07:00</updated>
+    <updated>2013-02-12T19:35:00-06:00</updated>
     <id>http://RayHightower.com/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim</id>
     <content type="html"><![CDATA[<p><a href="http://RayHightower.com/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a> includes a <code>rake</code> task that generates <a href="http://ctags.sourceforge.net/whatis.html">Exuberant Ctags</a>. To generate tags, run the following in the root directory of a RubyMotion project.</p>
 
@@ -733,7 +733,7 @@ If you are fortunate enough to work in the technology industry, you do not need 
   <entry>
     <title type="html"><![CDATA[The Vast and Endless Sea]]></title>
     <link href="http://RayHightower.com/blog/2013/01/17/the-vast-and-endless-sea/"/>
-    <updated>2013-01-17T13:35:00-07:00</updated>
+    <updated>2013-01-17T13:35:00-06:00</updated>
     <id>http://RayHightower.com/blog/2013/01/17/the-vast-and-endless-sea</id>
     <content type="html"><![CDATA[<p>All of us are inspired when we have a big goal to achieve. Antoine De Saint-Exupery expresses the idea well:</p>
 
@@ -746,7 +746,7 @@ If you are fortunate enough to work in the technology industry, you do not need 
   <entry>
     <title type="html"><![CDATA[Why I Use Vim]]></title>
     <link href="http://RayHightower.com/blog/2013/01/12/why-i-use-vim/"/>
-    <updated>2013-01-12T11:07:00-07:00</updated>
+    <updated>2013-01-12T11:07:00-06:00</updated>
     <id>http://RayHightower.com/blog/2013/01/12/why-i-use-vim</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/vim-osx.png" width="300" height="257" alt="Vim on OSX" title="Vim on OSX" align="right"/>
 My primary code-writing tools are:</p>
@@ -780,7 +780,7 @@ because it happened so quickly.</p></li>
   <entry>
     <title type="html"><![CDATA[Code Pilot for Xcode Navigation]]></title>
     <link href="http://RayHightower.com/blog/2013/01/08/code-pilot-for-Xcode-navigation/"/>
-    <updated>2013-01-08T10:54:00-07:00</updated>
+    <updated>2013-01-08T10:54:00-06:00</updated>
     <id>http://RayHightower.com/blog/2013/01/08/code-pilot-for-Xcode-navigation</id>
     <content type="html"><![CDATA[<p><a href="http://codepilot.cc">Code Pilot</a> is a free tool that lets developers navigate quickly between files in Xcode. I was introduced to the tool yesterday by Don Bora, instructor of the Mobile Makers <a href="http://mobilemakers.co/">iOS Accelerated</a> course that I&#8217;m currently taking.</p>
 
@@ -812,7 +812,7 @@ because it happened so quickly.</p></li>
   <entry>
     <title type="html"><![CDATA[Leap Motion: Advanced User Interface]]></title>
     <link href="http://RayHightower.com/blog/2013/01/07/leap-motion-advanced-user-interface/"/>
-    <updated>2013-01-07T11:56:00-07:00</updated>
+    <updated>2013-01-07T11:56:00-06:00</updated>
     <id>http://RayHightower.com/blog/2013/01/07/leap-motion-advanced-user-interface</id>
     <content type="html"><![CDATA[<p><a href="https://leapmotion.com/">Leap Motion</a> is a small device that lets users control their computers with simple hand gestures. The Leap Motion controller senses individual hand and finger movements. This is not a touch interface, because your hands never touch anything.</p>
 
@@ -837,7 +837,7 @@ because it happened so quickly.</p></li>
   <entry>
     <title type="html"><![CDATA[RubyMotion Provisioning Profiles]]></title>
     <link href="http://RayHightower.com/blog/2012/12/26/rubymotion-provisioning-profiles/"/>
-    <updated>2012-12-26T20:46:00-07:00</updated>
+    <updated>2012-12-26T20:46:00-06:00</updated>
     <id>http://RayHightower.com/blog/2012/12/26/rubymotion-provisioning-profiles</id>
     <content type="html"><![CDATA[<p><em>Note: This article on provisioning profiles was first posted in the <a href="https://groups.google.com/forum/?fromgroups=#!topic/rubymotion/Nvo8dH_8rkI">RubyMotion Google Group</a> on May 10, 2012. It was also referenced on <a href="http://stackoverflow.com/questions/13539743/rubymotion-build-error-cant-find-a-provisioning-profile-named-mixios-tea">Stack Overflow</a>.</em></p>
 
@@ -881,7 +881,7 @@ because it happened so quickly.</p></li>
   <entry>
     <title type="html"><![CDATA[Unix for Ruby Developers]]></title>
     <link href="http://RayHightower.com/blog/2012/12/24/unix-for-ruby-developers/"/>
-    <updated>2012-12-24T16:50:00-07:00</updated>
+    <updated>2012-12-24T16:50:00-06:00</updated>
     <id>http://RayHightower.com/blog/2012/12/24/unix-for-ruby-developers</id>
     <content type="html"><![CDATA[<p><a href="http://workingwithunixprocesses.com/"><img src="http://RayHightower.com/images/working-w-unix-processes.jpg" align="right" width="350" height="266"></a>
 It is gratifying to know that learning something tangentially related to Ruby will, in fact, teach me more about Ruby.</p>
@@ -1019,7 +1019,7 @@ It is gratifying to know that learning something tangentially related to Ruby wi
   <entry>
     <title type="html"><![CDATA[Mobile Makers, Objective-C, and RubyMotion]]></title>
     <link href="http://RayHightower.com/blog/2012/12/14/mobile-makers-objective-c-rubymotion/"/>
-    <updated>2012-12-14T06:45:00-07:00</updated>
+    <updated>2012-12-14T06:45:00-06:00</updated>
     <id>http://RayHightower.com/blog/2012/12/14/mobile-makers-objective-c-rubymotion</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/ipad-iphone.jpg" width="256" height="250" alt="iPad iPhone" title="iPad iPhone" align="right">
 This week I enrolled in the iOS Accelerated course offered by the <a href="http://mobilemakers.co/ios-accelerated">Mobile Makers Academy</a>. If you would like to do the same, mention my name and we&#8217;ll both receive a $300 discount on tuition.</p>
@@ -1060,7 +1060,7 @@ This week I enrolled in the iOS Accelerated course offered by the <a href="http:
   <entry>
     <title type="html"><![CDATA[Design and Big Ideas]]></title>
     <link href="http://RayHightower.com/blog/2012/12/08/design-and-big-ideas/"/>
-    <updated>2012-12-08T00:35:00-07:00</updated>
+    <updated>2012-12-08T00:35:00-06:00</updated>
     <id>http://RayHightower.com/blog/2012/12/08/design-and-big-ideas</id>
     <content type="html"><![CDATA[<p>WisdomGroup is hiring a <a href="https://jobs.chicagoruby.org/jobs/100">web design intern</a>. Our current volume of work requires it. The ideal candidate will share our beliefs about design, summarized as&#8230;</p>
 
