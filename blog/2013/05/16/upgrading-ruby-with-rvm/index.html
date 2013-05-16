@@ -5,13 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Ruby on Rails 3 Tutorial By Michael Hartl - RayHightower.com</title>
+  <title>Upgrading Ruby With RVM - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="<img src="/images/ror3-hartl.jpg" width="132" height="175" alt="Ruby on
-Rails 3 Tutorial" title="Ruby on Rails 3 Tutorial" align="right">
-Note: This &hellip;">
+  <meta name="description" content="Ruby Version Manager (RVM) is one of my favorite tools in the Ruby ecosystem. Reason: RVM lets me experiment with Ruby and Rails at will. I don&#8217 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +18,7 @@ Note: This &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/2011/07/27/ruby-on-rails-3-tutorial-by-michael-hartl/">
+  <link rel="canonical" href="http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -86,7 +84,7 @@ Note: This &hellip;">
   
   <header>
     
-      <h1 class="entry-title">Ruby on Rails 3 Tutorial by Michael Hartl</h1>
+      <h1 class="entry-title">Upgrading Ruby With RVM</h1>
     
     
       <p class="meta">
@@ -102,37 +100,158 @@ Note: This &hellip;">
   
 
 
-<time datetime="2011-07-27T09:15:00-05:00" pubdate data-updated="true">Jul 27<span>th</span>, 2011</time>
+<time datetime="2013-05-16T13:36:00-05:00" pubdate data-updated="true">May 16<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><img src="/images/ror3-hartl.jpg" width="132" height="175" alt="Ruby on
-Rails 3 Tutorial" title="Ruby on Rails 3 Tutorial" align="right">
-<em>Note: This review was originally posted at <a href="http://www.chicagoruby.org/book-reviews/">ChicagoRuby.org/book-reviews</a>.</em></p>
+<div class="entry-content"><p><a href="http://rvm.io">Ruby Version Manager (RVM)</a> is one of my favorite tools in the Ruby ecosystem.  Reason: RVM lets me experiment with Ruby and Rails at will. I don&#8217;t know about you, but my best experiments are full of risk so they eventually blow things up. When that happens, I can always recover the broken areas without wasting time on a full system restore.</p>
 
-<p>Ruby on Rails 3 Tutorial is well suited for beginning Ruby on Rails developers. Advanced developers will find it useful as well. Here’s why:</p>
+<p>Some devs choose to use another tool, <a href="https://github.com/sstephenson/rbenv">RBenv</a>, that serves a purpose similar to RVM. I began working with RVM before the other tools existed, and since it has always worked well for me, I have no reason to switch.</p>
 
-<ul>
-<li>Sometimes, as we become more advanced, we miss fundamentals along the way. Ruby on Rails 3 Tutorial will help to fill in the gaps.</li>
-<li>It is possible to know a concept so well that you can’t express it in words. If you’re an advanced developer, and you need to explain a concept to someone less advanced, you might not have the words to express your thoughts. This book can give you good building blocks for your explanations.</li>
-</ul>
+<h4>Ruby 2.0.0-p195</h4>
 
+<p>The latest patch of Ruby 2.0.0, p195, was released two days ago. Time to take it for a spin. RVM lets devs upgrade Ruby and manage gemsets seamlessly. Here&#8217;s how the process went.</p>
 
-<!-- more -->
+<!--more-->
 
 
-<p>Like most Rails books, this one starts with a few paragraphs about the Ruby language and the Rails framework. This book differs from some others because the author strives to build good craftsmanship practices in the reader. The earliest chapters introduce source code version control (using Git and GitHub), test driven development (using RSpec), and cloud hosting (using Heroku). By chapter two, the reader has already created and pushed to a GitHub repo. Very effective, very clear.</p>
+<h4>Get the Latest RVM</h4>
 
-<p>Advanced users who want to brush up on best practices like TDD will appreciate Hartl’s coverage and explanations of the practices. No developer with critical thinking skills will do something simply because “all the cool kids” are doing it. When Hartl talks about TDD, he does not preach it as a panacea against bugs, but he states (realistically) that TDD makes bugs more likely to be caught and fixed when they occur.</p>
+<p>Instructions for installing RVM are at <a href="http://rvm.io">http://rvm.io</a>.
+If you already have RVM installed, you should confirm that you have the
+latest version.</p>
 
-<p>Hartl expresses a healthy level of irreverence for some of the semantics of our profession. When discussing the difference between TDD and behavior driven development (BDD), he states “Frankly, I’m not convinced there’s much of a difference.” This approach builds trust. You get the feeling that you’re listening to a fellow developer who has fought and defeated many of the dragons that you’re currently facing.</p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rvm get head
+</span></code></pre></td></tr></table></div></figure>
 
-<p>Ruby on Rails 3 Tutorial is not a quick read. One reviewer, Derek Sivers of CD Baby, mentions in the jacket notes that he finished the book in three days. It’s certainly possible to read RoR3T in three days. But readers who want to truly absorb the material will spend time working through the examples, breaking code, fixing it, and generally immersing themselves in all this Ruby on Rails goodness.</p>
 
-<p>Ruby on Rails 3 Tutorial is a well-written book with clear explanations and useful examples. Highly recommended.</p>
+<h4>Grab the Ruby Patch</h4>
+
+<p>With the latest RVM installed, you can upgrade to the latest Ruby
+patch level.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rvm upgrade 2.0.0
+</span><span class='line'>Are you sure you wish to upgrade from ruby-2.0.0-p0 to ruby-2.0.0-p195? <span class="o">(</span>Y/n<span class="o">)</span>: y
+</span><span class='line'>Installing new ruby ruby-2.0.0-p195
+</span><span class='line'>Searching <span class="k">for </span>binary rubies, this might take some time.
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The process took at least twenty minutes on my system. I don&#8217;t have an exact time because I began working on other tasks during the upgrade, and when I looked back at the terminal window, the process was mostly complete, except for a few questions about gemsets&#8230;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>Migrating gems from ruby-2.0.0-p0 to ruby-2.0.0-p195
+</span><span class='line'>Are you sure you wish to MOVE gems from ruby-2.0.0-p0 to ruby-2.0.0-p195?
+</span><span class='line'>This will overwrite existing gems in ruby-2.0.0-p195 and remove them from ruby-2.0.0-p0 <span class="o">(</span>Y/n<span class="o">)</span>: y
+</span><span class='line'>Moving gemsets...
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>&#8230;and aliases, wrappers, and archiving my patchless Ruby 2.0.0.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>Do you wish to move over aliases? <span class="o">(</span>Y/n<span class="o">)</span>: y
+</span><span class='line'>Do you wish to move over wrappers? <span class="o">(</span>Y/n<span class="o">)</span>: y
+</span><span class='line'>Do you also wish to completely remove ruby-2.0.0-p0 <span class="o">(</span>inc. archive<span class="o">)</span>? <span class="o">(</span>Y/n<span class="o">)</span>: y
+</span><span class='line'>Removing ruby-2.0.0-p0........
+</span><span class='line'>Successfully migrated ruby-2.0.0-p0 to ruby-2.0.0-p195
+</span><span class='line'>Upgrade <span class="nb">complete</span>!
+</span><span class='line'>
+</span><span class='line'><span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Upgrade complete. Now running the latest patch of Ruby 2.0.0-p195</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>rvm list
+</span><span class='line'>
+</span><span class='line'>rvm rubies
+</span><span class='line'>
+</span><span class='line'>   macruby-0.12 <span class="o">[</span> i686 <span class="o">]</span>
+</span><span class='line'>   ruby-1.8.7-p334 <span class="o">[</span> i686 <span class="o">]</span>
+</span><span class='line'>   ruby-1.9.2-p290 <span class="o">[</span> x86_64 <span class="o">]</span>
+</span><span class='line'> * ruby-1.9.3-p385 <span class="o">[</span> x86_64 <span class="o">]</span>
+</span><span class='line'>   ruby-2.0.0-p195 <span class="o">[</span> x86_64 <span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># =&gt; - current</span>
+</span><span class='line'><span class="c"># =* - current &amp;&amp; default</span>
+</span><span class='line'><span class="c">#  * - default</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>As a final option, I chose to make this latest Ruby patch my default.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>rvm use ruby-2.0.0 --default
+</span><span class='line'>Using /Users/rth/.rvm/gems/ruby-2.0.0-p195
+</span><span class='line'>
+</span><span class='line'>~<span class="nv">$ </span>rvm list
+</span><span class='line'>
+</span><span class='line'>rvm rubies
+</span><span class='line'>
+</span><span class='line'>   macruby-0.12 <span class="o">[</span> i686 <span class="o">]</span>
+</span><span class='line'>   ruby-1.8.7-p334 <span class="o">[</span> i686 <span class="o">]</span>
+</span><span class='line'>   ruby-1.9.2-p290 <span class="o">[</span> x86_64 <span class="o">]</span>
+</span><span class='line'>   ruby-1.9.3-p385 <span class="o">[</span> x86_64 <span class="o">]</span>
+</span><span class='line'><span class="o">=</span>* ruby-2.0.0-p195 <span class="o">[</span> x86_64 <span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># =&gt; - current</span>
+</span><span class='line'><span class="c"># =* - current &amp;&amp; default</span>
+</span><span class='line'><span class="c">#  * - default</span>
+</span><span class='line'>
+</span><span class='line'>~<span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And that&#8217;s it.</p>
 </div>
 
 
@@ -155,7 +274,7 @@ Rails 3 Tutorial" title="Ruby on Rails 3 Tutorial" align="right">
   
 
 
-<time datetime="2011-07-27T09:15:00-05:00" pubdate data-updated="true">Jul 27<span>th</span>, 2011</time>
+<time datetime="2013-05-16T13:36:00-05:00" pubdate data-updated="true">May 16<span>th</span>, 2013</time>
       
 
 <span class="categories">
@@ -169,7 +288,7 @@ Rails 3 Tutorial" title="Ruby on Rails 3 Tutorial" align="right">
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2011/07/27/ruby-on-rails-3-tutorial-by-michael-hartl/" data-via="RayHightower" data-counturl="http://RayHightower.com/blog/2011/07/27/ruby-on-rails-3-tutorial-by-michael-hartl/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/" data-via="RayHightower" data-counturl="http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/" >Tweet</a>
   
   
   
@@ -178,10 +297,8 @@ Rails 3 Tutorial" title="Ruby on Rails 3 Tutorial" align="right">
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2008/10/17/gmail-growing-pains/" title="Previous Post: GMail Growing Pains">&laquo; GMail Growing Pains</a>
+        <a class="basic-alignment left" href="/blog/2013/05/13/rubymotion-sketchnotes/" title="Previous Post: RubyMotion Sketchnotes">&laquo; RubyMotion Sketchnotes</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/08/26/getting-down-is-mandatory/" title="Next Post: Getting Down Is Mandatory">Getting Down Is Mandatory &raquo;</a>
       
     </p>
   </footer>
@@ -324,8 +441,8 @@ Rails 3 Tutorial" title="Ruby on Rails 3 Tutorial" align="right">
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://RayHightower.com/blog/2011/07/27/ruby-on-rails-3-tutorial-by-michael-hartl/';
-        var disqus_url = 'http://RayHightower.com/blog/2011/07/27/ruby-on-rails-3-tutorial-by-michael-hartl/';
+        var disqus_identifier = 'http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/';
+        var disqus_url = 'http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/';
         var disqus_script = 'embed.js';
       
     (function () {
