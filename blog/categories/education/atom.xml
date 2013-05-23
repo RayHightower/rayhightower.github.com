@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Education | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/education/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-05-16T14:15:31-05:00</updated>
+  <updated>2013-05-22T21:37:11-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,96 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[BeagleBone Black, Up & Running]]></title>
+    <link href="http://RayHightower.com/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/"/>
+    <updated>2013-05-22T22:13:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/05/22/beaglebone-black-running-ruby-on-rails</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/BeagleBoneBlack.jpg" width="372" height="600" title="BeagleBone Black" alt="BeagleBone Black" align="right">
+<a href="http://beagleboard.org/Products/BeagleBone%20Black">BeagleBone Black</a>, like the <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a>, is a small, inexpensive computer that runs Linux. It's smaller than a deck of cards and you can buy one for about forty-five dollars ($45.00). The device is made by <a href="http://circuitco.com">CircuitCo</a> in Richardson, TX, USA.</p>
+
+<h3>It Just Works</h3>
+
+<p>BeagleBone Black runs Linux right out of the box. Steps required:</p>
+
+<ul>
+<li>Plug in the micro-HDMI cable for the monitor. See the "Gotchas"
+section about micro-HDMI below.</li>
+<li>Plug in the keyboard &amp; mouse via the USB port. You might need a USB hub because the board only has one USB port.</li>
+<li>Add power via the mini-USB port or the 5v power connection.</li>
+</ul>
+
+
+<p>After a few minutes of boot time, we have a fully-functioning Linux computer with a GUI, Firefox browser, and other tools.</p>
+
+<!--more-->
+
+
+<p>The BeagleBone Black has 2GB of flash storage on the board, and part
+of that is used for Linux. Here's a screenshot after just a few minutes of ownership.</p>
+
+<center><img src="http://RayHightower.com/images/BeagleBoneBlack-WindyCityRails.png" width="600" height="338" title="BeagleBone Black Firefox WindyCityRails" alt="BeagleBone Black Firefox WindyCityRails" align="center"></center>
+
+
+<h3>Documentation</h3>
+
+<p><img src="http://RayHightower.com/images/BeagleBoneBlack-USB.png" width="250" height="200" title="BeagleBone Black USB" alt="BeagleBone Black USB" align="right">
+All of the paper documentation for the BeagleBone Black fits on a slip of paper roughly the size of two business cards. The meat of the documentation resides on the device itself. To reach the electronic documentation:</p>
+
+<ol>
+<li>Plug the BeagleBone Black into a USB port on your laptop.</li>
+<li>The board will appear as a USB storage device. One of the files at the
+root of the storage device, <code>START.htm</code>, contains the documentation. It
+can be viewed in a web browser.</li>
+</ol>
+
+
+<p>The documentation recommends against <a href="http://en.wikipedia.org/wiki/Internet_Explorer">MSIE</a>.</p>
+
+<h3>Gotchas</h3>
+
+<p><img src="http://RayHightower.com/images/micro-HDMI-home-depot.jpg" width="400" height="300" title="Micro HDMI Home Depot" alt="Micro HDMI Home Depot" align="right">
+The manufacturer included a mini-USB cable with the device, so you can power it up right after you rip open the package. Gotcha: You need a micro-HDMI cable (or adapter) if you want to attach a monitor. I would have preferred a micro-HDMI-to-HDMI adapater in the box instead of the mini-USB cable. That's a little nit-picky on my part since micro-HDMI cables are easy to find at Home Depot.</p>
+
+<p>A quick shout-out to Home Depot: Their store-brand cables let you test the cable end without opening the package, right in the store. Excellent package design by Home Depot.</p>
+
+<p>My second "gotcha" is more important: The <code>curl</code> command did not behave as flawlessly as it did with the Raspberry Pi, so I was not able to install Ruby as quickly as planned. Details below.</p>
+
+<h3>Installing Rails</h3>
+
+<p>I will have to cover Ruby and Rails installation in a future blog post because my initial attempts were not successful. RVM, Ruby, and Rails installed easily with Raspberry Pi, even though the compilation time was long. With the BeagleBone Black, I received the following in response to the <code>curl</code> command:</p>
+
+<p>```bash
+sh-4.2# curl -L https://get.rvm.io | bash -s stable --ruby
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</p>
+
+<pre><code>                             Dload  Upload   Total   Spent    Left  Speed
+</code></pre>
+
+<p>  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (77) Problem with the SSL CA cert (path? access rights?)
+sh-4.2#
+```</p>
+
+<p>Maybe it's time to try <a href="https://github.com/sstephenson/rbenv">RBEnv</a>? I'll post a solution when I find it. Or... if a reader of this blog already has a solution for the BeagleBone Black Rails installation challenge, please post in the comments below and I'll credit you here.</p>
+
+<h4>BeagleBone Black vs. Raspberry Pi</h4>
+
+<p>Which is better, BeagleBone Black or Raspberry Pi? There's no clear winner yet. It's a matter of trade-offs:</p>
+
+<ul>
+<li>The 'Bone runs Linux right out of the box, while it takes some time to get Linux running on the Pi, unless you buy a card pre-configured for the Pi.</li>
+<li>RVM, Ruby, and Rails installation was painless on the Pi even though compilation time was long. The jury is still out w/r/t RVM on the 'Bone.</li>
+<li>Cost-wise, they're within ten bucks of each other. That's a wash.</li>
+<li>The 'Bone has more Ardunio-like provisions for digital projects.</li>
+<li>The Pi includes an RCA output for older TVs. Plus the Pi uses standard HDMI, so there's no need to get a special micro-HDMI cable.</li>
+</ul>
+
+
+<p>I've owned my 'Bone for just over 24 hours. Lots more to learn. Looking forward to it!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Upgrading Ruby With RVM]]></title>
@@ -236,73 +326,6 @@ A man found a cocoon of an emperor moth. He took it home so that he could watch 
 <p>Sometimes struggles are exactly what we need in our life. If we were to go through our life without any obstacles, we would be crippled. We would not be as strong as what we could have been. Give every opportunity a chance, and leave no room for regrets.</p>
 
 <p><em>The author of this article is unknown. Emperor moth photo by <a href="http://www.flickr.com/photos/33465428@N02/7015602897/">Dean Morley</a></em>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[You Can Do It Now]]></title>
-    <link href="http://RayHightower.com/blog/2013/03/13/you-can-do-it-now/"/>
-    <updated>2013-03-13T15:31:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/03/13/you-can-do-it-now</id>
-    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/do_it_now.jpg" align="right" width="200" height="296" alt="You Can Do It Now" title="You Can Do It Now">
-If you are fortunate enough to work in the technology industry, you do not need permission to move forward. So do it now.</p>
-
-<p>Yes, you will have to define <em>it</em> for yourself.</p>
-
-<h4>ChiPMA – Product Management</h4>
-
-<p>A few years ago I had the pleasure of hearing <a href="http://www.youtube.com/watch?v=igsvMAU5POY">Suneel Gupta</a> speak at a Chicago Product Management Association meeting hosted by Pathfinder Development. Three points raised during Gupta’s talk:</p>
-
-<ul>
-<li>Conditions are never perfect. So start now.</li>
-<li>What does <em>start</em> mean? Figure that out, and draw out the plan.</li>
-<li>If you suck at first, keep going.</li>
-<li>Conditions are never perfect.</li>
-</ul>
-
-
-<!-- more -->
-
-
-<h4>Learning From History</h4>
-
-<p>Gupta is a student of history. He began the talk by drawing parallels between today’s startup culture and the early days of powered flight.</p>
-
-<p>In the late 1800s, Samuel Pierpont Langley was an accomplished engineer with great connections to money and resources. One of his lifelong goals was to develop a vehicle for powered flight. He built several successful models, hired the smartest collaborators he could find, and he even raised $50k (in 1898 dollars) from investors. Newspaper reporters followed his entourage as they conducted experiments. Surely, this team of thoroughbreds would solve the flight puzzle.</p>
-
-<p>But most people have never heard of Langley. Somewhere in Ohio, far from the news outlets of the day, the Wright Brothers achieved the goal first. When Langley heard the news, he stopped trying.</p>
-
-<p>Why did the Wright Brothers win? They never waited for perfect conditions. The Wright Brothers did what they could with the resources they had at the time. Maybe constraints are advantages in disguise.</p>
-
-<h4>Draw Out the Plan</h4>
-
-<p>Everybody has dreams. Something magical happens when we take the time to map out our dreams on paper.</p>
-
-<p>Gupta’s example: Jack Dorsey, creator of Twitter. Dorsey drew the first mock-up for Twitter on paper. And then he showed it to people. Some laughed. Many gave feedback. He used the feedback to hone the idea into a viable product.</p>
-
-<p>Until you put the idea on paper (or some other medium) so you can show it to potential customers and collaborators, you’ll never get the feedback you need to improve.</p>
-
-<h4>Keep Going</h4>
-
-<p>Gupta and his brother had an idea. They wanted to create videos about the first wave of Indians to move to America. They approached Hollywood experts about creating the videos.</p>
-
-<p>"You’ll need at least $1 million," they were told. Much too expensive. Most people fold when facing a million dollar wall.</p>
-
-<p>But Suneel and his brother made their own videos with the equipment they had available. The videos were not million-dollar productions. But here’s the upside: When they were done, they had something of substance that they could show to people. They posted their work at <a href="http://kahanimovement.com">KahaniMovement.com</a>. One viewer liked the site enough to send a link to Steven Spielberg.</p>
-
-<p>Spielberg viewed the videos and he gave the brothers clear, actionable feedback. They made improvements. And they learned something interesting about Spielberg in the process: Even Spielberg starts with a loose cut sometimes! When Spielberg has a fresh idea that he’s trying to communicate, he will grab a hand-held camera, shoot the idea (no matter how rough) and show it to his team. If a picture is a thousand words, then a video is… you get the idea.</p>
-
-<h4>Teachers &amp; Parents Ignite Our Passion</h4>
-
-<p>Gupta shared a story about his 7th grade social studies class. The class watched a film of JFK delivering his inaugural speech in 1960. Gupta was moved. At the end of the film, the teacher informed that class that JFK had not written the speech. The author was Ted Sorensen, a man whom Kennedy called his <em>intellectual blood bank</em>.</p>
-
-<p>In 7th grade, Gupta had found his calling. He would become a speech writer.</p>
-
-<p>He went home and told his mother about his decision to become a speech writer. And that’s when his mother gave him a powerful piece of advice: "If you want to do that, you don’t have to wait. You can do it now."</p>
-
-<p>You can do it now. What are you waiting for?</p>
-
-<p><em>A version of this article was originally posted at <a href="http://wisdomgroup.com">http://wisdomgroup.com</a>.</em></p>
 ]]></content>
   </entry>
   
