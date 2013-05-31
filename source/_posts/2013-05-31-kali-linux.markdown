@@ -5,21 +5,27 @@ date: 2013-05-31 00:15
 comments: true
 categories: [ Education, Linux-Unix-OSX ]
 ---
-<img src="/images/kali-linux.png" width="400" height="303" title="Kali Linux" alt="Kali Linux" align="right">
->The quieter you become, the more you are able to hear. <br/>~Kali Linux tag line
+<img src="/images/kali-linux-desktop.png" width="400" height="303" title="Kali Linux - The quieter you become, the more you are able to hear." alt="Kali Linux - The quieter you become, the more you are able to hear." align="right">
+[Braintree](http://getbraintree.com) hosted a [Hax 'n Snax](http://www.meetup.com/braintreepayments/events/119511632/) event this afternoon. Devs from around Chicago gathered together to hack on code, socialize, trade ideas, and hone skills. Thanks Braintree for putting on a great event.
+
+My Hax 'n Snax time was spent interacting with other devs and experimenting with a Linux distro that I just discovered, Kali Linux.
+
+####What is Kali Linux?
+[Kali](http://www.kali.org/) is a fairly new Linux distro designed for penetration testing. Kali is the successor of BackTrack, a Linux distro used for digital forensics. The developers of Kali and BackTrack, [Offensive Software](http://www.offensive-security.com/), state that "Kali is a more mature, secure, and enterprise-ready version of BackTrack Linux." You can download it at [Kali.org](http://kali.org).
 
 <!--more-->
 ####Parallels Gotcha
-I'm running Kali Linux inside of Parallels version on Mac OS X Mountain Lion. I ran into a gotcha while getting Kali Linux to run in Parallels.  The Linux installation proceeded normally, but when I rebooted the system, Linux wouldn't come up. Instead, I got the error message
+I'm running Kali Linux inside of Parallels version 7 on Mac OS X 10.8.3 (Mountain Lion). The Linux installation proceeded normally, but when I rebooted the virtual machine, Linux wouldn't come up. Instead, I got the perpetual display of timeouts shown below.
 
-```bash
+<center><img src="/images/time-out.png" width="754" height="645" title="Kali Linux time out" alt="Kali Linux time out" align="center"></center>
 
-```
-Google is our friend! Through google, I found the solution on a blog called [redrise](http://redrise.wordpress.com/2013/04/02/installing-kali-in-parallels-desktop-7/).
+Google led me to a solution on a blog called [redrise](http://redrise.wordpress.com/2013/04/02/installing-kali-in-parallels-desktop-7/). The solution: To make Kali run on Parallels, uncheck the check box labeled "Show battery in Linux", as shown below.
 
-<center><img src="/images/show-battery-in-linux.png" width="798" height="653" title="Kali Linux Security Tools" alt="Kali Linux Security Tools" align="center"></center>
+<center><img src="/images/show-battery-in-linux.png" width="798" height="653" title="Kali - Show battery in Linux" alt="Kali - Show battery in Linux" align="center"></center>
  
+I'm not sure why a battery indicator would prevent Kali from booting in Parallels, but the solution worked. When I installed Kali on VMWare, the OS ran without special configuration changes.
 
+####The Kali Linux Tools
 
 <img src="/images/kali-linux-security-tools.png" width="798" height="653" title="Kali Linux Security Tools" alt="Kali Linux Security Tools" align="center">
 
