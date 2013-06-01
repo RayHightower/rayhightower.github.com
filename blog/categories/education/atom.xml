@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Education | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/education/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-05-31T19:49:49-05:00</updated>
+  <updated>2013-05-31T23:22:06-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -48,13 +48,15 @@
 
 <p>Kali comes with over 300 penetration tools. It's open source, so if you see room for improvement, <a href="http://git.kali.org/gitweb/">fork the repo</a> and go to work. If your ideas are strong enough, the developers might accept your pull request. There's even a version of Kali for <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a>. Take a look at the GUI.</p>
 
-<p><img src="http://RayHightower.com/images/kali-linux-security-tools.png" width="798" height="653" title="Kali Linux Security Tools" alt="Kali Linux Security Tools" align="center"></p>
+<center><img src="http://RayHightower.com/images/kali-linux-security-tools.png" width="798" height="653" title="Kali Linux Security Tools" alt="Kali Linux Security Tools" align="center"></center>
+
 
 <h4>Using Wireshark on Kali Linux</h4>
 
 <p>Kali includes sniffer tools that can capture WiFi traffic. If the WiFi traffic is "protected" (note the quotes) with an older method like wireless encryption protocol (WEP), Kali's tools can crack the encryption.</p>
 
-<p><img src="http://RayHightower.com/images/wireshark-kali-linux.png" width="600" height="492" title="Kali Linux Wireshark" alt="Kali Linux Wireshark" align="center"></p>
+<center><img src="http://RayHightower.com/images/wireshark-kali-linux.png" width="600" height="492" title="Kali Linux Wireshark" alt="Kali Linux Wireshark" align="center"></center>
+
 
 <p>A screenshot from Wireshark appears above. Wireshark sits and observes network traffic. If a packet looks interesting, drill down to discover the packet's source, destination, and contents.</p>
 
