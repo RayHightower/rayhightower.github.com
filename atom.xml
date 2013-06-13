@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-06-13T10:56:38-05:00</updated>
+  <updated>2013-06-13T10:58:41-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -18,7 +18,7 @@
     <link href="http://RayHightower.com/blog/2013/06/13/practice-begins-with-play/"/>
     <updated>2013-06-13T10:09:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/06/13/practice-begins-with-play</id>
-    <content type="html"><![CDATA[<p>Today I was invited to speak at the June <a href="http://www.tablexi.com/blog/2013/06/developer-education-june-table-talks/developers/">Table Talks</a> hosted by Table XI. Today&#8217;s theme was developer education. My topic: <em>Practice Begins With Play</em>. Developers who want to achieve mastery have many resources to choose from, including open source hardware like <a href="http://RayHightower.com/blog/2012/12/03/ruby-on-raspberry-pi/">Raspbery Pi</a>, <a href="http://RayHightower.com/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/">BeagleBone Black</a>, and <a href="http://parallella.org">Parallella</a>.</p>
+    <content type="html"><![CDATA[<p>Today I was invited to speak at the June <a href="http://www.tablexi.com/blog/2013/06/developer-education-june-table-talks/developers/">Table Talks</a> hosted by Table XI. Today&#8217;s theme was developer education. My topic: <em>Practice Begins With Play</em>. Developers who want to achieve mastery have many resources to choose from, including open source hardware like <a href="http://RayHightower.com/blog/2012/12/03/ruby-on-raspberry-pi/">Raspbery Pi</a>, <a href="http://RayHightower.com/blog/2013/05/22/beaglebone-black-up-and-running/">BeagleBone Black</a>, and <a href="http://parallella.org">Parallella</a>.</p>
 
 <!--more-->
 
