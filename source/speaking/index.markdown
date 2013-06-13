@@ -5,6 +5,12 @@ comments: false
 sharing: true
 footer: false
 ---
+###Practice Begins With Play
+It takes [10,000](/blog/2012/09/03/10000-hours-of-practice/) hours of practice to achieve mastery in a given subject. How does a novice get started, and how does an intermediate keep going? By remembering that practice begins with play. 
+
+<center><script async class="speakerdeck-embed" data-id="391a4b80b66a013009c8226af5af9159" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script></center>
+&nbsp;<br/>
+&nbsp;<br/>
 ###Building iOS Apps With RubyMotion
 <p>RubyMotion lets developers write native iOS apps using the Ruby programming language. Hightower delivered this presentation at <a href="http://magic-ruby.com/">Magic Ruby</a> and <a href="http://aloharubyconf.com/">Aloha Ruby</a> in October 2012. </p>
 
