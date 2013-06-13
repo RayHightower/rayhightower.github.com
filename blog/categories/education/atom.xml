@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Education | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/education/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-05-31T23:22:06-05:00</updated>
+  <updated>2013-06-13T10:33:37-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Practice Begins With Play]]></title>
+    <link href="http://RayHightower.com/blog/2013/06/13/practice-begins-with-play/"/>
+    <updated>2013-06-13T10:09:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/06/13/practice-begins-with-play</id>
+    <content type="html"><![CDATA[<p>Today I was invited to speak at the June <a href="http://www.tablexi.com/blog/2013/06/developer-education-june-table-talks/developers/">Table Talks</a> hosted by <a href="http://tablexi.com">Table XI</a>. Topic: Practice Begins With Play.</p>
+
+<!--more-->
+
+
+<h4>PechaKucha</h4>
+
+<p>Presentations were given in the <a href="http://www.pechakucha.org/faq">PechaKucha</a> format, which encourages presenters to deliver the maximimum amount of useful information in a relatively short time. Truly high impact!</p>
+
+<h4>Slides and Video</h4>
+
+<p>Slides from the talk appear below. Video will be posted here as soon as it becomes available.</p>
+
+<center><script async class="speakerdeck-embed" data-id="391a4b80b66a013009c8226af5af9159" data-ratio="1.29456384323641" src="http://RayHightower.com//speakerdeck.com/assets/embed.js"></script></center>
+
+
+<p>Thank you Table XI for hosting the event!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Kali Linux for Pentesting]]></title>
@@ -337,19 +362,6 @@ without leaving your editor.</p>
 <h4>The Bottom Line</h4>
 
 <p>Ack helps devs to find things quicker without leaving the zone. Try it!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Elegant Code]]></title>
-    <link href="http://RayHightower.com/blog/2013/04/12/elegant-code/"/>
-    <updated>2013-04-12T13:34:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/04/12/elegant-code</id>
-    <content type="html"><![CDATA[<p>This quote is too long to tweet, but too good to pass up:</p>
-
-<blockquote><p>Ugly programs are like ugly suspension bridges: they're much more liable to collapse than pretty ones, because the way humans (especially engineer-humans) perceive beauty is intimately related to our ability to process and understand complexity. A language that makes it hard to write elegant code makes it hard to write good code.</p>
-
-<p>~Eric S. Raymond, Author of The Cathedral and the Bazaar</p></blockquote>
 ]]></content>
   </entry>
   
