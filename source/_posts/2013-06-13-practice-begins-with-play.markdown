@@ -5,7 +5,7 @@ date: 2013-06-13 10:09
 comments: true
 categories: [ Education ]
 ---
-Today I was invited to speak at the June [Table Talks](http://www.tablexi.com/blog/2013/06/developer-education-june-table-talks/developers/) hosted by [Table XI](http://tablexi.com). Topic: Practice Begins With Play.
+Today I was invited to speak at the June [Table Talks](http://www.tablexi.com/blog/2013/06/developer-education-june-table-talks/developers/) hosted by Table XI. Topic: _Practice Begins With Play_. Developers who want to achieve mastery have many resources to choose from, including open source hardware like [Raspbery Pi](/blog/2012/12/03/ruby-on-raspberry-pi/), [BeagleBone Black](), and [Parallella](http://parallella.org).
 
 <!--more-->
 ####PechaKucha
