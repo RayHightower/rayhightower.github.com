@@ -3,7 +3,7 @@ layout: post
 title: "Practice Begins With Play"
 date: 2013-06-13 10:09
 comments: true
-categories: 
+categories: [ Education ]
 ---
 Today I was invited to speak at the June [Table Talks](http://www.tablexi.com/blog/2013/06/developer-education-june-table-talks/developers/) hosted by [Table XI](http://tablexi.com). Topic: Practice Begins With Play.
 
