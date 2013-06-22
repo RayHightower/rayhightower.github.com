@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Business | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/business/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-06-22T09:46:12-05:00</updated>
+  <updated>2013-06-22T09:47:20-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -31,7 +31,7 @@ Google Reader, the RSS product, shuts down on July 1st. I consume most news via 
 <p>After using the service for a few hours, I can already see some things that I like. Specifically:</p>
 
 <ul>
-<li>Minimal fluff. Other RSS clients feature big photos and special page-flipping effects. That's not for me. Just the facts, RSS.</li>
+<li>Minimal fluff. Other RSS clients feature big photos and page-flipping special effects. That's not for me. Just the facts, RSS.</li>
 <li>Easy RSS import from Google Reader. Just log in with your Google account and follow the prompts. After you import your feeds into Feed Wrangler's web app, you will never need Google Reader again.</li>
 <li>Reasonable cost. The Feed Wrangler service costs $19/year. Google dropped Reader because they couldn't make money from the free product. You can't fix that with volume! When an app makes money (directly or indirectly) then the app is more likely to stick around.</li>
 <li>iPhone and iPad apps. Feed Wrangler's native apps for <a href="https://itunes.apple.com/us/app/feed-wrangler/id634486174?mt=8">iPhone and iPad</a> sync with the web app. This is important for me because I consume most RSS on-the-go. A screenshot from the iPad app appears above.</li>
