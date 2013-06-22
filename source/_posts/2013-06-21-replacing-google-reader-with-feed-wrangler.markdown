@@ -17,7 +17,7 @@ After using the service for a few hours, I can already see some things that I li
 * Minimal fluff. Other RSS clients feature big photos and special page-flipping effects. That's not for me. Just the facts, RSS.
 * Easy RSS import from Google Reader. Just log in with your Google account and follow the prompts. After you import your feeds into Feed Wrangler's web app, you will never need Google Reader again. 
 * Reasonable cost. The Feed Wrangler service costs $19/year. Google dropped Reader because they couldn't make money from the free product. You can't fix that with volume! When an app makes money (directly or indirectly) then the app is more likely to stick around.
-* Mobile companions. Feed Wrangler's native apps for iPhone and iPad are very important because I consume most RSS on-the-go.
+* Mobile companions. Feed Wrangler's native apps for [iPhone and iPad](https://itunes.apple.com/us/app/feed-wrangler/id634486174?mt=8) are very important because I consume most RSS on-the-go.
 
 ####Cons
 Like most users, I want the developer to add "just one or two more features" to make the app perfect for me. Of course that's the slippery slope to bloatware since every user has a different set of one-or-two features.
