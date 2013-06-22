@@ -5,7 +5,7 @@ date: 2013-06-21 18:52
 comments: true
 categories: [ Business, Education ]
 ---
-<img src="/images/feedwrangler.png" height="100" width="100" align="right"
+<img src="/images/feedwrangler.png" height="188" width="188" align="right"
 alt="Feed Wrangler to Replace Google Reader" title="Feed Wrangler to Replace Google Reader">
 The decision to cancel Google Reader was disappointing. I consume most news via RSS, and the ability to sync multiple RSS clients between iPhone, iPad, and desktop with Google Reader in the background saved time while keeping me informed. 
 
