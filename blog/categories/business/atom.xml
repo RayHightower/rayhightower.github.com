@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Business | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/business/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-06-22T07:35:34-05:00</updated>
+  <updated>2013-06-22T09:20:18-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -47,6 +47,7 @@ The decision to cancel Google Reader was disappointing. I consume most news via 
 <ul>
 <li>Evernote integration. My current RSS client lets me drop an article into Evernote with a few taps on the screen.</li>
 <li>Organized imports. While Feed Wrangler imports feeds from Google Reader, it does not maintain Reader's organization. So I had to organize my feeds manually with Feed Wrangler's "Smart Stream" feature. If Reader's folders could be imported as Feed Wrangler's Smart Streams, that would be cool.</li>
+<li>Feed counter. Sometimes I prioritize my reading by the number of unread articles. A counter next to each feed would be helpful.</li>
 </ul>
 
 
