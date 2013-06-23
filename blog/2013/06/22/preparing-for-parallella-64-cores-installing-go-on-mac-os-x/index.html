@@ -166,7 +166,7 @@ Note: I&#8217;m using the default <code>GOROOT</code> variable, but your <code>G
 
 <p>Before you can run a Go program on your system, you have to create a Go workspace. A workspace is a directory structure that contains source code and binaries that a Go program needs in order to compile and execute.</p>
 
-<p>We can examine a the Go Workspace on my system with the Unix <code>tree</code> command:</p>
+<p>We can examine the Go Workspace on my system with the Unix <code>tree</code> command:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -196,12 +196,12 @@ Note: I&#8217;m using the default <code>GOROOT</code> variable, but your <code>G
 <p>Here&#8217;s a brief description of the directories:</p>
 
 <ul>
-<li>Code = root directory for all source code on my system. Yours may be different.</li>
-<li>gocode = where I store all of the Go code on my system</li>
+<li>Code = root directory for all source code on my system. Yours may differ.</li>
+<li>gocode = where I store all of the Go code on my system. I&#8217;m following the structure recommended by the Go documentation. I may alter this as I learn more about the language.</li>
 <li>src = source code</li>
 <li>github.com = directory named after the place where I store repos</li>
-<li>rayhightower = my GitHub profile named</li>
-<li>hello = directory named for the name of our first Go application</li>
+<li>rayhightower = my GitHub profile name</li>
+<li>hello = directory named for our first Go application</li>
 <li>hello.go = the Go source file for our <code>Hello World</code> program</li>
 </ul>
 
@@ -291,6 +291,19 @@ Note: I&#8217;m using the default <code>GOROOT</code> variable, but your <code>G
 
 
 <p>Success!</p>
+
+<h3>It&#8217;s Not Official, But It Makes Sense</h3>
+
+<p>As of this writing, Parallella does not officially support the Go language. So why go through all of this trouble?</p>
+
+<ul>
+<li>A 64-core Parallella is just too cool to pass up. And it&#8217;s open source.</li>
+<li>Go is designed for parallel systems. And it&#8217;s open source.</li>
+<li>Open source devs are working on a Go compiler for Parallella right now. If you&#8217;re reading this, and you&#8217;re one of the devs, thank you!</li>
+</ul>
+
+
+<p>The match makes sense. It&#8217;s always good to skate where the puck is going.</p>
 
 <h3>Next Steps</h3>
 
