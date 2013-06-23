@@ -6,9 +6,9 @@ comments: true
 categories: [ Education, Linux-Unix-OSX ]
 ---
 <img src="/images/parallella.jpg" width="450" height="257" alt="Parallella 64-core supercomputer" title="Parallella 64-core supercomputer" align="right" imgcap="Parallella Board">
-The idea of owning a 64-core parallel system for two hundred dollars (yes, $200.00) is exciting. [Parallella](http://parallella.org) is working to make that happen, perhaps as early as August 2013. To prepare for that day, I've decided to introduce myself to the Go language. 
+The idea of owning a 64-core parallel system for two hundred dollars (yes, $200.00) is exciting. [Parallella](http://www.parallella.org/introduction/) is working to make that happen, perhaps as early as August 2013. To prepare for that day, I've decided to introduce myself to the Go language. 
 <!--more-->
-I was inspired to explore Go by [Blake Smith's](https://twitter.com/blakesmith) presentation at [8th Light](http://www.meetup.com/ChicagoSC/events/120658422/) earlier this month.
+I was inspired to explore Go by [Blake Smith's](https://twitter.com/blakesmith) presentation at [8th Light](http://www.meetup.com/ChicagoSC/events/120658422/) earlier this month. [Justin Love](http://twitter.com/wondible) told me about Parallella last month at ChicagoRuby.
 
 ###What is Go?
 [The Go language](http://golang.org) is designed for parallel systems. Why does Go exist? One developer sums it up this way:
@@ -25,7 +25,7 @@ Because the best developers are polyglot. When we learn a new language, we cause
 ###How to Install Go on Mac OS X
 
 <ol>
-<li><a href="https://code.google.com/p/go/downloads/list">Download the binary distribution of Go that matches your system</a>, and complete the rest of these steps before installing it. For my 2010 i5-based 15-inch MacBook Pro, I chose <code>go1.1.1.darwin-amd64.pkg</code>. I was concerned about the reference to <code>amd64</code> in the name. But the description includes <code>Mac OS X (x86 64-bit)</code>, and the binary worked for me.</li>
+<li><a href="https://code.google.com/p/go/downloads/list">Download the binary of Go that matches your system</a>, and complete the rest of these steps before installing it. For my 2010 i5-based 15-inch MacBook Pro, I chose <code>go1.1.1.darwin-amd64.pkg</code>. I was concerned about the reference to <code>amd64</code> in the name. But the description includes <code>Mac OS X (x86 64-bit)</code>, and the binary worked for me.</li>
 <br/>
 <li>If you are upgrading from a previous version of Go, you will need to remove the old Go directory. You can do this while the download is happening in the background.</li>
 
@@ -40,7 +40,7 @@ export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
 export GOPATH=~/Code/gocode
 ```
-Note: I'm using the default <code>GOROOT</code> variable, but your <code>GOPATH</code> variable may differ from mine. I store all of my source code in a subdirectory of my home directory:<code>~/Code</code>. My complete Go directory structure is given below. By looking at my structure, you can adjust these steps to fit your system.</li>
+Note: I'm using the default <code>GOROOT</code> variable, but your <code>GOPATH</code> may differ from mine. I store all of my source code in a subdirectory of home:<code>~/Code</code>. My complete Go directory structure is given below. By looking at my structure, you can adjust these steps to fit your system.</li>
 <br/>
 <li>Tell your terminal session to recognize the new environmental variables. You can either restart terminal, or if your environmental variables are in <code>~/.bash_profile</code> like mine, you can do the following:</li>
 
@@ -55,7 +55,7 @@ Now, let's Go for a test drive.
 ###Creating a Go Workspace
 Before you can run a Go program on your system, you have to create a Go workspace. A workspace is a directory structure that contains source code and binaries that a Go program needs in order to compile and execute.
 
-We can examine a the Go Workspace on my system with the Unix <code>tree</code> command:
+We can examine the Go Workspace on my system with the Unix <code>tree</code> command:
 
 ```bash
 ~/Code/gocode$ tree
@@ -73,12 +73,12 @@ We can examine a the Go Workspace on my system with the Unix <code>tree</code> c
 
 Here's a brief description of the directories:
 
-* Code = root directory for all source code on my system. Yours may be different.
-* gocode = where I store all of the Go code on my system
+* Code = root directory for all source code on my system. Yours may differ.
+* gocode = where I store all of the Go code on my system. I'm following the structure recommended by the Go documentation. I may alter this as I learn more about the language.
 * src = source code
 * github.com = directory named after the place where I store repos
-* rayhightower = my GitHub profile named
-* hello = directory named for the name of our first Go application
+* rayhightower = my GitHub profile name
+* hello = directory named for our first Go application
 * hello.go = the Go source file for our <code>Hello World</code> program
 
 All structure below the <code>gocode</code> directory is mandated by Go.
@@ -92,19 +92,19 @@ package main
 import "fmt"
 
 func main() {
-    fmt.Printf("Hey Parallella enthusiasts: Learn Go!\n")
+    fmt.Printf("\n****** Hey Parallella enthusiasts: Learn Go! ******\n")
 }
 ```
 
 ###Compiling and Running
-We drop the code into `hello.go` in the `hello` directory. To compile the program:
+We drop the code into a file called `hello.go` in the `hello` directory. To compile the program:
 
 ```bash
 ~/Code/gocode/src/github.com/rayhightower/hello$ go install
 
 ~/Code/gocode/src/github.com/rayhightower/hello$
 ```
-If the compiler responds with a blank prompt (like above) then the program compiled successfully and a `bin` directory has been created inside the workspace. Run the `tree` command from the `gocode` directory to see how the structure has changed: 
+If the Go compiler responds with a blank prompt (like above) then the program compiled successfully and a `bin` directory has been created inside the Go workspace. Run the `tree` command from the `gocode` directory to see how the structure has changed: 
 
 ```bash
 ~/Code/gocode$ tree
@@ -122,17 +122,27 @@ If the compiler responds with a blank prompt (like above) then the program compi
 ~/Code/gocode$
 ```
 
-And now, let's cut the suspense and _run the program_. To do so, change into the `bin/` directory and type `./hello`.
+The newly created `bin/` directory contains our `hello` executable. And now, let's cut the suspense and _run the program_. To do so, change into the `bin/` directory and type `./hello`.
 
 ```bash
 ~/Code/gocode/src/github.com/rayhightower/hello$ cd ~/Code/gocode/bin
 
 ~/Code/gocode/bin$ ./hello
-Hey Parallella enthusiasts: Learn Go!
+
+****** Hey Parallella enthusiasts: Learn Go! ******
 
 ~/Code/gocode/bin$
 ```
 Success!
+
+###It's Not Official, But It Makes Sense
+As of this writing, Parallella does not officially support the Go language. So why go through all of this trouble? Because...
+
+* A 64-core Parallella is just too cool to pass up. And it's open source.
+* Go is designed for parallel systems. And it's open source.
+* Open source devs are working on a Go compiler for Parallella right now. If you're reading this, and you're one of the devs, thank you!
+
+The Go-Parallella match makes sense. It's always good to skate where the puck is going.
 
 ###Next Steps
 Now it's time to explore the Go language. The real adventure begins when the 64-core Parallella arrives. Looking forward to it!
