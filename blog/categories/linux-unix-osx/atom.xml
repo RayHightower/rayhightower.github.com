@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux-Unix-OSX | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/linux-unix-osx/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-06-22T19:13:33-05:00</updated>
+  <updated>2013-06-22T19:14:31-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -58,7 +58,7 @@ export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
 export GOPATH=~/Code/gocode
 ```
-Note: I'm using the default <code>GOROOT</code> variable, but your <code>GOPATH</code> may differ from mine. I store all of my source code in a subdirectory of my home directory:<code>~/Code</code>. My complete Go directory structure is given below. By looking at my structure, you can adjust these steps to fit your system.</li>
+Note: I'm using the default <code>GOROOT</code> variable, but your <code>GOPATH</code> may differ from mine. I store all of my source code in a subdirectory of home:<code>~/Code</code>. My complete Go directory structure is given below. By looking at my structure, you can adjust these steps to fit your system.</li>
 <br/>
 <li>Tell your terminal session to recognize the new environmental variables. You can either restart terminal, or if your environmental variables are in <code>~/.bash_profile</code> like mine, you can do the following:</li>
 
