@@ -162,7 +162,7 @@
     </url>
     <url>
         <loc>http://RayHightower.com/blog/2013/05/31/kali-linux-pentesting/</loc>
-        <lastmod>2013-05-31T23:21:58-05:00</lastmod>
+        <lastmod>2013-06-22T17:52:09-05:00</lastmod>
     </url>
     <url>
         <loc>http://RayHightower.com/blog/2013/06/13/practice-begins-with-play/</loc>
@@ -172,7 +172,13 @@
         <loc>
             http://RayHightower.com/blog/2013/06/21/replacing-google-reader-with-feed-wrangler/
         </loc>
-        <lastmod>2013-06-22T10:03:27-05:00</lastmod>
+        <lastmod>2013-06-22T17:50:40-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/
+        </loc>
+        <lastmod>2013-06-22T19:05:19-05:00</lastmod>
     </url>
     <url>
         <loc>http://RayHightower.com/404.html</loc>
@@ -180,7 +186,7 @@
     </url>
     <url>
         <loc>http://RayHightower.com/blog/archives/</loc>
-        <lastmod>2013-06-22T10:03:27-05:00</lastmod>
+        <lastmod>2013-06-22T19:05:19-05:00</lastmod>
     </url>
     <url>
         <loc>http://RayHightower.com/contact/</loc>
@@ -192,7 +198,7 @@
     </url>
     <url>
         <loc>http://RayHightower.com/</loc>
-        <lastmod>2013-06-22T10:03:27-05:00</lastmod>
+        <lastmod>2013-06-22T19:05:19-05:00</lastmod>
     </url>
     <url>
         <loc>http://RayHightower.com/speaking/</loc>

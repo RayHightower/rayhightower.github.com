@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Upgrading Ruby With RVM - RayHightower.com</title>
+  <title>Prep for Parallella's 64 Cores: Installing Go on Mac OS X - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="Ruby Version Manager (RVM) is one of my favorite tools in the Ruby ecosystem. Reason: RVM lets me experiment with Ruby and Rails at will. I don&#8217 &hellip;">
+  <meta name="description" content="The idea of owning a 64-core parallel system for two hundred dollars (yes, $200.00) is exciting. Parallella is working to make that happen, perhaps &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/">
+  <link rel="canonical" href="http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -84,7 +84,7 @@
   
   <header>
     
-      <h1 class="entry-title">Upgrading Ruby With RVM</h1>
+      <h1 class="entry-title">Prep for Parallella's 64 Cores: Installing Go on Mac OS X</h1>
     
     
       <p class="meta">
@@ -100,65 +100,73 @@
   
 
 
-<time datetime="2013-05-16T13:36:00-05:00" pubdate data-updated="true">May 16<span>th</span>, 2013</time>
+<time datetime="2013-06-22T12:58:00-05:00" pubdate data-updated="true">Jun 22<span>nd</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><a href="http://rvm.io">Ruby Version Manager (RVM)</a> is one of my favorite tools in the Ruby ecosystem.  Reason: RVM lets me experiment with Ruby and Rails at will. I don&#8217;t know about you, but my best experiments are full of risk so they eventually blow things up. When that happens, I can always recover the broken areas without wasting time on a full system restore.</p>
-
-<p>Some devs choose to use another tool, <a href="https://github.com/sstephenson/rbenv">RBenv</a>, that serves a purpose similar to RVM. I began working with RVM before the other tools existed, and since it has always worked well for me, I have no reason to switch.</p>
-
-<h4>Ruby 2.0.0-p195</h4>
-
-<p>The latest patch of Ruby 2.0.0, p195, was released two days ago. Time to take it for a spin. RVM lets devs upgrade Ruby and manage gemsets seamlessly. Here&#8217;s how the process went.</p>
+<div class="entry-content"><p><img src="/images/parallella.jpg" width="450" height="257" alt="Parallella 64-core supercomputer" title="Parallella 64-core supercomputer" align="right" imgcap="Parallella Board">
+The idea of owning a 64-core parallel system for two hundred dollars (yes, $200.00) is exciting. <a href="http://parallella.org">Parallella</a> is working to make that happen, perhaps as early as August 2013. To prepare for that day, I&#8217;ve decided to introduce myself to the Go language.</p>
 
 <!--more-->
 
 
-<h4>Get the Latest RVM</h4>
+<p>I was inspired to explore Go by <a href="https://twitter.com/blakesmith">Blake Smith&#8217;s</a> presentation at <a href="http://www.meetup.com/ChicagoSC/events/120658422/">8th Light</a> earlier this month.</p>
 
-<p>Instructions for installing RVM are at <a href="http://rvm.io">http://rvm.io</a>.
-If you already have RVM installed, you should confirm that you have the
-latest version.</p>
+<h3>What is Go?</h3>
+
+<p><a href="http://golang.org">The Go language</a> is designed for parallel systems. Why does Go exist? One developer sums it up this way:</p>
+
+<blockquote><p>Go was created at Google, by Google, for Google-size problems.<br/>~Dave Astels</p></blockquote>
+
+<p>Google writes software that runs on thousands of machines in parallel. As the number of concurrent operations increases, new challenges are encountered. Google addressed those challenges by creating Go.</p>
+
+<h3>Why Does a Rubyist Learn Go?</h3>
+
+<p>The team at <a href="http://wisdomgroup.com">WisdomGroup</a> writes web and mobile apps, mainly in Ruby. So why am I learning Go?</p>
+
+<p>Because the best developers are polyglot. When we learn a new language, we cause ourselves to see old problems in new ways and we strengthen our ability to solve new problems. It&#8217;s like cross-training for  athletes. In the end, we become better developers.</p>
+
+<h3>How to Install Go on Mac OS X</h3>
+
+<ol>
+<li><a href="https://code.google.com/p/go/downloads/list">Download the binary distribution of Go that matches your system</a>, and complete the rest of these steps before installing it. For my 2010 i5-based 15-inch MacBook Pro, I chose <code>go1.1.1.darwin-amd64.pkg</code>. I was concerned about the reference to <code>amd64</code> in the name. But the description includes <code>Mac OS X (x86 64-bit)</code>, and the binary worked for me.</li>
+<br/>
+<li>If you are upgrading from a previous version of Go, you will need to remove the old Go directory. You can do this while the download is happening in the background.</li>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rvm get head
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rm -rf /usr/local/go
 </span></code></pre></td></tr></table></div></figure>
 
-
-<h4>Grab the Ruby Patch</h4>
-
-<p>With the latest RVM installed, you can upgrade to the latest Ruby
-patch level.</p>
+<li>Define the <code>GOROOT</code> and <code>GOPATH</code> environmental variables. My system uses <code>~/.bash_profile</code> to define environmental variables, so I added the following lines to the end of that file:
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rvm upgrade 2.0.0
-</span><span class='line'>Are you sure you wish to upgrade from ruby-2.0.0-p0 to ruby-2.0.0-p195? <span class="o">(</span>Y/n<span class="o">)</span>: y
-</span><span class='line'>Installing new ruby ruby-2.0.0-p195
-</span><span class='line'>Searching <span class="k">for </span>binary rubies, this might take some time.
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">export </span><span class="nv">GOROOT</span><span class="o">=</span>/usr/local/go
+</span><span class='line'><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$GOROOT</span>/bin
+</span><span class='line'><span class="nb">export </span><span class="nv">GOPATH</span><span class="o">=</span>~/Code/gocode
 </span></code></pre></td></tr></table></div></figure>
-
-
-<p>The process took at least twenty minutes on my system. I don&#8217;t have an exact time because I began working on other tasks during the upgrade, and when I looked back at the terminal window, the process was mostly complete, except for a few questions about gemsets&#8230;</p>
+Note: Your <code>GOPATH</code> variable may be different from mine. I store all of my source code in a subdirectory of my home directory:<code>~/Code</code>. My complete Go directory structure is given below. By looking at my structure, you can adjust these steps to fit your system.</li>
+<br/>
+<li>Tell your terminal session to recognize the new environmental variables. You can either restart terminal, or if your environmental variables are in <code>~/.bash_profile</code> like mine, you can do the following:</li>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>Migrating gems from ruby-2.0.0-p0 to ruby-2.0.0-p195
-</span><span class='line'>Are you sure you wish to MOVE gems from ruby-2.0.0-p0 to ruby-2.0.0-p195?
-</span><span class='line'>This will overwrite existing gems in ruby-2.0.0-p195 and remove them from ruby-2.0.0-p0 <span class="o">(</span>Y/n<span class="o">)</span>: y
-</span><span class='line'>Moving gemsets...
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">source</span> ~/.bash_profile
 </span></code></pre></td></tr></table></div></figure>
+<li>Run the package installation program, <code>go1.1.1.darwin-amd64.pkg</code>, that was downloaded in Step 1.</li>
+</ol>
 
 
-<p>&#8230;and aliases, wrappers, and archiving my patchless Ruby 2.0.0.</p>
+<p>Now, let&#8217;s Go for a test drive.</p>
+
+<h3>Creating a Go Workspace</h3>
+
+<p>Before you can run a Go program on your system, you have to create a Go workspace. A workspace is a directory structure that contains source code and binaries that a Go program needs in order to compile and execute.</p>
+
+<p>We can examine a the Go Workspace on my system with the Unix <code>tree</code> command:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -168,18 +176,74 @@ patch level.</p>
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>Do you wish to move over aliases? <span class="o">(</span>Y/n<span class="o">)</span>: y
-</span><span class='line'>Do you wish to move over wrappers? <span class="o">(</span>Y/n<span class="o">)</span>: y
-</span><span class='line'>Do you also wish to completely remove ruby-2.0.0-p0 <span class="o">(</span>inc. archive<span class="o">)</span>? <span class="o">(</span>Y/n<span class="o">)</span>: y
-</span><span class='line'>Removing ruby-2.0.0-p0........
-</span><span class='line'>Successfully migrated ruby-2.0.0-p0 to ruby-2.0.0-p195
-</span><span class='line'>Upgrade <span class="nb">complete</span>!
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/gocode<span class="nv">$ </span>tree
+</span><span class='line'>.
+</span><span class='line'>└── src
+</span><span class='line'>    └── github.com
+</span><span class='line'>        └── rayhightower
+</span><span class='line'>            └── hello
+</span><span class='line'>                └── hello.go
 </span><span class='line'>
-</span><span class='line'><span class="err">$</span>
+</span><span class='line'>4 directories, 1 file
+</span><span class='line'>
+</span><span class='line'>~/Code/gocode<span class="err">$</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Upgrade complete. Now running the latest patch of Ruby 2.0.0-p195</p>
+<p>Here&#8217;s a brief description of the directories:</p>
+
+<ul>
+<li>Code = root directory for all source code on my system. Yours may be different.</li>
+<li>gocode = where I store all of the Go code on my system</li>
+<li>src = source code</li>
+<li>github.com = directory named after the place where I store repos</li>
+<li>rayhightower = my GitHub profile named</li>
+<li>hello = directory named for the name of our first Go application</li>
+<li>hello.go = the Go source file for our <code>Hello World</code> program</li>
+</ul>
+
+
+<p>All structure below the <code>gocode</code> directory is mandated by Go.</p>
+
+<h3>Writing &#8216;Hello World!&#8217; in Go</h3>
+
+<p>Google&#8217;s official installation instructions include a simple &#8216;Hello World&#8217; program for testing the installation. A slightly modified version appears below:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='go'><span class='line'><span class="k">package</span> <span class="n">main</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">import</span> <span class="s">&quot;fmt&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">func</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">fmt</span><span class="p">.</span><span class="n">Printf</span><span class="p">(</span><span class="s">&quot;Hey Parallella enthusiasts: Learn Go!\n&quot;</span><span class="p">)</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Compiling and Running</h3>
+
+<p>We drop the code into <code>hello.go</code> in the <code>hello</code> directory. To compile
+the program:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/gocode/src/github.com/rayhightower/hello<span class="nv">$ </span>go install
+</span><span class='line'>
+</span><span class='line'>~/Code/gocode/src/github.com/rayhightower/hello<span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If the compiler responds with a blank prompt (like above) then the program compiled successfully and a <code>bin</code> directory has been created inside the workspace. Run the <code>tree</code> command from the <code>gocode</code> directory to see how the structure has changed:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -194,23 +258,24 @@ patch level.</p>
 <span class='line-number'>11</span>
 <span class='line-number'>12</span>
 <span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>rvm list
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/gocode<span class="nv">$ </span>tree
+</span><span class='line'>.
+</span><span class='line'>├── bin
+</span><span class='line'>│   └── hello
+</span><span class='line'>└── src
+</span><span class='line'>    └── github.com
+</span><span class='line'>        └── rayhightower
+</span><span class='line'>            └── hello
+</span><span class='line'>                └── hello.go
 </span><span class='line'>
-</span><span class='line'>rvm rubies
+</span><span class='line'>5 directories, 2 files
 </span><span class='line'>
-</span><span class='line'>   macruby-0.12 <span class="o">[</span> i686 <span class="o">]</span>
-</span><span class='line'>   ruby-1.8.7-p334 <span class="o">[</span> i686 <span class="o">]</span>
-</span><span class='line'>   ruby-1.9.2-p290 <span class="o">[</span> x86_64 <span class="o">]</span>
-</span><span class='line'> * ruby-1.9.3-p385 <span class="o">[</span> x86_64 <span class="o">]</span>
-</span><span class='line'>   ruby-2.0.0-p195 <span class="o">[</span> x86_64 <span class="o">]</span>
-</span><span class='line'>
-</span><span class='line'><span class="c"># =&gt; - current</span>
-</span><span class='line'><span class="c"># =* - current &amp;&amp; default</span>
-</span><span class='line'><span class="c">#  * - default</span>
+</span><span class='line'>~/Code/gocode<span class="err">$</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>As a final option, I chose to make this latest Ruby patch my default.</p>
+<p>And now, let&#8217;s cut the suspense and <em>run the program</em>. To do so,
+change into the <code>bin/</code> directory and type <code>./hello</code>.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -218,40 +283,20 @@ patch level.</p>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
 <span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>rvm use ruby-2.0.0 --default
-</span><span class='line'>Using /Users/rth/.rvm/gems/ruby-2.0.0-p195
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/gocode/src/github.com/rayhightower/hello<span class="nv">$ </span><span class="nb">cd</span> ~/Code/gocode/bin
 </span><span class='line'>
-</span><span class='line'>~<span class="nv">$ </span>rvm list
+</span><span class='line'>~/Code/gocode/bin<span class="nv">$ </span>./hello
+</span><span class='line'>Hey Parallella enthusiasts: Learn Go!
 </span><span class='line'>
-</span><span class='line'>rvm rubies
-</span><span class='line'>
-</span><span class='line'>   macruby-0.12 <span class="o">[</span> i686 <span class="o">]</span>
-</span><span class='line'>   ruby-1.8.7-p334 <span class="o">[</span> i686 <span class="o">]</span>
-</span><span class='line'>   ruby-1.9.2-p290 <span class="o">[</span> x86_64 <span class="o">]</span>
-</span><span class='line'>   ruby-1.9.3-p385 <span class="o">[</span> x86_64 <span class="o">]</span>
-</span><span class='line'><span class="o">=</span>* ruby-2.0.0-p195 <span class="o">[</span> x86_64 <span class="o">]</span>
-</span><span class='line'>
-</span><span class='line'><span class="c"># =&gt; - current</span>
-</span><span class='line'><span class="c"># =* - current &amp;&amp; default</span>
-</span><span class='line'><span class="c">#  * - default</span>
-</span><span class='line'>
-</span><span class='line'>~<span class="err">$</span>
+</span><span class='line'>~/Code/gocode/bin<span class="err">$</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>And that&#8217;s it.</p>
+<p>Success!</p>
+
+<h3>Next Steps</h3>
+
+<p>Now it&#8217;s time to explore the Go language. The real adventure begins when the 64-core Parallella arrives. Looking forward to it!</p>
 </div>
 
 
@@ -274,12 +319,12 @@ patch level.</p>
   
 
 
-<time datetime="2013-05-16T13:36:00-05:00" pubdate data-updated="true">May 16<span>th</span>, 2013</time>
+<time datetime="2013-06-22T12:58:00-05:00" pubdate data-updated="true">Jun 22<span>nd</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/education/'>Education</a>, <a class='category' href='/blog/categories/rails/'>Rails</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>
+    <a class='category' href='/blog/categories/education/'>Education</a>, <a class='category' href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX</a>
   
 </span>
 
@@ -288,7 +333,7 @@ patch level.</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/" data-via="" data-counturl="http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/" data-via="" data-counturl="http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/" >Tweet</a>
   
   
   
@@ -297,10 +342,8 @@ patch level.</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/05/13/rubymotion-sketchnotes/" title="Previous Post: RubyMotion Sketchnotes">&laquo; RubyMotion Sketchnotes</a>
+        <a class="basic-alignment left" href="/blog/2013/06/21/replacing-google-reader-with-feed-wrangler/" title="Previous Post: Replacing Google Reader with Feed Wrangler">&laquo; Replacing Google Reader with Feed Wrangler</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/" title="Next Post: BeagleBone Black, Up & Running">BeagleBone Black, Up & Running &raquo;</a>
       
     </p>
   </footer>
@@ -429,8 +472,8 @@ patch level.</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/';
-        var disqus_url = 'http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/';
+        var disqus_identifier = 'http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/';
+        var disqus_url = 'http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/';
         var disqus_script = 'embed.js';
       
     (function () {
