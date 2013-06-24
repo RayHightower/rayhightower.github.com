@@ -8,7 +8,6 @@ categories: [ Education, Linux-Unix-OSX ]
 <img src="/images/parallella.jpg" width="450" height="257" alt="Parallella 64-core supercomputer" title="Parallella 64-core supercomputer" align="right" imgcap="Parallella Board">
 The idea of owning a 64-core parallel system for two hundred dollars (yes, $200.00) is exciting. [Parallella](http://www.parallella.org/introduction/) is working to make that happen, perhaps as early as August 2013. To prepare for that day, I've decided to introduce myself to the Go language. 
 <!--more-->
-I was inspired to explore Go by [Blake Smith's](https://twitter.com/blakesmith) presentation at [8th Light](http://www.meetup.com/ChicagoSC/events/120658422/) earlier this month. [Justin Love](http://twitter.com/wondible) told me about Parallella last month at ChicagoRuby.
 
 ###What is Go?
 [The Go language](http://golang.org) is designed for parallel systems. Why does Go exist? One developer sums it up this way:
@@ -27,7 +26,7 @@ Because the best developers are polyglot. When we learn a new language, we cause
 <ol>
 <li><a href="https://code.google.com/p/go/downloads/list">Download the binary of Go that matches your system</a>, and complete the rest of these steps before installing it. For my 2010 i5-based 15-inch MacBook Pro, I chose <code>go1.1.1.darwin-amd64.pkg</code>. I was concerned about the reference to <code>amd64</code> in the name. But the description includes <code>Mac OS X (x86 64-bit)</code>, and the binary worked for me.</li>
 <br/>
-<li>If you are upgrading from a previous version of Go, you will need to remove the old Go directory. You can do this while the download is happening in the background.</li>
+<li>If you are upgrading from a previous version of Go, you will need to remove the old Go directory. You can do this while the new binary is downloading in the background:</li>
 
 ```bash
 $ rm -rf /usr/local/go
@@ -146,3 +145,6 @@ The Go-Parallella match makes sense. It's always good to skate where the puck is
 
 ###Next Steps
 Now it's time to explore the Go language. The real adventure begins when the 64-core Parallella arrives. Looking forward to it!
+
+###Acknowledgements
+I was inspired to explore Go by [Blake Smith's](https://twitter.com/blakesmith) presentation at [8th Light](http://www.meetup.com/ChicagoSC/events/120658422/). [Justin Love](http://twitter.com/wondible) introduced me to Parallella last month at ChicagoRuby.
