@@ -132,7 +132,7 @@ The idea of owning a 64-core parallel system for two hundred dollars (yes, $200.
 <ol>
 <li><a href="https://code.google.com/p/go/downloads/list">Download the binary of Go that matches your system</a>, and complete the rest of these steps before installing it. For my 2010 i5-based 15-inch MacBook Pro, I chose <code>go1.1.1.darwin-amd64.pkg</code>. I was concerned about the reference to <code>amd64</code> in the name. But the description includes <code>Mac OS X (x86 64-bit)</code>, and the binary worked for me.</li>
 <br/>
-<li>If you are upgrading from a previous version of Go, you will need to remove the old Go directory. You can do this while the download is happening in the background.</li>
+<li>If you are upgrading from a previous version of Go, you will need to remove the old Go directory. You can do this while the new binary is downloading in the background:</li>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rm -rf /usr/local/go
