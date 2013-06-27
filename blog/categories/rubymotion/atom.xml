@@ -4,7 +4,7 @@
   <title><![CDATA[Category: RubyMotion | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/rubymotion/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-06-24T09:51:04-05:00</updated>
+  <updated>2013-06-27T15:36:39-04:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[RubyMotion Sketchnotes]]></title>
     <link href="http://RayHightower.com/blog/2013/05/13/rubymotion-sketchnotes/"/>
-    <updated>2013-05-13T17:48:00-05:00</updated>
+    <updated>2013-05-13T17:48:00-04:00</updated>
     <id>http://RayHightower.com/blog/2013/05/13/rubymotion-sketchnotes</id>
     <content type="html"><![CDATA[<p><a href="http://RayHightower.com/images/rubymotion-sketchnotes.jpg"><img src="http://RayHightower.com/images/rubymotion-sketchnotes-sm.jpg" width="300" height="157" alt="RubyMotion Sketchnotes" title="RubyMotion Sketchnotes" align="right"></a>
 Alexis Finch (<a href="https://twitter.com/agentFin">@agentfin</a>) captured Sketchnotes for a <a href="http://rayhightower.com/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a> presentation that I gave for <a href="http://meetup.com/geekfest">Groupon's Geekfest</a>.</p>
@@ -37,7 +37,7 @@ Alexis Finch (<a href="https://twitter.com/agentFin">@agentfin</a>) captured Ske
   <entry>
     <title type="html"><![CDATA[Objective-C Programming: The Big Nerd Ranch Guide]]></title>
     <link href="http://RayHightower.com/blog/2013/02/28/objective-c-programming-the-big-nerd-ranch-guide/"/>
-    <updated>2013-02-28T15:52:00-06:00</updated>
+    <updated>2013-02-28T15:52:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/02/28/objective-c-programming-the-big-nerd-ranch-guide</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/objective-c-big-nerd.png" align="right" width="250" height="357" alt="Objective-C Programming - The Big Nerd Ranch Guide" title="Objective-C Programming - The Big Nerd Ranch Guide"></p>
 
@@ -80,7 +80,7 @@ Alexis Finch (<a href="https://twitter.com/agentFin">@agentfin</a>) captured Ske
   <entry>
     <title type="html"><![CDATA[Atari's Pong, Built With RubyMotion]]></title>
     <link href="http://RayHightower.com/blog/2013/02/26/atari-pong-rubymotion-objective-c/"/>
-    <updated>2013-02-26T10:35:00-06:00</updated>
+    <updated>2013-02-26T10:35:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/02/26/atari-pong-rubymotion-objective-c</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/pong-rubymotion-objective-c.png" width="300" height="160" alt="Atari's Pong in RubyMotion and Objective-C" title="Atari's Pong in RubyMotion and Objective-C" align="right">
 <a href="http://en.wikipedia.org/wiki/Pong">Atari's Pong</a> is a classic video arcade game from the 1970s. Seeing Pong always gives me childhood flashbacks.</p>
@@ -185,7 +185,7 @@ Alexis Finch (<a href="https://twitter.com/agentFin">@agentfin</a>) captured Ske
   <entry>
     <title type="html"><![CDATA[Automatic ctags with RubyMotion and Vim]]></title>
     <link href="http://RayHightower.com/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim/"/>
-    <updated>2013-02-12T19:35:00-06:00</updated>
+    <updated>2013-02-12T19:35:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim</id>
     <content type="html"><![CDATA[<p><a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a> includes a <code>rake</code> task that generates <a href="http://ctags.sourceforge.net/whatis.html">Exuberant Ctags</a>. To generate tags, run the following in the root directory of a RubyMotion project.</p>
 
@@ -285,7 +285,7 @@ To use the RubyMotion console, cd into the new directory: NewApp</p>
   <entry>
     <title type="html"><![CDATA[RubyMotion Provisioning Profiles]]></title>
     <link href="http://RayHightower.com/blog/2012/12/26/rubymotion-provisioning-profiles/"/>
-    <updated>2012-12-26T20:46:00-06:00</updated>
+    <updated>2012-12-26T20:46:00-05:00</updated>
     <id>http://RayHightower.com/blog/2012/12/26/rubymotion-provisioning-profiles</id>
     <content type="html"><![CDATA[<p><em>Note: This article on provisioning profiles was first posted in the <a href="https://groups.google.com/forum/?fromgroups=#!topic/rubymotion/Nvo8dH_8rkI">RubyMotion Google Group</a> on May 10, 2012. It was also referenced on <a href="http://stackoverflow.com/questions/13539743/rubymotion-build-error-cant-find-a-provisioning-profile-named-mixios-tea">Stack Overflow</a>.</em></p>
 

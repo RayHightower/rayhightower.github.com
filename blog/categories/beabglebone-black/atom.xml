@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: BeabgleBone Black | RayHightower.com]]></title>
+  <link href="http://RayHightower.com/blog/categories/beabglebone-black/atom.xml" rel="self"/>
+  <link href="http://RayHightower.com/"/>
+  <updated>2013-06-27T15:36:39-04:00</updated>
+  <id>http://RayHightower.com/</id>
+  <author>
+    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[PechaKucha: Developer Education at TableXI]]></title>
+    <link href="http://RayHightower.com/blog/2013/06/27/video-education-pechakucha-at-tablexi/"/>
+    <updated>2013-06-27T15:13:00-04:00</updated>
+    <id>http://RayHightower.com/blog/2013/06/27/video-education-pechakucha-at-tablexi</id>
+    <content type="html"><![CDATA[<p><a href="http://pechakucha.com">PechaKucha</a> is a presentation style developed in Japan. The PechaKucha format is 20x20: The presenter must share an idea in twenty slides, each displayed for exactly twenty seconds, advancing automatically. Total presentation time = six minutues, forty seconds.</p>
+
+<p><a href="http://www.tablexi.com/blog/2013/06/practice-begins-with-play-a-table-talk/developers/">TableXI</a> hosted a PechaKucha on June 13th with the theme <em>Developer Education</em>. I was one of six presenters invited to speak. Video appears below:</p>
+
+<center><iframe width='460' height='345' src="http://www.pechakucha.org/presentations/51b92936dbdd200cbc000011/embed" frameborder="0"></iframe></center>
+
+
+<p>One highlight from the PechaKucha presentation: This year's <a href="http://windycityrails.org">WindyCityRails</a> will include a youth program on Thursday afternoon. Details will be announced in July. Follow <a href="http://twitter.com/windycityrails">@WindyCityRails</a> for the latest news on the program.</p>
+
+<p>Thanks TableXI for the PechaKucha invitation, and for sponsoring WindyCityRails 2013!</p>
+]]></content>
+  </entry>
+  
+</feed>
