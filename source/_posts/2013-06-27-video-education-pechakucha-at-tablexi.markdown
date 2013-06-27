@@ -5,7 +5,7 @@ date: 2013-06-27 15:13
 comments: true
 categories: [ BeabgleBone Black, Education, Raspberry Pi ]
 ---
-[PechaKucha](http://pechakucha.com) is a presentation format developed in Japan. The PechaKucha format is 20x20: The presenter must share an idea in twenty slides, each displayed for exactly twenty seconds, advancing automatically. Total presentation time = six minutues, forty seconds.
+[PechaKucha](http://pechakucha.com) is a presentation style developed in Japan. The PechaKucha format is 20x20: The presenter must share an idea in twenty slides, each displayed for exactly twenty seconds, advancing automatically. Total presentation time = six minutues, forty seconds.
 
 [TableXI](http://www.tablexi.com/blog/2013/06/practice-begins-with-play-a-table-talk/developers/) hosted a PechaKucha on June 13th with the theme _Developer Education_. I was one of six presenters invited to speak. Video appears below:
 
