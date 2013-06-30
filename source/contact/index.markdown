@@ -3,7 +3,6 @@ layout: page
 title: "contact"
 footer: false
 ---
-<p>This form will put you in touch with Ray Hightower.</p>
 <div id="wufoo-r7w8p9">
 Fill out my <a href="http://wisdomgroup.wufoo.com/forms/r7w8p9">online form</a>.
 </div>
