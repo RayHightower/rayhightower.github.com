@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-06-30T17:12:58-04:00</updated>
+  <updated>2013-07-04T15:31:43-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -14,9 +14,35 @@
 
   
   <entry>
+    <title type="html"><![CDATA[FeeddlerPro for RSS]]></title>
+    <link href="http://RayHightower.com/blog/2013/07/04/feeddlerpro-for-rss/"/>
+    <updated>2013-07-04T15:07:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/07/04/feeddlerpro-for-rss</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/FeeddlerPro-accounts.png" width="300" height="258"
+align="right" alt="FeeddlerPro Accounts" title="FeeddlerPro Accounts">
+Yes, the name appears misspelled. But <a href="https://itunes.apple.com/us/app/feeddler-rss-reader-pro/id365710282?mt=8">FeeddlerPro</a> is my choice for RSS on iPhone and iPad. Feeddler has long been my favorite RSS reader. The developer&#8217;s decision to add support for services beyond Google Reader (Bazqux Reader, FeedHQ, and The OldReader) sealed the decision for me.</p>
+
+<h3>Second Choice</h3>
+
+<p><a href="http://RayHightower.com/blog/2013/06/21/replacing-google-reader-with-feed-wrangler/">Feed Wrangler</a> was a close second. I like Feed Wrangler&#8217;s minimalist approach to RSS. However, the app is missing a few features that FeeddlerPro already has baked in.</p>
+
+<!--more-->
+
+
+<h3>Server-Side Synchronization</h3>
+
+<p>Of course, an RSS client is nothing without the server-side to keep everything synchronized. I chose <a href="http://theoldreader.com">The Old Reader</a> because it syncs between iPhone, iPad, and web without extra fluff.</p>
+
+<p>Other RSS providers probably offer the same level of service. Fortunately, Feeddler makes it easy to switch between RSS services seamlessly.</p>
+
+<p>Google Reader is history, but RSS marches on.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[PechaKucha: Developer Education at TableXI]]></title>
     <link href="http://RayHightower.com/blog/2013/06/27/pechakucha-developer-education-at-tablexi/"/>
-    <updated>2013-06-27T15:13:00-04:00</updated>
+    <updated>2013-06-27T15:13:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/06/27/pechakucha-developer-education-at-tablexi</id>
     <content type="html"><![CDATA[<p><a href="http://pechakucha.org">PechaKucha</a> is a concise presentation style developed in Japan. The PechaKucha format is 20x20: The presenter must share an idea in twenty slides, each displayed for exactly twenty seconds, advancing automatically. Total presentation time = six minutues, forty seconds.</p>
 
@@ -37,7 +63,7 @@
   <entry>
     <title type="html"><![CDATA[Prep for Parallella's 64 Cores: Installing Go on Mac OS X]]></title>
     <link href="http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/"/>
-    <updated>2013-06-22T12:58:00-04:00</updated>
+    <updated>2013-06-22T12:58:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/parallella.jpg" width="450" height="257" alt="Parallella 64-core supercomputer" title="Parallella 64-core supercomputer" align="right" imgcap="Parallella Board">
 The idea of owning a 64-core parallel system for two hundred dollars (yes, $200.00) is exciting. <a href="http://www.parallella.org/introduction/">Parallella</a> is working to make that happen, perhaps as early as August 2013. To prepare for that day, I&#8217;ve decided to introduce myself to the Go language.</p>
@@ -250,7 +276,7 @@ Note: I&#8217;m using the default <code>GOROOT</code> variable, but your <code>G
   <entry>
     <title type="html"><![CDATA[Replacing Google Reader with Feed Wrangler]]></title>
     <link href="http://RayHightower.com/blog/2013/06/21/replacing-google-reader-with-feed-wrangler/"/>
-    <updated>2013-06-21T18:52:00-04:00</updated>
+    <updated>2013-06-21T18:52:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/06/21/replacing-google-reader-with-feed-wrangler</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/feedwrangler-gil.jpg" height="600" width="450" align="right" alt="Google Reader Replacement: Feed Wrangler - iPad" title="Google Reader Replacement: Feed Wrangler - iPad">
 Google Reader, the RSS product, shuts down on July 1st. I consume most news via RSS, and the ability to sync multiple RSS clients between iPhone, iPad, and desktop with Google Reader in the background saved time while keeping me informed. Finding a replacement is critical.</p>
@@ -294,7 +320,7 @@ Google Reader, the RSS product, shuts down on July 1st. I consume most news via 
   <entry>
     <title type="html"><![CDATA[Practice Begins With Play]]></title>
     <link href="http://RayHightower.com/blog/2013/06/13/practice-begins-with-play/"/>
-    <updated>2013-06-13T10:09:00-04:00</updated>
+    <updated>2013-06-13T10:09:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/06/13/practice-begins-with-play</id>
     <content type="html"><![CDATA[<p>This afternoon I was invited to speak at the June <a href="http://www.tablexi.com/blog/2013/06/developer-education-june-table-talks/developers/">Table Talks</a> hosted by Table XI. Today&#8217;s theme was developer education. My topic: <em>Practice Begins With Play</em>. Developers who want to achieve mastery have many practice resources to choose from, including open source hardware like <a href="http://RayHightower.com/blog/2012/12/03/ruby-on-raspberry-pi/">Raspbery Pi</a>, <a href="http://RayHightower.com/blog/2013/05/22/beaglebone-black-up-and-running/">BeagleBone Black</a>, and <a href="http://parallella.org">Parallella</a>.</p>
 
@@ -319,7 +345,7 @@ Google Reader, the RSS product, shuts down on July 1st. I consume most news via 
   <entry>
     <title type="html"><![CDATA[Kali Linux for Pentesting]]></title>
     <link href="http://RayHightower.com/blog/2013/05/31/kali-linux-pentesting/"/>
-    <updated>2013-05-31T00:15:00-04:00</updated>
+    <updated>2013-05-31T00:15:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/05/31/kali-linux-pentesting</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/kali-linux-desktop.png" width="400" height="303" title="Kali Linux - The quieter you become, the more you are able to hear." alt="Kali Linux - The quieter you become, the more you are able to hear." align="right">
 <a href="http://getbraintree.com">Braintree</a> hosted a <a href="http://www.meetup.com/braintreepayments/events/119511632/">Hax &#8216;n Snax</a> event this afternoon. Devs from around Chicago gathered together to hack on code, socialize, trade ideas, and hone skills. Thanks Braintree for putting on a great event.</p>
@@ -372,7 +398,7 @@ Google Reader, the RSS product, shuts down on July 1st. I consume most news via 
   <entry>
     <title type="html"><![CDATA[BeagleBone Black, Up & Running]]></title>
     <link href="http://RayHightower.com/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/"/>
-    <updated>2013-05-22T22:13:00-04:00</updated>
+    <updated>2013-05-22T22:13:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/05/22/beaglebone-black-running-ruby-on-rails</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/BeagleBoneBlack.jpg" width="372" height="600" title="BeagleBone Black" alt="BeagleBone Black" align="right">
 <a href="http://beagleboard.org/Products/BeagleBone%20Black">BeagleBone Black</a>, like the <a href="http://RayHightower.com/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a>, is a small, inexpensive computer that runs Linux. It&#8217;s smaller than a deck of cards and you can buy one for about forty-five dollars ($45.00). The device is made by <a href="http://circuitco.com">CircuitCo</a> in Richardson, TX, USA.</p>
@@ -465,7 +491,7 @@ The manufacturer included a mini-USB cable with the device, so you can power it 
   <entry>
     <title type="html"><![CDATA[Upgrading Ruby With RVM]]></title>
     <link href="http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/"/>
-    <updated>2013-05-16T13:36:00-04:00</updated>
+    <updated>2013-05-16T13:36:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm</id>
     <content type="html"><![CDATA[<p><a href="http://rvm.io">Ruby Version Manager (RVM)</a> is one of my favorite tools in the Ruby ecosystem.  Reason: RVM lets me experiment with Ruby and Rails at will. I don&#8217;t know about you, but my best experiments are full of risk so they eventually blow things up. When that happens, I can always recover the broken areas without wasting time on a full system restore.</p>
 
@@ -618,7 +644,7 @@ patch level.</p>
   <entry>
     <title type="html"><![CDATA[RubyMotion Sketchnotes]]></title>
     <link href="http://RayHightower.com/blog/2013/05/13/rubymotion-sketchnotes/"/>
-    <updated>2013-05-13T17:48:00-04:00</updated>
+    <updated>2013-05-13T17:48:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/05/13/rubymotion-sketchnotes</id>
     <content type="html"><![CDATA[<p><a href="http://RayHightower.com/images/rubymotion-sketchnotes.jpg"><img src="http://RayHightower.com/images/rubymotion-sketchnotes-sm.jpg" width="300" height="157" alt="RubyMotion Sketchnotes" title="RubyMotion Sketchnotes" align="right"></a>
 Alexis Finch (<a href="https://twitter.com/agentFin">@agentfin</a>) captured Sketchnotes for a <a href="http://rayhightower.com/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a> presentation that I gave for <a href="http://meetup.com/geekfest">Groupon&#8217;s Geekfest</a>.</p>
@@ -639,7 +665,7 @@ Alexis Finch (<a href="https://twitter.com/agentFin">@agentfin</a>) captured Ske
   <entry>
     <title type="html"><![CDATA[The Man Who Sold Hot Dogs]]></title>
     <link href="http://RayHightower.com/blog/2013/04/23/the-man-who-sold-hot-dogs/"/>
-    <updated>2013-04-23T18:13:00-04:00</updated>
+    <updated>2013-04-23T18:13:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/04/23/the-man-who-sold-hot-dogs</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/hot-dog-cart.jpg" width="250" height="277" align="right" title="The Man Who Sold Hot Dogs" alt="The Man Who Sold Hot Dogs">
 <em>Note: This timeless story pre-dates the web, and it has appeared at <a href="http://wisdomgroup.com">WisdomGroup.com</a>. Author unknown.</em></p>
@@ -667,7 +693,7 @@ Alexis Finch (<a href="https://twitter.com/agentFin">@agentfin</a>) captured Ske
   <entry>
     <title type="html"><![CDATA[Ack 2.0: Written in Perl, Useful With Ruby]]></title>
     <link href="http://RayHightower.com/blog/2013/04/20/ack-written-in-perl-useful-with-ruby/"/>
-    <updated>2013-04-20T17:12:00-04:00</updated>
+    <updated>2013-04-20T17:12:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/04/20/ack-written-in-perl-useful-with-ruby</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/ack.png" align="right" height="237" width="230" alt="Ack Linux Mac OS X" title="Ack Linux Mac OS X"></p>
 
@@ -752,7 +778,7 @@ without leaving your editor.</p>
   <entry>
     <title type="html"><![CDATA[New RVM Behavior With .ruby-version and .ruby-gemset]]></title>
     <link href="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/"/>
-    <updated>2013-04-18T20:33:00-04:00</updated>
+    <updated>2013-04-18T20:33:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset</id>
     <content type="html"><![CDATA[<p><a href="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/"><img src="http://RayHightower.com/images/rvm.png" height="98" width="89" align="right" alt="RVM .ruby-version .ruby-gemset" title="RVM .ruby-version .ruby-gemset"></a>
 I trust <a href="http://rvm.io">RVM</a> to manage my Ruby versions and my gemsets. So when I saw an unexpected change in RVM&#8217;s behavior, I was concerned about a possible disruption in my workflow.</p>
@@ -855,7 +881,7 @@ I trust <a href="http://rvm.io">RVM</a> to manage my Ruby versions and my gemset
   <entry>
     <title type="html"><![CDATA[Elegant Code]]></title>
     <link href="http://RayHightower.com/blog/2013/04/12/elegant-code/"/>
-    <updated>2013-04-12T13:34:00-04:00</updated>
+    <updated>2013-04-12T13:34:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/04/12/elegant-code</id>
     <content type="html"><![CDATA[<p>This quote is too long to tweet, but too good to pass up:</p>
 
@@ -868,7 +894,7 @@ I trust <a href="http://rvm.io">RVM</a> to manage my Ruby versions and my gemset
   <entry>
     <title type="html"><![CDATA[Challenges Make Us Stronger]]></title>
     <link href="http://RayHightower.com/blog/2013/03/25/challenges-make-us-stronger/"/>
-    <updated>2013-03-25T09:37:00-04:00</updated>
+    <updated>2013-03-25T09:37:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/03/25/challenges-make-us-stronger</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/moth.png" width="300" height="215" align="right" title="Emperor moth photo by Dean Morley" alt="Emperor moth photo by Dean Morley">
 A man found a cocoon of an emperor moth. He took it home so that he could watch the moth come out of the cocoon. On the day a small opening appeared, he sat and watched the moth for several hours as the moth struggled to force its body through that little hole.</p>
@@ -897,7 +923,7 @@ A man found a cocoon of an emperor moth. He took it home so that he could watch 
   <entry>
     <title type="html"><![CDATA[How to Take a Raspberry Pi Screenshot]]></title>
     <link href="http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot/"/>
-    <updated>2013-03-19T20:43:00-04:00</updated>
+    <updated>2013-03-19T20:43:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot</id>
     <content type="html"><![CDATA[<p>After you get a <a href="http://RayHightower.com/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a> up and running, you may want to take a few screenshots so you can share the experience with others. Here&#8217;s how.</p>
 
@@ -948,7 +974,7 @@ and type the following at the prompt:</p>
   <entry>
     <title type="html"><![CDATA[You Can Do It Now]]></title>
     <link href="http://RayHightower.com/blog/2013/03/13/you-can-do-it-now/"/>
-    <updated>2013-03-13T15:31:00-04:00</updated>
+    <updated>2013-03-13T15:31:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/03/13/you-can-do-it-now</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/do_it_now.jpg" align="right" width="200" height="296" alt="You Can Do It Now" title="You Can Do It Now">
 If you are fortunate enough to work in the technology industry, you do not need permission to move forward. So do it now.</p>
@@ -1015,7 +1041,7 @@ If you are fortunate enough to work in the technology industry, you do not need 
   <entry>
     <title type="html"><![CDATA[Technology and God]]></title>
     <link href="http://RayHightower.com/blog/2013/03/03/technology-and-god/"/>
-    <updated>2013-03-03T14:00:00-05:00</updated>
+    <updated>2013-03-03T14:00:00-06:00</updated>
     <id>http://RayHightower.com/blog/2013/03/03/technology-and-god</id>
     <content type="html"><![CDATA[<p>Reflecting on a quote I became aware of recently:</p>
 
@@ -1030,7 +1056,7 @@ If you are fortunate enough to work in the technology industry, you do not need 
   <entry>
     <title type="html"><![CDATA[Objective-C Programming: The Big Nerd Ranch Guide]]></title>
     <link href="http://RayHightower.com/blog/2013/02/28/objective-c-programming-the-big-nerd-ranch-guide/"/>
-    <updated>2013-02-28T15:52:00-05:00</updated>
+    <updated>2013-02-28T15:52:00-06:00</updated>
     <id>http://RayHightower.com/blog/2013/02/28/objective-c-programming-the-big-nerd-ranch-guide</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/objective-c-big-nerd.png" align="right" width="250" height="357" alt="Objective-C Programming - The Big Nerd Ranch Guide" title="Objective-C Programming - The Big Nerd Ranch Guide"></p>
 
@@ -1073,7 +1099,7 @@ If you are fortunate enough to work in the technology industry, you do not need 
   <entry>
     <title type="html"><![CDATA[Atari's Pong, Built With RubyMotion]]></title>
     <link href="http://RayHightower.com/blog/2013/02/26/atari-pong-rubymotion-objective-c/"/>
-    <updated>2013-02-26T10:35:00-05:00</updated>
+    <updated>2013-02-26T10:35:00-06:00</updated>
     <id>http://RayHightower.com/blog/2013/02/26/atari-pong-rubymotion-objective-c</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/pong-rubymotion-objective-c.png" width="300" height="160" alt="Atari's Pong in RubyMotion and Objective-C" title="Atari's Pong in RubyMotion and Objective-C" align="right">
 <a href="http://en.wikipedia.org/wiki/Pong">Atari&#8217;s Pong</a> is a classic video arcade game from the 1970s. Seeing Pong always gives me childhood flashbacks.</p>
@@ -1178,7 +1204,7 @@ If you are fortunate enough to work in the technology industry, you do not need 
   <entry>
     <title type="html"><![CDATA[Apprenticeship Patterns]]></title>
     <link href="http://RayHightower.com/blog/2013/02/17/apprenticeship-patterns-by-dave-h-hoover-and-adewale-oshineye/"/>
-    <updated>2013-02-17T09:52:00-05:00</updated>
+    <updated>2013-02-17T09:52:00-06:00</updated>
     <id>http://RayHightower.com/blog/2013/02/17/apprenticeship-patterns-by-dave-h-hoover-and-adewale-oshineye</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/apprenticeship-patterns.gif" align="right" width="180" height="236" alt="Apprenticeship Patterns" title="Apprenticeship Patterns"></p>
 
@@ -1224,132 +1250,6 @@ If you are fortunate enough to work in the technology industry, you do not need 
 <blockquote><p>@ChicagoRuby: Wish granted: <a href="http://apprenticeship-patterns.labs.oreilly.com/">http://apprenticeship-patterns.labs.oreilly.com/</a>. The book is available online as a hypertext.</p></blockquote>
 
 <p>Thank you authors!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Automatic ctags with RubyMotion and Vim]]></title>
-    <link href="http://RayHightower.com/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim/"/>
-    <updated>2013-02-12T19:35:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim</id>
-    <content type="html"><![CDATA[<p><a href="http://RayHightower.com/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a> includes a <code>rake</code> task that generates <a href="http://ctags.sourceforge.net/whatis.html">Exuberant Ctags</a>. To generate tags, run the following in the root directory of a RubyMotion project.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rake ctags
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>Make Ctags Better With Automation</h4>
-
-<p>Ctags make writing code more efficient. But we shouldn&#8217;t have to type <code>$ rake ctags</code> every time we create a new RubyMotion project. This article shows how to use a shell script to generate ctags automatically every time you create a new RubyMotion app.</p>
-
-<!-- more -->
-
-
-<h4>How Ctags Save Time</h4>
-
-<p>Ctags can save you time. For example, when creating a new class called <code>HomeViewController</code> that inherits from <code>UIViewController</code>, typing the first view characters of the superclass will produce the drop-down shown below.
-<img src="http://RayHightower.com/images/uiviewcontroller.png" align="center" width="800" height="433" title="ctags RubyMotion Vim" alt="ctags RubyMotion Vim"></p>
-
-<p>RubyMotion&#8217;s implementation of ctags includes support for built-in iOS classes like UIViewController. The code completion and drop-downs offered by ctags will reduce keystrokes and errors, freeing the developer to focus on solving harder problems.</p>
-
-<h4>Creating the Script</h4>
-
-<p>Here&#8217;s the script. You can use any name that suits you. My script is called <code>mmotion.command</code> (with two m&#8217;s at the beginning to distinguish it from the standard <code>motion</code> command) and it&#8217;s in the <code>~/bin/</code> directory.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c">#!/bin/bash</span>
-</span><span class='line'><span class="c"># Create a RubyMotion app, change into the app&#39;s directory, and run ctags.</span>
-</span><span class='line'><span class="c"># Written by Raymond T. Hightower on February 12, 2013</span>
-</span><span class='line'>
-</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot;Creating a new RubyMotion app called:&quot;</span> <span class="nv">$1</span>
-</span><span class='line'>motion create <span class="nv">$1</span>
-</span><span class='line'><span class="nb">cd</span> <span class="nv">$1</span>
-</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot;Creating ctags for the new RubyMotion app...&quot;</span>
-</span><span class='line'>rake ctags
-</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot;Opening the new app in Vim...&quot;</span>
-</span><span class='line'>mvim .
-</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot;To use the RubyMotion console, cd into the new directory:&quot;</span> <span class="nv">$1</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>All of the work is done by by four lines. The remaining lines are comments or &#8216;echos&#8217; that tell the user what&#8217;s happening while the script is running.</p>
-
-<h4>Running the Script</h4>
-
-<p>If <code>~/bin/</code> is in the <code>$PATH</code>, you can run the script with the following line command:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>mmotion.command <span class="o">[</span>app name<span class="o">]</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Of course, we can still do better by leveraging the power of aliases in <code>~/.bash_profile</code>.</p>
-
-<h4>Adding an Alias to ~/.bash_profile</h4>
-
-<p>Dropping an alias into <code>~/.bash_profile</code> streamlines the process even more. You can use any alias you want as long as it doesn&#8217;t confilct with another command. Here&#8217;s what my alias looks like:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">alias </span><span class="nv">mmotion</span><span class="o">=</span><span class="s2">&quot;mmotion.command&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>Taking the Script for a Spin</h4>
-
-<p>Now we can build a new RubyMotion app called <code>NewApp</code> with these results:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/RubyMotion<span class="nv">$ </span>mmotion NewApp
-</span><span class='line'>Creating a new RubyMotion app called: NewApp
-</span><span class='line'>    Create NewApp
-</span><span class='line'>    Create NewApp/.gitignore
-</span><span class='line'>    Create NewApp/Rakefile
-</span><span class='line'>    Create NewApp/app
-</span><span class='line'>    Create NewApp/app/app_delegate.rb
-</span><span class='line'>    Create NewApp/resources
-</span><span class='line'>    Create NewApp/spec
-</span><span class='line'>    Create NewApp/spec/main_spec.rb
-</span><span class='line'>Creating ctags <span class="k">for </span>the new RubyMotion app...
-</span><span class='line'>Opening the new app in Vim...
-</span><span class='line'>To use the RubyMotion console, <span class="nb">cd </span>into the new directory: NewApp
-</span><span class='line'>
-</span><span class='line'>~/Code/Ruby/RubyMotion<span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>After the bash script ends, it lands in the directory from which it was originally run, no matter what directories it changed to during execution. This script will open the new app in Vim when it&#8217;s done.</p>
-
-<p>From here, you can <code>$ cd NewApp</code> and type <code>rake</code> to run the app in the iOS simulator.</p>
-
-<h4>Feedback Welcome</h4>
-
-<p>If you notice any glitches with this approach, feel free to send me a &#8220;heads up&#8221; via the <a href="http://RayHightower.com/contact/">contact</a> form on this site or in the blog comments below.</p>
 ]]></content>
   </entry>
   
