@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Seth Godin: How Dare You Waste the Revolution!"
-date: 2013-05-13 23:52
+date: 2013-07-09 23:52
 comments: true
 categories: 
 published: false
