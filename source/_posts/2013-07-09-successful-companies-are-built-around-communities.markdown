@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Seth Godin: How Dare You Waste the Revolution!"
+title: "Successful Companies Are Built Around Communities"
 date: 2013-07-09 23:52
 comments: true
 categories: [ Business ]
