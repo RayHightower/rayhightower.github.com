@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Business | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/business/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-07-04T15:42:16-05:00</updated>
+  <updated>2013-07-09T15:21:51-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,53 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Seth Godin: How Dare You Waste the Revolution!]]></title>
+    <link href="http://RayHightower.com/blog/2013/07/09/seth-godin-how-dare-you-waste-the-revolution/"/>
+    <updated>2013-07-09T23:52:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/07/09/seth-godin-how-dare-you-waste-the-revolution</id>
+    <content type="html"><![CDATA[<p>Seth Godin is on a mission. Technology enables us to form communities that stretch beyond traditional boundaries like age and social status. Godin is convinced that revolutions within and between communities will yield huge opportunities for those who have the courage to take action. Don’t waste the revolution!</p>
+
+<!--more-->
+
+
+<h4>Recognizing Change</h4>
+
+<p>Humans rarely recognize change when we’re in the middle of it. We’re too busy living! One example from Chicago history: The advent of the skyscraper. On the surface, a skyscraper is just a tall building… big deal. However, in hindsight we can see that the skyscraper (and the Chicago school of architecture) in the late 1880s led to the expansion of cities. Cities became magnets for <a href="http://en.wikipedia.org/wiki/Knowledge_worker">knowledge workers</a>. As cities grew to accommodate more people, political power shifted away from farms and toward urban areas. Professional service firms, companies that exist to make other companies better, blossomed &amp; grew. We continue to feel the effects of this trend today, over a century later.</p>
+
+<p>Godin believes that we are now dealing with another catalyst of change, one that is even more powerful than the skyscraper: the community. Communities are growing in size and power. Companies that know how to leverage communities are thriving.</p>
+
+<h4>Threadless is Not About T-Shirts</h4>
+
+<p>Fast forward to the early 21st century where we find a Chicago-area company called Threadless. If you sell a product that is easily copied, how do you differentiate yourself from the competition? By selling something that goes beyond the easily cloned product. <a href="http://threadless.com/">Threadless</a> has created a community around T-shirt sales. When building the company, the founders of Threadless looked at available technology and asked themselves, “What do people really want?” Their answers:</p>
+
+<ul>
+<li>To be famous.</li>
+<li>To be recognized.</li>
+<li>To be talked about.</li>
+</ul>
+
+
+<p>So they built the company to fulfill these basic human needs. If you’re an artist, submit a design. If enough people vote for your design, it gets printed on a shirt. And while you’re looking around the Threadless site, you’re welcome to buy any of the other designs for about $20 each.</p>
+
+<p>While other t-shirt companies are trying to undercut each other on price, Threadless gives customers what they really want, customers gladly pay a premium, and everybody wins.</p>
+
+<p><img src="http://RayHightower.com/images/rails_logo.jpg" width="200" height="285" align="right" title="Ruby on Rails Logo" alt="Ruby on Rails Logo"></p>
+
+<h4>We Don’t Pay for Software. We Pay for Results</h4>
+
+<p>Godin cites <a href="http://37signals.com">37signals</a> as an example of a company that nutures a community of software developers by giving away software for free. 37signals extracted the <a href="http://rubyonrails.org">Ruby on Rails</a> web framework from their Basecamp project management tool. Rather than charge for Rails, the company makes it available to the open source community at no charge. 37signals benefits because the people who use Rails, software developers, end up trying, buying and recommending the paid products to their colleagues. This results in an upward spiral in revenue for the company. To top it off, 37signals benefits from the open source community in ways that are not easily measured in dollars.</p>
+
+<p>WisdomGroup is grateful to the entire Ruby on Rails community, including 37signals. We express our gratitude through ChicagoRuby and WindyCityRails. Contributing to the open source community has enabled us to develop wonderful relationships with contractors, clients, advisors… all sorts of people who have helped us to grow &amp; prosper. User groups and conferences enable the software community to come together – creating something far beyond the grasp of an individual genius.</p>
+
+<h4>The Bottom Line</h4>
+
+<p>Seth Godin’s point at today’s seminar: Our most successful companies are built around communities. Companies that know how to build &amp; nurture communities will thrive &amp; grow. Companies stuck in the old paradigm (massive advertising on a massive scale) might survive, but they will be easily eclipsed by companies that understand the value of strong communities. The revolution is here, and Seth Godin urges all of us not to waste it.</p>
+
+<p><em>Note: An earlier version of this article was published at <a href="http://wisdomgroup.com">WisdomGroup.com</a>.</em></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Replacing Google Reader with Feed Wrangler]]></title>
@@ -178,19 +225,6 @@ If you are fortunate enough to work in the technology industry, you do not need 
 <p>You can do it now. What are you waiting for?</p>
 
 <p><em>A version of this article was originally posted at <a href="http://wisdomgroup.com">http://wisdomgroup.com</a>.</em></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The Vast and Endless Sea]]></title>
-    <link href="http://RayHightower.com/blog/2013/01/17/the-vast-and-endless-sea/"/>
-    <updated>2013-01-17T13:35:00-06:00</updated>
-    <id>http://RayHightower.com/blog/2013/01/17/the-vast-and-endless-sea</id>
-    <content type="html"><![CDATA[<p>All of us are inspired when we have a big goal to achieve. Antoine De Saint-Exupery expresses the idea well:</p>
-
-<blockquote><p>If you want to build a ship, don’t drum up the people to gather wood, divide the work and give orders. Instead, encourage them to yearn for the vast and endless sea.</p></blockquote>
-
-<p>2013 is already proving to be an exciting year. Looking forward to more.</p>
 ]]></content>
   </entry>
   
