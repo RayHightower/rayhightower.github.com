@@ -3,11 +3,11 @@ layout: post
 title: "Seth Godin: How Dare You Waste the Revolution!"
 date: 2013-07-09 23:52
 comments: true
-categories: 
-published: false
+categories: [ Business ]
+published: true
 ---
 Seth Godin is on a mission. Technology enables us to form communities that stretch beyond traditional boundaries like age and social status. Godin is convinced that revolutions within and between communities will yield huge opportunities for those who have the courage to take action. Don’t waste the revolution!
-
+<!--more-->
 ####Recognizing Change
 Humans rarely recognize change when we’re in the middle of it. We’re too busy living! One example from Chicago history: The advent of the skyscraper. On the surface, a skyscraper is just a tall building… big deal. However, in hindsight we can see that the skyscraper (and the Chicago school of architecture) in the late 1880s led to the expansion of cities. Cities became magnets for [knowledge workers](http://en.wikipedia.org/wiki/Knowledge_worker). As cities grew to accommodate more people, political power shifted away from farms and toward urban areas. Professional service firms, companies that exist to make other companies better, blossomed & grew. We continue to feel the effects of this trend today, over a century later.
 
@@ -32,3 +32,5 @@ WisdomGroup is grateful to the entire Ruby on Rails community, including 37signa
 
 ####The Bottom Line
 Seth Godin’s point at today’s seminar: Our most successful companies are built around communities. Companies that know how to build & nurture communities will thrive & grow. Companies stuck in the old paradigm (massive advertising on a massive scale) might survive, but they will be easily eclipsed by companies that understand the value of strong communities. The revolution is here, and Seth Godin urges all of us not to waste it.
+
+_Note: An earlier version of this article was published at [WisdomGroup.com](http://wisdomgroup.com)._
