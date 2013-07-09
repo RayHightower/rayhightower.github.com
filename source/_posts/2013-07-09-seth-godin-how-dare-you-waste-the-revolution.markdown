@@ -8,7 +8,7 @@ published: true
 ---
 [Seth Godin](http://www.sethgodin.com) is on a mission. Technology enables us to form communities that stretch beyond traditional boundaries like age and social status. Godin is convinced that revolutions within and between communities will yield huge opportunities for those who have the courage to take action. Don’t waste the revolution!
 
-I had the opportunity to hear Godin speak at a Groupon-produced event in Chicago some time ago. This post was inspired by the presentation.
+I had the opportunity to hear Godin speak at a Chicago area event some time ago. This post was inspired by the presentation.
 <!--more-->
 ###Recognizing Change
 Humans rarely recognize change when we’re in the middle of it. We’re too busy living! One example from Chicago history: The advent of the skyscraper. On the surface, a skyscraper is just a tall building… big deal. However, in hindsight we can see that the skyscraper (and the Chicago school of architecture) in the late 1880s led to the expansion of cities. Cities became magnets for [knowledge workers](http://en.wikipedia.org/wiki/Knowledge_worker). As cities grew to accommodate more people, political power shifted away from farms and toward urban areas. Professional service firms, companies that exist to make other companies better, blossomed & grew. We continue to feel the effects of this trend today, over a century later.
@@ -33,6 +33,6 @@ Godin cites [37signals](http://37signals.com) as an example of a company that nu
 WisdomGroup is grateful to the entire Ruby on Rails community, including 37signals. We express our gratitude through [ChicagoRuby](http://chicagoruby.org) and [WindyCityRails](http://windycityrails.org). Contributing to the open source community has enabled us to develop wonderful relationships with contractors, clients, advisors… all sorts of people who have helped us to grow & prosper. User groups and conferences enable the software community to come together – creating something far beyond the grasp of an individual genius.
 
 ###The Bottom Line
-Seth Godin’s point at today’s seminar: Our most successful companies are built around communities. Companies that know how to build & nurture communities will thrive & grow. Companies stuck in the old paradigm (massive advertising on a massive scale) might survive, but they will be easily eclipsed by companies that understand the value of strong communities. The revolution is here, and Seth Godin urges all of us not to waste it.
+Seth Godin’s point: Our most successful companies are built around communities. Companies that know how to build & nurture communities will thrive & grow. Companies stuck in the old paradigm (massive advertising on a massive scale) might survive, but they will be easily eclipsed by companies that understand the value of strong communities. The revolution is here, and Seth Godin urges all of us not to waste it.
 
 _Note: An earlier version of this article was published at [WisdomGroup.com](http://wisdomgroup.com)._
