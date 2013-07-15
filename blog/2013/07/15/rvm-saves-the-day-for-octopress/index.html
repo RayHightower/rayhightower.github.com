@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Four Steps. Five Minutes. - RayHightower.com</title>
+  <title>RVM Saves the Day for Octopress - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="Nine out of ten startups fail in the first year. Why? More important, what can we do to improve the odds? Entrepreneur Steve Blank might have an &hellip;">
+  <meta name="description" content="Octopress is a lean blogging engine that happens to power RayHightower.com. Earlier today, after a quick update to the blog, I encountered the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/2012/08/31/four-steps-five-minutes/">
+  <link rel="canonical" href="http://RayHightower.com/blog/2013/07/15/rvm-saves-the-day-for-octopress/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -84,7 +84,7 @@
   
   <header>
     
-      <h1 class="entry-title">Four Steps. Five Minutes.</h1>
+      <h1 class="entry-title">RVM Saves the Day for Octopress</h1>
     
     
       <p class="meta">
@@ -100,76 +100,130 @@
   
 
 
-<time datetime="2012-08-31T15:04:00-05:00" pubdate data-updated="true">Aug 31<span>st</span>, 2012</time>
+<time datetime="2013-07-15T14:29:00-05:00" pubdate data-updated="true">Jul 15<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Nine out of ten startups fail in the first year. Why? More important, what can we do to improve the odds? Entrepreneur Steve Blank might have an answer, expressed in his book <em>The Four Steps to the Epiphany</em>. Key points from the book are summarized here.</p>
+<div class="entry-content"><p><a href="http://octopress.org">Octopress</a> is a lean blogging engine that happens to power <a href="http://rayhightower.com">RayHightower.com</a>. Earlier today, after a quick update to the blog, I encountered the following:</p>
 
-<center><iframe name="foursteps" width="560" height="349" src="http://www.youtube.com/embed/uIYUTKP1pl8?rel=0" frameborder="0" allowfullscreen></iframe></center>
-
-
-<!-- more -->
-
-
-<h4>Ignite Chicago</h4>
-
-<p>This presentation was created for <a href="http://ignitechi.org">Ignite Chicago</a>. Ignite talks are special because speakers are required to present their thoughts in five minutes with slides that auto-advance every fifteen seconds. Thank you Stella Fayman and Tim Jahn for organizing the event.</p>
-
-<h4>About the Author of <em>The Four Steps to the Epiphany</em></h4>
-
-<p><a href="http://steveblank.com">Steve Blank</a> worked in, owned, or managed eight different silicon valley startups in the course of twenty years. His eighth startup was very successful; he was able to exit with enough money to retire. At that point, Blank began to reflect on the successes and failures of the various startups he had been involved with. Reflection led to lectures at Stanford, Berkeley, and Columbia. Notes from his lectures evolved into the book: <em>The Four Steps to the Epiphany</em>.</p>
-
-<p>Blank noticed that startups went through predictable patterns of success or failure. Yes, there are multiple paths to failure, but there are fewer paths to success. Blank believes he has found a success path that applies to most startups.</p>
-
-<h4>Counter Example: Webvan</h4>
-
-<p>Sometimes it helps to explain an idea through counter example. <a href="http://en.wikipedia.org/wiki/Webvan">Webvan</a> was built to deliver groceries to people who ordered on the web. The problem? Webvan built software and warehouses before they had a reliable supply of customers. They were so confident of their future success that they spent close to one billion dollars building infrastructure. They ran out of money before they had customers.</p>
-
-<p>It&#8217;s not fair to pick on Webvan when so many other companies make the same mistake. Remember the Apple Newton? Apple is a great company, but they put tons of money into an early PDA (the Newton) before customers even knew what a PDA was. Same with Motorola. Motorola’s Iridium was supposed to be a network of communications satellites covering the planet. Satellites designed to give internet and phone access to every human on planet earth. The problem: Nobody could afford Iridium. In these examples, Motorola, Apple, and Webvan, all burned through money before they had a steady supply of customers. There is a better way.</p>
-
-<h4>The Four Steps</h4>
-
-<p>Steve Blank lists <em>The Four Steps to the Epiphany</em> as:</p>
-
-<ol>
-<li>Customer Discovery</li>
-<li>Customer Validation</li>
-<li>Customer Creation</li>
-<li>Company Building</li>
-</ol>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rake generate
+</span><span class='line'>/Users/rth/.rvm/gems/ruby-1.9.3-p448@global/gems/bundler-1.2.4/lib/bundler/rubygems_integration.rb:187:in <span class="sb">`</span>stub_source_index170<span class="s1">&#39;: uninitialized constant Gem::SourceIndex (NameError)</span>
+</span><span class='line'><span class="s1">     from /Users/rth/.rvm/gems/ruby-1.9.3-p448@global/gems/bundler-1.2.4/lib/bundler/rubygems_integration.rb:353:in `stub_rubygems&#39;</span>
+</span><span class='line'>     from /Users/rth/.rvm/gems/ruby-1.9.3-p448@global/gems/bundler-1.2.4/lib/bundler/rubygems_integration.rb:250:in <span class="sb">`</span>replace_entrypoints<span class="s1">&#39;</span>
+</span><span class='line'><span class="s1">     from /Users/rth/.rvm/gems/ruby-1.9.3-p448@global/gems/bundler-1.2.4/lib/bundler/runtime.rb:14:in `setup&#39;</span>
+</span><span class='line'>     from /Users/rth/.rvm/gems/ruby-1.9.3-p448@global/gems/bundler-1.2.4/lib/bundler.rb:116:in <span class="sb">`</span>setup<span class="s1">&#39;</span>
+</span><span class='line'><span class="s1">     from /Users/rth/.rvm/gems/ruby-1.9.3-p448@global/gems/rubygems-bundler-1.1.0/lib/rubygems-bundler/noexec.rb:77:in `setup&#39;</span>
+</span><span class='line'>     from /Users/rth/.rvm/gems/ruby-1.9.3-p448@global/gems/rubygems-bundler-1.1.0/lib/rubygems-bundler/noexec.rb:89:in <span class="sb">`</span>&lt;top <span class="o">(</span>required<span class="o">)</span>&gt;<span class="s1">&#39;</span>
+</span><span class='line'><span class="s1">     from /Users/rth/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:116:in `require&#39;</span>
+</span><span class='line'>     from /Users/rth/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:116:in <span class="sb">`</span>rescue in require<span class="s1">&#39;</span>
+</span><span class='line'><span class="s1">     from /Users/rth/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:122:in `require&#39;</span>
+</span><span class='line'>     from /Users/rth/.rvm/gems/ruby-1.9.3-p448@octopress/bin/ruby_noexec_wrapper:9:in <span class="sb">`</span>&lt;main&gt;<span class="err">&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
-<p>There are a few things to point out about the steps. First the process is iterative, not linear. If at any point we get stuck, we go back and repeat a step (or two) based on what we&#8217;ve learned. A smaller repetition might be termed an iteration. But if the entrepreneur needs to revisit the entire business plan, or change basic assumptions in the business model, the repetition/backtracking would be termed a <em>pivot</em>.</p>
+<p>Not good. What happened?</p>
 
-<h4>Customer Discovery and the Minimum Viable Product</h4>
+<!--more-->
 
-<p>Every entrepreneur has an idea about what customers want. We all know something of the pain felt by our customers, or so we think. Blank&#8217;s suggestion: Take what you know about your prospective customers&#8217; pain and build a minimum viable product (MVP) with just enough features to address the pain. Then get outside the building. Get away from wherever it is that you work and talk to real customers with your MVP in hand. Let them try it. They&#8217;ll give you valuable feedback about what you should do next. If their pain is great enough, and if your MVP is good enough, they&#8217;ll buy it.</p>
 
-<h4>Which Customers?<a href="/images/lifecycle.png" onclick="window.open('/images/lifecycle.png','popup','width=770,height=548,scrollbars=no,resizable=yes,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="/images/lifecycle_thumb.png" border="0" alt="Technology Adoption Lifecycle, Crossing the Chasm, Geoffrey Moore" name="image" class="right" width="195" height="137" title="Technology Adoption Lifecycle, Crossing the Chasm, Geoffrey Moore" /></a></h4>
+<h3>The Problem</h3>
 
-<p>It&#8217;s important to note the type of customer we want at this stage. We want early adopters. We want customers who are feeling pain in the entrepreneur&#8217;s area of expertise. Perhaps customers who have tried to solve the problem themselves with no success. Early adopters will give us the most useful &amp; actionable feedback at this stage.</p>
+<p>From the error message, it appeared that my current version of Bundler was incompatible with Octopress. Googling for the error message (a favorite trick) was unhelpful. Had to try a different line of attack.</p>
 
-<h4>Customer Validation</h4>
+<h3>The Solution: Roll Back</h3>
 
-<p>The customer validation step is complete when early adopters buy the product we&#8217;re offering. When customers buy, we know we have a valid product. If they don&#8217;t buy, it might be time to pivot. In this context, <em>pivot</em> means to change the basic assumptions of the business we&#8217;re building. We might change pricing, features, or we might change our entire approach to customers. Many startups go through several pivots before achieving success.</p>
+<p>Fortunately, I use <a href="http://rayhightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/">RVM</a>. Currently installed versions of Ruby:</p>
 
-<h4>Customer Creation</h4>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>rvm list
+</span><span class='line'>
+</span><span class='line'>rvm rubies
+</span><span class='line'>
+</span><span class='line'>   jruby-1.7.3 <span class="o">[</span> x86_64 <span class="o">]</span>
+</span><span class='line'>   macruby-0.12 <span class="o">[</span> i686 <span class="o">]</span>
+</span><span class='line'>   ruby-1.8.7-p334 <span class="o">[</span> i686 <span class="o">]</span>
+</span><span class='line'>   ruby-1.9.2-p290 <span class="o">[</span> x86_64 <span class="o">]</span>
+</span><span class='line'>   ruby-1.9.3-p448 <span class="o">[</span> x86_64 <span class="o">]</span>
+</span><span class='line'><span class="o">=</span>* ruby-2.0.0-p247 <span class="o">[</span> x86_64 <span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># =&gt; - current</span>
+</span><span class='line'><span class="c"># =* - current &amp;&amp; default</span>
+</span><span class='line'><span class="c">#  * - default</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<p>After we&#8217;ve discovered customers, and after we&#8217;ve gone through customer validation, it&#8217;s time to create more customers. Our initial customers were the early adopters and innovators. In the customer creation step, we move beyond our initial customers into the majority. At this point we begin to spend money on marketing.</p>
 
-<h4>Company Building</h4>
+<p>Since <code>$ rake deploy</code> last worked with Ruby 1.9.2 on my machine, I decided to roll back to that point.</p>
 
-<p>After we&#8217;ve gone through the first three customer-oriented steps, we build the company. Now it&#8217;s time to spend money on infrastructure, warehouses, expensive customized software&#8230; anything we need to scale the company as large as we can. Notice that we don&#8217;t try to scale until after we figure out how to develop a steady supply of customers.</p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rvm use ruby-1.9.2-p290
+</span></code></pre></td></tr></table></div></figure>
 
-<h4>That&#8217;s Not All&#8230;</h4>
 
-<p>We live in a time of continuous &amp; rapid change. Once a business has become successful with <em>The Four Steps</em>, it&#8217;s important to remain watchful for new opportunities. Good companies become great when they execute consistently over time.</p>
+<p>Next, I built another <code>octopress</code> gemset to work with this version of Ruby, pointed to the gemset, and used Bundler to add the necessary gems.</p>
 
-<p><em>Note: A version of this post originally appeared on the <a href="http://wisdomgroup.com">WisdomGroup Blog</a>.</em></p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rvm gemset create octopress
+</span><span class='line'><span class="nv">$ </span>rvm gemset use octopress
+</span><span class='line'><span class="nv">$ </span>bundle install
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And now <code>$ rake generate</code> works as required.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rake generate
+</span><span class='line'><span class="c">## Generating Site with Jekyll</span>
+</span><span class='line'>identical <span class="nb">source</span>/stylesheets/screen.css
+</span><span class='line'>Configuration from /Users/rth/Code/Ruby/apps/rayhightower/_config.yml
+</span><span class='line'>Building site: <span class="nb">source</span> -&gt; public
+</span><span class='line'>Successfully generated site: <span class="nb">source</span> -&gt; public
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Success!</p>
+
+<h3>RVM Saves the Day</h3>
+
+<p>Once again, RVM lets me recovery quickly by shifting to an earlier version of Ruby. What&#8217;s the root cause of the problem? I don&#8217;t know at this point. But for now, the blog is up &amp; running!</p>
 </div>
 
 
@@ -192,12 +246,12 @@
   
 
 
-<time datetime="2012-08-31T15:04:00-05:00" pubdate data-updated="true">Aug 31<span>st</span>, 2012</time>
+<time datetime="2013-07-15T14:29:00-05:00" pubdate data-updated="true">Jul 15<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/business/'>Business</a>
+    <a class='category' href='/blog/categories/ruby/'>Ruby</a>
   
 </span>
 
@@ -206,7 +260,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2012/08/31/four-steps-five-minutes/" data-via="" data-counturl="http://RayHightower.com/blog/2012/08/31/four-steps-five-minutes/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/07/15/rvm-saves-the-day-for-octopress/" data-via="" data-counturl="http://RayHightower.com/blog/2013/07/15/rvm-saves-the-day-for-octopress/" >Tweet</a>
   
   
   
@@ -215,10 +269,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/08/26/getting-down-is-mandatory/" title="Previous Post: Getting Down Is Mandatory">&laquo; Getting Down Is Mandatory</a>
+        <a class="basic-alignment left" href="/blog/2013/07/09/successful-companies-are-built-around-communities/" title="Previous Post: Successful Companies Are Built Around Communities">&laquo; Successful Companies Are Built Around Communities</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/09/03/10000-hours-of-practice/" title="Next Post: 10,000 Hours of Practice">10,000 Hours of Practice &raquo;</a>
       
     </p>
   </footer>
@@ -347,8 +399,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://RayHightower.com/blog/2012/08/31/four-steps-five-minutes/';
-        var disqus_url = 'http://RayHightower.com/blog/2012/08/31/four-steps-five-minutes/';
+        var disqus_identifier = 'http://RayHightower.com/blog/2013/07/15/rvm-saves-the-day-for-octopress/';
+        var disqus_url = 'http://RayHightower.com/blog/2013/07/15/rvm-saves-the-day-for-octopress/';
         var disqus_script = 'embed.js';
       
     (function () {
