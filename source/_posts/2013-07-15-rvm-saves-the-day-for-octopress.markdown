@@ -78,4 +78,4 @@ Successfully generated site: source -> public
 Success!
 
 ###RVM Saves the Day
-Once again, RVM lets me recovery quickly by shifting to an earlier version of Ruby. What's the root cause of the problem? I don't know at this point. But for now, my blog is up & running!
+Once again, RVM lets me recovery quickly by shifting to an earlier version of Ruby. What's the root cause of the problem? I don't know at this point. But for now, the blog is up & running!
