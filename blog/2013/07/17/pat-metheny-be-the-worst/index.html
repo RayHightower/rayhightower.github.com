@@ -5,11 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>BeagleBone Black, Up & Running - RayHightower.com</title>
+  <title>Pat Metheny: Be the Worst - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="BeagleBone Black, like the Raspberry Pi, is a small, inexpensive computer that runs Linux. It&#8217;s smaller than a deck of cards and you can buy &hellip;">
+  <meta name="description" content="<img src="/images/PatMethenyGroup.jpg" width="400" height="400"
+align="right" alt="Pat Metheny: Be the Worst" title="Pat Metheny: Be the Worst" >
+Pat &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/">
+  <link rel="canonical" href="http://RayHightower.com/blog/2013/07/17/pat-metheny-be-the-worst/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -84,7 +86,7 @@
   
   <header>
     
-      <h1 class="entry-title">BeagleBone Black, Up & Running</h1>
+      <h1 class="entry-title">Pat Metheny: Be the Worst</h1>
     
     
       <p class="meta">
@@ -100,98 +102,22 @@
   
 
 
-<time datetime="2013-05-22T22:13:00-05:00" pubdate data-updated="true">May 22<span>nd</span>, 2013</time>
+<time datetime="2013-07-17T07:58:00-05:00" pubdate data-updated="true">Jul 17<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><img src="/images/BeagleBoneBlack.jpg" width="372" height="600" title="BeagleBone Black" alt="BeagleBone Black" align="right">
-<a href="http://beagleboard.org/Products/BeagleBone%20Black">BeagleBone Black</a>, like the <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a>, is a small, inexpensive computer that runs Linux. It&#8217;s smaller than a deck of cards and you can buy one for about forty-five dollars ($45.00). The device is made by <a href="http://circuitco.com">CircuitCo</a> in Richardson, TX, USA.</p>
+<div class="entry-content"><p><img src="/images/PatMethenyGroup.jpg" width="400" height="400"
+align="right" alt="Pat Metheny: Be the Worst" title="Pat Metheny: Be the Worst" >
+Pat Metheny encourages musicians to &#8220;be the worst&#8221; in whatever band they choose to join. Of course, he does not mean to play poorly.</p>
 
-<h3>It Just Works</h3>
+<p>Rather, he encourages us to surround ourselves with the best musicians we can find so that we can learn from them. The concept is explored further in the book <a href="/blog/2013/02/17/apprenticeship-patterns-by-dave-h-hoover-and-adewale-oshineye/">Apprenticeship Patterns</a> by Dave Hoover and Ade Oshineye.</p>
 
-<p>BeagleBone Black runs Linux right out of the box. Steps required:</p>
+<p>I was reminded to be-the-worst while attending a conference this week, an event where I am surrounded by computer scientists with much more experience than me. I learned a lot his week. I will share details in a future post.</p>
 
-<ul>
-<li>Plug in the micro-HDMI cable for the monitor. See the &#8220;Gotchas&#8221;
-section about micro-HDMI below.</li>
-<li>Plug in the keyboard &amp; mouse via the USB port. You might need a USB hub because the board only has one USB port.</li>
-<li>Add power via the mini-USB port or the 5v power connection.</li>
-</ul>
-
-
-<p>After a few minutes of boot time, we have a fully-functioning Linux computer with a GUI, Firefox browser, and other tools.</p>
-
-<!--more-->
-
-
-<p>The BeagleBone Black has 2GB of flash storage on the board, and part
-of that is used for Linux. Here&#8217;s a screenshot after just a few minutes of ownership.</p>
-
-<center><img src="/images/BeagleBoneBlack-WindyCityRails.png" width="600" height="338" title="BeagleBone Black Firefox WindyCityRails" alt="BeagleBone Black Firefox WindyCityRails" align="center"></center>
-
-
-<h3>Documentation</h3>
-
-<p><img src="/images/BeagleBoneBlack-USB.png" width="250" height="200" title="BeagleBone Black USB" alt="BeagleBone Black USB" align="right">
-All of the paper documentation for the BeagleBone Black fits on a slip of paper roughly the size of two business cards. The meat of the documentation resides on the device itself. To reach the electronic documentation:</p>
-
-<ol>
-<li>Plug the BeagleBone Black into a USB port on your laptop.</li>
-<li>The board will appear as a USB storage device. One of the files at the
-root of the storage device, <code>START.htm</code>, contains the documentation. It
-can be viewed in a web browser.</li>
-</ol>
-
-
-<p>The documentation recommends against <a href="http://en.wikipedia.org/wiki/Internet_Explorer">MSIE</a>.</p>
-
-<h3>Gotchas</h3>
-
-<p><img src="/images/micro-HDMI-home-depot.jpg" width="400" height="300" title="Micro HDMI Home Depot" alt="Micro HDMI Home Depot" align="right">
-The manufacturer included a mini-USB cable with the device, so you can power it up right after you rip open the package. Gotcha: You need a micro-HDMI cable (or adapter) if you want to attach a monitor. I would have preferred a micro-HDMI-to-HDMI adapater in the box instead of the mini-USB cable. That&#8217;s a little nit-picky on my part since micro-HDMI cables are easy to find at Home Depot.</p>
-
-<p>A quick shout-out to Home Depot: Their store-brand cables let you test the cable end without opening the package, right in the store. Excellent package design by Home Depot.</p>
-
-<p>My second &#8220;gotcha&#8221; is more important: The <code>curl</code> command did not behave as flawlessly as it did with the Raspberry Pi, so I was not able to install Ruby as quickly as planned. Details below.</p>
-
-<h3>Installing Rails</h3>
-
-<p>I will have to cover Ruby and Rails installation in a future blog post because my initial attempts were not successful. <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">RVM, Ruby, and Rails installed easily with Raspberry Pi</a>, even though the compilation time was long. With the BeagleBone Black, I received the following in response to the <code>curl</code> command:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>sh-4.2# curl -L https://get.rvm.io | bash -s stable --ruby
-</span><span class='line'>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-</span><span class='line'>                                 Dload  Upload   Total   Spent    Left  Speed
-</span><span class='line'>  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-</span><span class='line'>curl: <span class="o">(</span>77<span class="o">)</span> Problem with the SSL CA cert <span class="o">(</span>path? access rights?<span class="o">)</span>
-</span><span class='line'>sh-4.2#
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Maybe it&#8217;s time to try <a href="https://github.com/sstephenson/rbenv">RBEnv</a>? I&#8217;ll post a solution when I find it. Or&#8230; if a reader of this blog already has a solution for the BeagleBone Black Rails installation challenge, please post in the comments below and I&#8217;ll credit you here.</p>
-
-<h4>BeagleBone Black vs. Raspberry Pi</h4>
-
-<p>Which is better, BeagleBone Black or Raspberry Pi? There&#8217;s no clear winner in my opinion. It&#8217;s a matter of trade-offs:</p>
-
-<ul>
-<li>The &#8216;Bone runs Linux right out of the box, while it takes some time to get Linux running on the Pi, unless you buy a card pre-configured for the Pi.</li>
-<li>RVM, Ruby, and Rails installation was painless on the Pi even though compilation time was long. The jury is still out w/r/t RVM on the &#8216;Bone.</li>
-<li>Cost-wise, they&#8217;re within ten bucks of each other. That&#8217;s a wash.</li>
-<li>The &#8216;Bone has more Ardunio-like provisions for digital projects.</li>
-<li>The Pi includes an RCA output for older TVs. Plus the Pi uses standard HDMI, so there&#8217;s no need to get a special micro-HDMI cable.</li>
-</ul>
-
-
-<p>I&#8217;ve owned my &#8216;Bone for just over 24 hours. Lots more to learn. Looking forward to it!</p>
+<p>In the meantime, I invite you to join me in a Pat Metheny learning exercise of your choice. Be the worst!</p>
 </div>
 
 
@@ -214,12 +140,12 @@ The manufacturer included a mini-USB cable with the device, so you can power it 
   
 
 
-<time datetime="2013-05-22T22:13:00-05:00" pubdate data-updated="true">May 22<span>nd</span>, 2013</time>
+<time datetime="2013-07-17T07:58:00-05:00" pubdate data-updated="true">Jul 17<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/beaglebone-black/'>BeagleBone Black</a>, <a class='category' href='/blog/categories/education/'>Education</a>, <a class='category' href='/blog/categories/rails/'>Rails</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>
+    <a class='category' href='/blog/categories/education/'>Education</a>
   
 </span>
 
@@ -228,7 +154,7 @@ The manufacturer included a mini-USB cable with the device, so you can power it 
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/" data-via="" data-counturl="http://RayHightower.com/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/07/17/pat-metheny-be-the-worst/" data-via="" data-counturl="http://RayHightower.com/blog/2013/07/17/pat-metheny-be-the-worst/" >Tweet</a>
   
   
   
@@ -237,10 +163,8 @@ The manufacturer included a mini-USB cable with the device, so you can power it 
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/05/16/upgrading-ruby-with-rvm/" title="Previous Post: Upgrading Ruby With RVM">&laquo; Upgrading Ruby With RVM</a>
+        <a class="basic-alignment left" href="/blog/2013/07/15/rvm-saves-the-day-for-octopress/" title="Previous Post: RVM Saves the Day for Octopress">&laquo; RVM Saves the Day for Octopress</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/05/31/kali-linux-pentesting/" title="Next Post: Kali Linux for Pentesting">Kali Linux for Pentesting &raquo;</a>
       
     </p>
   </footer>
@@ -369,8 +293,8 @@ The manufacturer included a mini-USB cable with the device, so you can power it 
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://RayHightower.com/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/';
-        var disqus_url = 'http://RayHightower.com/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/';
+        var disqus_identifier = 'http://RayHightower.com/blog/2013/07/17/pat-metheny-be-the-worst/';
+        var disqus_url = 'http://RayHightower.com/blog/2013/07/17/pat-metheny-be-the-worst/';
         var disqus_script = 'embed.js';
       
     (function () {
