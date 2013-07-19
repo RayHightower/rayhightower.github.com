@@ -6,9 +6,9 @@ comments: true
 categories: [ Education ]
 published: true
 ---
-The [Petascale Tools Workshop](http://www.paradyn.org/CSCADS2013/index.html) is for computer scientists who design, build, and test the fastest supercomputers on the planet. Supercomputer performance is measured in petaflops: 10<sup><sup>15</sup></sup> floating point operations per second. That's blazing speed, thousands of times faster than the fastest MacBook Pro. 
+The [Petascale Tools Workshop](http://www.paradyn.org/CSCADS2013/index.html) is for computer scientists who create tools that enable apps to run efficiently on the world's fastest supercomputers. Supercomputer performance is measured in petaflops: 10<sup><sup>15</sup></sup> floating point operations per second. That's blazing speed, thousands of times faster than the fastest MacBook Pro. 
 <!--more-->
-[WisdomGroup](http://WisdomGroup.com) was invited to attend the workshop because our client, [Texas A & M University](http://www.wisdomgroup.com/case-studies/texas-am-university/), operates in the high performance computing (HPC) space. As the only non-PhD in the room, I was given a chance to exercixe Pat Metheny's [be-the-worst](/blog/2013/07/17/pat-metheny-be-the-worst/) philosophy in the extreme! The result: I learned things that will help WisdomGroup to deliver better solutions for our clients, especially the TAMU team. 
+[WisdomGroup](http://WisdomGroup.com) was invited to attend the workshop because our client, [Texas A & M University](http://www.wisdomgroup.com/case-studies/texas-am-university/), operates in the high performance computing (HPC) space. As the only non-PhD in the room, I was given a chance to exercise Pat Metheny's [be-the-worst](/blog/2013/07/17/pat-metheny-be-the-worst/) philosophy in the extreme. The result: I learned things that will help WisdomGroup to deliver better solutions for our clients, especially the TAMU team. 
 
 ###One Megawatt = $1,000,000.00
 As with other disciplines of engineering, supercomputer design is all about managing trade-offs. If you increase the clock speed, how will that affect your electrical bill? If you increase the size of the cache, how much more will you spend on hardware?
@@ -22,52 +22,91 @@ The debate between the scientists was vigorous yet respectful. After hearing the
 ###Re-Framing the Power Problem
 There is another way to look at the power problem. Consider it from the perspective of performance, not power. Here's how one presenter put it: No matter where we build a supercomputer, we will only have a limited amount of power. Let's look at the maximum available power as a constraint and go from there.
 
-Today's most powerful supercomputing facilities can deliver a maximum of 20 megawatts, which translates into a $20 million per year electrical bill. This constraint is real; we have yet to build a more powerful facility.
+Rubyists are familiar with the saying &#34;[constraints are liberating](http://gettingreal.37signals.com/ch03_Embrace_Constraints.php)&#34;, popularized by 37signals. Since power limitations are real constraints, our next step is to figure out how to extract the best results allowed within the constraints.
 
-Rubyists are familiar with the saying ["constraints are liberating"](http://gettingreal.37signals.com/ch03_Embrace_Constraints.php), popularized by 37signals. Since the 20 megawatt constraint is real, our next step is to figure out how to extract the best results that the constraint will allow.   
+###Top Five
+Supercomputer scientists are as competitive as olympic athletes. Here are the five fastest machines in the world as of June 2013:
+
+
+<table class="table table-condensed">
+	<thead>
+	<tr>
+		<th>Rank</th>
+		<th>Site</th>
+		<th>System</th>
+		<th>Cores</th>
+		<th>Rmax (PF/s)</th>
+		<th>Rpeak (PF/s)</th>
+
+		<th>Power (MW)</th>
+	</tr>
+	</thead>
+
+	<tr class="sublist odd">
+
+		<td><span class="badge">1</span></td>
+		<td><a href="/site/50460">National University of Defense Technology</a><br>China</td>
+		<td><a href="/system/177999"> <b>Tianhe-2 (MilkyWay-2)</b> - TH-IVB-FEP Cluster, Intel Xeon E5-2692 12C 2.200GHz, TH Express-2, Intel Xeon Phi 31S1P</a><br/>NUDT</td>
+		<td style="text-align: right;">3,120,000</td>
+		<td style="text-align: right;">33,862.7</td>
+		<td style="text-align: right;">54,902.4</td>
+		<td>17,808</td>
+	</tr>
+
+	<tr class="sublist even">
+
+		<td><span class="badge">2</span></td>
+		<td><a href="/site/48553">DOE/SC/Oak Ridge National Laboratory</a><br>United States</td>
+		<td><a href="/system/177975"> <b>Titan</b> - Cray XK7 , Opteron 6274 16C 2.200GHz, Cray Gemini interconnect, NVIDIA K20x</a><br/>Cray Inc.</td>
+		<td style="text-align: right;">560,640</td>
+		<td style="text-align: right;">17,590.0</td>
+		<td style="text-align: right;">27,112.5</td>
+		<td>8,209</td>
+	</tr>
+
+	<tr class="sublist odd">
+
+		<td><span class="badge">3</span></td>
+		<td><a href="/site/49763">DOE/NNSA/LLNL</a><br>United States</td>
+		<td><a href="/system/177556"> <b>Sequoia</b> - BlueGene/Q, Power BQC 16C 1.60 GHz, Custom</a><br/>IBM</td>
+		<td style="text-align: right;">1,572,864</td>
+		<td style="text-align: right;">17,173.2</td>
+		<td style="text-align: right;">20,132.7</td>
+		<td>7,890</td>
+	</tr>
+
+	<tr class="sublist even">
+
+		<td><span class="badge">4</span></td>
+		<td><a href="/site/50313">RIKEN Advanced Institute for Computational Science (AICS)</a><br>Japan</td>
+		<td><a href="/system/177232">K computer, SPARC64 VIIIfx 2.0GHz, Tofu interconnect</a><br/>Fujitsu</td>
+		<td style="text-align: right;">705,024</td>
+		<td style="text-align: right;">10,510.0</td>
+		<td style="text-align: right;">11,280.4</td>
+		<td>12,660</td>
+	</tr>
+
+	<tr class="sublist odd">
+
+		<td><span class="badge">5</span></td>
+		<td><a href="/site/47347">DOE/SC/Argonne National Laboratory</a><br>United States</td>
+		<td><a href="/system/177718"> <b>Mira</b> - BlueGene/Q, Power BQC 16C 1.60GHz, Custom</a><br/>IBM</td>
+		<td style="text-align: right;">786,432</td>
+		<td style="text-align: right;">8,586.6</td>
+		<td style="text-align: right;">10,066.3</td>
+		<td>3,945</td>
+	</tr>
+</table>
+
+[Top500.org](http://top500.org) has more information about the fastest
+machines.
 
 ###Digging Deeper
-Some of the biggest performance gains can be realized through more efficient software. The fastest supercomputers run some distribution of Linux. An entire community of PhDs focuses on ways to optimize the Linux kernel for supercomputing. Optimization is not a one-size-fits all process. The scientists need to consder the type of application being run, percentage of time spent on I/O, efficiency of algorithms... you get the idea. Each potential point for optimization is like a node on an ever expanding tree.
+Some of the biggest performance gains can be realized through more efficient software. Most supercomputers run some distribution of Linux. Some teams of researchers focus on ways to optimize the Linux kernel for supercomputing.
 
-In the Ruby world, we might use tools like [New Relic](http://newrelic.com) or [Code Climate](http://codeclimate.com) to identify hot spots in our code, places where re-factoring can reduce CPU utilization or I/O. HPC tools, tend to be highly customizable because the users are scientists themselves.
+Optimization is not a one-size-fits all process. The scientists need to consder the type of applications being run, percentage of time spent on I/O, efficiency of algorithms, and so on. Each potential optimization choice is like a node on an ever expanding tree. The choices are endless, and the seasoned expert will know where to focus for the best results.
 
+In the Ruby world, we might use tools like [New Relic](http://newrelic.com) or [Code Climate](http://codeclimate.com) to identify hot spots in our code, places where re-factoring can reduce CPU utilization or improve I/O. HPC tools, tend to be highly customizable because the users are intimately familar with their own hardware. During a lunch conversation, one team of scientist shared how they suspected a defect in hardware counters used to measure the behavior of a supercomputer under study. The instincts of the scientists proved correct, and the errant counters were replaced.
 
-
-
-
-
-
-As we say in the Ruby community, [constraints are liberating]().
-
-I was blown away by the presenter's Kaviot graph:
-
-<img src="" width="" height="" alt="" title="" aligh="center"> 
-
-In one image, we can see the relationship between petaflops, cache hits...
-
-
-###Measuring and Accepting Trade-Offs
-
-Kaviat graph (radar graph)
-
-###Optimization Methods
-
-
-
-
-###Top 500
-The top 500 HPC in the world:
-http://top500.org/lists/2013/06/
-
-
-###Sample Optimization
-Say you have an application that performs matrix multiplication. Can there be a difference in app performance depending on the order of the loops?
-
-```ruby
-
-```
-
-###Auto Tuning
-
-
-
+###Conclusion
+I am grateful to the organizers of the Petascale Tools Workshop for hosting the event, and to the TAMU team for extending the invitation. Thank you both!
