@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-07-19T11:04:30-05:00</updated>
+  <updated>2013-07-19T11:07:40-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -117,6 +117,10 @@ machines.</p>
 <p>Optimization is not a one-size-fits all process. The scientists need to consder the type of applications being run, percentage of time spent on I/O, efficiency of algorithms, and so on. Each potential optimization choice is like a node on an ever expanding tree. The choices are endless, and the seasoned expert will know where to focus for the best results.</p>
 
 <p>In the Ruby world, we might use tools like <a href="http://newrelic.com">New Relic</a> or <a href="http://codeclimate.com">Code Climate</a> to identify hot spots in our code, places where re-factoring can reduce CPU utilization or improve I/O. HPC tools, tend to be highly customizable because the users are intimately familar with their own hardware. During a lunch conversation, one team of scientist shared how they suspected a defect in hardware counters used to measure the behavior of a supercomputer under study. The instincts of the scientists proved correct, and the errant counters were replaced.</p>
+
+<h3>Conclusion</h3>
+
+<p>When smart people challenge each other to grow, great things happen. The scientists at the Petascale Tools Workshop were clearly helping each other to grow. The next few years in supercomputing will be exciting!</p>
 
 <h3>Acknowledgements</h3>
 
