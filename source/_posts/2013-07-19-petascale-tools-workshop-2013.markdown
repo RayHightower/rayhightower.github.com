@@ -32,7 +32,7 @@ Supercomputer scientists are as competitive as olympic athletes. Here are the fi
 	<thead>
 	<tr>
 		<th>Rank</th>
-		<th>Site</th>
+		<th width="100">Site</th>
 		<th>Cores</th>
 		<th>Rmax (PF/s)</th>
 		<th>Rpeak (PF/s)</th>
@@ -42,46 +42,46 @@ Supercomputer scientists are as competitive as olympic athletes. Here are the fi
 
 	<tr class="sublist odd">
 		<td><span class="badge">1</span></td>
-		<td><a href="/site/50460">National University of Defense Technology</a><br>China</td>
+		<td>China</td>
 		<td style="text-align: right;">3,120,000</td>
-		<td style="text-align: right;">33.86</td>
-		<td style="text-align: right;">54.90</td>
+		<td style="text-align: right;">33.9</td>
+		<td style="text-align: right;">54.9</td>
 		<td>17.8</td>
 	</tr>
 
 	<tr class="sublist even">
 		<td><span class="badge">2</span></td>
-		<td><a href="/site/48553">DOE/SC/Oak Ridge National Laboratory</a><br>United States</td>
+		<td>United States</td>
 		<td style="text-align: right;">560,640</td>
-		<td style="text-align: right;">17.59</td>
-		<td style="text-align: right;">27.11</td>
+		<td style="text-align: right;">17.5</td>
+		<td style="text-align: right;">27.1</td>
 		<td>8.2</td>
 	</tr>
 
 	<tr class="sublist odd">
 		<td><span class="badge">3</span></td>
-		<td><a href="/site/49763">DOE/NNSA/LLNL</a><br>United States</td>
+		<td>United States</td>
 		<td style="text-align: right;">1,572,864</td>
-		<td style="text-align: right;">17.17</td>
-		<td style="text-align: right;">20.13</td>
+		<td style="text-align: right;">17.2</td>
+		<td style="text-align: right;">20.1</td>
 		<td>7.9</td>
 	</tr>
 
 	<tr class="sublist even">
 		<td><span class="badge">4</span></td>
-		<td><a href="/site/50313">RIKEN Advanced Institute for Computational Science (AICS)</a><br>Japan</td>
+		<td>Japan</td>
 		<td style="text-align: right;">705,024</td>
-		<td style="text-align: right;">10.51</td>
-		<td style="text-align: right;">11.28</td>
+		<td style="text-align: right;">10.5</td>
+		<td style="text-align: right;">11.3</td>
 		<td>12.6</td>
 	</tr>
 
 	<tr class="sublist odd">
 		<td><span class="badge">5</span></td>
-		<td><a href="/site/47347">DOE/SC/Argonne National Laboratory</a><br>United States</td>
+		<td>United States</td>
 		<td style="text-align: right;">786,432</td>
-		<td style="text-align: right;">8.59</td>
-		<td style="text-align: right;">10.07</td>
+		<td style="text-align: right;">8.6</td>
+		<td style="text-align: right;">10.1</td>
 		<td>3.9</td>
 	</tr>
 </table>
