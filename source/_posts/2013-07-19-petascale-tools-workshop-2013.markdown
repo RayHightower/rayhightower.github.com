@@ -46,7 +46,7 @@ Supercomputer scientists are as competitive as olympic athletes. Here are the fi
 		<td style="text-align: right;">3,120,000</td>
 		<td style="text-align: right;">33.9</td>
 		<td style="text-align: right;">54.9</td>
-		<td>17.8</td>
+		<td style="text-align: right;">17.8</td>
 	</tr>
 
 	<tr class="sublist even">
@@ -55,7 +55,7 @@ Supercomputer scientists are as competitive as olympic athletes. Here are the fi
 		<td style="text-align: right;">560,640</td>
 		<td style="text-align: right;">17.5</td>
 		<td style="text-align: right;">27.1</td>
-		<td>8.2</td>
+		<td style="text-align: right;">8.2</td>
 	</tr>
 
 	<tr class="sublist odd">
@@ -64,7 +64,7 @@ Supercomputer scientists are as competitive as olympic athletes. Here are the fi
 		<td style="text-align: right;">1,572,864</td>
 		<td style="text-align: right;">17.2</td>
 		<td style="text-align: right;">20.1</td>
-		<td>7.9</td>
+		<td style="text-align: right;">7.9</td>
 	</tr>
 
 	<tr class="sublist even">
@@ -73,7 +73,7 @@ Supercomputer scientists are as competitive as olympic athletes. Here are the fi
 		<td style="text-align: right;">705,024</td>
 		<td style="text-align: right;">10.5</td>
 		<td style="text-align: right;">11.3</td>
-		<td>12.6</td>
+		<td style="text-align: right;">12.6</td>
 	</tr>
 
 	<tr class="sublist odd">
@@ -82,7 +82,7 @@ Supercomputer scientists are as competitive as olympic athletes. Here are the fi
 		<td style="text-align: right;">786,432</td>
 		<td style="text-align: right;">8.6</td>
 		<td style="text-align: right;">10.1</td>
-		<td>3.9</td>
+		<td style="text-align: right;">3.9</td>
 	</tr>
 </table>
 
