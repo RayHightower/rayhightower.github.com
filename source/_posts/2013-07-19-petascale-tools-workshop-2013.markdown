@@ -44,45 +44,45 @@ Supercomputer scientists are as competitive as olympic athletes. Here are the fi
 		<td><span class="badge">1</span></td>
 		<td><a href="/site/50460">National University of Defense Technology</a><br>China</td>
 		<td style="text-align: right;">3,120,000</td>
-		<td style="text-align: right;">33,862.7</td>
-		<td style="text-align: right;">54,902.4</td>
-		<td>17,808</td>
+		<td style="text-align: right;">33.86</td>
+		<td style="text-align: right;">54.90</td>
+		<td>17.8</td>
 	</tr>
 
 	<tr class="sublist even">
 		<td><span class="badge">2</span></td>
 		<td><a href="/site/48553">DOE/SC/Oak Ridge National Laboratory</a><br>United States</td>
 		<td style="text-align: right;">560,640</td>
-		<td style="text-align: right;">17,590.0</td>
-		<td style="text-align: right;">27,112.5</td>
-		<td>8,209</td>
+		<td style="text-align: right;">17.59</td>
+		<td style="text-align: right;">27.11</td>
+		<td>8.2</td>
 	</tr>
 
 	<tr class="sublist odd">
 		<td><span class="badge">3</span></td>
 		<td><a href="/site/49763">DOE/NNSA/LLNL</a><br>United States</td>
 		<td style="text-align: right;">1,572,864</td>
-		<td style="text-align: right;">17,173.2</td>
-		<td style="text-align: right;">20,132.7</td>
-		<td>7,890</td>
+		<td style="text-align: right;">17.17</td>
+		<td style="text-align: right;">20.13</td>
+		<td>7.9</td>
 	</tr>
 
 	<tr class="sublist even">
 		<td><span class="badge">4</span></td>
 		<td><a href="/site/50313">RIKEN Advanced Institute for Computational Science (AICS)</a><br>Japan</td>
 		<td style="text-align: right;">705,024</td>
-		<td style="text-align: right;">10,510.0</td>
-		<td style="text-align: right;">11,280.4</td>
-		<td>12,660</td>
+		<td style="text-align: right;">10.51</td>
+		<td style="text-align: right;">11.28</td>
+		<td>12.6</td>
 	</tr>
 
 	<tr class="sublist odd">
 		<td><span class="badge">5</span></td>
 		<td><a href="/site/47347">DOE/SC/Argonne National Laboratory</a><br>United States</td>
 		<td style="text-align: right;">786,432</td>
-		<td style="text-align: right;">8,586.6</td>
-		<td style="text-align: right;">10,066.3</td>
-		<td>3,945</td>
+		<td style="text-align: right;">8.59</td>
+		<td style="text-align: right;">10.07</td>
+		<td>3.9</td>
 	</tr>
 </table>
 
