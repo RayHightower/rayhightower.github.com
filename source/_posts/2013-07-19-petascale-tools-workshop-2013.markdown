@@ -25,18 +25,18 @@ There is another way to look at the power problem. Consider it from the perspect
 Rubyists are familiar with the saying &#34;[constraints are liberating](http://gettingreal.37signals.com/ch03_Embrace_Constraints.php)&#34;, popularized by 37signals. Since power limitations are real constraints, our next step is to figure out how to extract the best results allowed within the constraints.
 
 ###Top Five
-Supercomputer scientists are as competitive as olympic athletes. Here are the five fastest machines in the world as of June 2013:
+Supercomputer scientists are as competitive as olympic athletes. As of June 2013, the five fastest machines in the world are:
 
-
+<center>
 <table class="table table-condensed">
 	<thead>
 	<tr>
-		<th>Rank</th>
+		<th width="75">Rank</th>
 		<th width="100">Site</th>
-		<th>Cores</th>
-		<th>Rmax (PF/s)</th>
-		<th>Rpeak (PF/s)</th>
-		<th>Power (MW)</th>
+		<th width="75" style="text-align: right;">Cores</th>
+		<th width="75" style="text-align: right;">Rmax (PF/s)</th>
+		<th width="75" style="text-align: right;">Rpeak (PF/s)</th>
+		<th width="75" style="text-align: right;">Power (MW)</th>
 	</tr>
 	</thead>
 
@@ -51,7 +51,7 @@ Supercomputer scientists are as competitive as olympic athletes. Here are the fi
 
 	<tr class="sublist even">
 		<td><span class="badge">2</span></td>
-		<td>United States</td>
+		<td>USA</td>
 		<td style="text-align: right;">560,640</td>
 		<td style="text-align: right;">17.5</td>
 		<td style="text-align: right;">27.1</td>
@@ -60,7 +60,7 @@ Supercomputer scientists are as competitive as olympic athletes. Here are the fi
 
 	<tr class="sublist odd">
 		<td><span class="badge">3</span></td>
-		<td>United States</td>
+		<td>USA</td>
 		<td style="text-align: right;">1,572,864</td>
 		<td style="text-align: right;">17.2</td>
 		<td style="text-align: right;">20.1</td>
@@ -78,15 +78,17 @@ Supercomputer scientists are as competitive as olympic athletes. Here are the fi
 
 	<tr class="sublist odd">
 		<td><span class="badge">5</span></td>
-		<td>United States</td>
+		<td>USA</td>
 		<td style="text-align: right;">786,432</td>
 		<td style="text-align: right;">8.6</td>
 		<td style="text-align: right;">10.1</td>
 		<td style="text-align: right;">3.9</td>
 	</tr>
 </table>
+</center>
 
-[Top500.org](http://top500.org) has more information about the fastest
+&nbsp;<br/>
+Rmax and Rpeak are part of the [LINPACK](http://en.wikipedia.org/wiki/LINPACK_benchmarks) library of benchmarks. [Top500.org](http://top500.org) has more information about the fastest
 machines.
 
 ###Digging Deeper
