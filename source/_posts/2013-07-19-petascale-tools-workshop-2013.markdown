@@ -99,4 +99,7 @@ Optimization is not a one-size-fits all process. The scientists need to consder 
 In the Ruby world, we might use tools like [New Relic](http://newrelic.com) or [Code Climate](http://codeclimate.com) to identify hot spots in our code, places where re-factoring can reduce CPU utilization or improve I/O. HPC tools, tend to be highly customizable because the users are intimately familar with their own hardware. During a lunch conversation, one team of scientist shared how they suspected a defect in hardware counters used to measure the behavior of a supercomputer under study. The instincts of the scientists proved correct, and the errant counters were replaced.
 
 ###Conclusion
+When smart people challenge each other to grow, great things happen. The scientists at the Petascale Tools Workshop were clearly helping each other to grow. The next few years in supercomputing will be exciting!
+
+###Acknowledgements
 I am grateful to the organizers of the Petascale Tools Workshop for hosting the event, and to the TAMU team for extending the invitation. Thank you both!
