@@ -33,20 +33,16 @@ Supercomputer scientists are as competitive as olympic athletes. Here are the fi
 	<tr>
 		<th>Rank</th>
 		<th>Site</th>
-		<th>System</th>
 		<th>Cores</th>
 		<th>Rmax (PF/s)</th>
 		<th>Rpeak (PF/s)</th>
-
 		<th>Power (MW)</th>
 	</tr>
 	</thead>
 
 	<tr class="sublist odd">
-
 		<td><span class="badge">1</span></td>
 		<td><a href="/site/50460">National University of Defense Technology</a><br>China</td>
-		<td><a href="/system/177999"> <b>Tianhe-2 (MilkyWay-2)</b> - TH-IVB-FEP Cluster, Intel Xeon E5-2692 12C 2.200GHz, TH Express-2, Intel Xeon Phi 31S1P</a><br/>NUDT</td>
 		<td style="text-align: right;">3,120,000</td>
 		<td style="text-align: right;">33,862.7</td>
 		<td style="text-align: right;">54,902.4</td>
@@ -54,10 +50,8 @@ Supercomputer scientists are as competitive as olympic athletes. Here are the fi
 	</tr>
 
 	<tr class="sublist even">
-
 		<td><span class="badge">2</span></td>
 		<td><a href="/site/48553">DOE/SC/Oak Ridge National Laboratory</a><br>United States</td>
-		<td><a href="/system/177975"> <b>Titan</b> - Cray XK7 , Opteron 6274 16C 2.200GHz, Cray Gemini interconnect, NVIDIA K20x</a><br/>Cray Inc.</td>
 		<td style="text-align: right;">560,640</td>
 		<td style="text-align: right;">17,590.0</td>
 		<td style="text-align: right;">27,112.5</td>
@@ -65,10 +59,8 @@ Supercomputer scientists are as competitive as olympic athletes. Here are the fi
 	</tr>
 
 	<tr class="sublist odd">
-
 		<td><span class="badge">3</span></td>
 		<td><a href="/site/49763">DOE/NNSA/LLNL</a><br>United States</td>
-		<td><a href="/system/177556"> <b>Sequoia</b> - BlueGene/Q, Power BQC 16C 1.60 GHz, Custom</a><br/>IBM</td>
 		<td style="text-align: right;">1,572,864</td>
 		<td style="text-align: right;">17,173.2</td>
 		<td style="text-align: right;">20,132.7</td>
@@ -76,10 +68,8 @@ Supercomputer scientists are as competitive as olympic athletes. Here are the fi
 	</tr>
 
 	<tr class="sublist even">
-
 		<td><span class="badge">4</span></td>
 		<td><a href="/site/50313">RIKEN Advanced Institute for Computational Science (AICS)</a><br>Japan</td>
-		<td><a href="/system/177232">K computer, SPARC64 VIIIfx 2.0GHz, Tofu interconnect</a><br/>Fujitsu</td>
 		<td style="text-align: right;">705,024</td>
 		<td style="text-align: right;">10,510.0</td>
 		<td style="text-align: right;">11,280.4</td>
@@ -87,10 +77,8 @@ Supercomputer scientists are as competitive as olympic athletes. Here are the fi
 	</tr>
 
 	<tr class="sublist odd">
-
 		<td><span class="badge">5</span></td>
 		<td><a href="/site/47347">DOE/SC/Argonne National Laboratory</a><br>United States</td>
-		<td><a href="/system/177718"> <b>Mira</b> - BlueGene/Q, Power BQC 16C 1.60GHz, Custom</a><br/>IBM</td>
 		<td style="text-align: right;">786,432</td>
 		<td style="text-align: right;">8,586.6</td>
 		<td style="text-align: right;">10,066.3</td>
