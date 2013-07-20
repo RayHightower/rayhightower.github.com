@@ -31,11 +31,10 @@ Supercomputer scientists are as competitive as olympic athletes. As of June 2013
 <table class="table table-condensed">
 	<thead>
 	<tr>
-		<th width="75">Rank</th>
-		<th width="100">Site</th>
-		<th width="75" style="text-align: right;">Cores</th>
+		<th width="50">Rank</th>
+		<th width="75">Site</th>
+		<th width="100" style="text-align: right;">Cores</th>
 		<th width="75" style="text-align: right;">Rmax (PF/s)</th>
-		<th width="75" style="text-align: right;">Rpeak (PF/s)</th>
 		<th width="75" style="text-align: right;">Power (MW)</th>
 	</tr>
 	</thead>
@@ -45,7 +44,6 @@ Supercomputer scientists are as competitive as olympic athletes. As of June 2013
 		<td>China</td>
 		<td style="text-align: right;">3,120,000</td>
 		<td style="text-align: right;">33.9</td>
-		<td style="text-align: right;">54.9</td>
 		<td style="text-align: right;">17.8</td>
 	</tr>
 
@@ -54,7 +52,6 @@ Supercomputer scientists are as competitive as olympic athletes. As of June 2013
 		<td>USA</td>
 		<td style="text-align: right;">560,640</td>
 		<td style="text-align: right;">17.5</td>
-		<td style="text-align: right;">27.1</td>
 		<td style="text-align: right;">8.2</td>
 	</tr>
 
@@ -63,7 +60,6 @@ Supercomputer scientists are as competitive as olympic athletes. As of June 2013
 		<td>USA</td>
 		<td style="text-align: right;">1,572,864</td>
 		<td style="text-align: right;">17.2</td>
-		<td style="text-align: right;">20.1</td>
 		<td style="text-align: right;">7.9</td>
 	</tr>
 
@@ -72,7 +68,6 @@ Supercomputer scientists are as competitive as olympic athletes. As of June 2013
 		<td>Japan</td>
 		<td style="text-align: right;">705,024</td>
 		<td style="text-align: right;">10.5</td>
-		<td style="text-align: right;">11.3</td>
 		<td style="text-align: right;">12.6</td>
 	</tr>
 
@@ -81,14 +76,13 @@ Supercomputer scientists are as competitive as olympic athletes. As of June 2013
 		<td>USA</td>
 		<td style="text-align: right;">786,432</td>
 		<td style="text-align: right;">8.6</td>
-		<td style="text-align: right;">10.1</td>
 		<td style="text-align: right;">3.9</td>
 	</tr>
 </table>
 </center>
 
 &nbsp;<br/>
-Rmax and Rpeak are part of the [LINPACK](http://en.wikipedia.org/wiki/LINPACK_benchmarks) library of benchmarks. [Top500.org](http://top500.org) has more information about the fastest
+Scientists determine Rmax by running the [LINPACK](http://en.wikipedia.org/wiki/LINPACK_benchmarks) benchmark. [Top500.org](http://top500.org) has more information about the fastest
 machines.
 
 ###Digging Deeper
@@ -96,7 +90,7 @@ Some of the biggest performance gains can be realized through more efficient sof
 
 Optimization is not a one-size-fits all process. The scientists need to consder the type of applications being run, percentage of time spent on I/O, efficiency of algorithms, and so on. Each potential optimization choice is like a node on an ever expanding tree. The choices are endless, and the seasoned expert will know where to focus for the best results.
 
-In the Ruby world, we might use tools like [New Relic](http://newrelic.com) or [Code Climate](http://codeclimate.com) to identify hot spots in our code, places where re-factoring can reduce CPU utilization or improve I/O. HPC tools, tend to be highly customizable because the users are intimately familar with their own hardware. During a lunch conversation, one team of scientist shared how they suspected a defect in hardware counters used to measure the behavior of a supercomputer under study. The instincts of the scientists proved correct, and the errant counters were replaced.
+In the Ruby world, we might use tools like [New Relic](http://newrelic.com) or [Code Climate](http://codeclimate.com) to identify hot spots in our code, places where re-factoring can reduce CPU utilization or improve I/O. HPC tools tend to be highly customizable because the users are intimately familar with their own hardware. During a lunch conversation, one team of scientist shared how they suspected a defect in hardware counters used to measure the behavior of a supercomputer under study. The instincts of the scientists proved correct, and the errant counters were replaced.
 
 ###Conclusion
 When smart people challenge each other to grow, great things happen. The scientists at the Petascale Tools Workshop were clearly helping each other to grow. The next few years in supercomputing will be exciting!
