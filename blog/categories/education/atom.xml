@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Education | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/education/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-07-19T18:01:51-05:00</updated>
+  <updated>2013-07-19T21:22:09-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -53,7 +53,6 @@
         <th width="75">Site</th>
         <th width="100" style="text-align: right;">Cores</th>
         <th width="75" style="text-align: right;">Rmax (PF/s)</th>
-        <th width="75" style="text-align: right;">Rpeak (PF/s)</th>
         <th width="75" style="text-align: right;">Power (MW)</th>
     </tr>
     </thead>
@@ -63,7 +62,6 @@
         <td>China</td>
         <td style="text-align: right;">3,120,000</td>
         <td style="text-align: right;">33.9</td>
-        <td style="text-align: right;">54.9</td>
         <td style="text-align: right;">17.8</td>
     </tr>
 
@@ -72,7 +70,6 @@
         <td>USA</td>
         <td style="text-align: right;">560,640</td>
         <td style="text-align: right;">17.5</td>
-        <td style="text-align: right;">27.1</td>
         <td style="text-align: right;">8.2</td>
     </tr>
 
@@ -81,7 +78,6 @@
         <td>USA</td>
         <td style="text-align: right;">1,572,864</td>
         <td style="text-align: right;">17.2</td>
-        <td style="text-align: right;">20.1</td>
         <td style="text-align: right;">7.9</td>
     </tr>
 
@@ -90,7 +86,6 @@
         <td>Japan</td>
         <td style="text-align: right;">705,024</td>
         <td style="text-align: right;">10.5</td>
-        <td style="text-align: right;">11.3</td>
         <td style="text-align: right;">12.6</td>
     </tr>
 
@@ -99,7 +94,6 @@
         <td>USA</td>
         <td style="text-align: right;">786,432</td>
         <td style="text-align: right;">8.6</td>
-        <td style="text-align: right;">10.1</td>
         <td style="text-align: right;">3.9</td>
     </tr>
 </table>
@@ -107,7 +101,7 @@
 
 
 <p>&nbsp;<br/>
-Rmax and Rpeak are part of the <a href="http://en.wikipedia.org/wiki/LINPACK_benchmarks">LINPACK</a> library of benchmarks. <a href="http://top500.org">Top500.org</a> has more information about the fastest
+Scientists determine Rmax by running the <a href="http://en.wikipedia.org/wiki/LINPACK_benchmarks">LINPACK</a> benchmark. <a href="http://top500.org">Top500.org</a> has more information about the fastest
 machines.</p>
 
 <h3>Digging Deeper</h3>
