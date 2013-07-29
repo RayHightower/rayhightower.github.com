@@ -10,5 +10,5 @@ published: true
 <!-- more -->
 <center><script async class="speakerdeck-embed" data-id="4c328420da3d01301487425a5f060967" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script></center>
 
-Thank you Ignite organizers ([Pete Aiello](http://www.goteampete.com) and [Claire Lew](http://clairelew.com)) for the invitation and for hosting a great event.
+Thank you Ignite Chicago organizers ([Pete Aiello](http://www.goteampete.com) and [Claire Lew](http://clairelew.com)) for the invitation and for hosting a great event.
 
