@@ -4,6 +4,12 @@ module Jekyll
     def render(context)
       html = ""
       categories = context.registers[:site].categories.keys
+
+      #Downcase introduced by RTH to make iOS sort properly.
+      categories.each do |category|
+        category.downcase!
+      end
+
       categories.sort.each do |category|
         posts_in_category = context.registers[:site].categories[category].size
         category_dir = context.registers[:site].config['category_dir']
