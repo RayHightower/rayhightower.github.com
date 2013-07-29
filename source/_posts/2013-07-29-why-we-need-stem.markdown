@@ -6,7 +6,7 @@ comments: true
 categories: [ Education ] 
 published: true
 ---
-[Ignite Chicago](http://ignitechi.org) is an evening of 5 minute talks presented by speakers who want to ignite and inspire others. Each speaker is allowed twenty slides, and the slides advance automatically every fifteen seconds. The Ignite organizers asked me to present _Why We Need STEM_ at [1871](http://1871.com). I'll post the video as soon as it becomes available. For now, check out the slides...
+[Ignite Chicago](http://ignitechi.org) is an evening of 5-minute talks presented by speakers who want to ignite and inspire others. Each speaker is allowed twenty slides, and the slides advance automatically every fifteen seconds. The Ignite organizers asked me to present _Why We Need STEM_ at [1871](http://1871.com). I'll post the video as soon as it becomes available. For now, check out the slides...
 <!-- more -->
 <center><script async class="speakerdeck-embed" data-id="4c328420da3d01301487425a5f060967" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script></center>
 
