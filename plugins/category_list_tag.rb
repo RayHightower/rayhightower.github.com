@@ -5,12 +5,7 @@ module Jekyll
       html = ""
       categories = context.registers[:site].categories.keys
 
-      #Downcase introduced by RTH to make iOS sort properly.
-      categories.each do |category|
-        category.downcase!
-      end
-
-      categories.sort.each do |category|
+      categories.sort_by(&:downcase).each do |category|  # .sort_by(&:downcase) added by RTH 7/28/2013 to sort iOS tag properly
         posts_in_category = context.registers[:site].categories[category].size
         category_dir = context.registers[:site].config['category_dir']
         category_url = File.join(category_dir, category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase)
