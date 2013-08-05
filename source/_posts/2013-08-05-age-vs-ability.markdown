@@ -5,7 +5,7 @@ date: 2013-08-05 06:34
 comments: true
 categories: [ Business, Education ]
 ---
-{% imgcap right [title Benjamin Franklin] /images/Benjamin-Franklin.jpg Columnist. Statesman. Scientist. %}
+{% imgcap right /images/Benjamin-Franklin.jpg Columnist. Statesman. Scientist. %}
 Age has little to do with ability. Every profession has examples of people who achieve goals while they are _too young_ to do so, or after they are considered _over the hill_. These atypical achievers are exciting to watch.
 
 _The Wall Street Journal_ listed some examples in a 1980s-era ad for United Technologies Corporation.
