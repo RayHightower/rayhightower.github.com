@@ -3,7 +3,7 @@ layout: post
 title: "You Can Build Things"
 date: 2013-08-16 14:18
 comments: true
-published: false
+published: true
 categories: [ Business, Education ]
 ---
 From a video interview with Steve Jobs:
