@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+<<<<<<< HEAD
         <loc>http://RayHightower.com/blog/2007/01/02/diamonds-for-ten-dollars-per-carat/</loc>
         <lastmod>2013-02-18T12:21:59-06:00</lastmod>
     </url>
@@ -19,6 +20,20 @@
         <lastmod>2013-02-18T01:33:22-06:00</lastmod>
     </url>
     <url>
+=======
+<<<<<<< HEAD
+        <loc>http://RayHightower.github.com/blog/2012/08/26/getting-down-is-mandatory/</loc>
+        <lastmod>2012-08-26T20:13:59-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://RayHightower.github.com/blog/archives/</loc>
+        <lastmod>2012-08-26T20:13:59-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://RayHightower.github.com/</loc>
+        <lastmod>2012-08-26T20:13:59-05:00</lastmod>
+=======
+>>>>>>> source
         <loc>http://RayHightower.com/blog/2012/08/26/getting-down-is-mandatory/</loc>
         <lastmod>2013-01-09T19:14:11-06:00</lastmod>
     </url>
@@ -245,7 +260,13 @@
         <lastmod>2013-07-31T22:20:50-05:00</lastmod>
     </url>
     <url>
+<<<<<<< HEAD
         <loc>http://RayHightower.com/speaking/</loc>
         <lastmod>2013-06-13T11:12:11-05:00</lastmod>
+=======
+        <loc>http://RayHightower.com/presentations/</loc>
+        <lastmod>2012-11-08T12:26:03-06:00</lastmod>
+>>>>>>> 9dcd5e369228bd56b850d26ff25028eec786048d
+>>>>>>> source
     </url>
 </urlset>
