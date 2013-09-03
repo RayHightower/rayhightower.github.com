@@ -1,0 +1,9 @@
+<div class="highlight"><pre><span class="vg">$:</span><span class="o">.</span><span class="n">unshift</span><span class="p">(</span><span class="s2">&quot;/Library/RubyMotion/lib&quot;</span><span class="p">)</span> 
+<span class="nb">require</span> <span class="s1">&#39;motion/project&#39;</span> 
+<span class="no">Motion</span><span class="o">::</span><span class="no">Project</span><span class="o">::</span><span class="no">App</span><span class="o">.</span><span class="n">setup</span> <span class="k">do</span> <span class="o">|</span><span class="n">app</span><span class="o">|</span> <span class="c1"># Use `rake config&#39; to see complete project settings. </span>
+  <span class="n">app</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Tweets&#39;</span> 
+  <span class="n">app</span><span class="o">.</span><span class="n">provisioning_profile</span> <span class="o">=</span> <span class="s1">&#39;/Users/[username]/Library/ MobileDevice/Provisioning Profiles/[string-of-numbers].mobileprovision&#39;</span> 
+  <span class="n">app</span><span class="o">.</span><span class="n">codesign_certificate</span> <span class="o">=</span> <span class="s1">&#39;iPhone Developer: John Q Developer (A5QZ9QF4Z1)&#39;</span> 
+<span class="k">end</span> 
+</pre>
+</div>

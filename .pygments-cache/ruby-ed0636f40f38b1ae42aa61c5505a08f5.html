@@ -1,0 +1,36 @@
+<div class="highlight"><pre>  <span class="k">def</span> <span class="nf">plusTapped</span><span class="p">(</span><span class="n">sender</span><span class="p">)</span>
+    <span class="vi">@counter</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="vi">@label</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="no">FizzBuzzViewController</span><span class="o">.</span><span class="n">fbcalc</span><span class="p">(</span><span class="vi">@counter</span><span class="p">)</span><span class="o">.</span><span class="n">to_s</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">minusTapped</span><span class="p">(</span><span class="n">sender</span><span class="p">)</span>
+    <span class="vi">@counter</span> <span class="o">-=</span> <span class="mi">1</span>
+    <span class="vi">@label</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="no">FizzBuzzViewController</span><span class="o">.</span><span class="n">fbcalc</span><span class="p">(</span><span class="vi">@counter</span><span class="p">)</span><span class="o">.</span><span class="n">to_s</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">resetTapped</span><span class="p">(</span><span class="n">sender</span><span class="p">)</span>
+    <span class="vi">@counter</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="vi">@label</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Begin&quot;</span>
+
+    <span class="n">rotate_background</span><span class="p">(</span><span class="vi">@view_handle</span><span class="p">)</span>
+
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">rotate_background</span><span class="p">(</span><span class="n">view_handle</span><span class="p">)</span>
+    <span class="vi">@color_index</span> <span class="o">||=</span> <span class="mi">0</span>
+
+    <span class="k">case</span> <span class="vi">@color_index</span>
+    <span class="k">when</span> <span class="mi">0</span>
+      <span class="vi">@view_handle</span><span class="o">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="no">UIColor</span><span class="o">.</span><span class="n">redColor</span>
+    <span class="k">when</span> <span class="mi">1</span>
+      <span class="vi">@view_handle</span><span class="o">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="no">UIColor</span><span class="o">.</span><span class="n">greenColor</span>
+    <span class="k">when</span> <span class="mi">2</span>
+      <span class="vi">@view_handle</span><span class="o">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="no">UIColor</span><span class="o">.</span><span class="n">blueColor</span>
+    <span class="k">when</span> <span class="mi">3</span>
+      <span class="vi">@view_handle</span><span class="o">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="no">UIColor</span><span class="o">.</span><span class="n">yellowColor</span>
+    <span class="k">end</span>
+
+    <span class="vi">@color_index</span> <span class="o">=</span> <span class="p">(</span><span class="vi">@color_index</span> <span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="mi">4</span>
+  <span class="k">end</span>
+</pre>
+</div>

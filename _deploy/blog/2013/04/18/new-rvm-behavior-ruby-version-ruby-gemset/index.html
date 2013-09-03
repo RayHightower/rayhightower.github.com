@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>New RVM Behavior With .ruby-version and .ruby-gemset - RayHightower.com</title>
+  <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
+
+  
+  <meta name="description" content="I trust RVM to manage my Ruby versions and my gemsets. So when I saw an unexpected change in RVM&#8217;s behavior, I was concerned about a possible &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+<!-- Arvo is like Rockwell. Added by RTH on 12/27/2012. -->
+<link href='http://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-330946-28']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">RayHightower.com</a></h1>
+  
+    <h2>Thoughts about Ruby, Rails, RubyMotion, iOS, and business growth.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:RayHightower.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/speaking">Speaking</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">New RVM Behavior With .ruby-version and .ruby-gemset</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-18T20:33:00-05:00" pubdate data-updated="true">Apr 18<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><a href="/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/"><img src="/images/rvm.png" height="98" width="89" align="right" alt="RVM .ruby-version .ruby-gemset" title="RVM .ruby-version .ruby-gemset"></a>
+I trust <a href="http://rvm.io">RVM</a> to manage my Ruby versions and my gemsets. So when I saw an unexpected change in RVM&#8217;s behavior, I was concerned about a possible disruption in my workflow.</p>
+
+<!--more-->
+
+
+<h4>A New RVM Message</h4>
+
+<p>Here&#8217;s the message I received when I changed into <code>mydirectory/</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps/<span class="nv">$ </span><span class="nb">cd </span>mydirectory/
+</span><span class='line'>You are using <span class="s1">&#39;.rvmrc&#39;</span>, it requires trusting, it is slower and it is not
+</span><span class='line'>compatible with other ruby managers, you can switch to <span class="s1">&#39;.ruby-version&#39;</span>
+</span><span class='line'>using <span class="s1">&#39;rvm rvmrc to [.]ruby-version&#39;</span> or ignore this warnings with
+</span><span class='line'><span class="s1">&#39;rvm rvmrc warning ignore ~/Code/Ruby/apps/mydirectory/.rvmrc&#39;</span>,
+</span><span class='line'><span class="s1">&#39;.rvmrc&#39;</span> will <span class="k">continue </span>to be the default project file in RVM 1 and RVM 2,
+</span><span class='line'>to ignore the warning <span class="k">for </span>all files run
+</span><span class='line'><span class="s1">&#39;rvm rvmrc warning ignore all .rvmrcs&#39;</span>.
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/mydirectory<span class="o">[</span>master<span class="o">]</span><span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Decision: Do the Update</h4>
+
+<p>Ignoring a warning feels like sticking my head in the sand. It&#8217;s better to face things head-on. So I decided to go with the update. If things don&#8217;t work out, I can always remove RVM completely and start from scratch.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps/mydirectory<span class="o">[</span>master<span class="o">]</span><span class="nv">$ </span>rvm rvmrc to .ruby-version
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>My shell responded by repeating the <code>.rvmrc</code> vs <code>.ruby-version</code> notice. But when I examine the directory, everything looks good.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>total 56
+</span><span class='line'>drwx---rwx   53 rth  wheel   1802 Apr 19 07:18 .
+</span><span class='line'>drwx---rwx   27 rth  wheel    918 Feb 10 08:26 ..
+</span><span class='line'>-rw-r--r--    1 rth  wheel    175 Feb  4 13:41 .gitignore
+</span><span class='line'>-rw-r--r--@   1 rth  wheel      0 Oct 15  2012 .repl_history
+</span><span class='line'>-rw-r--r--    1 rth  wheel     11 Apr 19 07:18 .ruby-gemset
+</span><span class='line'>-rw-r--r--    1 rth  wheel     16 Apr 19 07:18 .ruby-version
+</span><span class='line'>drwxr-xr-x   10 rth  wheel    340 Feb 14 20:41 AFNetworking-RubyMotion-Example
+</span><span class='line'>drwxr-xr-x   13 rth  wheel    442 Feb 24 17:29 AccordionUIView
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Instead of a single <code>.rvmrc</code> file, Ruby versions are managed by
+<code>.ruby-version</code> while gemsets are managed through <code>.ruby-gemset</code>.</p>
+
+<h4>Bash Alias</h4>
+
+<p>Next, it&#8217;s time to clean things up by adding an <code>alias</code> to
+<code>~/.bash_profile</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">alias </span><span class="nv">newrvm</span><span class="o">=</span><span class="s2">&quot;rvm rvmrc to .ruby-version&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Tell the terminal session to use the new <code>~/.bash_profile</code> with</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">source</span> ~/.bash_profile
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And now we can begin using <code>.ruby-version</code> and <code>.ruby-gemset</code> in any .rvmrc-equipped directory with a simple one-word command.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>newrvm
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Feedback Welcome</h4>
+
+<p>If you notice any snags (including typos) in the above procedure, please reach out via the comments below or through <a href="http://twitter.com/rayhightower">Twitter</a>.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-18T20:33:00-05:00" pubdate data-updated="true">Apr 18<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/rails/'>Rails</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/" data-via="" data-counturl="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/04/12/elegant-code/" title="Previous Post: Elegant Code">&laquo; Elegant Code</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/04/20/ack-written-in-perl-useful-with-ruby/" title="Next Post: Ack 2.0: Written in Perl, Useful With Ruby">Ack 2.0: Written in Perl, Useful With Ruby &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About</h1>
+  <p>Raymond T. Hightower is a software developer, perpetual student, founder of <a href="http://wisdomgroup.com">WisdomGroup</a>, and organizer of <a href="http://chicagoruby.org">ChicagoRuby</a> & <a href="http://windycityrails.org">WindyCityRails</a>. He is currently exploring RubyMotion & iOS.
+  </p>
+  <p>
+  <a href="http://wisdomgroup.com"><img src="/images/wisdomgroup.jpg" width="191" height="42" alt="WisdomGroup - Ruby on Rails. MVP. iPhone. iPad." title="WisdomGroup - Ruby on Rails. MVP. iPhone. iPad."/></a><br/>
+  <a href="http://windycityrails.org"><img src="/images/windycityrails.jpg" width="191" height="42" alt="WindyCityRails - Ruby on Rails Conference in Chicago, IL USA" title="WindyCityRails - Ruby on Rails Conference in Chicago, IL USA"/></a><br/>
+  <a href="http://chicagoruby.org"><img src="/images/chicagoruby.jpg" width="191" height="42" alt="ChicagoRuby - Ruby on Rails in Chicago, IL USA" title="ChicagoRuby - Ruby on Rails in Chicago, IL USA" /></a><br/>
+  </p>
+</section>
+<section>
+  <h1>Observations</h1>
+  <ul>
+    <li>A person with a new idea is a crank until the idea succeeds.<br/> ~Mark Twain</li>
+    <li>Find a need and fulfill it. Successful businesses are founded on the needs of people.<br/>~A. G. Gaston</li>
+    <li>Everybody told me no at first, including my wife. I turned the
+    nos into yeses and the disadvantages into advantages.<br/>~John H.
+    Johnson</li>
+    <li>I would have been fired a hundred times at a company run by
+    MBAs. But I never went into business to make money. I went... so
+    that I could do interesting things that hadn't been done
+    before.<br/>~Amar Bose</li>
+  </ul>
+</section>
+<section>
+  <h1>Speaking</h1>
+  <ul>
+    <li><a href="http://ignitechi.org">Ignite Chicago</a> at 1871 in
+    Chicago, IL</li>
+    <li><a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">Aloha Ruby</a> in Honolulu, HI</li>
+    <li><a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">Magic Ruby</a> in Orlando, FL</li>
+    <li><a href="http://www.meetup.com/Geekfest/events/100821552/">Geekfest</a> at Groupon in Chicago, IL</li>
+    <li><a href="http://snow-mobile.org">Snow Mobile</a> in Madison, WI</li>
+    <li><a href="http://chicagocodecamp.com">Chicago Code Camp</a> in Grayslake, IL</li>
+  </ul>
+</section>
+<section>
+  <h1>Code & Biz</h1>
+  <ul>
+    <li><a href="http://github.com/rayhightower">GitHub</a></li>
+    <li><a href="http://coderwall.com/rayhightower">Coder Wall</a></li>
+    <li><a href="http://twitter.com/rayhightower">Twitter (@RayHightower)</a></li>
+  </ul>
+<!-- AddThis Follow BEGIN -->
+<div class="addthis_toolbox addthis_32x32_style addthis_default_style">
+<a class="addthis_button_linkedin_follow" addthis:userid="rayhightower"></a>
+<a class="addthis_button_vimeo_follow" addthis:userid="chicagoruby"></a>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50904f5d21a0414f"></script>
+<!-- AddThis Follow END -->
+</section>
+<!-- added by RTH 1/9/2013 from http://www.dotnetguy.co.uk/post/2012/06/25/octopress-category-list-plugin/ -->
+<section>
+  <h1>Blog Categories</h1>
+  <ul id="categories">
+    <li class='category'><a href='/blog/categories/beaglebone-black/'>BeagleBone Black (2)</a></li>
+<li class='category'><a href='/blog/categories/business/'>Business (18)</a></li>
+<li class='category'><a href='/blog/categories/education/'>Education (25)</a></li>
+<li class='category'><a href='/blog/categories/ios/'>iOS (9)</a></li>
+<li class='category'><a href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX (6)</a></li>
+<li class='category'><a href='/blog/categories/objective-c/'>Objective-C (4)</a></li>
+<li class='category'><a href='/blog/categories/rails/'>Rails (6)</a></li>
+<li class='category'><a href='/blog/categories/raspberry-pi/'>Raspberry Pi (3)</a></li>
+<li class='category'><a href='/blog/categories/ruby/'>Ruby (12)</a></li>
+<li class='category'><a href='/blog/categories/rubymotion/'>RubyMotion (8)</a></li>
+<li class='category'><a href='/blog/categories/ux/'>UX (1)</a></li>
+<li class='category'><a href='/blog/categories/vim/'>Vim (3)</a></li>
+<li class='category'><a href='/blog/categories/xcode/'>Xcode (4)</a></li>
+
+  </ul>
+</section>
+<section>
+  <h1>Popular Blog Posts</h1>
+  <ul>
+    <li><a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Ruby on Raspberry Pi</a></li>
+    <li><a href="/blog/2013/07/29/why-we-need-stem/">Why We Need STEM</a></li>
+    <li><a href="/blog/2013/05/31/kali-linux-pentesting/">Kali Linux Pentesting</a></li>
+    <li><a href="/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">Preparing for Parallella's 64 Cores</a></li>
+    <li><a href="/blog/2013/02/26/atari-pong-rubymotion-objective-c/">Atari's Pong with RubyMotion</a></li>
+    <li><a href="/blog/2012/09/03/10000-hours-of-practice/">10,000 Hours of Practice</a></li>
+  </ul>
+</section>
+
+<section>
+  <h1>Vim</h1>
+  <p>I don't always use a modal editor. But when I do, I use <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a>.</p>
+  <p>
+  <a href="/blog/2013/01/12/why-i-use-vim/"><img src="/images/vim_editor.gif" width="125" height="60" alt="Vim, the editor" title="Vim, the editor"/></a>
+  </p>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'rayhightower';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/';
+        var disqus_url = 'http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

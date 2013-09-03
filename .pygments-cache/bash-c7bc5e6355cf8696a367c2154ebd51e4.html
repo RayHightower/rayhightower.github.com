@@ -1,0 +1,14 @@
+<div class="highlight"><pre><span class="c">#!/bin/bash</span>
+<span class="c"># Create a RubyMotion app, change into the app&#39;s directory, and run ctags.</span>
+<span class="c"># Written by Raymond T. Hightower on February 12, 2013</span>
+
+<span class="nb">echo</span> <span class="s2">&quot;Creating a new RubyMotion app called:&quot;</span> <span class="nv">$1</span>
+motion create <span class="nv">$1</span>
+<span class="nb">cd</span> <span class="nv">$1</span>
+<span class="nb">echo</span> <span class="s2">&quot;Creating ctags for the new RubyMotion app...&quot;</span>
+rake ctags
+<span class="nb">echo</span> <span class="s2">&quot;Opening the new app in Vim...&quot;</span>
+mvim .
+<span class="nb">echo</span> <span class="s2">&quot;To use the RubyMotion console, cd into the new directory:&quot;</span> <span class="nv">$1</span>
+</pre>
+</div>

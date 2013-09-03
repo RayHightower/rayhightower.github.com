@@ -1,0 +1,15 @@
+<div class="highlight"><pre><span class="nb">puts</span> <span class="s2">&quot;Parent process pid (before fork) is </span><span class="si">#{</span><span class="no">Process</span><span class="o">.</span><span class="n">pid</span><span class="si">}</span><span class="s2">.</span><span class="se">\n</span><span class="s2">&quot;</span>
+
+<span class="k">if</span> <span class="nb">fork</span>
+  <span class="n">current_process</span> <span class="o">=</span> <span class="no">Process</span><span class="o">.</span><span class="n">pid</span>
+  <span class="n">parent_process</span> <span class="o">=</span> <span class="no">Process</span><span class="o">.</span><span class="n">ppid</span>
+  <span class="nb">printf</span> <span class="s2">&quot;Entered the *if* block during Process </span><span class="si">#{</span><span class="n">current_process</span><span class="si">}</span><span class="s2">.&quot;</span>
+  <span class="nb">printf</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">The parent of this process is </span><span class="si">#{</span><span class="no">Process</span><span class="o">.</span><span class="n">ppid</span><span class="si">}</span><span class="s2">, which should be bash.</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+<span class="k">else</span>
+  <span class="n">current_process</span> <span class="o">=</span> <span class="no">Process</span><span class="o">.</span><span class="n">pid</span>
+  <span class="n">parent_process</span> <span class="o">=</span> <span class="no">Process</span><span class="o">.</span><span class="n">ppid</span>
+  <span class="nb">printf</span> <span class="s2">&quot;Entered the *else* block during Process </span><span class="si">#{</span><span class="n">current_process</span><span class="si">}</span><span class="s2">.&quot;</span>
+  <span class="nb">printf</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">The parent of this process is </span><span class="si">#{</span><span class="n">parent_process</span><span class="si">}</span><span class="s2">, which should be the original of this process.</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+<span class="k">end</span>
+</pre>
+</div>
