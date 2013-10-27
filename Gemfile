@@ -1,16 +1,21 @@
-source "http://rubygems.org"
+source "https://rubygems.org"
 
 group :development do
-  gem 'rake', '~> 0.9.2'
-  gem 'rack', '~> 1.4.1'
+  gem 'rake', '~> 0.9'
   gem 'github-pages'
-  gem 'rdiscount', '~> 1.6.8'
+  gem 'jekyll'
+  gem 'rdiscount'
+  gem 'pygments.rb'
   gem 'RedCloth', '~> 4.2.9'
-  gem 'haml', '~> 3.1.6'
-  gem 'compass', '~> 0.12.1'
+  gem 'haml', '~> 3.1.7'
+  gem 'compass', '~> 0.12.2'
+  gem 'sass', '~> 3.2'
+  gem 'sass-globbing', '~> 1.0.0'
   gem 'rubypants', '~> 0.2.0'
   gem 'rb-fsevent', '~> 0.9'
   gem 'stringex', '~> 1.4.0'
+  gem 'liquid'
+  gem 'directory_watcher', '1.4.1'
+  gem 'sinatra', '~> 1.4.2'
 end
 
-gem 'sinatra', '~> 1.3.2'
